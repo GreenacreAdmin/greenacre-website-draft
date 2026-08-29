@@ -28,3 +28,14 @@ body{padding-bottom:var(--footer-height)!important}
  .site-footer__logo{flex:initial!important}.site-footer__logo img{max-height:34px!important}
  .site-footer__logo--cambridge img,.site-footer__logo--edt img{max-height:29px!important}
 }
+
+/* ONESQA FINAL SIZE */
+.site-footer__logo--onesqa img {
+  width: auto !important;
+  height: 64px !important;
+  max-height: 64px !important;
+  max-width: 112px !important;
+  object-fit: contain !important;
+}
+/* END ONESQA FINAL SIZE */
+
