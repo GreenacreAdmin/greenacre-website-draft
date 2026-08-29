@@ -48,7 +48,14 @@ h3 {
   line-height: 1.3;
 }
 
-/* Main explanatory and introductory copy */
+/*
+ * STANDARD PARAGRAPH RULE
+ *
+ * All ordinary paragraph text uses this size automatically.
+ * New <p> elements require no typography class.
+ * Specialist components may override this explicitly where needed.
+ */
+p,
 .lead,
 .page-hero p,
 .subhero p,
