@@ -4,9 +4,8 @@
 .subhero {
   box-sizing: border-box !important;
   height: 340px !important;
-  padding: 0 !important;
-  display: flex !important;
-  align-items: center !important;
+  padding: 72px 0 0 !important;
+  display: block !important;
 }
 
 /*
@@ -30,6 +29,7 @@
   .page-hero,
   .subhero {
     height: 330px !important;
+    padding-top: 58px !important;
   }
 
   .page-hero > .wrap,
