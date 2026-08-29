@@ -16,7 +16,7 @@
   position:static;
   width:100%;
   height:var(--footer-height);
-  background:var(--footer-green);
+  background:var(--footer-green)!important;
   color:var(--footer-ink);
   border-top:1px solid rgba(17,23,17,.12);
   box-shadow:0 -3px 12px rgba(0,0,0,.07);
