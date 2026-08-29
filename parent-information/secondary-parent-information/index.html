@@ -90,8 +90,46 @@ body{padding-bottom:var(--footer-height)!important}
 }
 </style>
 
-<style id="stage15-secondary-parent-info">
-.secondary-parent-info{padding-top:34px!important}
+<style id="stage16-standard-navigation">
+@media (min-width:901px){
+  .nav-drop{
+    position:relative!important;
+  }
+
+  .nav-drop > .nav-menu{
+    position:absolute!important;
+    top:100%!important;
+    left:0!important;
+    margin-top:0!important;
+    visibility:hidden!important;
+    opacity:0!important;
+    pointer-events:none!important;
+    transform:translateY(6px)!important;
+    transition:opacity .14s ease, transform .14s ease, visibility .14s ease!important;
+    z-index:100!important;
+  }
+
+  .nav-drop:hover > .nav-menu,
+  .nav-drop:focus-within > .nav-menu,
+  .nav-drop.nav-open > .nav-menu{
+    visibility:visible!important;
+    opacity:1!important;
+    pointer-events:auto!important;
+    transform:translateY(0)!important;
+  }
+
+  /* Small invisible bridge so the pointer can move naturally into the submenu. */
+  .nav-drop > .nav-menu::before{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    top:-10px;
+    height:10px;
+  }
+}
+</style>
+<style id="stage17-secondary-consistency">
 .secondary-parent-info .section-jump{
   display:flex;flex-wrap:wrap;gap:10px;margin:0 0 34px;
 }
@@ -108,7 +146,7 @@ body{padding-bottom:var(--footer-height)!important}
   padding:28px 0 6px;border-top:1px solid rgba(47,107,63,.16);
   scroll-margin-top:110px;
 }
-.secondary-parent-info .info-block:first-of-type{border-top:0}
+.secondary-parent-info .info-block:first-of-type{border-top:0;padding-top:0}
 .secondary-parent-info h2{
   margin:0 0 8px;color:var(--green-dark);font-size:clamp(26px,3vw,36px);
 }
@@ -202,53 +240,13 @@ body{padding-bottom:var(--footer-height)!important}
   .secondary-parent-info .day-row>div:nth-child(3)::before{content:"Years 10 - 11"}
   .secondary-parent-info .day-row>div:nth-child(3){border-top:1px solid rgba(47,107,63,.1)}
 }
-</style>
-<style id="stage16-standard-navigation">
-@media (min-width:901px){
-  .nav-drop{
-    position:relative!important;
-  }
-
-  .nav-drop > .nav-menu{
-    position:absolute!important;
-    top:100%!important;
-    left:0!important;
-    margin-top:0!important;
-    visibility:hidden!important;
-    opacity:0!important;
-    pointer-events:none!important;
-    transform:translateY(6px)!important;
-    transition:opacity .14s ease, transform .14s ease, visibility .14s ease!important;
-    z-index:100!important;
-  }
-
-  .nav-drop:hover > .nav-menu,
-  .nav-drop:focus-within > .nav-menu,
-  .nav-drop.nav-open > .nav-menu{
-    visibility:visible!important;
-    opacity:1!important;
-    pointer-events:auto!important;
-    transform:translateY(0)!important;
-  }
-
-  /* Small invisible bridge so the pointer can move naturally into the submenu. */
-  .nav-drop > .nav-menu::before{
-    content:"";
-    position:absolute;
-    left:0;
-    right:0;
-    top:-10px;
-    height:10px;
-  }
-}
-</style>
-</head><body><header class="site-header"><div class="site-header__inner"><a aria-label="Greenacre International School home" class="site-brand" data-path="" href="./"><img alt="Greenacre International School" src="assets/images/greenacre-logo.png"/></a><button aria-expanded="false" class="menu-toggle" type="button">Menu</button><nav aria-label="Main navigation" class="site-nav"><a data-path="" href="./">Home</a><div class="nav-drop"><button type="button">Our School</button><div class="nav-menu"><a data-path="our-school/about-greenacre/">About Greenacre</a><a data-path="our-school/head-of-school-welcome/" href="/our-school/head-of-school-welcome/">Head of School Welcome</a><a data-path="our-school/environmentality/">Environmentality</a><a data-path="our-school/wellbeing/">Wellbeing</a><a data-path="our-school/our-team/">Our Team</a><a data-path="our-school/campus-facilities/">Campus &amp; Facilities</a></div></div><div class="nav-drop"><button type="button">Learning</button><div class="nav-menu"><a data-path="learning/curriculum/">Curriculum</a><a data-path="learning/early-years/">Early Years</a><a data-path="learning/primary/">Primary</a><a data-path="learning/secondary/">Secondary</a></div></div><div class="nav-drop"><button type="button">Admissions</button><div class="nav-menu"><a data-path="admissions/admissions-visits/">Admissions &amp; Visits</a><a data-path="admissions/fees/">Fees</a><a data-path="admissions/faqs/">FAQs</a></div></div><div class="nav-drop"><button type="button">Parent Information</button><div class="nav-menu"><a data-path="parent-information/key-information/">Key Information</a><a data-path="parent-information/calendar-term-dates/">Calendar &amp; Term Dates</a><a data-path="parent-information/secondary-parent-information/" href="/parent-information/secondary-parent-information/">Secondary Parent Information</a><a data-path="parent-information/ecas/">Clubs &amp; ECAs</a><a data-path="parent-information/services/">Services</a></div></div><a data-path="contact/">Contact</a></nav></div></header><main><section class="page-hero">
-<div class="shell">
+</style></head><body><header class="site-header"><div class="site-header__inner"><a aria-label="Greenacre International School home" class="site-brand" data-path="" href="./"><img alt="Greenacre International School" src="assets/images/greenacre-logo.png"/></a><button aria-expanded="false" class="menu-toggle" type="button">Menu</button><nav aria-label="Main navigation" class="site-nav"><a data-path="" href="./">Home</a><div class="nav-drop"><button type="button">Our School</button><div class="nav-menu"><a data-path="our-school/about-greenacre/">About Greenacre</a><a data-path="our-school/head-of-school-welcome/" href="/our-school/head-of-school-welcome/">Head of School Welcome</a><a data-path="our-school/environmentality/">Environmentality</a><a data-path="our-school/wellbeing/">Wellbeing</a><a data-path="our-school/our-team/">Our Team</a><a data-path="our-school/campus-facilities/">Campus &amp; Facilities</a></div></div><div class="nav-drop"><button type="button">Learning</button><div class="nav-menu"><a data-path="learning/curriculum/">Curriculum</a><a data-path="learning/early-years/">Early Years</a><a data-path="learning/primary/">Primary</a><a data-path="learning/secondary/">Secondary</a></div></div><div class="nav-drop"><button type="button">Admissions</button><div class="nav-menu"><a data-path="admissions/admissions-visits/">Admissions &amp; Visits</a><a data-path="admissions/fees/">Fees</a><a data-path="admissions/faqs/">FAQs</a></div></div><div class="nav-drop"><button type="button">Parent Information</button><div class="nav-menu"><a data-path="parent-information/key-information/">Key Information</a><a data-path="parent-information/calendar-term-dates/">Calendar &amp; Term Dates</a><a data-path="parent-information/secondary-parent-information/" href="/parent-information/secondary-parent-information/">Secondary Parent Information</a><a data-path="parent-information/ecas/">Clubs &amp; ECAs</a><a data-path="parent-information/services/">Services</a></div></div><a data-path="contact/">Contact</a></nav></div></header><main><section class="page-hero">
+<div class="wrap">
 <p class="eyebrow">Parent Information</p>
 <h1>Secondary Parent Information 2026-27</h1>
 <p class="lead">Key information for Years 7-11, including the school day, what students need, daily arrangements, assessments, reports and Cambridge IGCSE examinations.</p>
 </div>
-</section><section class="content-section secondary-parent-info"><div class="shell">
+</section><section class="section secondary-parent-info"><div class="wrap">
 <nav aria-label="Secondary parent information sections" class="section-jump">
 <a href="#term-dates">Term dates</a>
 <a href="#school-day">School day</a>
@@ -611,8 +609,6 @@ linear-gradient(35deg,#dce9d6,#f2eadc);display:flex;align-items:center;justify-c
 @media(max-width:850px){.phase-links,.pathway,.feature-list{grid-template-columns:1fr}.photo-plan{min-height:280px}}
 </style>
 <script id="site-nav-script">(()=>{const project=location.hostname==='greenacreadmin.github.io'?'/greenacre-website-draft/':'/';document.querySelectorAll('[data-path]').forEach(a=>a.href=project+(a.dataset.path||''));const t=document.querySelector('.menu-toggle'),n=document.querySelector('.site-nav');if(t&&n)t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',String(o))})})();</script>
-
-
 <script id="stage16-standard-navigation-js">
 (()=>{
   const desktopMQ = window.matchMedia('(min-width:901px)');
