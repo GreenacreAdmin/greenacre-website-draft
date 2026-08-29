@@ -1,0 +1,61 @@
+/*
+ * Shared Greenacre content components.
+ * Consolidated from identical page-local rules.
+ */
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1.08fr .92fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.grid2.reverse {
+  grid-template-columns: .92fr 1.08fr;
+}
+
+.photo {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 18px 48px rgba(37,72,45,.12);
+}
+
+.photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.feature {
+  background: #fff;
+  border: 1px solid rgba(47,107,63,.12);
+  border-radius: 18px;
+  padding: 22px;
+}
+
+.feature strong {
+  display: block;
+  color: var(--green-dark);
+  margin-bottom: 5px;
+}
+
+@media (max-width:850px) {
+  .grid2,
+  .grid2.reverse {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
