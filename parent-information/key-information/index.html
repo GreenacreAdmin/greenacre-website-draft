@@ -89,6 +89,38 @@ body{padding-bottom:var(--footer-height)!important}
  .site-footer__logo--cambridge img,.site-footer__logo--edt img{max-height:29px!important}
 }
 </style>
+
+<style id="stage12-desktop-hover-menu">
+@media (min-width: 901px){
+  .nav-item{position:relative}
+  .nav-item:hover > .dropdown,
+  .nav-item:focus-within > .dropdown,
+  .nav-item:hover > .submenu,
+  .nav-item:focus-within > .submenu{
+    display:block!important;
+    opacity:1!important;
+    visibility:visible!important;
+    pointer-events:auto!important;
+    transform:translateY(0)!important;
+  }
+
+  .nav-item > .dropdown,
+  .nav-item > .submenu{
+    margin-top:0!important;
+  }
+
+  /* Invisible hover bridge prevents the menu closing while moving into it. */
+  .nav-item:has(> .dropdown)::after,
+  .nav-item:has(> .submenu)::after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    top:100%;
+    height:14px;
+  }
+}
+</style>
 </head><body><header class="site-header"><div class="site-header__inner"><a aria-label="Greenacre International School home" class="site-brand" data-path="" href="./"><img alt="Greenacre International School" src="assets/images/greenacre-logo.png"/></a><button aria-expanded="false" class="menu-toggle" type="button">Menu</button><nav aria-label="Main navigation" class="site-nav"><a data-path="" href="./">Home</a><div class="nav-drop"><button type="button">Our School</button><div class="nav-menu"><a data-path="our-school/about-greenacre/">About Greenacre</a><a data-path="our-school/head-of-school-welcome/" href="/our-school/head-of-school-welcome/">Head of School Welcome</a><a data-path="our-school/environmentality/">Environmentality</a><a data-path="our-school/wellbeing/">Wellbeing</a><a data-path="our-school/our-team/">Our Team</a><a data-path="our-school/campus-facilities/">Campus &amp; Facilities</a></div></div><div class="nav-drop"><button type="button">Learning</button><div class="nav-menu"><a data-path="learning/curriculum/">Curriculum</a><a data-path="learning/early-years/">Early Years</a><a data-path="learning/primary/">Primary</a><a data-path="learning/secondary/">Secondary</a></div></div><div class="nav-drop"><button type="button">Admissions</button><div class="nav-menu"><a data-path="admissions/admissions-visits/">Admissions &amp; Visits</a><a data-path="admissions/fees/">Fees</a><a data-path="admissions/faqs/">FAQs</a></div></div><div class="nav-drop"><button type="button">Parent Information</button><div class="nav-menu"><a data-path="parent-information/key-information/">Key Information</a><a data-path="parent-information/calendar-term-dates/">Calendar &amp; Term Dates</a><a data-path="parent-information/ecas/">Clubs &amp; ECAs</a><a data-path="parent-information/services/">Services</a></div></div><a data-path="contact/">Contact</a></nav></div></header><main>
 <section class="page-hero"><div class="wrap"><div class="eyebrow">Greenacre International School / Koh Samui, Thailand</div><h1>Key Information</h1><p>Practical information for Greenacre families, including the school day, uniform, meals, transport and communication.</p></div></section>
 <section><div class="wrap"><div class="kicker">The school day</div><h2>Arrival, collection and ECAs.</h2><p>The school gates open at 8:30am. Start and collection times vary by phase, with after-school activities extending the day for some year groups.</p>
@@ -348,4 +380,28 @@ linear-gradient(35deg,#dce9d6,#f2eadc);display:flex;align-items:center;justify-c
 @media(max-width:850px){.phase-links,.pathway,.feature-list{grid-template-columns:1fr}.photo-plan{min-height:280px}}
 </style>
 <script id="site-nav-script">(()=>{const project=location.hostname==='greenacreadmin.github.io'?'/greenacre-website-draft/':'/';document.querySelectorAll('[data-path]').forEach(a=>a.href=project+(a.dataset.path||''));const t=document.querySelector('.menu-toggle'),n=document.querySelector('.site-nav');if(t&&n)t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',String(o))})})();</script>
+
+<script id="stage12-desktop-hover-js">
+(()=>{
+  const desktop = () => window.matchMedia('(min-width: 901px)').matches;
+  document.querySelectorAll('.nav-item').forEach(item=>{
+    const menu = item.querySelector(':scope > .dropdown, :scope > .submenu');
+    if(!menu) return;
+
+    item.addEventListener('mouseenter', ()=>{
+      if(!desktop()) return;
+      item.classList.add('open');
+      const trigger=item.querySelector(':scope > a, :scope > button');
+      if(trigger) trigger.setAttribute('aria-expanded','true');
+    });
+
+    item.addEventListener('mouseleave', ()=>{
+      if(!desktop()) return;
+      item.classList.remove('open');
+      const trigger=item.querySelector(':scope > a, :scope > button');
+      if(trigger) trigger.setAttribute('aria-expanded','false');
+    });
+  });
+})();
+</script>
 </body></html>

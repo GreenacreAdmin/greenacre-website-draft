@@ -84,11 +84,78 @@ body{padding-bottom:var(--footer-height)!important}
  .site-footer__logo--cambridge img,.site-footer__logo--edt img{max-height:29px!important}
 }
 </style>
+<style id="stage12-environmentality-blur">
+/* Stage 12: Environmentality placeholders must be unmistakably temporary. */
+main .review-secondary-photo,
+main .temp-photo,
+main .photo-plan{
+  position:relative!important;
+  overflow:hidden!important;
+  isolation:isolate!important;
+}
+main .review-secondary-photo img,
+main .temp-photo img,
+main .photo-plan img{
+  filter:blur(16px) saturate(.65)!important;
+  transform:scale(1.08)!important;
+}
+main .review-secondary-photo::before,
+main .temp-photo::before,
+main .photo-plan::before{
+  content:"";
+  position:absolute;
+  inset:-16px;
+  z-index:2;
+  -webkit-backdrop-filter:blur(16px);
+  backdrop-filter:blur(16px);
+  background:rgba(255,255,255,.05);
+  pointer-events:none;
+}
+main .review-secondary-photo .temp-stamp,
+main .review-secondary-photo .temp-note,
+main .temp-photo .stamp,
+main .temp-photo .shot,
+main .photo-plan .stamp,
+main .photo-plan .shot{
+  z-index:5!important;
+}
+</style>
+<style id="stage12-desktop-hover-menu">
+@media (min-width: 901px){
+  .nav-item{position:relative}
+  .nav-item:hover > .dropdown,
+  .nav-item:focus-within > .dropdown,
+  .nav-item:hover > .submenu,
+  .nav-item:focus-within > .submenu{
+    display:block!important;
+    opacity:1!important;
+    visibility:visible!important;
+    pointer-events:auto!important;
+    transform:translateY(0)!important;
+  }
+
+  .nav-item > .dropdown,
+  .nav-item > .submenu{
+    margin-top:0!important;
+  }
+
+  /* Invisible hover bridge prevents the menu closing while moving into it. */
+  .nav-item:has(> .dropdown)::after,
+  .nav-item:has(> .submenu)::after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    top:100%;
+    height:14px;
+  }
+}
+</style>
 </head><body><header class="site-header"><div class="site-header__inner"><a aria-label="Greenacre International School home" class="site-brand" data-path="" href="./"><img alt="Greenacre International School" src="assets/images/greenacre-logo.png"/></a><button aria-expanded="false" class="menu-toggle" type="button">Menu</button><nav aria-label="Main navigation" class="site-nav"><a data-path="" href="./">Home</a><div class="nav-drop"><button type="button">Our School</button><div class="nav-menu"><a data-path="our-school/about-greenacre/">About Greenacre</a><a data-path="our-school/head-of-school-welcome/" href="/our-school/head-of-school-welcome/">Head of School Welcome</a><a data-path="our-school/environmentality/">Environmentality</a><a data-path="our-school/wellbeing/">Wellbeing</a><a data-path="our-school/our-team/">Our Team</a><a data-path="our-school/campus-facilities/">Campus &amp; Facilities</a></div></div><div class="nav-drop"><button type="button">Learning</button><div class="nav-menu"><a data-path="learning/curriculum/">Curriculum</a><a data-path="learning/early-years/">Early Years</a><a data-path="learning/primary/">Primary</a><a data-path="learning/secondary/">Secondary</a></div></div><div class="nav-drop"><button type="button">Admissions</button><div class="nav-menu"><a data-path="admissions/admissions-visits/">Admissions &amp; Visits</a><a data-path="admissions/fees/">Fees</a><a data-path="admissions/faqs/">FAQs</a></div></div><div class="nav-drop"><button type="button">Parent Information</button><div class="nav-menu"><a data-path="parent-information/key-information/">Key Information</a><a data-path="parent-information/calendar-term-dates/">Calendar &amp; Term Dates</a><a data-path="parent-information/ecas/">Clubs &amp; ECAs</a><a data-path="parent-information/services/">Services</a></div></div><a data-path="contact/">Contact</a></nav></div></header><main>
 <section class="subhero"><div class="wrap"><div class="eyebrow">Greenacre International School / Koh Samui, Thailand</div><h1>Environmentality</h1><p>Environmental awareness is part of Greenacre's identity, helping students understand their relationship with the natural world and their responsibility towards it.</p></div></section>
-<section><div class="wrap grid2"><div><div class="kicker">A GREEN school</div><h2>Learning in, about and for the environment.</h2><p>Environmental responsibility sits within Greenacre's GREEN values and is woven through school life. Students are encouraged to understand the importance of protecting the planet and to become environmental stewards in their communities.</p><p>Our approach is practical as well as academic. Environmental learning should help children develop knowledge, responsibility and habits that support a more sustainable future.</p></div><div class="temp-photo env-one" data-note="Temporary Greenacre image. Replace with a current environmental learning photograph from the school."><span aria-hidden="true" class="photo-blur-layer"></span></div></div></section>
+<section><div class="wrap grid2"><div><div class="kicker">A GREEN school</div><h2>Learning in, about and for the environment.</h2><p>Environmental responsibility sits within Greenacre's GREEN values and is woven through school life. Students are encouraged to understand the importance of protecting the planet and to become environmental stewards in their communities.</p><p>Our approach is practical as well as academic. Environmental learning should help children develop knowledge, responsibility and habits that support a more sustainable future.</p></div><div class="temp-photo env-one review-secondary-photo" data-note="Temporary Greenacre image. Replace with a current environmental learning photograph from the school."><span aria-hidden="true" class="photo-blur-layer review-secondary-photo"><span aria-hidden="true" class="photo-blur-layer"></span></span></div></div></section>
 <section><div class="wrap"><div class="kicker">Environmental</div><h2>More than a classroom topic.</h2><div class="cards"><div class="card"><h3>In the environment</h3><p>Using Greenacre's natural surroundings as a place for observation, exploration and learning.</p></div><div class="card"><h3>About the environment</h3><p>Building understanding of the natural world, sustainability and the impact people have upon the planet.</p></div><div class="card"><h3>For the environment</h3><p>Turning awareness into responsible choices and practical action, including green initiatives and conservation.</p></div></div></div></section>
-<section><div class="wrap grid2 reverse"><div class="temp-photo env-two" data-note="Temporary Greenacre image. Replace with a current practical stewardship or outdoor-learning photograph."><span aria-hidden="true" class="photo-blur-layer"></span></div><div><div class="kicker">Our values in action</div><h2>Growing responsible global citizens.</h2><p>Greenacre aims to equip students for life in the 21st century, including helping them become environmentally aware citizens who make a positive contribution to their communities.</p><p>Sustainability, environmental awareness and care for our community are intended to be lived every day, not simply taught as isolated subjects.</p></div></div></section>
+<section><div class="wrap grid2 reverse"><div class="temp-photo env-two review-secondary-photo" data-note="Temporary Greenacre image. Replace with a current practical stewardship or outdoor-learning photograph."><span aria-hidden="true" class="photo-blur-layer review-secondary-photo"><span aria-hidden="true" class="photo-blur-layer"></span></span></div><div><div class="kicker">Our values in action</div><h2>Growing responsible global citizens.</h2><p>Greenacre aims to equip students for life in the 21st century, including helping them become environmentally aware citizens who make a positive contribution to their communities.</p><p>Sustainability, environmental awareness and care for our community are intended to be lived every day, not simply taught as isolated subjects.</p></div></div></section>
 </main><style>
   @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@400;500;700&display=swap');
 
@@ -315,4 +382,28 @@ p{line-height:1.75}
 @media(max-width:850px){.wrap{width:min(calc(100% - 32px),var(--max))}.grid2,.grid2.reverse{grid-template-columns:1fr;gap:32px}.cards,.staff-grid{grid-template-columns:1fr}.subhero{padding:54px 0}.temp-photo{min-height:280px}main section{padding:52px 0}}
 </style>
 <script id="site-nav-script">(()=>{const project=location.hostname==='greenacreadmin.github.io'?'/greenacre-website-draft/':'/';document.querySelectorAll('[data-path]').forEach(a=>a.href=project+(a.dataset.path||''));const t=document.querySelector('.menu-toggle'),n=document.querySelector('.site-nav');if(t&&n)t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',String(o))})})();</script>
+
+<script id="stage12-desktop-hover-js">
+(()=>{
+  const desktop = () => window.matchMedia('(min-width: 901px)').matches;
+  document.querySelectorAll('.nav-item').forEach(item=>{
+    const menu = item.querySelector(':scope > .dropdown, :scope > .submenu');
+    if(!menu) return;
+
+    item.addEventListener('mouseenter', ()=>{
+      if(!desktop()) return;
+      item.classList.add('open');
+      const trigger=item.querySelector(':scope > a, :scope > button');
+      if(trigger) trigger.setAttribute('aria-expanded','true');
+    });
+
+    item.addEventListener('mouseleave', ()=>{
+      if(!desktop()) return;
+      item.classList.remove('open');
+      const trigger=item.querySelector(':scope > a, :scope > button');
+      if(trigger) trigger.setAttribute('aria-expanded','false');
+    });
+  });
+})();
+</script>
 </body></html>
