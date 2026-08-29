@@ -14,17 +14,17 @@
 .subhero > .wrap {
   position: relative !important;
   width: min(calc(100% - 64px), 1360px) !important;
+  padding-top: 72px !important;
+  box-sizing: border-box !important;
   max-width: none !important;
   height: 100% !important;
   margin: 0 auto !important;
 }
 
-/* Fixed vertical coordinates: wrapping can only grow downward. */
+/* Fixed top anchor with natural title/intro spacing. */
 .page-hero .eyebrow,
 .subhero .eyebrow {
-  position: absolute !important;
-  top: 72px !important;
-  left: 0 !important;
+  position: static !important;
   display: block !important;
   height: 16px !important;
   margin: 0 !important;
@@ -40,15 +40,13 @@
 
 .page-hero h1,
 .subhero h1 {
-  position: absolute !important;
-  top: 100px !important;
-  left: 0 !important;
+  position: static !important;
   box-sizing: border-box !important;
   width: 100% !important;
-  height: 118px !important;
-  min-height: 118px !important;
+  height: auto !important;
+  min-height: 0 !important;
   max-width: 1000px !important;
-  margin: 0 !important;
+  margin: 12px 0 18px !important;
   padding: 0 !important;
   font-size: clamp(2.3rem, 4vw, 3.5rem) !important;
   line-height: 1.05 !important;
@@ -59,9 +57,7 @@
 .subhero p,
 .page-hero p.lead,
 .subhero p.lead {
-  position: absolute !important;
-  top: 236px !important;
-  left: 0 !important;
+  position: static !important;
   width: 100% !important;
   max-width: 912px !important;
   margin: 0 !important;
@@ -80,22 +76,7 @@
   .page-hero > .wrap,
   .subhero > .wrap {
     width: min(calc(100% - 32px), 1360px) !important;
+    padding-top: 58px !important;
   }
 
-  .page-hero .eyebrow,
-  .subhero .eyebrow {
-    top: 58px !important;
-  }
-
-  .page-hero h1,
-  .subhero h1 {
-    top: 86px !important;
-  }
-
-  .page-hero p,
-  .subhero p,
-  .page-hero p.lead,
-  .subhero p.lead {
-    top: 222px !important;
-  }
 }
