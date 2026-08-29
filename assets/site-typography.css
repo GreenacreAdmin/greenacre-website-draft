@@ -35,6 +35,12 @@ h1 {
   line-height: 1.05 !important;
 }
 
+/* Standard internal-page hero spacing: matches Admissions */
+.page-hero,
+.subhero {
+  padding: 84px 0 70px !important;
+}
+
 /* Main section headings */
 h2 {
   font-size: clamp(1.7rem, 2.5vw, 2.4rem);
