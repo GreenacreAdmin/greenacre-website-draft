@@ -943,6 +943,34 @@
 .menu-toggle{display:none;margin-left:auto;border:0;background:rgba(255,255,255,.4);border-radius:999px;padding:10px 15px;font:700 .78rem "Comfortaa",sans-serif}
 @media(max-width:980px){.site-header__inner{height:72px;width:min(calc(100% - 28px),1500px)}.site-brand img{height:49px}.menu-toggle{display:block}.site-nav{display:none;position:absolute;top:72px;left:0;right:0;background:#B4DB8F;padding:12px 18px 20px;box-shadow:0 16px 30px rgba(0,0,0,.12)}.site-nav.open{display:grid}.nav-drop>button{width:100%;text-align:left}.nav-menu{display:grid;position:static;box-shadow:none;background:rgba(255,255,255,.28);border:0;margin:2px 0 8px;padding:5px 10px}.site-nav>a{display:block}}
 </style>
+
+<style id="stage10-global-review">
+/* Stage 10 consistency fixes */
+main .page-hero{
+  background:linear-gradient(135deg,#214f31,#3f7b4e) !important;
+  color:#fff !important;
+}
+main .page-hero h1, main .page-hero p{color:#fff !important}
+main .page-hero .eyebrow{color:#dcebd0 !important}
+main section:nth-child(odd).page-hero{background:linear-gradient(135deg,#214f31,#3f7b4e) !important}
+
+/* Temporary photography system */
+.review-photo-placeholder{position:relative;overflow:hidden}
+.review-photo-placeholder img{filter:blur(13px) saturate(.7);transform:scale(1.06)}
+.review-photo-stamp{
+ position:absolute;left:18px;top:18px;z-index:3;padding:8px 12px;border-radius:999px;
+ background:rgba(31,79,49,.92);color:#fff;font:700 11px/1.2 Comfortaa,sans-serif;
+ letter-spacing:.08em;text-transform:uppercase;box-shadow:0 4px 16px rgba(0,0,0,.18)
+}
+.review-photo-caption{
+ margin:10px 4px 0;color:#667268;font-size:.78rem;line-height:1.45
+}
+.home-replace-stamp{
+ position:absolute;right:10px;bottom:10px;z-index:5;padding:5px 8px;border-radius:999px;
+ background:rgba(31,79,49,.82);color:white;font:700 9px/1 Comfortaa,sans-serif;
+ letter-spacing:.04em
+}
+</style>
 </head>
 
 <body><header class="site-header"><div class="site-header__inner"><a class="site-brand" data-path="" href="./" aria-label="Greenacre International School home"><img src="assets/images/greenacre-logo.png" alt="Greenacre International School"></a><button class="menu-toggle" type="button" aria-expanded="false">Menu</button><nav class="site-nav" aria-label="Main navigation"><a data-path="" href="./">Home</a><div class="nav-drop"><button type="button">Our School</button><div class="nav-menu"><a data-path="our-school/about-greenacre/">About Greenacre</a><a data-path="our-school/environmentality/">Environmentality</a><a data-path="our-school/wellbeing/">Wellbeing</a><a data-path="our-school/our-team/">Our Team</a><a data-path="our-school/campus-facilities/">Campus &amp; Facilities</a></div></div><div class="nav-drop"><button type="button">Learning</button><div class="nav-menu"><a data-path="learning/curriculum/">Curriculum</a><a data-path="learning/early-years/">Early Years</a><a data-path="learning/primary/">Primary</a><a data-path="learning/secondary/">Secondary</a></div></div><div class="nav-drop"><button type="button">Admissions</button><div class="nav-menu"><a data-path="admissions/admissions-visits/">Admissions &amp; Visits</a><a data-path="admissions/fees/">Fees</a><a data-path="admissions/faqs/">FAQs</a></div></div><div class="nav-drop"><button type="button">Parent Information</button><div class="nav-menu"><a data-path="parent-information/key-information/">Key Information</a><a data-path="parent-information/calendar-term-dates/">Calendar &amp; Term Dates</a><a data-path="parent-information/ecas/">Clubs &amp; ECAs</a><a data-path="parent-information/services/">Services</a></div></div><a data-path="contact/">Contact</a></nav></div></header>
@@ -950,7 +978,7 @@
 
     <section class="hero" aria-labelledby="home-title">
       <div class="hero-inner">
-        <p class="eyebrow">Greenacre International School / Koh Samui, Thailand</p>
+        <p class="eyebrow">Greenacre International School · Koh Samui</p>
         <h1 id="home-title">Growing Together <span class="motto-dot">·</span> Learning Together <span class="motto-dot">·</span> Working Together</h1>
         <p class="hero-copy">
           An inclusive international school on Koh Samui, supporting students to grow
@@ -1258,45 +1286,182 @@
 
   </main>
 
-  <style id="site-footer-redesign">
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@400;500;700&display=swap');
-.site-footer{position:static!important;inset:auto!important;height:auto!important;background:#B4DB8F;color:#172218;border-top:1px solid rgba(23,34,24,.12);box-shadow:none;}
-body{padding-bottom:0!important;}
-.site-footer__inner{width:min(calc(100% - 46px),1500px);height:auto!important;margin:0 auto;display:block!important;padding:34px 0 26px;}
-.site-footer__top{display:grid;grid-template-columns:minmax(320px,1fr) auto;gap:36px 56px;align-items:start;}
-.site-footer__identity{text-align:left;}
-.site-footer__name{display:inline-block;margin:0 0 9px;color:#172218;font-family:"Bree Serif",Georgia,serif;font-size:1.35rem;line-height:1.1;text-decoration:none;}
-.site-footer__details{display:grid!important;gap:4px!important;color:rgba(23,34,24,.78);font-family:"Roboto",Arial,sans-serif;font-size:.82rem!important;line-height:1.4!important;}
-.site-footer__details span,.site-footer__details a{white-space:normal!important;color:inherit;text-decoration:none;}
-.site-footer__links{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px 20px;padding-top:3px;max-width:610px;}
-.site-footer__links a{color:#172218;text-decoration:none;font:700 .76rem/1.35 "Comfortaa",sans-serif;padding:5px 0;border-bottom:1px solid transparent;}
-.site-footer__links a:hover{border-bottom-color:rgba(23,34,24,.5);}
-.site-footer__logos{height:auto!important;width:100%;margin-top:26px;padding-top:22px;border-top:1px solid rgba(23,34,24,.14);display:flex!important;align-items:center;justify-content:space-between!important;gap:26px!important;}
-.site-footer__logo{height:52px!important;min-width:0;flex:1 1 0!important;display:flex;align-items:center;justify-content:center;text-decoration:none;}
-.site-footer__logo img{display:block;width:auto;max-width:100%;height:auto;max-height:45px!important;object-fit:contain;}
-.site-footer__logo--cambridge img{max-height:38px!important}.site-footer__logo--edt img{max-height:46px!important}.site-footer__logo--isqm img{max-height:50px!important}
-.site-footer__logo:hover{opacity:.78}
-@media(max-width:900px){.site-footer__inner{width:min(calc(100% - 32px),1500px);padding:28px 0 22px}.site-footer__top{grid-template-columns:1fr;gap:18px}.site-footer__identity{text-align:center}.site-footer__links{justify-content:center;max-width:none}.site-footer__details{justify-items:center}.site-footer__logos{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px!important}.site-footer__logo{height:44px!important}.site-footer__logo img{max-height:37px!important}.site-footer__logo--cambridge img{max-height:32px!important}.site-footer__logo--edt img{max-height:38px!important}.site-footer__logo--isqm img{max-height:41px!important}}
-@media(max-width:560px){.site-footer__inner{width:min(calc(100% - 26px),1500px)}.site-footer__name{font-size:1.18rem}.site-footer__details{font-size:.76rem!important}.site-footer__links{gap:6px 16px}.site-footer__logos{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:14px!important}.site-footer__logo:nth-child(4){grid-column:1/2}.site-footer__logo:nth-child(5){grid-column:3/4}}
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@400;500;700&display=swap');
+
+  :root {
+    --footer-green: #B4DB8F;
+    --footer-ink: #111711;
+    --footer-height: 82px;
+  }
+
+  body {
+    padding-bottom: var(--footer-height);
+  }
+
+  .site-footer {
+    position: fixed;
+    inset: auto 0 0 0;
+    z-index: 9999;
+    height: var(--footer-height);
+    background: var(--footer-green);
+    color: var(--footer-ink);
+    border-top: 1px solid rgba(17, 23, 17, .12);
+    box-shadow: 0 -3px 12px rgba(0,0,0,.07);
+  }
+
+  .site-footer__inner {
+    width: min(calc(100% - 46px), 1500px);
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(285px, .72fr) minmax(680px, 1.28fr);
+    gap: clamp(32px, 5vw, 84px);
+    align-items: center;
+  }
+
+  .site-footer__name {
+    display: inline-block;
+    margin-bottom: 3px;
+    color: var(--footer-ink);
+    font-family: "Bree Serif", Georgia, serif;
+    font-size: .98rem;
+    line-height: 1;
+    text-decoration: none;
+  }
+
+  .site-footer__details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px 10px;
+    color: rgba(17, 23, 17, .78);
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: .60rem;
+    line-height: 1.28;
+  }
+
+  .site-footer__details span,
+  .site-footer__details a {
+    white-space: nowrap;
+  }
+
+  .site-footer__details a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .site-footer__logos {
+    height: 58px;
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 24px;
+  }
+
+  .site-footer__logo {
+    flex: 0 0 auto;
+    min-width: 0;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .site-footer__logo img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 45px;
+    object-fit: contain;
+  }
+
+  .site-footer__logo--onesqa img { max-height: 46px; }
+  .site-footer__logo--isat img { max-height: 43px; }
+  .site-footer__logo--cambridge img { max-height: 38px; }
+  .site-footer__logo--edt img { max-height: 46px; }
+  .site-footer__logo--isqm img { max-height: 50px; }
+
+  .site-footer__logo:hover {
+    opacity: .78;
+  }
+
+  @media (max-width: 1050px) {
+    :root { --footer-height: 96px; }
+
+    .site-footer__inner {
+      width: min(calc(100% - 28px), 1500px);
+      grid-template-columns: 220px 1fr;
+      gap: 22px;
+    }
+
+    .site-footer__name { font-size: .86rem; }
+    .site-footer__details { font-size: .54rem; gap: 1px 7px; }
+    .site-footer__logos {
+      gap: 14px;
+    }
+  }
+
+  @media (max-width: 720px) {
+    :root { --footer-height: 126px; }
+
+    .site-footer__inner {
+      grid-template-columns: 1fr;
+      grid-template-rows: 42px 66px;
+      gap: 4px;
+      padding: 7px 0;
+    }
+
+    .site-footer__identity {
+      text-align: center;
+    }
+
+    .site-footer__name { font-size: .80rem; }
+
+    .site-footer__details {
+      justify-content: center;
+      font-size: .51rem;
+    }
+
+    .site-footer__logos {
+      width: 100%;
+      justify-self: stretch;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 6px;
+    }
+
+    .site-footer__logo {
+      flex: initial;
+    }
+
+    .site-footer__logo img {
+      max-height: 34px;
+    }
+
+    .site-footer__logo--cambridge img,
+    .site-footer__logo--edt img {
+      max-height: 29px;
+    }
+  }
 </style>
+
 <footer class="site-footer" aria-label="Greenacre International School footer">
   <div class="site-footer__inner">
-    <div class="site-footer__top">
-      <div class="site-footer__identity">
-        <a class="site-footer__name" data-path="" href="/">Greenacre International School</a>
-        <div class="site-footer__details">
-          <span>108 Moo 2, Namuang, Koh Samui, Surat Thani 84140</span>
-          <a href="tel:+6677430729">+66 77 430 729</a>
-          <a href="mailto:admission@greenacre.ac.th">admission@greenacre.ac.th</a>
-        </div>
+
+    <div class="site-footer__identity">
+      <a class="site-footer__name"
+         href="./">Greenacre International School</a>
+
+      <div class="site-footer__details">
+        <span>108 Moo 2, Namuang, Koh Samui, Surat Thani 84140</span>
+        <a href="tel:+6677430729">+66 77 430 729</a>
+        <a href="mailto:admission@greenacre.ac.th">admission@greenacre.ac.th</a>
       </div>
-      <nav class="site-footer__links" aria-label="Footer navigation">
-        <a data-path="our-school/about-greenacre/" href="/our-school/about-greenacre/">About Greenacre</a>
-        <a data-path="learning/curriculum/" href="/learning/curriculum/">Curriculum</a>
-        <a data-path="admissions/admissions-visits/" href="/admissions/admissions-visits/">Admissions</a>
-        <a data-path="parent-information/calendar-term-dates/" href="/parent-information/calendar-term-dates/">Calendar</a>
-      </nav>
     </div>
+
     <div class="site-footer__logos" aria-label="Accreditations and associations">
 
       <a class="site-footer__logo site-footer__logo--onesqa"
@@ -1380,5 +1545,58 @@ body{padding-bottom:0!important;}
       start();
     })();
   </script>
-<script id="site-nav-script">(()=>{const project=location.hostname==='greenacreadmin.github.io'?'/greenacre-website-draft/':'/';document.querySelectorAll('[data-path]').forEach(a=>a.href=project+(a.dataset.path||''));const t=document.querySelector('.menu-toggle'),n=document.querySelector('.site-nav');if(t&&n)t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',String(o))})})();</script></body>
+<script id="site-nav-script">(()=>{const project=location.hostname==='greenacreadmin.github.io'?'/greenacre-website-draft/':'/';document.querySelectorAll('[data-path]').forEach(a=>a.href=project+(a.dataset.path||''));const t=document.querySelector('.menu-toggle'),n=document.querySelector('.site-nav');if(t&&n)t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',String(o))})})();</script>
+<script id="stage10-photo-review">
+(()=>{
+ const path=location.pathname;
+ const home = path==='/' || path.endsWith('/greenacre-website-draft/') || /\/index\.html$/.test(path) && !path.includes('/our-school/') && !path.includes('/learning/') && !path.includes('/admissions/') && !path.includes('/parent-information/') && !path.includes('/contact') && !path.includes('/work-with-us') && !path.includes('/school-policies');
+ const title=(document.querySelector('main h1')?.textContent||'this page').trim();
+ const descriptions={
+  'About Greenacre':'Replace with a current Greenacre school community or campus photograph.',
+  'Environmentality':'Replace with a current Greenacre environmental learning photograph.',
+  'Wellbeing':'Replace with a current Greenacre wellbeing or student-life photograph.',
+  'Campus & Facilities':'Replace with a current photograph of the relevant Greenacre facility.',
+  'Curriculum':'Replace with a current Greenacre learning photograph.',
+  'Early Years':'Replace with a current Greenacre Early Years classroom or outdoor-learning photograph.',
+  'Primary':'Replace with a current Greenacre Primary classroom or activity photograph.',
+  'Secondary':'Replace with a current Greenacre Secondary classroom or student-learning photograph.',
+  'Admissions & Visits':'Replace with a current welcoming Greenacre campus or admissions-visit photograph.',
+  'School Fees':'Replace with a current Greenacre campus or school-life photograph if photography is retained here.',
+  'Frequently Asked Questions':'Replace with a current Greenacre school-life photograph.',
+  'Key Information':'Replace with a current Greenacre school-life photograph.',
+  'Calendar & Term Dates':'Replace with a current Greenacre school-life photograph if photography is retained here.',
+  'Clubs & ECAs':'Replace with a current Greenacre club or after-school activity photograph.',
+  'Services':'Replace with a current photograph of the relevant Greenacre service.',
+  'Contact':'Replace with a current welcoming photograph of the Greenacre campus.',
+  'Work With Us':'Replace with a current Greenacre staff/community photograph.',
+  'School Policies':'Replace with a current Greenacre campus photograph if photography is retained here.',
+  'Head of School Welcome':'Replace with a current portrait photograph of Mr Dara Nagle.'
+ };
+ if(home){
+   const imgs=[...document.querySelectorAll('main img')];
+   imgs.slice(1).forEach(img=>{
+     const p=img.parentElement;
+     if(!p) return;
+     const cs=getComputedStyle(p);
+     if(cs.position==='static') p.style.position='relative';
+     if(!p.querySelector('.home-replace-stamp')){
+       const s=document.createElement('span'); s.className='home-replace-stamp'; s.textContent='To be replaced'; p.appendChild(s);
+     }
+   });
+   return;
+ }
+ if(title==='Our Team') return;
+ document.querySelectorAll('main img').forEach(img=>{
+   if(img.closest('.person-card') || img.closest('.site-footer')) return;
+   const p=img.parentElement;
+   if(!p) return;
+   p.classList.add('review-photo-placeholder');
+   if(!p.querySelector('.review-photo-stamp')){
+     const s=document.createElement('span'); s.className='review-photo-stamp'; s.textContent='TEMP - REPLACE PHOTO'; p.appendChild(s);
+     const c=document.createElement('div'); c.className='review-photo-caption'; c.textContent=descriptions[title]||('Replace with a current Greenacre photograph appropriate to '+title+'.'); p.insertAdjacentElement('afterend',c);
+   }
+ });
+})();
+</script>
+</body>
 </html>

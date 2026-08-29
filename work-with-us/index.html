@@ -41,7 +41,35 @@ p{margin-top:0}
 @media(max-width:900px){.wrap{width:min(calc(100% - 32px),var(--max))}.grid{grid-template-columns:1fr}section{padding:55px 0}}
 @media(max-width:560px){.actions{display:grid}.button{text-align:center}.policy-link{align-items:flex-start;flex-direction:column;gap:8px}}
 
-</style></head><body><header class="site-header"><div class="site-header__inner"><a class="site-brand" data-path="" href="./" aria-label="Greenacre International School home"><img src="assets/images/greenacre-logo.png" alt="Greenacre International School"></a><button class="menu-toggle" type="button" aria-expanded="false">Menu</button><nav class="site-nav" aria-label="Main navigation"><a data-path="" href="./">Home</a><div class="nav-drop"><button type="button">Our School</button><div class="nav-menu"><a data-path="our-school/about-greenacre/">About Greenacre</a><a data-path="our-school/environmentality/">Environmentality</a><a data-path="our-school/wellbeing/">Wellbeing</a><a data-path="our-school/our-team/">Our Team</a><a data-path="our-school/campus-facilities/">Campus &amp; Facilities</a></div></div><div class="nav-drop"><button type="button">Learning</button><div class="nav-menu"><a data-path="learning/curriculum/">Curriculum</a><a data-path="learning/early-years/">Early Years</a><a data-path="learning/primary/">Primary</a><a data-path="learning/secondary/">Secondary</a></div></div><div class="nav-drop"><button type="button">Admissions</button><div class="nav-menu"><a data-path="admissions/admissions-visits/">Admissions &amp; Visits</a><a data-path="admissions/fees/">Fees</a><a data-path="admissions/faqs/">FAQs</a></div></div><div class="nav-drop"><button type="button">Parent Information</button><div class="nav-menu"><a data-path="parent-information/key-information/">Key Information</a><a data-path="parent-information/calendar-term-dates/">Calendar &amp; Term Dates</a><a data-path="parent-information/ecas/">Clubs &amp; ECAs</a><a data-path="parent-information/services/">Services</a></div></div><a data-path="contact/">Contact</a></nav></div></header><main>
+</style>
+<style id="stage10-global-review">
+/* Stage 10 consistency fixes */
+main .page-hero{
+  background:linear-gradient(135deg,#214f31,#3f7b4e) !important;
+  color:#fff !important;
+}
+main .page-hero h1, main .page-hero p{color:#fff !important}
+main .page-hero .eyebrow{color:#dcebd0 !important}
+main section:nth-child(odd).page-hero{background:linear-gradient(135deg,#214f31,#3f7b4e) !important}
+
+/* Temporary photography system */
+.review-photo-placeholder{position:relative;overflow:hidden}
+.review-photo-placeholder img{filter:blur(13px) saturate(.7);transform:scale(1.06)}
+.review-photo-stamp{
+ position:absolute;left:18px;top:18px;z-index:3;padding:8px 12px;border-radius:999px;
+ background:rgba(31,79,49,.92);color:#fff;font:700 11px/1.2 Comfortaa,sans-serif;
+ letter-spacing:.08em;text-transform:uppercase;box-shadow:0 4px 16px rgba(0,0,0,.18)
+}
+.review-photo-caption{
+ margin:10px 4px 0;color:#667268;font-size:.78rem;line-height:1.45
+}
+.home-replace-stamp{
+ position:absolute;right:10px;bottom:10px;z-index:5;padding:5px 8px;border-radius:999px;
+ background:rgba(31,79,49,.82);color:white;font:700 9px/1 Comfortaa,sans-serif;
+ letter-spacing:.04em
+}
+</style>
+</head><body><header class="site-header"><div class="site-header__inner"><a class="site-brand" data-path="" href="./" aria-label="Greenacre International School home"><img src="assets/images/greenacre-logo.png" alt="Greenacre International School"></a><button class="menu-toggle" type="button" aria-expanded="false">Menu</button><nav class="site-nav" aria-label="Main navigation"><a data-path="" href="./">Home</a><div class="nav-drop"><button type="button">Our School</button><div class="nav-menu"><a data-path="our-school/about-greenacre/">About Greenacre</a><a data-path="our-school/head-of-school-welcome/" href="/our-school/head-of-school-welcome/">Head of School Welcome</a><a data-path="our-school/environmentality/">Environmentality</a><a data-path="our-school/wellbeing/">Wellbeing</a><a data-path="our-school/our-team/">Our Team</a><a data-path="our-school/campus-facilities/">Campus &amp; Facilities</a></div></div><div class="nav-drop"><button type="button">Learning</button><div class="nav-menu"><a data-path="learning/curriculum/">Curriculum</a><a data-path="learning/early-years/">Early Years</a><a data-path="learning/primary/">Primary</a><a data-path="learning/secondary/">Secondary</a></div></div><div class="nav-drop"><button type="button">Admissions</button><div class="nav-menu"><a data-path="admissions/admissions-visits/">Admissions &amp; Visits</a><a data-path="admissions/fees/">Fees</a><a data-path="admissions/faqs/">FAQs</a></div></div><div class="nav-drop"><button type="button">Parent Information</button><div class="nav-menu"><a data-path="parent-information/key-information/">Key Information</a><a data-path="parent-information/calendar-term-dates/">Calendar &amp; Term Dates</a><a data-path="parent-information/ecas/">Clubs &amp; ECAs</a><a data-path="parent-information/services/">Services</a></div></div><a data-path="contact/">Contact</a></nav></div></header><main>
 
 <section class="page-hero"><div class="wrap">
   <div class="eyebrow">Greenacre International School / Koh Samui, Thailand</div>
@@ -311,4 +339,57 @@ p{margin-top:0}
 
     </div>
   </div>
-</footer><script id="site-nav-script">(()=>{const project=location.hostname==='greenacreadmin.github.io'?'/greenacre-website-draft/':'/';document.querySelectorAll('[data-path]').forEach(a=>a.href=project+(a.dataset.path||''));const t=document.querySelector('.menu-toggle'),n=document.querySelector('.site-nav');if(t&&n)t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',String(o))})})();</script></body></html>
+</footer><script id="site-nav-script">(()=>{const project=location.hostname==='greenacreadmin.github.io'?'/greenacre-website-draft/':'/';document.querySelectorAll('[data-path]').forEach(a=>a.href=project+(a.dataset.path||''));const t=document.querySelector('.menu-toggle'),n=document.querySelector('.site-nav');if(t&&n)t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',String(o))})})();</script>
+<script id="stage10-photo-review">
+(()=>{
+ const path=location.pathname;
+ const home = path==='/' || path.endsWith('/greenacre-website-draft/') || /\/index\.html$/.test(path) && !path.includes('/our-school/') && !path.includes('/learning/') && !path.includes('/admissions/') && !path.includes('/parent-information/') && !path.includes('/contact') && !path.includes('/work-with-us') && !path.includes('/school-policies');
+ const title=(document.querySelector('main h1')?.textContent||'this page').trim();
+ const descriptions={
+  'About Greenacre':'Replace with a current Greenacre school community or campus photograph.',
+  'Environmentality':'Replace with a current Greenacre environmental learning photograph.',
+  'Wellbeing':'Replace with a current Greenacre wellbeing or student-life photograph.',
+  'Campus & Facilities':'Replace with a current photograph of the relevant Greenacre facility.',
+  'Curriculum':'Replace with a current Greenacre learning photograph.',
+  'Early Years':'Replace with a current Greenacre Early Years classroom or outdoor-learning photograph.',
+  'Primary':'Replace with a current Greenacre Primary classroom or activity photograph.',
+  'Secondary':'Replace with a current Greenacre Secondary classroom or student-learning photograph.',
+  'Admissions & Visits':'Replace with a current welcoming Greenacre campus or admissions-visit photograph.',
+  'School Fees':'Replace with a current Greenacre campus or school-life photograph if photography is retained here.',
+  'Frequently Asked Questions':'Replace with a current Greenacre school-life photograph.',
+  'Key Information':'Replace with a current Greenacre school-life photograph.',
+  'Calendar & Term Dates':'Replace with a current Greenacre school-life photograph if photography is retained here.',
+  'Clubs & ECAs':'Replace with a current Greenacre club or after-school activity photograph.',
+  'Services':'Replace with a current photograph of the relevant Greenacre service.',
+  'Contact':'Replace with a current welcoming photograph of the Greenacre campus.',
+  'Work With Us':'Replace with a current Greenacre staff/community photograph.',
+  'School Policies':'Replace with a current Greenacre campus photograph if photography is retained here.',
+  'Head of School Welcome':'Replace with a current portrait photograph of Mr Dara Nagle.'
+ };
+ if(home){
+   const imgs=[...document.querySelectorAll('main img')];
+   imgs.slice(1).forEach(img=>{
+     const p=img.parentElement;
+     if(!p) return;
+     const cs=getComputedStyle(p);
+     if(cs.position==='static') p.style.position='relative';
+     if(!p.querySelector('.home-replace-stamp')){
+       const s=document.createElement('span'); s.className='home-replace-stamp'; s.textContent='To be replaced'; p.appendChild(s);
+     }
+   });
+   return;
+ }
+ if(title==='Our Team') return;
+ document.querySelectorAll('main img').forEach(img=>{
+   if(img.closest('.person-card') || img.closest('.site-footer')) return;
+   const p=img.parentElement;
+   if(!p) return;
+   p.classList.add('review-photo-placeholder');
+   if(!p.querySelector('.review-photo-stamp')){
+     const s=document.createElement('span'); s.className='review-photo-stamp'; s.textContent='TEMP - REPLACE PHOTO'; p.appendChild(s);
+     const c=document.createElement('div'); c.className='review-photo-caption'; c.textContent=descriptions[title]||('Replace with a current Greenacre photograph appropriate to '+title+'.'); p.insertAdjacentElement('afterend',c);
+   }
+ });
+})();
+</script>
+</body></html>

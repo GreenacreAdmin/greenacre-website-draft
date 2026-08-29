@@ -26,130 +26,42 @@
 @media(max-width:1000px){.team-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:700px){.team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style>
-</head><body><header class="site-header"><div class="site-header__inner"><a class="site-brand" data-path="" href="./" aria-label="Greenacre International School home"><img src="assets/images/greenacre-logo.png" alt="Greenacre International School"></a><button class="menu-toggle" type="button" aria-expanded="false">Menu</button><nav class="site-nav" aria-label="Main navigation"><a data-path="" href="./">Home</a><div class="nav-drop"><button type="button">Our School</button><div class="nav-menu"><a data-path="our-school/about-greenacre/">About Greenacre</a><a data-path="our-school/environmentality/">Environmentality</a><a data-path="our-school/wellbeing/">Wellbeing</a><a data-path="our-school/our-team/">Our Team</a><a data-path="our-school/campus-facilities/">Campus &amp; Facilities</a></div></div><div class="nav-drop"><button type="button">Learning</button><div class="nav-menu"><a data-path="learning/curriculum/">Curriculum</a><a data-path="learning/early-years/">Early Years</a><a data-path="learning/primary/">Primary</a><a data-path="learning/secondary/">Secondary</a></div></div><div class="nav-drop"><button type="button">Admissions</button><div class="nav-menu"><a data-path="admissions/admissions-visits/">Admissions &amp; Visits</a><a data-path="admissions/fees/">Fees</a><a data-path="admissions/faqs/">FAQs</a></div></div><div class="nav-drop"><button type="button">Parent Information</button><div class="nav-menu"><a data-path="parent-information/key-information/">Key Information</a><a data-path="parent-information/calendar-term-dates/">Calendar &amp; Term Dates</a><a data-path="parent-information/ecas/">Clubs &amp; ECAs</a><a data-path="parent-information/services/">Services</a></div></div><a data-path="contact/">Contact</a></nav></div></header>
+
+<style id="stage10-global-review">
+/* Stage 10 consistency fixes */
+main .page-hero{
+  background:linear-gradient(135deg,#214f31,#3f7b4e) !important;
+  color:#fff !important;
+}
+main .page-hero h1, main .page-hero p{color:#fff !important}
+main .page-hero .eyebrow{color:#dcebd0 !important}
+main section:nth-child(odd).page-hero{background:linear-gradient(135deg,#214f31,#3f7b4e) !important}
+
+/* Temporary photography system */
+.review-photo-placeholder{position:relative;overflow:hidden}
+.review-photo-placeholder img{filter:blur(13px) saturate(.7);transform:scale(1.06)}
+.review-photo-stamp{
+ position:absolute;left:18px;top:18px;z-index:3;padding:8px 12px;border-radius:999px;
+ background:rgba(31,79,49,.92);color:#fff;font:700 11px/1.2 Comfortaa,sans-serif;
+ letter-spacing:.08em;text-transform:uppercase;box-shadow:0 4px 16px rgba(0,0,0,.18)
+}
+.review-photo-caption{
+ margin:10px 4px 0;color:#667268;font-size:.78rem;line-height:1.45
+}
+.home-replace-stamp{
+ position:absolute;right:10px;bottom:10px;z-index:5;padding:5px 8px;border-radius:999px;
+ background:rgba(31,79,49,.82);color:white;font:700 9px/1 Comfortaa,sans-serif;
+ letter-spacing:.04em
+}
+</style>
+</head><body><header class="site-header"><div class="site-header__inner"><a class="site-brand" data-path="" href="./" aria-label="Greenacre International School home"><img src="assets/images/greenacre-logo.png" alt="Greenacre International School"></a><button class="menu-toggle" type="button" aria-expanded="false">Menu</button><nav class="site-nav" aria-label="Main navigation"><a data-path="" href="./">Home</a><div class="nav-drop"><button type="button">Our School</button><div class="nav-menu"><a data-path="our-school/about-greenacre/">About Greenacre</a><a data-path="our-school/head-of-school-welcome/" href="/our-school/head-of-school-welcome/">Head of School Welcome</a><a data-path="our-school/environmentality/">Environmentality</a><a data-path="our-school/wellbeing/">Wellbeing</a><a data-path="our-school/our-team/">Our Team</a><a data-path="our-school/campus-facilities/">Campus &amp; Facilities</a></div></div><div class="nav-drop"><button type="button">Learning</button><div class="nav-menu"><a data-path="learning/curriculum/">Curriculum</a><a data-path="learning/early-years/">Early Years</a><a data-path="learning/primary/">Primary</a><a data-path="learning/secondary/">Secondary</a></div></div><div class="nav-drop"><button type="button">Admissions</button><div class="nav-menu"><a data-path="admissions/admissions-visits/">Admissions &amp; Visits</a><a data-path="admissions/fees/">Fees</a><a data-path="admissions/faqs/">FAQs</a></div></div><div class="nav-drop"><button type="button">Parent Information</button><div class="nav-menu"><a data-path="parent-information/key-information/">Key Information</a><a data-path="parent-information/calendar-term-dates/">Calendar &amp; Term Dates</a><a data-path="parent-information/ecas/">Clubs &amp; ECAs</a><a data-path="parent-information/services/">Services</a></div></div><a data-path="contact/">Contact</a></nav></div></header>
+
 <main>
-<section class="page-hero"><div class="wrap">
-<div class="eyebrow">Greenacre International School / Koh Samui, Thailand</div>
-<h1>Our Team</h1>
-<p>We are proud of the teachers and support staff who work together to give students the best school experience possible.</p>
-</div></section>
+<section class="page-hero"><div class="wrap"><div class="eyebrow">Greenacre International School / Koh Samui, Thailand</div><h1>Our Team</h1><p>Meet the teachers and support staff who make up the Greenacre community.</p></div></section>
 <section class="team-intro"><div class="wrap">
-<p class="update-note"><strong>Currently updating for the new school year.</strong> Photographs will be added as current staff portraits become available.</p>
-<section class="team-section"><h2>Leadership</h2><div class="team-grid"><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Mr. Dara</h3><p>Head Teacher</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Lindsey Archbold and Viroj Junthong</h3><p>Co-Founder and Licensee</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Mr. Mark</h3><p>Head of Primary</p></div>
-</article></div></section><section class="team-section"><h2>Early Years &amp; Primary Teachers</h2><div class="team-grid"><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Vanessa</h3><p>Nursery (FS1) Teacher</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Chloe</h3><p>Reception (FS2) Teacher</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Amber</h3><p>Year 1 Class Teacher</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Amy</h3><p>Year 2 Class Teacher</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Mr. James</h3><p>Year 3A Class Teacher</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Santana</h3><p>Year 3B Class Teacher</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Mr. Jordan</h3><p>Year 4 Class Teacher</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Mr. Ethan</h3><p>Year 5 Class Teacher</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Mr. Caleb</h3><p>Year 6 Class Teacher</p></div>
-</article></div></section><section class="team-section"><h2>Secondary Teachers</h2><div class="team-grid"><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Pixie</h3><p>KS3 English Teacher</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Rachel</h3><p>KS4 English Teacher</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Hannah</h3><p>Secondary Humanities Teacher</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Mr. Ellis</h3><p>Secondary Science Teacher</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Mr. Owen</h3><p>Secondary Maths Teacher</p></div>
-</article></div></section><section class="team-section"><h2>Whole-School Teachers</h2><div class="team-grid"><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Mr. Kevin</h3><p>Sports &amp; Swimming Teacher</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Tatiana</h3><p>Art &amp; Graphic Design Teacher</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Mr. Richard</h3><p>Environmental Teacher</p></div>
-</article></div></section><section class="team-section"><h2>Thai Language Teachers</h2><div class="team-grid"><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Fon</h3><p>Thai Teacher</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Care</h3><p>Thai Teacher</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Piaew</h3><p>Thai Teacher</p></div>
-</article></div></section><section class="team-section"><h2>Teaching Assistants</h2><div class="team-grid"><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Ann</h3><p>Teaching Assistant</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Vicky</h3><p>Teaching Assistant</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Cherry</h3><p>Teaching Assistant</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Jen</h3><p>Teaching Assistant</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Pat</h3><p>Teaching Assistant</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Fon</h3><p>Teaching Assistant</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Pom</h3><p>Teaching Assistant</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Milk</h3><p>Teaching Assistant</p></div>
-</article></div></section><section class="team-section"><h2>Administration &amp; Support</h2><div class="team-grid"><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Lorevic</h3><p>Nurse &amp; Science Technician</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Jeab</h3><p>Front Office</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Shirley</h3><p>Front Office</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Tiew</h3><p>Visa Manager</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Sunny</h3><p>Accounts Manager</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Ms. Honey</h3><p>Assistant Accountant</p></div>
-</article><article class="person-card">
-<img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar">
-<div class="person-copy"><h3>Mr. Watchara (Krung)</h3><p>General Manager</p></div>
-</article></div></section>
+<h2>Our Amazing Team</h2>
+<p class="lead">We are exceptionally proud of our team at Greenacre International School. Our teachers and support staff are committed to ensuring that students have the best school experience possible. All our teachers are highly qualified and our teaching standards support strong progress for students of all abilities.</p>
+<section class="team-section"><h2>Leadership</h2><div class="team-grid"><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Mr. Dara</h3><p>Head of School</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Mr. Mark</h3><p>Head of Primary</p></div></article></div></section><section class="team-section"><h2>Early Years &amp; Primary Teachers</h2><div class="team-grid"><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Vanessa</h3><p>Nursery (FS1) Teacher</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Chloe</h3><p>Reception (FS2) Teacher</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Amber</h3><p>Year 1 Class Teacher</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Amy</h3><p>Year 2 Class Teacher</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Mr. James</h3><p>Year 3A Class Teacher</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Santana</h3><p>Year 3B Class Teacher</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Mr. Jordan</h3><p>Year 4 Class Teacher</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Mr. Ethan</h3><p>Year 5 Class Teacher</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Mr. Caleb</h3><p>Year 6 Class Teacher</p></div></article></div></section><section class="team-section"><h2>Secondary Teachers</h2><div class="team-grid"><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Pixie</h3><p>KS3 English Teacher</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Rachel</h3><p>KS4 English Teacher</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Hannah</h3><p>Secondary Humanities Teacher</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Mr. Ellis</h3><p>Secondary Science Teacher</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Mr. Owen</h3><p>Secondary Maths Teacher</p></div></article></div></section><section class="team-section"><h2>Whole-School Teachers</h2><div class="team-grid"><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Mr. Kevin</h3><p>Sports &amp; Swimming Teacher</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Tatiana</h3><p>Art &amp; Graphic Design Teacher</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Mr. Richard</h3><p>Environmental Teacher</p></div></article></div></section><section class="team-section"><h2>Thai Language Teachers</h2><div class="team-grid"><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Fon</h3><p>Thai Teacher</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Care</h3><p>Thai Teacher</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Piaew</h3><p>Thai Teacher</p></div></article></div></section><section class="team-section"><h2>Teaching Assistants</h2><div class="team-grid"><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Ann</h3><p>Teaching Assistant</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Vicky</h3><p>Teaching Assistant</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Cherry</h3><p>Teaching Assistant</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Jen</h3><p>Teaching Assistant</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Pat</h3><p>Teaching Assistant</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Fon</h3><p>Teaching Assistant</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Milk</h3><p>Teaching Assistant</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Pom</h3><p>Teaching Assistant</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Milky</h3><p>Teaching Assistant</p></div></article></div></section><section class="team-section"><h2>Administration &amp; Support</h2><div class="team-grid"><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Lorevic</h3><p>Nurse &amp; Science Technician</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Jeab</h3><p>Admin and Receptionist Officer</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Shirley</h3><p>School Admission Officer</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Tiew</h3><p>Visa Officer</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Sunny</h3><p>Finance Officer</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Honey</h3><p>Finance Officer</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Mr. Watchara (Krung)</h3><p>Facilities Manager</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Anne</h3><p>Thai Director</p></div></article><article class="person-card"><img src="../../assets/images/team-avatar-placeholder.svg" alt="" class="person-avatar"><div class="person-copy"><h3>Ms. Tippawan (Tip)</h3><p>Administration Manager</p></div></article></div></section>
 </div></section>
 </main>
 <footer class="site-footer" aria-label="Greenacre International School footer">
@@ -220,7 +132,7 @@
 .subhero h1{font-size:clamp(2.4rem,5vw,4.7rem);line-height:1.02;margin:12px 0 18px;max-width:900px}
 .subhero p{font-size:1.08rem;line-height:1.75;max-width:760px;margin:0}
 main section{padding:72px 0}
-main section:nth-child(odd):not(.subhero){background:var(--cream)}
+main section:nth-child(odd):not(.subhero):not(.page-hero){background:var(--cream)}
 .grid2{display:grid;grid-template-columns:1.08fr .92fr;gap:64px;align-items:center}
 .grid2.reverse{grid-template-columns:.92fr 1.08fr}
 h2{font-size:clamp(1.9rem,3vw,3rem);line-height:1.14;color:var(--green-dark);margin:0 0 20px}
@@ -247,4 +159,57 @@ p{line-height:1.75}
 .note{padding:24px;border-left:4px solid var(--orange);background:#fff;border-radius:0 16px 16px 0}
 @media(max-width:850px){.wrap{width:min(calc(100% - 32px),var(--max))}.grid2,.grid2.reverse{grid-template-columns:1fr;gap:32px}.cards,.staff-grid{grid-template-columns:1fr}.subhero{padding:54px 0}.temp-photo{min-height:280px}main section{padding:52px 0}}
 </style>
-<script id="site-nav-script">(()=>{const project=location.hostname==='greenacreadmin.github.io'?'/greenacre-website-draft/':'/';document.querySelectorAll('[data-path]').forEach(a=>a.href=project+(a.dataset.path||''));const t=document.querySelector('.menu-toggle'),n=document.querySelector('.site-nav');if(t&&n)t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',String(o))})})();</script></body></html></body>
+<script id="site-nav-script">(()=>{const project=location.hostname==='greenacreadmin.github.io'?'/greenacre-website-draft/':'/';document.querySelectorAll('[data-path]').forEach(a=>a.href=project+(a.dataset.path||''));const t=document.querySelector('.menu-toggle'),n=document.querySelector('.site-nav');if(t&&n)t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',String(o))})})();</script>
+<script id="stage10-photo-review">
+(()=>{
+ const path=location.pathname;
+ const home = path==='/' || path.endsWith('/greenacre-website-draft/') || /\/index\.html$/.test(path) && !path.includes('/our-school/') && !path.includes('/learning/') && !path.includes('/admissions/') && !path.includes('/parent-information/') && !path.includes('/contact') && !path.includes('/work-with-us') && !path.includes('/school-policies');
+ const title=(document.querySelector('main h1')?.textContent||'this page').trim();
+ const descriptions={
+  'About Greenacre':'Replace with a current Greenacre school community or campus photograph.',
+  'Environmentality':'Replace with a current Greenacre environmental learning photograph.',
+  'Wellbeing':'Replace with a current Greenacre wellbeing or student-life photograph.',
+  'Campus & Facilities':'Replace with a current photograph of the relevant Greenacre facility.',
+  'Curriculum':'Replace with a current Greenacre learning photograph.',
+  'Early Years':'Replace with a current Greenacre Early Years classroom or outdoor-learning photograph.',
+  'Primary':'Replace with a current Greenacre Primary classroom or activity photograph.',
+  'Secondary':'Replace with a current Greenacre Secondary classroom or student-learning photograph.',
+  'Admissions & Visits':'Replace with a current welcoming Greenacre campus or admissions-visit photograph.',
+  'School Fees':'Replace with a current Greenacre campus or school-life photograph if photography is retained here.',
+  'Frequently Asked Questions':'Replace with a current Greenacre school-life photograph.',
+  'Key Information':'Replace with a current Greenacre school-life photograph.',
+  'Calendar & Term Dates':'Replace with a current Greenacre school-life photograph if photography is retained here.',
+  'Clubs & ECAs':'Replace with a current Greenacre club or after-school activity photograph.',
+  'Services':'Replace with a current photograph of the relevant Greenacre service.',
+  'Contact':'Replace with a current welcoming photograph of the Greenacre campus.',
+  'Work With Us':'Replace with a current Greenacre staff/community photograph.',
+  'School Policies':'Replace with a current Greenacre campus photograph if photography is retained here.',
+  'Head of School Welcome':'Replace with a current portrait photograph of Mr Dara Nagle.'
+ };
+ if(home){
+   const imgs=[...document.querySelectorAll('main img')];
+   imgs.slice(1).forEach(img=>{
+     const p=img.parentElement;
+     if(!p) return;
+     const cs=getComputedStyle(p);
+     if(cs.position==='static') p.style.position='relative';
+     if(!p.querySelector('.home-replace-stamp')){
+       const s=document.createElement('span'); s.className='home-replace-stamp'; s.textContent='To be replaced'; p.appendChild(s);
+     }
+   });
+   return;
+ }
+ if(title==='Our Team') return;
+ document.querySelectorAll('main img').forEach(img=>{
+   if(img.closest('.person-card') || img.closest('.site-footer')) return;
+   const p=img.parentElement;
+   if(!p) return;
+   p.classList.add('review-photo-placeholder');
+   if(!p.querySelector('.review-photo-stamp')){
+     const s=document.createElement('span'); s.className='review-photo-stamp'; s.textContent='TEMP - REPLACE PHOTO'; p.appendChild(s);
+     const c=document.createElement('div'); c.className='review-photo-caption'; c.textContent=descriptions[title]||('Replace with a current Greenacre photograph appropriate to '+title+'.'); p.insertAdjacentElement('afterend',c);
+   }
+ });
+})();
+</script>
+</body></html></body>
