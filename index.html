@@ -1043,37 +1043,71 @@ body{padding-bottom:var(--footer-height)!important}
 /* The hero is deliberately never stamped. */
 .hero>.home-photo-stamp,.hero .home-photo-stamp{display:none!important}
 </style>
-
 <style id="stage13-facebook">
 .facebook-plugin-wrap{width:100%;max-width:600px;margin:0 auto;overflow:hidden}
 .facebook-plugin-wrap .fb-page,
 .facebook-plugin-wrap .fb-page>span,
 .facebook-plugin-wrap iframe{max-width:100%!important;width:100%!important}
 </style>
-<style id="stage13-menu-hover">
+<style id="stage14-header-menu-fix">
+@media(min-width:981px){
+  .site-header__inner{height:76px!important}
+  .site-brand img{height:54px!important}
+}
 @media(min-width:901px){
-  .nav-item{position:relative}
-  .nav-item > .dropdown,.nav-item > .submenu{
-    margin-top:0!important;
-    transition:opacity .12s ease,visibility .12s ease,transform .12s ease!important;
+  .nav-drop{position:relative!important}
+  .nav-drop::after{
+    content:"";position:absolute;left:-12px;right:-12px;top:100%;
+    height:18px;z-index:20;pointer-events:auto;
   }
-  .nav-item.stage13-hover-open > .dropdown,
-  .nav-item.stage13-hover-open > .submenu,
-  .nav-item:hover > .dropdown,
-  .nav-item:hover > .submenu,
-  .nav-item:focus-within > .dropdown,
-  .nav-item:focus-within > .submenu{
-    display:block!important;opacity:1!important;visibility:visible!important;
-    pointer-events:auto!important;transform:translateY(0)!important;
+  .nav-drop > .nav-menu{
+    top:calc(100% + 7px)!important;
+    z-index:40!important;
   }
-  .nav-item:has(> .dropdown)::after,
-  .nav-item:has(> .submenu)::after{
-    content:"";position:absolute;left:-12px;right:-12px;top:80%;height:38px;z-index:2;
+  .nav-drop.stage14-hover-open > .nav-menu,
+  .nav-drop:hover > .nav-menu,
+  .nav-drop:focus-within > .nav-menu{
+    display:grid!important;
+    visibility:visible!important;
+    opacity:1!important;
+    pointer-events:auto!important;
   }
-  .nav-item > .dropdown,.nav-item > .submenu{z-index:30!important}
 }
 </style>
-</head>
+<style id="stage14-testimonial-placeholder-style">
+.stage14-testimonial-placeholder{
+  border:2px dashed rgba(47,107,63,.28)!important;
+  background:rgba(234,242,228,.52)!important;
+}
+.stage14-testimonial-placeholder blockquote{
+  color:#667268!important;
+  font-style:italic!important;
+}
+.stage14-testimonial-placeholder cite{
+  color:#8f1710!important;
+  font-weight:800!important;
+  letter-spacing:.06em!important;
+}
+</style><style id="stage14-facebook-fix">
+.facebook-panel{overflow:hidden!important}
+.facebook-plugin-wrap{
+  position:relative;width:100%;max-width:600px;min-height:600px;
+  margin:0 auto;overflow:hidden;
+}
+.facebook-plugin-wrap .fb-page,
+.facebook-plugin-wrap .fb-page>span,
+.facebook-plugin-wrap .fb-page iframe{
+  width:100%!important;max-width:600px!important;
+}
+.facebook-fallback{
+  display:none;width:100%!important;max-width:600px!important;height:600px!important;
+  margin:0 auto;
+}
+@media(max-width:700px){
+  .facebook-plugin-wrap{min-height:520px}
+  .facebook-fallback{height:520px!important}
+}
+</style></head>
 <body><header class="site-header"><div class="site-header__inner"><a aria-label="Greenacre International School home" class="site-brand" data-path="" href="./"><img alt="Greenacre International School" src="assets/images/greenacre-logo.png"/></a><button aria-expanded="false" class="menu-toggle" type="button">Menu</button><nav aria-label="Main navigation" class="site-nav"><a data-path="" href="./">Home</a><div class="nav-drop"><button type="button">Our School</button><div class="nav-menu"><a data-path="our-school/about-greenacre/">About Greenacre</a><a data-path="our-school/head-of-school-welcome/" href="/our-school/head-of-school-welcome/">Head of School Welcome</a><a data-path="our-school/environmentality/">Environmentality</a><a data-path="our-school/wellbeing/">Wellbeing</a><a data-path="our-school/our-team/">Our Team</a><a data-path="our-school/campus-facilities/">Campus &amp; Facilities</a></div></div><div class="nav-drop"><button type="button">Learning</button><div class="nav-menu"><a data-path="learning/curriculum/">Curriculum</a><a data-path="learning/early-years/">Early Years</a><a data-path="learning/primary/">Primary</a><a data-path="learning/secondary/">Secondary</a></div></div><div class="nav-drop"><button type="button">Admissions</button><div class="nav-menu"><a data-path="admissions/admissions-visits/">Admissions &amp; Visits</a><a data-path="admissions/fees/">Fees</a><a data-path="admissions/faqs/">FAQs</a></div></div><div class="nav-drop"><button type="button">Parent Information</button><div class="nav-menu"><a data-path="parent-information/key-information/">Key Information</a><a data-path="parent-information/calendar-term-dates/">Calendar &amp; Term Dates</a><a data-path="parent-information/ecas/">Clubs &amp; ECAs</a><a data-path="parent-information/services/">Services</a></div></div><a data-path="contact/">Contact</a></nav></div></header>
 <main class="page">
 <section aria-labelledby="home-title" class="hero">
@@ -1285,11 +1319,8 @@ body{padding-bottom:var(--footer-height)!important}
             </blockquote>
 <cite>Greenacre parent testimonial</cite>
 </article>
-</div>
-<div aria-label="Choose testimonial" class="testimonial-dots">
-<button aria-label="Show testimonial 1" class="testimonial-dot active" type="button"></button>
-<button aria-label="Show testimonial 2" class="testimonial-dot" type="button"></button>
-</div>
+<article class="testimonial-card stage14-testimonial-placeholder"><blockquote>Approved Greenacre family testimonial to be added here.</blockquote><cite>TESTIMONIAL PLACEHOLDER</cite></article></div>
+<div aria-label="Choose testimonial" class="testimonial-dots"><button aria-label="Show testimonial 1" class="testimonial-dot active" type="button"></button><button aria-label="Show testimonial 2" class="testimonial-dot" type="button"></button><button aria-label="Show testimonial 3" class="testimonial-dot" type="button"></button></div>
 </div>
 </section>
 <section aria-labelledby="location-social-heading" class="location-social">
@@ -1313,24 +1344,11 @@ body{padding-bottom:var(--footer-height)!important}
 <article class="facebook-panel">
 <div class="facebook-panel-head">
 <h3>Latest from Greenacre</h3>
-<div id="fb-root"></div>
-<div class="facebook-plugin-wrap">
-<div class="fb-page" data-adapt-container-width="1" data-height="600" data-hide-cover="" data-href="https://www.facebook.com/samuigreenacreschool/" data-show-facepile="" data-show-posts="true" data-small-header="" data-width="600">
-<blockquote cite="https://www.facebook.com/samuigreenacreschool/" class="fb-xfbml-parse-ignore">
-<a href="https://www.facebook.com/samuigreenacreschool/">Greenacre International School, Koh Samui</a>
-</blockquote>
+
+
 </div>
-</div>
-</div>
-<div class="facebook-xfbml-wrap">
-<div id="fb-root"></div>
-<div class="fb-page" data-adapt-container-width="true" data-height="600" data-hide-cover="true" data-href="https://www.facebook.com/samuigreenacreschool/" data-show-facepile="false" data-show-posts="true" data-small-header="true" data-width="500">
-<blockquote cite="https://www.facebook.com/samuigreenacreschool/" class="fb-xfbml-parse-ignore">
-<a href="https://www.facebook.com/samuigreenacreschool/" rel="noopener noreferrer" target="_blank">Greenacre International School, Koh Samui</a>
-</blockquote>
-</div>
-</div>
-</article>
+
+<div id="fb-root"></div><div class="facebook-plugin-wrap"><div class="fb-page" data-adapt-container-width="1" data-height="600" data-hide-cover="" data-href="https://www.facebook.com/samuigreenacreschool/" data-show-facepile="" data-show-posts="true" data-small-header="" data-tabs="timeline" data-width="600"><blockquote cite="https://www.facebook.com/samuigreenacreschool/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/samuigreenacreschool/">Greenacre International School, Koh Samui</a></blockquote></div><iframe allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen="true" class="facebook-fallback" frameborder="0" height="600" scrolling="no" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsamuigreenacreschool%2F&amp;tabs=timeline&amp;width=600&amp;height=600&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false" style="border:none;overflow:hidden" title="Greenacre International School Facebook feed" width="600"></iframe></div></article>
 </div>
 </div>
 </section>
@@ -1579,37 +1597,73 @@ body{padding-bottom:var(--footer-height)!important}
   </script>
 <script id="site-nav-script">(()=>{const project=location.hostname==='greenacreadmin.github.io'?'/greenacre-website-draft/':'/';document.querySelectorAll('[data-path]').forEach(a=>a.href=project+(a.dataset.path||''));const t=document.querySelector('.menu-toggle'),n=document.querySelector('.site-nav');if(t&&n)t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',String(o))})})();</script>
 
-<script async="1" crossorigin="anonymous" defer="1" nonce="fo1IS16s" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0"></script>
-<script id="stage13-menu-hover-js">
+<script id="stage14-menu-hover-js">
 (()=>{
- const desktop=()=>matchMedia('(min-width:901px)').matches;
- document.querySelectorAll('.nav-item').forEach(item=>{
-   const menu=item.querySelector(':scope > .dropdown, :scope > .submenu');
-   if(!menu) return;
-   let timer=null;
-   const trigger=item.querySelector(':scope > a, :scope > button');
-   const open=()=>{
-     if(!desktop()) return;
-     clearTimeout(timer);
-     item.classList.add('stage13-hover-open','open');
-     if(trigger) trigger.setAttribute('aria-expanded','true');
-   };
-   const close=()=>{
-     if(!desktop()) return;
-     clearTimeout(timer);
-     timer=setTimeout(()=>{
-       item.classList.remove('stage13-hover-open','open');
-       if(trigger) trigger.setAttribute('aria-expanded','false');
-     },500);
-   };
-   item.addEventListener('mouseenter',open);
-   item.addEventListener('mouseleave',close);
-   menu.addEventListener('mouseenter',open);
-   menu.addEventListener('mouseleave',close);
-   item.addEventListener('focusin',open);
-   item.addEventListener('focusout',e=>{if(!item.contains(e.relatedTarget)) close();});
- });
+  const desktop=()=>window.matchMedia('(min-width:901px)').matches;
+  document.querySelectorAll('.nav-drop').forEach(drop=>{
+    const menu=drop.querySelector(':scope > .nav-menu');
+    if(!menu) return;
+    let closeTimer=null;
+    const trigger=drop.querySelector(':scope > button, :scope > a');
+
+    const open=()=>{
+      if(!desktop()) return;
+      window.clearTimeout(closeTimer);
+      drop.classList.add('stage14-hover-open');
+      if(trigger) trigger.setAttribute('aria-expanded','true');
+    };
+
+    const delayedClose=()=>{
+      if(!desktop()) return;
+      window.clearTimeout(closeTimer);
+      closeTimer=window.setTimeout(()=>{
+        drop.classList.remove('stage14-hover-open');
+        if(trigger) trigger.setAttribute('aria-expanded','false');
+      },500);
+    };
+
+    drop.addEventListener('mouseenter',open);
+    drop.addEventListener('mouseleave',delayedClose);
+    menu.addEventListener('mouseenter',open);
+    menu.addEventListener('mouseleave',delayedClose);
+    drop.addEventListener('focusin',open);
+    drop.addEventListener('focusout',e=>{
+      if(!drop.contains(e.relatedTarget)) delayedClose();
+    });
+  });
 })();
 </script>
-</body>
+<script async="1" crossorigin="anonymous" defer="1" nonce="fo1IS16s" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0"></script><script id="stage14-facebook-init">
+(()=>{
+  const plugin=document.querySelector('.facebook-plugin-wrap .fb-page');
+  const fallback=document.querySelector('.facebook-fallback');
+  if(!plugin||!fallback) return;
+
+  const showFallback=()=>{
+    if(!plugin.querySelector('iframe')){
+      plugin.style.display='none';
+      fallback.style.display='block';
+    }
+  };
+
+  const parse=()=>{
+    try{
+      if(window.FB&&FB.XFBML){
+        FB.XFBML.parse(plugin.parentElement,()=>{
+          window.setTimeout(showFallback,1200);
+        });
+      }else{
+        window.setTimeout(parse,250);
+      }
+    }catch(e){
+      showFallback();
+    }
+  };
+
+  window.addEventListener('load',()=>{
+    window.setTimeout(parse,150);
+    window.setTimeout(showFallback,3500);
+  });
+})();
+</script></body>
 </html>
