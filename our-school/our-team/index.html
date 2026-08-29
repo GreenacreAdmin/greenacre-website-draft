@@ -137,17 +137,7 @@ body{padding-bottom:var(--footer-height)!important}
   }
 }
 </style>
-<style id="stage24-team-roster">
-.team-group-heading{margin:36px 0 14px;color:var(--green-dark)}
-.team-grid-stage24{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
-.team-card-stage24{padding:18px;background:#fff;border:1px solid rgba(47,107,63,.12);border-radius:16px}
-.team-avatar-stage24{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;margin-bottom:12px;background:var(--green-soft);color:var(--green-dark);font-weight:700}
-.team-card-stage24 h4{margin:0 0 6px;color:var(--green-dark);font-size:16px}
-.team-card-stage24 p{margin:0;color:#657066;font-size:13px;line-height:1.5}
-@media(max-width:1000px){.team-grid-stage24{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:760px){.team-grid-stage24{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:520px){.team-grid-stage24{grid-template-columns:1fr}}
-</style><style id="stage25-header-uniform">
+<style id="stage25-header-uniform">
 /* Uniform site header dimensions */
 .site-header__inner{
   height:65.6px !important;
@@ -167,6 +157,115 @@ body{padding-bottom:var(--footer-height)!important}
     max-height:38.4px !important;
     width:auto !important;
   }
+}
+</style><style id="stage28-team-redesign">
+/* Team page colour correction:
+   pale green text is reserved for the dark page hero only. */
+#stage24-roster .eyebrow{
+  color:var(--green-dark) !important;
+  opacity:1 !important;
+}
+.page-hero .eyebrow{
+  color:#dcebd0 !important;
+}
+
+/* Compact team presentation */
+#stage24-roster{
+  background:#f8faf6;
+}
+#stage24-roster > .wrap{
+  max-width:1240px;
+}
+#stage24-roster > .wrap > h2{
+  margin-bottom:14px;
+}
+#stage24-roster > .wrap > p{
+  max-width:900px;
+}
+.team-photo-note{
+  margin:18px 0 4px !important;
+  padding:10px 14px;
+  display:inline-block;
+  border-radius:10px;
+  background:#edf4e8;
+  color:#536258 !important;
+  font-size:12px;
+  line-height:1.45;
+}
+.team-group-stage28{
+  margin-top:34px;
+}
+.team-group-heading-stage28{
+  margin:0 0 14px;
+  padding-bottom:8px;
+  border-bottom:1px solid rgba(47,107,63,.15);
+  color:var(--green-dark);
+  font-size:18px;
+  line-height:1.3;
+}
+.team-grid-stage28{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:12px;
+}
+.team-card-stage28{
+  min-width:0;
+  display:flex;
+  align-items:center;
+  gap:13px;
+  min-height:104px;
+  padding:12px 14px;
+  background:#fff;
+  border:1px solid rgba(47,107,63,.12);
+  border-radius:14px;
+  box-shadow:0 5px 16px rgba(31,79,49,.045);
+}
+.team-avatar-stage28{
+  flex:0 0 76px;
+  width:76px;
+  height:76px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  padding:9px;
+  box-sizing:border-box;
+  background:#e6e9e4;
+  border:1px dashed #9ca79f;
+  color:#667069;
+  text-align:center;
+}
+.team-avatar-stage28 span{
+  display:block;
+  max-width:58px;
+  font-size:8px;
+  line-height:1.18;
+  letter-spacing:.035em;
+  font-weight:800;
+}
+.team-card-copy-stage28{
+  min-width:0;
+}
+.team-card-stage28 h4{
+  margin:0 0 4px;
+  color:var(--green-dark);
+  font-size:15px;
+  line-height:1.25;
+}
+.team-card-stage28 p{
+  margin:0;
+  color:#647168;
+  font-size:12px;
+  line-height:1.35;
+}
+@media(max-width:1050px){
+  .team-grid-stage28{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:780px){
+  .team-grid-stage28{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:540px){
+  .team-grid-stage28{grid-template-columns:1fr}
+  .team-card-stage28{min-height:96px}
 }
 </style></head><body><header class="site-header"><div class="site-header__inner"><a aria-label="Greenacre International School home" class="site-brand" data-path="our-school/our-team" href="/our-school/our-team"><img alt="Greenacre International School" src="assets/images/greenacre-logo.png"/></a><button aria-expanded="false" class="menu-toggle" type="button">Menu</button><nav aria-label="Primary" class="site-nav">
 <a data-path="" href="/">Home</a>
@@ -212,7 +311,7 @@ body{padding-bottom:var(--footer-height)!important}
 </nav></div></header>
 <main>
 <section class="page-hero"><div class="wrap"><div class="eyebrow">Greenacre International School / Koh Samui, Thailand</div><h1>Our Team</h1><p>Meet the teachers and support staff who make up the Greenacre community.</p></div></section>
-<section class="section" id="stage24-roster"><div class="wrap"><div class="eyebrow">Our Team</div><h2>Our Amazing Team!</h2><p>We are exceptionally proud of our team here at Greenacre International School.</p><p>Our teachers and support staff are committed and dedicated to ensuring that our students have the best school experience possible. Whether that is through the exceptional and inspiring teaching or the way in which the whole team is valued as an integral part of the Greenacre family.</p><p>All our teachers are highly-qualified and our teaching standards ensure rapid progress for students of all abilities. Our competent classroom assistants all have previous experience within an international school environment.</p><h3 class="team-group-heading">Leadership</h3><div class="team-grid-stage24"><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">D</div><h4>Mr. Dara</h4><p>Head of School</p></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">M</div><h4>Mr. Mark</h4><p>Head of Primary</p></article></div><h3 class="team-group-heading">Early Years &amp; Primary Teachers</h3><div class="team-grid-stage24"><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">V</div><h4>Ms. Vanessa</h4><p>Nursery (FS1) Teacher</p></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">C</div><h4>Ms. Chloe</h4><p>Reception (FS2) Teacher</p></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">A</div><h4>Ms. Amber</h4><p>Year 1 Class Teacher</p></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">A</div><h4>Ms. Amy</h4><p>Year 2 Class Teacher</p></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">J</div><h4>Mr. James</h4><p>Year 3A Class Teacher</p></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">S</div><h4>Ms. Santana</h4><p>Year 3B Class Teacher</p></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">J</div><h4>Mr. Jordan</h4><p>Year 4 Class Teacher</p></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">E</div><h4>Mr. Ethan</h4><p>Year 5 Class Teacher</p></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">C</div><h4>Mr. Caleb</h4><p>Year 6 Class Teacher</p></article></div><h3 class="team-group-heading">Secondary Teachers</h3><div class="team-grid-stage24"><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">P</div><h4>Ms. Pixie</h4><p>KS3 English Teacher</p></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">R</div><h4>Ms. Rachel</h4><p>KS4 English Teacher</p></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">H</div><h4>Ms. Hannah</h4><p>Secondary Humanities Teacher</p></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">E</div><h4>Mr. Ellis</h4><p>Secondary Science Teacher</p></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">O</div><h4>Mr. Owen</h4><p>Secondary Maths Teacher</p></article></div><h3 class="team-group-heading">Whole-School Teachers</h3><div class="team-grid-stage24"><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">K</div><h4>Mr. Kevin</h4><p>Sports &amp; Swimming Teacher</p></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">T</div><h4>Ms. Tatiana</h4><p>Art &amp; Graphic Design Teacher</p></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">R</div><h4>Mr. Richard</h4><p>Environmental Teacher</p></article></div><h3 class="team-group-heading">Thai Language Teachers</h3><div class="team-grid-stage24"><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">F</div><h4>Ms. Fon</h4></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">C</div><h4>Ms. Care</h4></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">P</div><h4>Ms. Piaew</h4></article></div><h3 class="team-group-heading">Teaching Assistants</h3><div class="team-grid-stage24"><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">A</div><h4>Ms. Ann</h4></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">V</div><h4>Ms. Vicky</h4></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">C</div><h4>Ms. Cherry</h4></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">J</div><h4>Ms. Jen</h4></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">P</div><h4>Ms. Pat</h4></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">F</div><h4>Ms. Fon</h4></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">M</div><h4>Ms. Milk</h4></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">P</div><h4>Ms. Pom</h4></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">M</div><h4>Ms. Milky</h4></article></div><h3 class="team-group-heading">Administration &amp; Support</h3><div class="team-grid-stage24"><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">L</div><h4>Ms. Lorevic</h4><p>Nurse &amp; Science Technician</p></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">J</div><h4>Ms. Jeab</h4><p>Admin and Receptionist Officer</p></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">S</div><h4>Ms. Shirley</h4><p>School Admission Officer</p></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">T</div><h4>Ms. Tiew</h4><p>Visa Officer</p></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">S</div><h4>Ms. Sunny</h4><p>Finance Officer</p></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">H</div><h4>Ms. Honey</h4><p>Finance Officer</p></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">W</div><h4>Mr. Watchara (Krung)</h4><p>Facilities Manager</p></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">A</div><h4>Ms. Anne</h4><p>Thai Director</p></article><article class="team-card-stage24"><div aria-hidden="true" class="team-avatar-stage24">T</div><h4>Ms. Tippawan (Tip)</h4><p>Administration Manager</p></article></div></div></section></main>
+<section class="section" id="stage24-roster"><div class="wrap"><div class="eyebrow">Our Team</div><h2>Our Amazing Team!</h2><p>We are exceptionally proud of our team here at Greenacre International School.</p><p>Our teachers and support staff are committed and dedicated to ensuring that our students have the best school experience possible. Whether that is through the exceptional and inspiring teaching or the way in which the whole team is valued as an integral part of the Greenacre family.</p><p>All our teachers are highly-qualified and our teaching standards ensure rapid progress for students of all abilities. Our competent classroom assistants all have previous experience within an international school environment.</p><p class="team-photo-note">Staff photographs will be updated with recent portraits before launch.</p><section class="team-group-stage28"><h3 class="team-group-heading-stage28">Leadership</h3><div class="team-grid-stage28"><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Mr. Dara" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Mr. Dara</h4><p>Head of School</p></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Mr. Mark" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Mr. Mark</h4><p>Head of Primary</p></div></article></div></section><section class="team-group-stage28"><h3 class="team-group-heading-stage28">Early Years &amp; Primary Teachers</h3><div class="team-grid-stage28"><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Vanessa" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Vanessa</h4><p>Nursery (FS1) Teacher</p></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Chloe" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Chloe</h4><p>Reception (FS2) Teacher</p></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Amber" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Amber</h4><p>Year 1 Class Teacher</p></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Amy" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Amy</h4><p>Year 2 Class Teacher</p></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Mr. James" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Mr. James</h4><p>Year 3A Class Teacher</p></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Santana" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Santana</h4><p>Year 3B Class Teacher</p></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Mr. Jordan" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Mr. Jordan</h4><p>Year 4 Class Teacher</p></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Mr. Ethan" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Mr. Ethan</h4><p>Year 5 Class Teacher</p></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Mr. Caleb" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Mr. Caleb</h4><p>Year 6 Class Teacher</p></div></article></div></section><section class="team-group-stage28"><h3 class="team-group-heading-stage28">Secondary Teachers</h3><div class="team-grid-stage28"><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Pixie" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Pixie</h4><p>KS3 English Teacher</p></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Rachel" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Rachel</h4><p>KS4 English Teacher</p></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Hannah" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Hannah</h4><p>Secondary Humanities Teacher</p></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Mr. Ellis" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Mr. Ellis</h4><p>Secondary Science Teacher</p></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Mr. Owen" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Mr. Owen</h4><p>Secondary Maths Teacher</p></div></article></div></section><section class="team-group-stage28"><h3 class="team-group-heading-stage28">Whole-School Teachers</h3><div class="team-grid-stage28"><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Mr. Kevin" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Mr. Kevin</h4><p>Sports &amp; Swimming Teacher</p></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Tatiana" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Tatiana</h4><p>Art &amp; Graphic Design Teacher</p></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Mr. Richard" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Mr. Richard</h4><p>Environmental Teacher</p></div></article></div></section><section class="team-group-stage28"><h3 class="team-group-heading-stage28">Thai Language Teachers</h3><div class="team-grid-stage28"><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Fon" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Fon</h4></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Care" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Care</h4></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Piaew" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Piaew</h4></div></article></div></section><section class="team-group-stage28"><h3 class="team-group-heading-stage28">Teaching Assistants</h3><div class="team-grid-stage28"><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Ann" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Ann</h4></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Vicky" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Vicky</h4></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Cherry" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Cherry</h4></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Jen" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Jen</h4></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Pat" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Pat</h4></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Fon" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Fon</h4></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Milk" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Milk</h4></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Pom" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Pom</h4></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Milky" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Milky</h4></div></article></div></section><section class="team-group-stage28"><h3 class="team-group-heading-stage28">Administration &amp; Support</h3><div class="team-grid-stage28"><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Lorevic" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Lorevic</h4><p>Nurse &amp; Science Technician</p></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Jeab" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Jeab</h4><p>Admin and Receptionist Officer</p></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Shirley" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Shirley</h4><p>School Admission Officer</p></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Tiew" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Tiew</h4><p>Visa Officer</p></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Sunny" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Sunny</h4><p>Finance Officer</p></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Honey" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Honey</h4><p>Finance Officer</p></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Mr. Watchara (Krung)" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Mr. Watchara (Krung)</h4><p>Facilities Manager</p></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Anne" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Anne</h4><p>Thai Director</p></div></article><article class="team-card-stage28"><div aria-label="Temporary photo placeholder for Ms. Tippawan (Tip)" class="team-avatar-stage28" role="img"><span>REPLACE WITH RECENT PHOTO</span></div><div class="team-card-copy-stage28"><h4>Ms. Tippawan (Tip)</h4><p>Administration Manager</p></div></article></div></section></div></section></main>
 <footer aria-label="Greenacre International School footer" class="site-footer">
 <div class="site-footer__inner">
 <div class="site-footer__identity">
