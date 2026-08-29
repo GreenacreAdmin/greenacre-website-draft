@@ -834,7 +834,18 @@
     @media (max-width: 560px) {
       .hero { min-height: 560px; }
       .hero-inner { padding-top: 80px; padding-bottom: 52px; }
-      h1 { font-size: 2.55rem; }
+      h1 {
+        font-size: 2.55rem;
+        text-align: center;
+      }
+
+      h1 .motto-line {
+        display: block;
+      }
+
+      h1 .motto-dot {
+        display: none;
+      }
       .button-row { display: grid; grid-template-columns: 1fr; }
       .button { width: 100%; }
       .intro-photo, .identity-photo { min-height: 300px; }
@@ -1082,7 +1093,7 @@
 <span class="home-photo-stamp">Replace image?</span>
 <div class="hero-inner">
 <p class="eyebrow">Greenacre International School · Koh Samui</p>
-<h1 id="home-title">Growing Together <span class="motto-dot">·</span> Learning Together <span class="motto-dot">·</span> Working Together</h1>
+<h1 id="home-title"><span class="motto-line">Growing Together</span> <span class="motto-dot">·</span> <span class="motto-line">Learning Together</span> <span class="motto-dot">·</span> <span class="motto-line">Working Together</span></h1>
 <p class="hero-copy">
           An inclusive international school on Koh Samui, supporting students to grow
           academically, personally and with a strong awareness of the natural world.
