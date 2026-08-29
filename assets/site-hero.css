@@ -87,4 +87,12 @@
     padding-bottom: 42px !important;
   }
 
+  .page-hero .eyebrow,
+  .subhero .eyebrow {
+    font-size: .70rem !important;
+    line-height: 1.25 !important;
+    letter-spacing: .10em !important;
+    height: auto !important;
+  }
+
 }
