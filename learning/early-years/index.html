@@ -84,31 +84,7 @@ body{padding-bottom:var(--footer-height)!important}
  .site-footer__logo--cambridge img,.site-footer__logo--edt img{max-height:29px!important}
 }
 </style>
-<style id="stage14-header-menu-fix">
-@media(min-width:981px){
-  .site-header__inner{height:76px!important}
-  .site-brand img{height:54px!important}
-}
-@media(min-width:901px){
-  .nav-drop{position:relative!important}
-  .nav-drop::after{
-    content:"";position:absolute;left:-12px;right:-12px;top:100%;
-    height:18px;z-index:20;pointer-events:auto;
-  }
-  .nav-drop > .nav-menu{
-    top:calc(100% + 7px)!important;
-    z-index:40!important;
-  }
-  .nav-drop.stage14-hover-open > .nav-menu,
-  .nav-drop:hover > .nav-menu,
-  .nav-drop:focus-within > .nav-menu{
-    display:grid!important;
-    visibility:visible!important;
-    opacity:1!important;
-    pointer-events:auto!important;
-  }
-}
-</style>
+
 <style id="stage14-early-years-blur">
 .photo-plan.early{position:relative!important;overflow:hidden!important;isolation:isolate!important}
 .photo-plan.early>.photo-blur-layer{
@@ -120,7 +96,47 @@ body{padding-bottom:var(--footer-height)!important}
 }
 .photo-plan.early>.stamp,
 .photo-plan.early>.shot{position:relative!important;z-index:4!important}
-</style></head><body><header class="site-header"><div class="site-header__inner"><a aria-label="Greenacre International School home" class="site-brand" data-path="" href="./"><img alt="Greenacre International School" src="assets/images/greenacre-logo.png"/></a><button aria-expanded="false" class="menu-toggle" type="button">Menu</button><nav aria-label="Main navigation" class="site-nav"><a data-path="" href="./">Home</a><div class="nav-drop"><button type="button">Our School</button><div class="nav-menu"><a data-path="our-school/about-greenacre/">About Greenacre</a><a data-path="our-school/head-of-school-welcome/" href="/our-school/head-of-school-welcome/">Head of School Welcome</a><a data-path="our-school/environmentality/">Environmentality</a><a data-path="our-school/wellbeing/">Wellbeing</a><a data-path="our-school/our-team/">Our Team</a><a data-path="our-school/campus-facilities/">Campus &amp; Facilities</a></div></div><div class="nav-drop"><button type="button">Learning</button><div class="nav-menu"><a data-path="learning/curriculum/">Curriculum</a><a data-path="learning/early-years/">Early Years</a><a data-path="learning/primary/">Primary</a><a data-path="learning/secondary/">Secondary</a></div></div><div class="nav-drop"><button type="button">Admissions</button><div class="nav-menu"><a data-path="admissions/admissions-visits/">Admissions &amp; Visits</a><a data-path="admissions/fees/">Fees</a><a data-path="admissions/faqs/">FAQs</a></div></div><div class="nav-drop"><button type="button">Parent Information</button><div class="nav-menu"><a data-path="parent-information/key-information/">Key Information</a><a data-path="parent-information/calendar-term-dates/">Calendar &amp; Term Dates</a><a data-path="parent-information/secondary-parent-information/" href="/parent-information/secondary-parent-information/">Secondary Parent Information</a><a data-path="parent-information/ecas/">Clubs &amp; ECAs</a><a data-path="parent-information/services/">Services</a></div></div><a data-path="contact/">Contact</a></nav></div></header><main>
+</style>
+<style id="stage16-standard-navigation">
+@media (min-width:901px){
+  .nav-drop{
+    position:relative!important;
+  }
+
+  .nav-drop > .nav-menu{
+    position:absolute!important;
+    top:100%!important;
+    left:0!important;
+    margin-top:0!important;
+    visibility:hidden!important;
+    opacity:0!important;
+    pointer-events:none!important;
+    transform:translateY(6px)!important;
+    transition:opacity .14s ease, transform .14s ease, visibility .14s ease!important;
+    z-index:100!important;
+  }
+
+  .nav-drop:hover > .nav-menu,
+  .nav-drop:focus-within > .nav-menu,
+  .nav-drop.nav-open > .nav-menu{
+    visibility:visible!important;
+    opacity:1!important;
+    pointer-events:auto!important;
+    transform:translateY(0)!important;
+  }
+
+  /* Small invisible bridge so the pointer can move naturally into the submenu. */
+  .nav-drop > .nav-menu::before{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    top:-10px;
+    height:10px;
+  }
+}
+</style>
+</head><body><header class="site-header"><div class="site-header__inner"><a aria-label="Greenacre International School home" class="site-brand" data-path="" href="./"><img alt="Greenacre International School" src="assets/images/greenacre-logo.png"/></a><button aria-expanded="false" class="menu-toggle" type="button">Menu</button><nav aria-label="Main navigation" class="site-nav"><a data-path="" href="./">Home</a><div class="nav-drop"><button type="button">Our School</button><div class="nav-menu"><a data-path="our-school/about-greenacre/">About Greenacre</a><a data-path="our-school/head-of-school-welcome/" href="/our-school/head-of-school-welcome/">Head of School Welcome</a><a data-path="our-school/environmentality/">Environmentality</a><a data-path="our-school/wellbeing/">Wellbeing</a><a data-path="our-school/our-team/">Our Team</a><a data-path="our-school/campus-facilities/">Campus &amp; Facilities</a></div></div><div class="nav-drop"><button type="button">Learning</button><div class="nav-menu"><a data-path="learning/curriculum/">Curriculum</a><a data-path="learning/early-years/">Early Years</a><a data-path="learning/primary/">Primary</a><a data-path="learning/secondary/">Secondary</a></div></div><div class="nav-drop"><button type="button">Admissions</button><div class="nav-menu"><a data-path="admissions/admissions-visits/">Admissions &amp; Visits</a><a data-path="admissions/fees/">Fees</a><a data-path="admissions/faqs/">FAQs</a></div></div><div class="nav-drop"><button type="button">Parent Information</button><div class="nav-menu"><a data-path="parent-information/key-information/">Key Information</a><a data-path="parent-information/calendar-term-dates/">Calendar &amp; Term Dates</a><a data-path="parent-information/secondary-parent-information/" href="/parent-information/secondary-parent-information/">Secondary Parent Information</a><a data-path="parent-information/ecas/">Clubs &amp; ECAs</a><a data-path="parent-information/services/">Services</a></div></div><a data-path="contact/">Contact</a></nav></div></header><main>
 <section class="subhero"><div class="wrap"><div class="eyebrow">Greenacre International School / Koh Samui, Thailand</div><h1>Early Years</h1><p>A happy, secure and creative beginning where children learn through play, investigation and doing.</p></div></section>
 <section><div class="wrap grid2"><div><div class="kicker">The start of the journey</div><h2>Curiosity comes first.</h2><p>Early Years is the beginning of Greenacre's continuous learning journey from age 3 to IGCSE. Children are supported to explore, communicate, build confidence and develop positive relationships in an inclusive environment.</p><p>Learning at this stage is active and purposeful, with opportunities to investigate, create, play and learn from the world around them.</p></div><div class="photo-plan early"><span aria-hidden="true" class="photo-blur-layer"></span><span class="stamp">TEMP - REPLACE PHOTO</span><div class="shot">Final Greenacre image: FS1 or FS2 children absorbed in child-led outdoor play or investigation. Prefer natural interaction and exploration, not children lined up or looking at the camera.</div></div></div></section>
 <section><div class="wrap"><div class="kicker">A strong foundation</div><h2>Learning through experience.</h2><div class="feature-list"><div class="feature"><strong>Play and investigation</strong>Children learn by exploring, trying ideas and making connections.</div><div class="feature"><strong>Communication</strong>Language, listening and interaction are developed through everyday learning.</div><div class="feature"><strong>Confidence and independence</strong>Children are encouraged to make choices, solve problems and take growing responsibility.</div><div class="feature"><strong>Belonging</strong>Respect, empathy and nurture help create a secure and inclusive start to school life.</div></div></div></section>
@@ -367,40 +383,93 @@ linear-gradient(35deg,#dce9d6,#f2eadc);display:flex;align-items:center;justify-c
 @media(max-width:850px){.phase-links,.pathway,.feature-list{grid-template-columns:1fr}.photo-plan{min-height:280px}}
 </style>
 <script id="site-nav-script">(()=>{const project=location.hostname==='greenacreadmin.github.io'?'/greenacre-website-draft/':'/';document.querySelectorAll('[data-path]').forEach(a=>a.href=project+(a.dataset.path||''));const t=document.querySelector('.menu-toggle'),n=document.querySelector('.site-nav');if(t&&n)t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',String(o))})})();</script>
-<script id="stage14-menu-hover-js">
+
+
+<script id="stage16-standard-navigation-js">
 (()=>{
-  const desktop=()=>window.matchMedia('(min-width:901px)').matches;
-  document.querySelectorAll('.nav-drop').forEach(drop=>{
-    const menu=drop.querySelector(':scope > .nav-menu');
-    if(!menu) return;
-    let closeTimer=null;
-    const trigger=drop.querySelector(':scope > button, :scope > a');
+  const desktopMQ = window.matchMedia('(min-width:901px)');
+  const drops = [...document.querySelectorAll('.nav-drop')];
 
-    const open=()=>{
-      if(!desktop()) return;
+  const closeAll = except => {
+    drops.forEach(drop => {
+      if(drop === except) return;
+      drop.classList.remove('nav-open');
+      const trigger = drop.querySelector(':scope > button, :scope > a');
+      if(trigger && trigger.hasAttribute('aria-expanded')){
+        trigger.setAttribute('aria-expanded','false');
+      }
+    });
+  };
+
+  drops.forEach(drop => {
+    const menu = drop.querySelector(':scope > .nav-menu');
+    const trigger = drop.querySelector(':scope > button, :scope > a');
+    if(!menu || !trigger) return;
+
+    let closeTimer = null;
+
+    const open = () => {
+      if(!desktopMQ.matches) return;
       window.clearTimeout(closeTimer);
-      drop.classList.add('stage14-hover-open');
-      if(trigger) trigger.setAttribute('aria-expanded','true');
+      closeAll(drop);
+      drop.classList.add('nav-open');
+      trigger.setAttribute('aria-expanded','true');
     };
 
-    const delayedClose=()=>{
-      if(!desktop()) return;
+    const closeSoon = () => {
+      if(!desktopMQ.matches) return;
       window.clearTimeout(closeTimer);
-      closeTimer=window.setTimeout(()=>{
-        drop.classList.remove('stage14-hover-open');
-        if(trigger) trigger.setAttribute('aria-expanded','false');
-      },500);
+      closeTimer = window.setTimeout(() => {
+        if(!drop.matches(':hover') && !drop.contains(document.activeElement)){
+          drop.classList.remove('nav-open');
+          trigger.setAttribute('aria-expanded','false');
+        }
+      },220);
     };
 
-    drop.addEventListener('mouseenter',open);
-    drop.addEventListener('mouseleave',delayedClose);
-    menu.addEventListener('mouseenter',open);
-    menu.addEventListener('mouseleave',delayedClose);
-    drop.addEventListener('focusin',open);
-    drop.addEventListener('focusout',e=>{
-      if(!drop.contains(e.relatedTarget)) delayedClose();
+    drop.addEventListener('mouseenter', open);
+    drop.addEventListener('mouseleave', closeSoon);
+    menu.addEventListener('mouseenter', () => window.clearTimeout(closeTimer));
+    menu.addEventListener('mouseleave', closeSoon);
+
+    trigger.addEventListener('click', e => {
+      if(!desktopMQ.matches) return; // preserve existing mobile tap behaviour
+      if(trigger.tagName === 'BUTTON'){
+        e.preventDefault();
+        const isOpen = drop.classList.contains('nav-open');
+        closeAll(drop);
+        drop.classList.toggle('nav-open', !isOpen);
+        trigger.setAttribute('aria-expanded', String(!isOpen));
+      }
+    });
+
+    drop.addEventListener('focusin', () => {
+      if(desktopMQ.matches) open();
+    });
+
+    drop.addEventListener('focusout', e => {
+      if(desktopMQ.matches && !drop.contains(e.relatedTarget)){
+        drop.classList.remove('nav-open');
+        trigger.setAttribute('aria-expanded','false');
+      }
+    });
+
+    drop.addEventListener('keydown', e => {
+      if(e.key === 'Escape'){
+        drop.classList.remove('nav-open');
+        trigger.setAttribute('aria-expanded','false');
+        trigger.focus();
+      }
     });
   });
+
+  document.addEventListener('click', e => {
+    if(desktopMQ.matches && !e.target.closest('.nav-drop')){
+      closeAll();
+    }
+  });
+
+  desktopMQ.addEventListener?.('change', () => closeAll());
 })();
 </script>
 </body></html>
