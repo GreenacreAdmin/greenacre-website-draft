@@ -8,28 +8,53 @@
   display: block !important;
 }
 
-/*
-  Hero alignment is controlled here rather than by each page's
-  generic .wrap rules.
-*/
+/* Hero alignment is independent of page-specific .wrap rules. */
 .page-hero > .wrap,
 .subhero > .wrap {
   width: min(calc(100% - 64px), 1360px) !important;
   max-width: none !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  margin: 0 auto !important;
+}
+
+/* Lock every part of the hero text stack. */
+.page-hero .eyebrow,
+.subhero .eyebrow {
+  display: block !important;
+  height: 16px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: .82rem !important;
+  line-height: 16px !important;
+  font-weight: 700 !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+  color: #dcebd0 !important;
+  opacity: .86 !important;
 }
 
 .page-hero h1,
 .subhero h1 {
-  margin: 12px 0 18px !important;
+  box-sizing: border-box !important;
+  height: 118px !important;
   min-height: 118px !important;
   max-width: 1000px !important;
+  margin: 12px 0 18px !important;
+  padding: 0 !important;
+  font-size: clamp(2.3rem, 4vw, 3.5rem) !important;
+  line-height: 1.05 !important;
+  letter-spacing: -.035em !important;
 }
 
 .page-hero p,
-.subhero p {
+.subhero p,
+.page-hero p.lead,
+.subhero p.lead {
   max-width: 912px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 1.08rem !important;
+  line-height: 1.65 !important;
+  font-weight: 500 !important;
 }
 
 @media (max-width: 720px) {
@@ -42,5 +67,11 @@
   .page-hero > .wrap,
   .subhero > .wrap {
     width: min(calc(100% - 32px), 1360px) !important;
+  }
+
+  .page-hero h1,
+  .subhero h1 {
+    height: 118px !important;
+    min-height: 118px !important;
   }
 }
