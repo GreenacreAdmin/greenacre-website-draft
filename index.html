@@ -932,9 +932,20 @@
 
   </style>
   <title>Greenacre International School | Koh Samui</title>
+
+<style id="site-header-styles">
+:root{--shell-green:#B4DB8F;--shell-ink:#172218}
+.site-header{position:sticky;top:0;z-index:10000;background:rgba(180,219,143,.97);border-bottom:1px solid rgba(23,34,24,.12);backdrop-filter:blur(10px)}
+.site-header__inner{width:min(calc(100% - 46px),1500px);height:82px;margin:auto;display:flex;align-items:center;gap:34px}
+.site-brand{display:flex;align-items:center;flex:0 0 auto;text-decoration:none}.site-brand img{width:auto;height:58px;object-fit:contain}
+.site-nav{margin-left:auto;display:flex;align-items:center;gap:4px}.site-nav a,.nav-drop>button{border:0;background:none;color:var(--shell-ink);font:700 .78rem/1.2 "Comfortaa",sans-serif;text-decoration:none;padding:12px 11px;border-radius:999px;cursor:pointer}.site-nav a:hover,.nav-drop>button:hover{background:rgba(255,255,255,.38)}
+.nav-drop{position:relative}.nav-menu{display:none;position:absolute;top:calc(100% + 7px);left:0;min-width:245px;padding:9px;background:#fff;border:1px solid rgba(47,107,63,.14);border-radius:16px;box-shadow:0 18px 48px rgba(37,72,45,.16)}.nav-drop:hover .nav-menu,.nav-drop:focus-within .nav-menu{display:grid}.nav-menu a{border-radius:10px;padding:10px 12px;font-size:.74rem}
+.menu-toggle{display:none;margin-left:auto;border:0;background:rgba(255,255,255,.4);border-radius:999px;padding:10px 15px;font:700 .78rem "Comfortaa",sans-serif}
+@media(max-width:980px){.site-header__inner{height:72px;width:min(calc(100% - 28px),1500px)}.site-brand img{height:49px}.menu-toggle{display:block}.site-nav{display:none;position:absolute;top:72px;left:0;right:0;background:#B4DB8F;padding:12px 18px 20px;box-shadow:0 16px 30px rgba(0,0,0,.12)}.site-nav.open{display:grid}.nav-drop>button{width:100%;text-align:left}.nav-menu{display:grid;position:static;box-shadow:none;background:rgba(255,255,255,.28);border:0;margin:2px 0 8px;padding:5px 10px}.site-nav>a{display:block}}
+</style>
 </head>
 
-<body>
+<body><header class="site-header"><div class="site-header__inner"><a class="site-brand" data-path="" href="./" aria-label="Greenacre International School home"><img src="assets/images/greenacre-logo.png" alt="Greenacre International School"></a><button class="menu-toggle" type="button" aria-expanded="false">Menu</button><nav class="site-nav" aria-label="Main navigation"><a data-path="" href="./">Home</a><div class="nav-drop"><button type="button">Our School</button><div class="nav-menu"><a data-path="our-school/about-greenacre/">About Greenacre</a><a data-path="our-school/environmentality/">Environmentality</a><a data-path="our-school/wellbeing/">Wellbeing</a><a data-path="our-school/our-team/">Our Team</a><a data-path="our-school/campus-facilities/">Campus &amp; Facilities</a></div></div><div class="nav-drop"><button type="button">Learning</button><div class="nav-menu"><a data-path="learning/curriculum/">Curriculum</a><a data-path="learning/early-years/">Early Years</a><a data-path="learning/primary/">Primary</a><a data-path="learning/secondary/">Secondary</a></div></div><div class="nav-drop"><button type="button">Admissions</button><div class="nav-menu"><a data-path="admissions/admissions-visits/">Admissions &amp; Visits</a><a data-path="admissions/fees/">Fees</a><a data-path="admissions/faqs/">FAQs</a></div></div><div class="nav-drop"><button type="button">Parent Information</button><div class="nav-menu"><a data-path="parent-information/key-information/">Key Information</a><a data-path="parent-information/calendar-term-dates/">Calendar &amp; Term Dates</a><a data-path="parent-information/ecas/">Clubs &amp; ECAs</a><a data-path="parent-information/services/">Services</a></div></div><a data-path="contact/">Contact</a></nav></div></header>
   <main class="page">
 
     <section class="hero" aria-labelledby="home-title">
@@ -1515,5 +1526,5 @@
       start();
     })();
   </script>
-</body>
+<script id="site-nav-script">(()=>{const project=location.hostname==='greenacreadmin.github.io'?'/greenacre-website-draft/':'/';document.querySelectorAll('[data-path]').forEach(a=>a.href=project+(a.dataset.path||''));const t=document.querySelector('.menu-toggle'),n=document.querySelector('.site-nav');if(t&&n)t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',String(o))})})();</script></body>
 </html>
