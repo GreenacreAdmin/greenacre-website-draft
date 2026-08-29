@@ -39,6 +39,9 @@
 }
 #stage24-roster > .wrap{
   max-width:1240px;
+  width:calc(100% - 48px);
+  margin-left:auto;
+  margin-right:auto;
 }
 #stage24-roster > .wrap > h2{
   margin-bottom:14px;
@@ -130,6 +133,12 @@
 @media(max-width:540px){
   .team-grid-stage28{grid-template-columns:1fr}
   .team-card-stage28{min-height:145px}
+}
+
+@media(max-width:620px){
+  #stage24-roster > .wrap{
+    width:calc(100% - 28px);
+  }
 }
 </style></head><body><header class="site-header"><div class="site-header__inner"><a aria-label="Greenacre International School home" class="site-brand" data-path="" href="/"><img alt="Greenacre International School" src="assets/images/greenacre-logo.png"/></a><button aria-expanded="false" class="menu-toggle" type="button">Menu</button><nav aria-label="Primary" class="site-nav">
 <a data-path="" href="/">Home</a>
