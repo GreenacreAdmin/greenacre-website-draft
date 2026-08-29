@@ -1,0 +1,131 @@
+/*
+ * GREENACRE INTERNAL PAGE FOOTER
+ *
+ * Internal pages use the same footer design as the homepage,
+ * but remain in normal document flow.
+ * The homepage retains its separate fixed-footer behaviour.
+ */
+
+:root{
+  --footer-height:118px;
+  --footer-green:#dce9d6;
+  --footer-ink:#111711;
+}
+
+.site-footer{
+  position:static;
+  width:100%;
+  height:var(--footer-height);
+  background:var(--footer-green);
+  color:var(--footer-ink);
+  border-top:1px solid rgba(17,23,17,.12);
+  box-shadow:0 -3px 12px rgba(0,0,0,.07);
+}
+
+.site-footer__inner{
+  width:min(calc(100% - 46px),1500px);
+  height:100%;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:minmax(285px,.72fr) minmax(680px,1.28fr);
+  gap:clamp(32px,5vw,84px);
+  align-items:center;
+}
+
+.site-footer__name{
+  display:inline-block;
+  margin-bottom:3px;
+  color:var(--footer-ink);
+  font-family:"Bree Serif",Georgia,serif;
+  font-size:.98rem;
+  line-height:1;
+  text-decoration:none;
+}
+
+.site-footer__details{
+  display:flex;
+  flex-wrap:wrap;
+  gap:1px 10px;
+  color:rgba(17,23,17,.78);
+  font-family:"Roboto",Arial,sans-serif;
+  font-size:.60rem;
+  line-height:1.28;
+}
+
+.site-footer__details span,
+.site-footer__details a{white-space:nowrap}
+
+.site-footer__details a{
+  color:inherit;
+  text-decoration:none;
+}
+
+.site-footer__logos{
+  height:58px;
+  justify-self:end;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:24px;
+}
+
+.site-footer__logo{
+  flex:0 0 auto;
+  min-width:0;
+  height:54px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+}
+
+.site-footer__logo img{
+  display:block;
+  width:auto;
+  max-width:100%;
+  height:auto;
+  max-height:45px;
+  object-fit:contain;
+}
+
+.site-footer__logo--onesqa img{max-height:53px;max-width:95px}
+.site-footer__logo--isat img{max-height:43px}
+.site-footer__logo--cambridge img{max-height:38px}
+.site-footer__logo--edt img{max-height:46px}
+.site-footer__logo--isqm img{max-height:50px}
+
+@media(max-width:1050px){
+  .site-footer__inner{
+    width:min(calc(100% - 28px),1500px);
+    grid-template-columns:220px 1fr;
+    gap:22px;
+  }
+  .site-footer__name{font-size:.86rem}
+  .site-footer__details{font-size:.54rem;gap:1px 7px}
+  .site-footer__logos{gap:14px}
+}
+
+@media(max-width:760px){
+  :root{--footer-height:122px}
+  .site-footer__inner{
+    grid-template-columns:1fr;
+    grid-template-rows:42px 66px;
+    gap:4px;
+    padding:7px 0;
+    box-sizing:border-box;
+  }
+  .site-footer__identity{text-align:center}
+  .site-footer__name{font-size:.80rem}
+  .site-footer__details{justify-content:center;font-size:.51rem}
+  .site-footer__logos{
+    width:100%;
+    justify-self:stretch;
+    display:grid;
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    gap:6px;
+  }
+  .site-footer__logo{flex:initial}
+  .site-footer__logo img{max-height:34px}
+  .site-footer__logo--cambridge img,
+  .site-footer__logo--edt img{max-height:29px}
+}
