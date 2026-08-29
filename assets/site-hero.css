@@ -46,7 +46,7 @@
   height: auto !important;
   min-height: 0 !important;
   max-width: 1000px !important;
-  margin: 12px 0 18px !important;
+  margin: 12px 0 8px !important;
   padding: 0 !important;
   font-size: clamp(2.3rem, 4vw, 3.5rem) !important;
   line-height: 1.05 !important;
