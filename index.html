@@ -966,12 +966,7 @@
 /* The hero is deliberately never stamped. */
 .hero>.home-photo-stamp,.hero .home-photo-stamp{display:none!important}
 </style>
-<style id="stage13-facebook">
-.facebook-plugin-wrap{width:100%;max-width:600px;margin:0 auto;overflow:hidden}
-.facebook-plugin-wrap .fb-page,
-.facebook-plugin-wrap .fb-page>span,
-.facebook-plugin-wrap iframe{max-width:100%!important;width:100%!important}
-</style>
+
 <style id="stage14-testimonial-placeholder-style">
 .stage14-testimonial-placeholder{
   border:2px dashed rgba(47,107,63,.28)!important;
@@ -986,28 +981,47 @@
   font-weight:800!important;
   letter-spacing:.06em!important;
 }
-</style><style id="stage14-facebook-fix">
-.facebook-panel{overflow:hidden!important}
+</style>
+<link href="assets/stage16-standard-navigation.css" rel="stylesheet"/>
+<link href="assets/stage25-header-uniform.css" rel="stylesheet"/><style id="stage36-facebook-details">
+.facebook-panel{
+  overflow:visible!important;
+}
 .facebook-plugin-wrap{
-  position:relative;width:100%;max-width:600px;min-height:600px;
-  margin:0 auto;overflow:hidden;
+  position:relative;
+  width:100%;
+  max-width:600px;
+  min-height:760px;
+  margin:0 auto;
+  overflow:visible;
 }
 .facebook-plugin-wrap .fb-page,
 .facebook-plugin-wrap .fb-page>span,
 .facebook-plugin-wrap .fb-page iframe{
-  width:100%!important;max-width:600px!important;
+  width:100%!important;
+  max-width:600px!important;
+  min-height:760px!important;
 }
 .facebook-fallback{
-  display:none;width:100%!important;max-width:600px!important;height:600px!important;
+  display:none;
+  width:100%!important;
+  max-width:600px!important;
+  height:760px!important;
   margin:0 auto;
 }
 @media(max-width:700px){
-  .facebook-plugin-wrap{min-height:520px}
-  .facebook-fallback{height:520px!important}
+  .facebook-plugin-wrap{
+    min-height:680px;
+  }
+  .facebook-plugin-wrap .fb-page,
+  .facebook-plugin-wrap .fb-page>span,
+  .facebook-plugin-wrap .fb-page iframe,
+  .facebook-fallback{
+    min-height:680px!important;
+    height:680px!important;
+  }
 }
-</style>
-<link href="assets/stage16-standard-navigation.css" rel="stylesheet"/>
-<link href="assets/stage25-header-uniform.css" rel="stylesheet"/></head>
+</style></head>
 <body><header class="site-header"><div class="site-header__inner"><a aria-label="Greenacre International School home" class="site-brand" data-path="" href="/"><img alt="Greenacre International School" src="assets/images/greenacre-logo.png"/></a><button aria-expanded="false" class="menu-toggle" type="button">Menu</button><nav aria-label="Primary" class="site-nav">
 <a data-path="" href="/">Home</a>
 <div class="nav-drop">
@@ -1286,7 +1300,7 @@
 <div class="facebook-panel-head">
 <h3>Latest from Greenacre</h3>
 </div>
-<div id="fb-root"></div><div class="facebook-plugin-wrap"><div class="fb-page" data-adapt-container-width="1" data-height="600" data-hide-cover="" data-href="https://www.facebook.com/samuigreenacreschool/" data-show-facepile="" data-show-posts="true" data-small-header="" data-tabs="timeline" data-width="600"><blockquote cite="https://www.facebook.com/samuigreenacreschool/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/samuigreenacreschool/">Greenacre International School, Koh Samui</a></blockquote></div><iframe allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen="true" class="facebook-fallback" frameborder="0" height="600" scrolling="no" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsamuigreenacreschool%2F&amp;tabs=timeline&amp;width=600&amp;height=600&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false" style="border:none;overflow:hidden" title="Greenacre International School Facebook feed" width="600"></iframe></div></article>
+<div id="fb-root"></div><div class="facebook-plugin-wrap"><div class="fb-page" data-adapt-container-width="1" data-height="760" data-hide-cover="true" data-href="https://www.facebook.com/samuigreenacreschool/" data-show-facepile="false" data-show-posts="true" data-small-header="true" data-tabs="timeline" data-width="600"><blockquote cite="https://www.facebook.com/samuigreenacreschool/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/samuigreenacreschool/">Greenacre International School, Koh Samui</a></blockquote></div><iframe allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen="true" class="facebook-fallback" frameborder="0" height="760" scrolling="no" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsamuigreenacreschool%2F&amp;tabs=timeline&amp;width=600&amp;height=760&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=true&amp;show_facepile=false" style="border:none;overflow:hidden" title="Greenacre International School Facebook feed" width="600"></iframe></div></article>
 </div>
 </div>
 </section>
