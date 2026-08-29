@@ -32,9 +32,9 @@ body{padding-bottom:var(--footer-height)!important}
 /* ONESQA FINAL SIZE */
 .site-footer__logo--onesqa img {
   width: auto !important;
-  height: 56px !important;
-  max-height: 56px !important;
-  max-width: 100px !important;
+  height: 53px !important;
+  max-height: 53px !important;
+  max-width: 95px !important;
   object-fit: contain !important;
 }
 /* END ONESQA FINAL SIZE */
