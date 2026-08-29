@@ -1,0 +1,37 @@
+@media (min-width:901px){
+  .nav-drop{
+    position:relative!important;
+  }
+
+  .nav-drop > .nav-menu{
+    position:absolute!important;
+    top:100%!important;
+    left:0!important;
+    margin-top:0!important;
+    visibility:hidden!important;
+    opacity:0!important;
+    pointer-events:none!important;
+    transform:translateY(6px)!important;
+    transition:opacity .14s ease, transform .14s ease, visibility .14s ease!important;
+    z-index:100!important;
+  }
+
+  .nav-drop:hover > .nav-menu,
+  .nav-drop:focus-within > .nav-menu,
+  .nav-drop.nav-open > .nav-menu{
+    visibility:visible!important;
+    opacity:1!important;
+    pointer-events:auto!important;
+    transform:translateY(0)!important;
+  }
+
+  /* Small invisible bridge so the pointer can move naturally into the submenu. */
+  .nav-drop > .nav-menu::before{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    top:-10px;
+    height:10px;
+  }
+}

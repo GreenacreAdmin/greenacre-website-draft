@@ -1,0 +1,11 @@
+Greenacre website technical structure
+
+The website remains plain static HTML for GitHub Pages.
+
+Shared site-wide CSS and JavaScript that was previously duplicated inline across every full page has been moved into /assets. Each page references those files relatively, so the same build also works under the GitHub Pages project path and later under the custom domain.
+
+Page-specific CSS remains inline on the page where it is used. This deliberately avoids changing cascade order or page appearance during the cleanup.
+
+The old /parent-information/ecas/ file remains a redirect/stub and is not treated as a full page.
+
+When changing site-wide header, footer, navigation or common photo behaviour, update the corresponding shared file in /assets rather than copying new CSS or JavaScript into every page.

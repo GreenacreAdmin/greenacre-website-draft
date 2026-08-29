@@ -931,86 +931,9 @@
 
   </style>
 <title>Greenacre International School | Koh Samui</title>
-<style id="site-header-styles">
-:root{--shell-green:#B4DB8F;--shell-ink:#172218}
-.site-header{position:sticky;top:0;z-index:10000;background:rgba(180,219,143,.97);border-bottom:1px solid rgba(23,34,24,.12);backdrop-filter:blur(10px)}
-.site-header__inner{width:min(calc(100% - 46px),1500px);height:82px;margin:auto;display:flex;align-items:center;gap:34px}
-.site-brand{display:flex;align-items:center;flex:0 0 auto;text-decoration:none}.site-brand img{width:auto;height:58px;object-fit:contain}
-.site-nav{margin-left:auto;display:flex;align-items:center;gap:4px}.site-nav a,.nav-drop>button{border:0;background:none;color:var(--shell-ink);font:700 .78rem/1.2 "Comfortaa",sans-serif;text-decoration:none;padding:12px 11px;border-radius:999px;cursor:pointer}.site-nav a:hover,.nav-drop>button:hover{background:rgba(255,255,255,.38)}
-.nav-drop{position:relative}.nav-menu{display:none;position:absolute;top:calc(100% + 7px);left:0;min-width:245px;padding:9px;background:#fff;border:1px solid rgba(47,107,63,.14);border-radius:16px;box-shadow:0 18px 48px rgba(37,72,45,.16)}.nav-drop:hover .nav-menu,.nav-drop:focus-within .nav-menu{display:grid}.nav-menu a{border-radius:10px;padding:10px 12px;font-size:.74rem}
-.menu-toggle{display:none;margin-left:auto;border:0;background:rgba(255,255,255,.4);border-radius:999px;padding:10px 15px;font:700 .78rem "Comfortaa",sans-serif}
-@media(max-width:980px){.site-header__inner{height:72px;width:min(calc(100% - 28px),1500px)}.site-brand img{height:49px}.menu-toggle{display:block}.site-nav{display:none;position:absolute;top:72px;left:0;right:0;background:#B4DB8F;padding:12px 18px 20px;box-shadow:0 16px 30px rgba(0,0,0,.12)}.site-nav.open{display:grid}.nav-drop>button{width:100%;text-align:left}.nav-menu{display:grid;position:static;box-shadow:none;background:rgba(255,255,255,.28);border:0;margin:2px 0 8px;padding:5px 10px}.site-nav>a{display:block}}
-</style>
-<style id="stage11-photo-system">
-/* Secondary page temporary photos: image stays attractive but is unmistakably unfinished. */
-.temp-photo,.photo-plan,.review-secondary-photo{
-  position:relative!important;overflow:hidden!important;isolation:isolate;
-}
-.photo-blur-layer{
-  position:absolute;inset:-18px;z-index:1;pointer-events:none;
-  -webkit-backdrop-filter:blur(15px);backdrop-filter:blur(15px);
-  background:rgba(255,255,255,.04);
-}
-.temp-photo::before,.temp-photo::after,
-.photo-plan>.stamp,.photo-plan>.shot,
-.review-secondary-photo>.temp-stamp,
-.review-secondary-photo>.temp-note{
-  position:relative;z-index:3;
-}
-.review-secondary-photo>.temp-stamp{
-  position:absolute;left:18px;top:18px;padding:9px 14px;border-radius:999px;
-  background:rgba(31,79,49,.94);color:#fff;font:700 11px/1.2 Comfortaa,sans-serif;
-  letter-spacing:.07em;text-transform:uppercase;
-}
-.review-secondary-photo>.temp-note{
-  position:absolute;left:18px;right:18px;bottom:18px;padding:10px 13px;border-radius:12px;
-  background:rgba(20,57,34,.84);color:#fff;font-size:.76rem;line-height:1.45;
-}
-.review-secondary-photo>img{display:block;width:100%;height:100%;object-fit:cover}
-
-/* Homepage photography: real photos stay clear, with a small replacement marker. */
-.home-photo-temp{position:relative!important;isolation:isolate}
-.home-photo-temp>.home-photo-stamp{
-  position:absolute;right:10px;bottom:10px;z-index:8;padding:5px 8px;border-radius:999px;
-  background:rgba(31,79,49,.82);color:#fff;font:700 9px/1 Comfortaa,sans-serif;
-  letter-spacing:.035em;box-shadow:0 2px 10px rgba(0,0,0,.14)
-}
-
-/* Dara and staff avatars are placeholders, not blurred photography. */
-.head-welcome-photo img,.person-avatar{filter:none!important;transform:none!important}
-</style>
-<style id="stage11-footer-lock">
-:root{--footer-green:#B4DB8F;--footer-ink:#111711;--footer-height:82px}
-body{padding-bottom:var(--footer-height)!important}
-.site-footer{position:fixed!important;inset:auto 0 0 0!important;z-index:9999!important;height:var(--footer-height)!important;background:var(--footer-green)!important;color:var(--footer-ink)!important;border-top:1px solid rgba(17,23,17,.12)!important;box-shadow:0 -3px 12px rgba(0,0,0,.07)!important}
-.site-footer__inner{width:min(calc(100% - 46px),1500px)!important;height:100%!important;margin:0 auto!important;display:grid!important;grid-template-columns:minmax(285px,.72fr) minmax(680px,1.28fr)!important;gap:clamp(32px,5vw,84px)!important;align-items:center!important}
-.site-footer__name{display:inline-block!important;margin-bottom:3px!important;color:var(--footer-ink)!important;font-family:"Bree Serif",Georgia,serif!important;font-size:.98rem!important;line-height:1!important;text-decoration:none!important}
-.site-footer__details{display:flex!important;flex-wrap:wrap!important;gap:1px 10px!important;color:rgba(17,23,17,.78)!important;font-family:"Roboto",Arial,sans-serif!important;font-size:.60rem!important;line-height:1.28!important}
-.site-footer__details span,.site-footer__details a{white-space:nowrap!important}
-.site-footer__details a{color:inherit!important;text-decoration:none!important}
-.site-footer__logos{height:58px!important;justify-self:end!important;display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:24px!important}
-.site-footer__logo{flex:0 0 auto!important;min-width:0!important;height:54px!important;display:flex!important;align-items:center!important;justify-content:center!important;text-decoration:none!important}
-.site-footer__logo img{display:block!important;width:auto!important;max-width:100%!important;height:auto!important;max-height:45px!important;object-fit:contain!important;filter:none!important;transform:none!important}
-.site-footer__logo--onesqa img{max-height:46px!important}
-.site-footer__logo--isat img{max-height:43px!important}
-.site-footer__logo--cambridge img{max-height:38px!important}
-.site-footer__logo--edt img{max-height:46px!important}
-.site-footer__logo--isqm img{max-height:50px!important}
-@media(max-width:1050px){
- :root{--footer-height:96px}
- .site-footer__inner{width:min(calc(100% - 28px),1500px)!important;grid-template-columns:220px 1fr!important;gap:22px!important}
- .site-footer__name{font-size:.86rem!important}.site-footer__details{font-size:.54rem!important;gap:1px 7px!important}.site-footer__logos{gap:14px!important}
-}
-@media(max-width:720px){
- :root{--footer-height:126px}
- .site-footer__inner{grid-template-columns:1fr!important;grid-template-rows:42px 66px!important;gap:4px!important;padding:7px 0!important}
- .site-footer__identity{text-align:center!important}.site-footer__name{font-size:.80rem!important}
- .site-footer__details{justify-content:center!important;font-size:.51rem!important}
- .site-footer__logos{width:100%!important;justify-self:stretch!important;display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:6px!important}
- .site-footer__logo{flex:initial!important}.site-footer__logo img{max-height:34px!important}
- .site-footer__logo--cambridge img,.site-footer__logo--edt img{max-height:29px!important}
-}
-</style>
+<link href="assets/site-header-styles.css" rel="stylesheet"/>
+<link href="assets/stage11-photo-system.css" rel="stylesheet"/>
+<link href="assets/stage11-footer-lock.css" rel="stylesheet"/>
 <style id="stage11-home-stamp-visibility">
 .home-photo-temp{position:relative!important}
 .home-photo-temp>.home-photo-stamp{
@@ -1083,67 +1006,8 @@ body{padding-bottom:var(--footer-height)!important}
   .facebook-fallback{height:520px!important}
 }
 </style>
-<style id="stage16-standard-navigation">
-@media (min-width:901px){
-  .nav-drop{
-    position:relative!important;
-  }
-
-  .nav-drop > .nav-menu{
-    position:absolute!important;
-    top:100%!important;
-    left:0!important;
-    margin-top:0!important;
-    visibility:hidden!important;
-    opacity:0!important;
-    pointer-events:none!important;
-    transform:translateY(6px)!important;
-    transition:opacity .14s ease, transform .14s ease, visibility .14s ease!important;
-    z-index:100!important;
-  }
-
-  .nav-drop:hover > .nav-menu,
-  .nav-drop:focus-within > .nav-menu,
-  .nav-drop.nav-open > .nav-menu{
-    visibility:visible!important;
-    opacity:1!important;
-    pointer-events:auto!important;
-    transform:translateY(0)!important;
-  }
-
-  /* Small invisible bridge so the pointer can move naturally into the submenu. */
-  .nav-drop > .nav-menu::before{
-    content:"";
-    position:absolute;
-    left:0;
-    right:0;
-    top:-10px;
-    height:10px;
-  }
-}
-</style>
-<style id="stage25-header-uniform">
-/* Uniform site header dimensions */
-.site-header__inner{
-  height:65.6px !important;
-}
-.site-brand img{
-  display:block;
-  height:38.4px !important;
-  width:auto !important;
-  max-height:38.4px !important;
-}
-@media(max-width:720px){
-  .site-header__inner{
-    height:57.6px !important;
-  }
-  .site-brand img{
-    height:38.4px !important;
-    max-height:38.4px !important;
-    width:auto !important;
-  }
-}
-</style></head>
+<link href="assets/stage16-standard-navigation.css" rel="stylesheet"/>
+<link href="assets/stage25-header-uniform.css" rel="stylesheet"/></head>
 <body><header class="site-header"><div class="site-header__inner"><a aria-label="Greenacre International School home" class="site-brand" data-path="" href="/"><img alt="Greenacre International School" src="assets/images/greenacre-logo.png"/></a><button aria-expanded="false" class="menu-toggle" type="button">Menu</button><nav aria-label="Primary" class="site-nav">
 <a data-path="" href="/">Home</a>
 <div class="nav-drop">
@@ -1669,7 +1533,7 @@ body{padding-bottom:var(--footer-height)!important}
       start();
     })();
   </script>
-<script id="site-nav-script">(()=>{const project=location.hostname==='greenacreadmin.github.io'?'/greenacre-website-draft/':'/';document.querySelectorAll('[data-path]').forEach(a=>a.href=project+(a.dataset.path||''));const t=document.querySelector('.menu-toggle'),n=document.querySelector('.site-nav');if(t&&n)t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',String(o))})})();</script>
+<script src="assets/site-routing-mobile-nav.js"></script>
 <script async="1" crossorigin="anonymous" defer="1" nonce="fo1IS16s" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0"></script><script id="stage14-facebook-init">
 (()=>{
   const plugin=document.querySelector('.facebook-plugin-wrap .fb-page');
@@ -1703,92 +1567,6 @@ body{padding-bottom:var(--footer-height)!important}
   });
 })();
 </script>
-<script id="stage16-standard-navigation-js">
-(()=>{
-  const desktopMQ = window.matchMedia('(min-width:901px)');
-  const drops = [...document.querySelectorAll('.nav-drop')];
-
-  const closeAll = except => {
-    drops.forEach(drop => {
-      if(drop === except) return;
-      drop.classList.remove('nav-open');
-      const trigger = drop.querySelector(':scope > button, :scope > a');
-      if(trigger && trigger.hasAttribute('aria-expanded')){
-        trigger.setAttribute('aria-expanded','false');
-      }
-    });
-  };
-
-  drops.forEach(drop => {
-    const menu = drop.querySelector(':scope > .nav-menu');
-    const trigger = drop.querySelector(':scope > button, :scope > a');
-    if(!menu || !trigger) return;
-
-    let closeTimer = null;
-
-    const open = () => {
-      if(!desktopMQ.matches) return;
-      window.clearTimeout(closeTimer);
-      closeAll(drop);
-      drop.classList.add('nav-open');
-      trigger.setAttribute('aria-expanded','true');
-    };
-
-    const closeSoon = () => {
-      if(!desktopMQ.matches) return;
-      window.clearTimeout(closeTimer);
-      closeTimer = window.setTimeout(() => {
-        if(!drop.matches(':hover') && !drop.contains(document.activeElement)){
-          drop.classList.remove('nav-open');
-          trigger.setAttribute('aria-expanded','false');
-        }
-      },220);
-    };
-
-    drop.addEventListener('mouseenter', open);
-    drop.addEventListener('mouseleave', closeSoon);
-    menu.addEventListener('mouseenter', () => window.clearTimeout(closeTimer));
-    menu.addEventListener('mouseleave', closeSoon);
-
-    trigger.addEventListener('click', e => {
-      if(!desktopMQ.matches) return; // preserve existing mobile tap behaviour
-      if(trigger.tagName === 'BUTTON'){
-        e.preventDefault();
-        const isOpen = drop.classList.contains('nav-open');
-        closeAll(drop);
-        drop.classList.toggle('nav-open', !isOpen);
-        trigger.setAttribute('aria-expanded', String(!isOpen));
-      }
-    });
-
-    drop.addEventListener('focusin', () => {
-      if(desktopMQ.matches) open();
-    });
-
-    drop.addEventListener('focusout', e => {
-      if(desktopMQ.matches && !drop.contains(e.relatedTarget)){
-        drop.classList.remove('nav-open');
-        trigger.setAttribute('aria-expanded','false');
-      }
-    });
-
-    drop.addEventListener('keydown', e => {
-      if(e.key === 'Escape'){
-        drop.classList.remove('nav-open');
-        trigger.setAttribute('aria-expanded','false');
-        trigger.focus();
-      }
-    });
-  });
-
-  document.addEventListener('click', e => {
-    if(desktopMQ.matches && !e.target.closest('.nav-drop')){
-      closeAll();
-    }
-  });
-
-  desktopMQ.addEventListener?.('change', () => closeAll());
-})();
-</script>
+<script src="assets/desktop-navigation.js"></script>
 </body>
 </html>

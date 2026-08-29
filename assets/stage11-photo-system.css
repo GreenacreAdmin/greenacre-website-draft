@@ -1,0 +1,36 @@
+/* Secondary page temporary photos: image stays attractive but is unmistakably unfinished. */
+.temp-photo,.photo-plan,.review-secondary-photo{
+  position:relative!important;overflow:hidden!important;isolation:isolate;
+}
+.photo-blur-layer{
+  position:absolute;inset:-18px;z-index:1;pointer-events:none;
+  -webkit-backdrop-filter:blur(15px);backdrop-filter:blur(15px);
+  background:rgba(255,255,255,.04);
+}
+.temp-photo::before,.temp-photo::after,
+.photo-plan>.stamp,.photo-plan>.shot,
+.review-secondary-photo>.temp-stamp,
+.review-secondary-photo>.temp-note{
+  position:relative;z-index:3;
+}
+.review-secondary-photo>.temp-stamp{
+  position:absolute;left:18px;top:18px;padding:9px 14px;border-radius:999px;
+  background:rgba(31,79,49,.94);color:#fff;font:700 11px/1.2 Comfortaa,sans-serif;
+  letter-spacing:.07em;text-transform:uppercase;
+}
+.review-secondary-photo>.temp-note{
+  position:absolute;left:18px;right:18px;bottom:18px;padding:10px 13px;border-radius:12px;
+  background:rgba(20,57,34,.84);color:#fff;font-size:.76rem;line-height:1.45;
+}
+.review-secondary-photo>img{display:block;width:100%;height:100%;object-fit:cover}
+
+/* Homepage photography: real photos stay clear, with a small replacement marker. */
+.home-photo-temp{position:relative!important;isolation:isolate}
+.home-photo-temp>.home-photo-stamp{
+  position:absolute;right:10px;bottom:10px;z-index:8;padding:5px 8px;border-radius:999px;
+  background:rgba(31,79,49,.82);color:#fff;font:700 9px/1 Comfortaa,sans-serif;
+  letter-spacing:.035em;box-shadow:0 2px 10px rgba(0,0,0,.14)
+}
+
+/* Dara and staff avatars are placeholders, not blurred photography. */
+.head-welcome-photo img,.person-avatar{filter:none!important;transform:none!important}
