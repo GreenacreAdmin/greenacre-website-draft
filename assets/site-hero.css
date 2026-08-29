@@ -20,6 +20,13 @@
   margin-right: auto !important;
 }
 
+.page-hero h1,
+.subhero h1 {
+  margin: 12px 0 18px !important;
+  min-height: 118px !important;
+  max-width: 1000px !important;
+}
+
 .page-hero p,
 .subhero p {
   max-width: 912px !important;
