@@ -70,13 +70,16 @@
 @media (max-width: 720px) {
   .page-hero,
   .subhero {
-    height: 264px !important;
+    height: auto !important;
+    min-height: 264px !important;
   }
 
   .page-hero > .wrap,
   .subhero > .wrap {
     width: min(calc(100% - 32px), 1360px) !important;
+    height: auto !important;
     padding-top: 58px !important;
+    padding-bottom: 42px !important;
   }
 
 }
