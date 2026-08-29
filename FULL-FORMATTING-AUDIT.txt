@@ -1,0 +1,40 @@
+Greenacre website full formatting audit
+
+Scope
+-----
+Full pages audited: 22
+Visible headings audited: 192
+Small eyebrow/kicker labels audited: 83
+
+Results
+-------
+Heading titles ending with a full stop: 0
+Pages with the small-heading contrast safeguard before cleanup: 22 / 22
+Unexplained empty layout divs: 0
+Pages still using float-based layout CSS: 0
+Unexpected fixed/minimum heights of 600px or more: 0
+Bare unstyled links inside CTA/button rows: 0
+
+White-space/layout review
+-------------------------
+The audit searched for empty structural elements, float-based positioning, unusually large fixed
+content heights, oversized explicit margins/padding and grid/flex structures likely to reserve
+unused space. No unexplained fixed-height or empty-layout spacing problems were found.
+
+The large fixed blocks that remain on the homepage belong to the map and Facebook feed and are
+intentional. Hero spacing is also intentional and was excluded from the white-space warning check.
+
+Changes made
+------------
+1. Consolidated the light-background eyebrow/kicker contrast rule into one shared stylesheet:
+   /assets/formatting-safeguards.css
+2. Added safe max-width rules for images, video, iframes and tables.
+3. Added min-width:0 to grid/flex children to prevent accidental horizontal misalignment caused
+   by long text or embedded content.
+4. Removed the obsolete Stage 12 About-page scroll-spacing experiment.
+5. No content wording, roster data, links or deliberate page layouts were changed.
+
+Post-cleanup validation
+-----------------------
+Headings ending with a full stop: 0
+Pages linked to the shared formatting safeguard: 22 / 22

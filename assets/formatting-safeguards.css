@@ -1,0 +1,44 @@
+/* Site-wide formatting safeguards added after full formatting audit. */
+
+/* Prevent media or long grid/flex children from forcing accidental horizontal misalignment. */
+main img,
+main video,
+main iframe {
+  max-width: 100%;
+}
+
+main [class*="grid"] > *,
+main [class*="flex"] > * {
+  min-width: 0;
+}
+
+/* Section labels: readable by default on pale/light backgrounds. */
+.eyebrow,
+.kicker {
+  color: var(--green-mid) !important;
+  opacity: 1 !important;
+}
+
+/* Pale label text is reserved for dark presentation areas. */
+.page-hero .eyebrow,
+.page-hero .kicker,
+.hero .eyebrow,
+.hero .kicker,
+.subhero .eyebrow,
+.subhero .kicker,
+.dark .eyebrow,
+.dark .kicker,
+.green-section .eyebrow,
+.green-section .kicker,
+.cta-band .eyebrow,
+.cta-band .kicker,
+.cta-section .eyebrow,
+.cta-section .kicker {
+  color: #dcebd0 !important;
+  opacity: 1 !important;
+}
+
+/* Keep tables inside their available content width. */
+main table {
+  max-width: 100%;
+}
