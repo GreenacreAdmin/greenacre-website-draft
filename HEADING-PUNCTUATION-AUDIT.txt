@@ -1,0 +1,65 @@
+Greenacre heading punctuation audit
+
+Total visible headings audited: 192
+Headings ending with a full stop before cleanup: 57
+Headings changed: 57
+Headings ending with a full stop after cleanup: 0
+
+Changes made:
+- admissions/admissions-visits/index.html | h2 | Start with a visit. -> Start with a visit
+- admissions/admissions-visits/index.html | h2 | A straightforward admissions process. -> A straightforward admissions process
+- admissions/faqs/index.html | h2 | Questions from families. -> Questions from families
+- admissions/fees/index.html | h2 | Current tuition fee schedule. -> Current tuition fee schedule
+- admissions/fees/index.html | h2 | Useful next steps. -> Useful next steps
+- contact/index.html | h2 | We'd be pleased to hear from you. -> We'd be pleased to hear from you
+- contact/index.html | h2 | See the school during a normal day. -> See the school during a normal day
+- index.html | h2 | Welcome to Greenacre International School. -> Welcome to Greenacre International School
+- index.html | h2 | A continuous learning journey from Early Years to IGCSE. -> A continuous learning journey from Early Years to IGCSE
+- index.html | h2 | Environmentality is part of who we are. -> Environmentality is part of who we are
+- index.html | h2 | From age 3 to Cambridge IGCSE. -> From age 3 to Cambridge IGCSE
+- index.html | h2 | Wellbeing is part of learning. -> Wellbeing is part of learning
+- index.html | h2 | Useful links for families. -> Useful links for families
+- index.html | h2 | What parents say about Greenacre. -> What parents say about Greenacre
+- index.html | h2 | Find us and follow school life. -> Find us and follow school life
+- index.html | h2 | Come and see Greenacre for yourself. -> Come and see Greenacre for yourself
+- learning/clubs-ecas/index.html | h2 | Learning continues beyond lessons. -> Learning continues beyond lessons
+- learning/clubs-ecas/index.html | h2 | Duke of Edinburgh's Award. -> Duke of Edinburgh's Award
+- learning/clubs-ecas/index.html | h2 | ECA timings. -> ECA timings
+- learning/curriculum/index.html | h2 | Clear progression from age 3 to 16. -> Clear progression from age 3 to 16
+- learning/curriculum/index.html | h2 | One connected journey through school. -> One connected journey through school
+- learning/curriculum/index.html | h2 | Knowledge, skills and personal growth. -> Knowledge, skills and personal growth
+- learning/curriculum/index.html | h2 | Learning at every stage. -> Learning at every stage
+- learning/early-years/index.html | h2 | Curiosity comes first. -> Curiosity comes first
+- learning/early-years/index.html | h2 | Learning through experience. -> Learning through experience
+- learning/early-years/index.html | h2 | More than preparation for Primary. -> More than preparation for Primary
+- learning/primary/index.html | h2 | Building strong foundations for future learning. -> Building strong foundations for future learning
+- learning/primary/index.html | h2 | Developing the whole child. -> Developing the whole child
+- learning/primary/index.html | h2 | Challenge, support and reflection. -> Challenge, support and reflection
+- learning/secondary/index.html | h2 | Depth, independence and preparation. -> Depth, independence and preparation
+- learning/secondary/index.html | h2 | The Cambridge IGCSE pathway. -> The Cambridge IGCSE pathway
+- learning/secondary/index.html | h2 | Preparing students for what comes next. -> Preparing students for what comes next
+- our-school/about-greenacre/index.html | h2 | Growing together, learning together and working together. -> Growing together, learning together and working together
+- our-school/about-greenacre/index.html | h2 | Preparing students for life beyond school. -> Preparing students for life beyond school
+- our-school/about-greenacre/index.html | h2 | Every person matters. -> Every person matters
+- our-school/about-greenacre/index.html | h2 | Values lived throughout school life. -> Values lived throughout school life
+- our-school/about-greenacre/index.html | h2 | A continuous journey from age 3 to IGCSE. -> A continuous journey from age 3 to IGCSE
+- our-school/about-greenacre/index.html | h2 | International education in southern Koh Samui. -> International education in southern Koh Samui
+- our-school/campus-facilities/index.html | h2 | A school shaped by its surroundings. -> A school shaped by its surroundings
+- our-school/campus-facilities/index.html | h2 | Spaces for a broad education. -> Spaces for a broad education
+- our-school/campus-facilities/index.html | h2 | The best way to understand the campus is to see it. -> The best way to understand the campus is to see it
+- our-school/environmentality/index.html | h2 | Learning in, about and for the environment. -> Learning in, about and for the environment
+- our-school/environmentality/index.html | h2 | More than a classroom topic. -> More than a classroom topic
+- our-school/environmentality/index.html | h2 | Growing responsible global citizens. -> Growing responsible global citizens
+- our-school/wellbeing/index.html | h2 | Wellbeing is part of learning. -> Wellbeing is part of learning
+- our-school/wellbeing/index.html | h2 | Relationships, responsibility and belonging. -> Relationships, responsibility and belonging
+- our-school/wellbeing/index.html | h2 | Different backgrounds, one school community. -> Different backgrounds, one school community
+- parent-information/calendar-term-dates/index.html | h2 | The current Greenacre school calendar. -> The current Greenacre school calendar
+- parent-information/calendar-term-dates/index.html | h2 | Daily timings. -> Daily timings
+- parent-information/key-information/index.html | h2 | Arrival, collection and ECAs. -> Arrival, collection and ECAs
+- parent-information/key-information/index.html | h2 | What families need to know. -> What families need to know
+- parent-information/key-information/index.html | h2 | More parent information. -> More parent information
+- parent-information/secondary-parent-information/index.html | h3 | Planning a trip? Please check the assessment and exam dates first. -> Planning a trip? Please check the assessment and exam dates first
+- parent-information/services/index.html | h2 | Services for Greenacre families. -> Services for Greenacre families
+- parent-information/services/index.html | h2 | Meals during the school day. -> Meals during the school day
+- school-policies/index.html | h2 | Policies that reflect our ethos and practice. -> Policies that reflect our ethos and practice
+- work-with-us/index.html | h2 | Be part of the Greenacre community. -> Be part of the Greenacre community
