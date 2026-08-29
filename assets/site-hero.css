@@ -1,0 +1,39 @@
+/* Shared internal-page hero system */
+
+.page-hero,
+.subhero {
+  box-sizing: border-box !important;
+  height: 340px !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/*
+  Hero alignment is controlled here rather than by each page's
+  generic .wrap rules.
+*/
+.page-hero > .wrap,
+.subhero > .wrap {
+  width: min(calc(100% - 64px), 1360px) !important;
+  max-width: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.page-hero p,
+.subhero p {
+  max-width: 912px !important;
+}
+
+@media (max-width: 720px) {
+  .page-hero,
+  .subhero {
+    height: 330px !important;
+  }
+
+  .page-hero > .wrap,
+  .subhero > .wrap {
+    width: min(calc(100% - 32px), 1360px) !important;
+  }
+}
