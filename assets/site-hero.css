@@ -4,7 +4,7 @@
 .subhero {
   box-sizing: border-box !important;
   position: relative !important;
-  height: 340px !important;
+  height: 272px !important;
   padding: 0 !important;
   display: block !important;
 }
@@ -70,7 +70,7 @@
 @media (max-width: 720px) {
   .page-hero,
   .subhero {
-    height: 330px !important;
+    height: 264px !important;
   }
 
   .page-hero > .wrap,
