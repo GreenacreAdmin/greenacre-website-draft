@@ -1,0 +1,181 @@
+/* Greenacre Stage 48
+   Selective design variety using the successful contained-composition logic.
+   No content changes. */
+
+.env-opening-stage48 {
+  background: #f7f5ed;
+}
+
+.env-opening-stage48 > .wrap {
+  border: 1px solid rgba(35, 96, 59, .14);
+  border-radius: 22px;
+  padding: clamp(28px, 4vw, 48px);
+  background: #fff;
+  box-shadow: 0 14px 38px rgba(43, 69, 48, .055);
+  align-items: center;
+}
+
+.env-three-stage48 {
+  background: #fff;
+}
+
+.env-three-stage48 .cards {
+  padding: 22px;
+  border-radius: 22px;
+  background: #eef4e8;
+  gap: 16px;
+}
+
+.env-three-stage48 .card {
+  background: #fff;
+  border: 1px solid rgba(35, 96, 59, .10);
+  box-shadow: none;
+}
+
+.env-closing-stage48 {
+  background: #f7f5ed;
+}
+
+.early-how-stage48 {
+  background: #f7f5ed;
+}
+
+.early-how-stage48 > .wrap {
+  border-radius: 22px;
+  padding: clamp(30px, 4vw, 48px);
+  background: #fff;
+  border: 1px solid rgba(35, 96, 59, .13);
+  box-shadow: 0 14px 38px rgba(43, 69, 48, .05);
+}
+
+.early-how-stage48 .feature-list {
+  margin-top: 26px;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 14px !important;
+}
+
+.early-how-stage48 .feature {
+  min-width: 0;
+  padding: 20px 22px !important;
+  border-radius: 16px;
+  background: #eef4e8;
+  border: 1px solid rgba(35, 96, 59, .09);
+}
+
+.eyfs-seven .seven-grid {
+  display: grid !important;
+  grid-template-columns: repeat(8, minmax(0, 1fr)) !important;
+  gap: 18px !important;
+  align-items: stretch;
+}
+
+.eyfs-seven .seven-card {
+  grid-column: span 2 !important;
+  width: auto !important;
+  max-width: none !important;
+  min-width: 0;
+}
+
+.eyfs-seven .seven-card:nth-child(5) {
+  grid-column: 2 / span 2 !important;
+}
+
+.eyfs-seven .seven-card:nth-child(6) {
+  grid-column: 4 / span 2 !important;
+}
+
+.eyfs-seven .seven-card:nth-child(7) {
+  grid-column: 6 / span 2 !important;
+}
+
+.primary-reflection-stage48 {
+  background: #f7f5ed;
+  padding-top: 54px !important;
+  padding-bottom: 54px !important;
+}
+
+.primary-reflection-stage48 > .wrap {
+  border-radius: 22px;
+  padding: clamp(28px, 4vw, 46px);
+  background: #fff;
+  border: 1px solid rgba(35, 96, 59, .13);
+  box-shadow: 0 14px 38px rgba(43, 69, 48, .055);
+  align-items: center;
+  gap: clamp(28px, 4vw, 52px) !important;
+}
+
+.primary-reflection-stage48 .photo-plan {
+  min-height: 330px;
+}
+
+.secondary-igcse-stage48 {
+  background: #f7f5ed;
+  padding-top: 54px !important;
+  padding-bottom: 54px !important;
+}
+
+.secondary-igcse-stage48 > .wrap {
+  border-radius: 22px;
+  padding: clamp(30px, 4vw, 48px);
+  background: #fff;
+  border: 1px solid rgba(35, 96, 59, .13);
+  box-shadow: 0 14px 38px rgba(43, 69, 48, .055);
+}
+
+.secondary-igcse-stage48 .feature-list {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 14px !important;
+  margin-top: 26px;
+}
+
+.secondary-igcse-stage48 .feature {
+  min-width: 0;
+  padding: 20px 22px !important;
+  border-radius: 16px;
+  background: #eef4e8;
+  border: 1px solid rgba(35, 96, 59, .09);
+}
+
+@media (max-width: 1000px) {
+  .eyfs-seven .seven-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+
+  .eyfs-seven .seven-card {
+    grid-column: span 2 !important;
+  }
+
+  .eyfs-seven .seven-card:nth-child(5),
+  .eyfs-seven .seven-card:nth-child(6) {
+    grid-column: span 2 !important;
+  }
+
+  .eyfs-seven .seven-card:nth-child(7) {
+    grid-column: 2 / span 2 !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .early-how-stage48 .feature-list,
+  .secondary-igcse-stage48 .feature-list {
+    grid-template-columns: 1fr !important;
+  }
+
+  .eyfs-seven .seven-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  .eyfs-seven .seven-card,
+  .eyfs-seven .seven-card:nth-child(5),
+  .eyfs-seven .seven-card:nth-child(6),
+  .eyfs-seven .seven-card:nth-child(7) {
+    grid-column: 1 !important;
+  }
+
+  .primary-reflection-stage48 .photo-plan {
+    min-height: 260px;
+  }
+}
