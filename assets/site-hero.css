@@ -68,6 +68,17 @@
 }
 
 
+
+.page-hero.secondary-parent-info-hero {
+  height: auto !important;
+  min-height: 272px !important;
+}
+
+.page-hero.secondary-parent-info-hero > .wrap {
+  height: auto !important;
+  padding-bottom: 42px !important;
+}
+
 .subhero h1.secondary-parent-info-title {
   max-width: 1280px !important;
 }
