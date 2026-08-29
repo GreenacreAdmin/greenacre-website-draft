@@ -1,0 +1,72 @@
+Greenacre small-heading contrast audit
+
+Small heading elements audited: 83
+Potential light-background instances reviewed: 61
+Full pages updated with a site-wide contrast safeguard: 22
+
+Rule applied:
+- .eyebrow and .kicker default to readable green on light backgrounds.
+- pale green is reserved for known dark hero/green/CTA contexts.
+
+Light-background instances reviewed:
+- admissions/admissions-visits/index.html | .kicker | Come and see Greenacre
+- admissions/admissions-visits/index.html | .kicker | How to join
+- admissions/faqs/index.html | .kicker | Greenacre at a glance
+- admissions/fees/index.html | .kicker | 2026/27
+- admissions/fees/index.html | .kicker | Planning your application
+- contact/index.html | .eyebrow | Contact details
+- contact/index.html | .eyebrow | Visit Greenacre
+- index.html | .eyebrow | Welcome to Greenacre
+- index.html | .eyebrow | Learning at Greenacre
+- index.html | .eyebrow | Environmentality
+- index.html | .eyebrow | Learning pathway
+- index.html | .eyebrow | Wellbeing
+- index.html | .eyebrow | Find what you need
+- index.html | .eyebrow | From our families
+- index.html | .eyebrow | Greenacre on Koh Samui
+- index.html | .eyebrow | Admissions
+- learning/clubs-ecas/index.html | .kicker | After school
+- learning/clubs-ecas/index.html | .kicker | Wider opportunities
+- learning/clubs-ecas/index.html | .kicker | Practical information
+- learning/curriculum/index.html | .kicker | The learning journey
+- learning/curriculum/index.html | .kicker | Cambridge pathway
+- learning/curriculum/index.html | .kicker | How students learn
+- learning/curriculum/index.html | .kicker | Explore each phase
+- learning/early-years/index.html | .eyebrow | How children learn at Greenacre
+- learning/early-years/index.html | .eyebrow | Early Years learning framework
+- learning/early-years/index.html | .kicker | The start of the journey
+- learning/early-years/index.html | .kicker | A strong foundation
+- learning/early-years/index.html | .kicker | Growing at Greenacre
+- learning/primary/index.html | .kicker | Years 1-6
+- learning/primary/index.html | .kicker | Primary learning
+- learning/primary/index.html | .kicker | Learning beyond a score
+- learning/secondary/index.html | .kicker | Years 7-9
+- learning/secondary/index.html | .kicker | Years 10-11
+- learning/secondary/index.html | .kicker | Expectations and challenge
+- our-school/about-greenacre/index.html | .eyebrow | Our school identity
+- our-school/about-greenacre/index.html | .eyebrow | Our aims
+- our-school/about-greenacre/index.html | .eyebrow | Mission
+- our-school/about-greenacre/index.html | .eyebrow | Our GREEN values
+- our-school/about-greenacre/index.html | .eyebrow | Learning at Greenacre
+- our-school/about-greenacre/index.html | .eyebrow | Safeguarding
+- our-school/about-greenacre/index.html | .eyebrow | Greenacre on Koh Samui
+- our-school/campus-facilities/index.html | .kicker | Our setting
+- our-school/campus-facilities/index.html | .kicker | Around school
+- our-school/campus-facilities/index.html | .kicker | Visit Greenacre
+- our-school/environmentality/index.html | .kicker | A GREEN school
+- our-school/environmentality/index.html | .kicker | Environmental
+- our-school/environmentality/index.html | .kicker | Our values in action
+- our-school/our-team/index.html | .eyebrow | Our Team
+- our-school/wellbeing/index.html | .kicker | Known and valued
+- our-school/wellbeing/index.html | .kicker | Our approach
+- our-school/wellbeing/index.html | .kicker | International community
+- parent-information/calendar-term-dates/index.html | .kicker | 2026–27
+- parent-information/calendar-term-dates/index.html | .kicker | School day
+- parent-information/key-information/index.html | .kicker | The school day
+- parent-information/key-information/index.html | .kicker | Everyday information
+- parent-information/key-information/index.html | .kicker | Useful links
+- parent-information/services/index.html | .kicker | Everyday support
+- parent-information/services/index.html | .kicker | Catering
+- parent-information/services/index.html | .kicker | Questions
+- school-policies/index.html | .eyebrow | School policies
+- work-with-us/index.html | .eyebrow | Why Greenacre?
