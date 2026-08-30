@@ -1660,7 +1660,7 @@
 
     const height =
       footer.getBoundingClientRect().top -
-      hero.getBoundingClientRect().top;
+      (hero.getBoundingClientRect().top + window.scrollY);
 
     hero.style.minHeight = Math.max(0, Math.ceil(height)) + 'px';
   }
