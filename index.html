@@ -1629,11 +1629,10 @@
     }
 
     const height =
-      window.innerHeight -
-      header.getBoundingClientRect().height -
-      footer.getBoundingClientRect().height;
+      footer.getBoundingClientRect().top -
+      hero.getBoundingClientRect().top;
 
-    hero.style.minHeight = Math.max(0, height) + 'px';
+    hero.style.minHeight = Math.max(0, Math.ceil(height)) + 'px';
   }
 
   fitHero();
