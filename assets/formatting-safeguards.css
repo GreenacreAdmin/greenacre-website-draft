@@ -56,3 +56,12 @@ main table {
   border-radius:18px;
   box-shadow:0 7px 20px rgba(31,79,49,.05);
 }
+
+/* Our Team: standard card family with mirrored accent */
+.team-grid-v2 > .team-person-v2 {
+  background:#fff;
+  border:1px solid rgba(47,107,63,.12);
+  border-right:4px solid var(--green-mid);
+  border-radius:18px;
+  box-shadow:0 7px 20px rgba(31,79,49,.05);
+}
