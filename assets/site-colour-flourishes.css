@@ -90,3 +90,9 @@ main > section:not(.page-hero):not(.subhero):nth-of-type(3n) .kicker{
   background:#fff;
   border:1px solid rgba(47,107,63,.20);
 }
+
+/* GREEN value names remain readable on white cards */
+.values-grid > .value strong,
+.values > .value strong{
+  color:var(--green-dark);
+}
