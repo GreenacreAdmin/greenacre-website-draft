@@ -179,3 +179,80 @@
     min-height: 260px;
   }
 }
+
+/* Stage 52: aims and learning-page normalisation */
+
+.aims-section-stage40 .aims-stage52-wrap {
+  display: block;
+}
+
+.aims-stage52-intro {
+  max-width: 900px;
+  margin: 0 0 28px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--green-dark);
+}
+
+.aims-stage52-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.aim-stage52 {
+  padding: 20px 22px;
+  border-radius: 16px;
+  background: #eef4e8;
+  border: 1px solid rgba(35, 96, 59, .09);
+}
+
+.aim-stage52 strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--green-dark);
+}
+
+.aim-stage52 p {
+  margin: 0;
+}
+
+/*
+ * Primary uses the same contained feature treatment already used by
+ * Early Years and Secondary.
+ */
+.primary-whole-child-stage48 {
+  background: #f7f5ed;
+  padding-top: 54px !important;
+  padding-bottom: 54px !important;
+}
+
+.primary-whole-child-stage48 > .wrap {
+  border-radius: 22px;
+  padding: clamp(30px, 4vw, 48px);
+  background: #fff;
+  border: 1px solid rgba(35, 96, 59, .13);
+  box-shadow: 0 14px 38px rgba(43, 69, 48, .055);
+}
+
+.primary-whole-child-stage48 .feature-list {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 14px !important;
+  margin-top: 26px;
+}
+
+.primary-whole-child-stage48 .feature {
+  min-width: 0;
+  padding: 20px 22px !important;
+  border-radius: 16px;
+  background: #eef4e8;
+  border: 1px solid rgba(35, 96, 59, .09);
+}
+
+@media (max-width: 720px) {
+  .aims-stage52-grid,
+  .primary-whole-child-stage48 .feature-list {
+    grid-template-columns: 1fr !important;
+  }
+}
