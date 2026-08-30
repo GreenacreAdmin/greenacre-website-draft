@@ -745,21 +745,33 @@
     .testimonial-dots {
       display: flex;
       justify-content: center;
-      gap: 8px;
-      margin-top: 22px;
+      gap: 0;
+      margin-top: 7px;
     }
 
     .testimonial-dot {
-      width: 10px;
-      height: 10px;
+      position: relative;
+      width: 40px;
+      height: 40px;
       padding: 0;
       border: 0;
-      border-radius: 50%;
-      background: rgba(47,107,63,.22);
+      background: transparent;
       cursor: pointer;
     }
 
-    .testimonial-dot.active { background: var(--green); }
+    .testimonial-dot::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(47,107,63,.22);
+      transform: translate(-50%,-50%);
+    }
+
+    .testimonial-dot.active::before { background: var(--green); }
 
     .final-cta {
       position: relative;
