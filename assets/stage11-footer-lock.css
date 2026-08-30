@@ -39,3 +39,31 @@ body{padding-bottom:var(--footer-height)!important}
 }
 /* END ONESQA FINAL SIZE */
 
+
+/* MOBILE FOOTER LOGO SCALE */
+@media(max-width:720px){
+  .site-footer__logo img{
+    max-height:26px!important;
+  }
+
+  .site-footer__logo--onesqa img{
+    width:auto!important;
+    height:auto!important;
+    max-height:40px!important;
+    max-width:71px!important;
+  }
+
+  .site-footer__logo--isat img{
+    max-height:26px!important;
+  }
+
+  .site-footer__logo--cambridge img,
+  .site-footer__logo--edt img{
+    max-height:22px!important;
+  }
+
+  .site-footer__logo--isqm img{
+    max-height:26px!important;
+  }
+}
+/* END MOBILE FOOTER LOGO SCALE */
