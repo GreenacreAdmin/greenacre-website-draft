@@ -11,11 +11,11 @@
   content:"";
   position:absolute;
   left:50%;
-  bottom:5px;
-  width:4px;
-  height:4px;
+  top:4px;
+  width:3px;
+  height:3px;
   border-radius:50%;
-  background:var(--green-dark,#1f4f31);
+  background:var(--shell-ink,#172218);
   transform:translateX(-50%);
 }
 
