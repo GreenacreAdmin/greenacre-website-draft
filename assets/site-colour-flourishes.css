@@ -1,77 +1,79 @@
 :root{
   --accent-orange:#d8833a;
-  --accent-orange-soft:#fbf0e5;
   --accent-teal:#3f7f7b;
-  --accent-teal-soft:#e8f3f1;
-  --accent-green-soft:#eaf2e4;
+  --accent-green:#4f895b;
 }
 
-/* Small colour flourishes only: core Greenacre structure remains green. */
+/* Core Greenacre structure remains green.
+   Accent colour is expressed through small solid details rather than card surfaces. */
 
-/* Repeated neutral cards */
+/* Keep repeated cards visually consistent */
+.cards > .card,
+.feature-list > .feature,
+.info-grid > .info-card,
+.info-card-grid > .info-card,
+.phase-links > .phase-link,
+.seven-grid > .seven-card{
+  background:#fff;
+  border-color:rgba(47,107,63,.12);
+}
+
+/* Repeated card families: restrained accent edge */
 .cards > .card:nth-child(3n+1),
 .feature-list > .feature:nth-child(3n+1),
 .info-grid > .info-card:nth-child(3n+1),
 .info-card-grid > .info-card:nth-child(3n+1){
-  border-color:rgba(47,107,63,.22);
-  background:linear-gradient(180deg,#fff 0%,rgba(234,242,228,.42) 100%);
+  border-left:4px solid var(--accent-green);
 }
 
 .cards > .card:nth-child(3n+2),
 .feature-list > .feature:nth-child(3n+2),
 .info-grid > .info-card:nth-child(3n+2),
 .info-card-grid > .info-card:nth-child(3n+2){
-  border-color:rgba(216,131,58,.30);
-  background:linear-gradient(180deg,#fff 0%,rgba(251,240,229,.58) 100%);
+  border-left:4px solid var(--accent-orange);
 }
 
 .cards > .card:nth-child(3n),
 .feature-list > .feature:nth-child(3n),
 .info-grid > .info-card:nth-child(3n),
 .info-card-grid > .info-card:nth-child(3n){
-  border-color:rgba(63,127,123,.28);
-  background:linear-gradient(180deg,#fff 0%,rgba(232,243,241,.58) 100%);
+  border-left:4px solid var(--accent-teal);
 }
 
 /* Curriculum phase links */
 .phase-links > .phase-link:nth-child(1){
-  border-color:rgba(47,107,63,.26);
-  background:linear-gradient(180deg,#fff 0%,rgba(234,242,228,.52) 100%);
+  border-top:4px solid var(--accent-green);
 }
 .phase-links > .phase-link:nth-child(2){
-  border-color:rgba(216,131,58,.30);
-  background:linear-gradient(180deg,#fff 0%,rgba(251,240,229,.62) 100%);
+  border-top:4px solid var(--accent-orange);
 }
 .phase-links > .phase-link:nth-child(3){
-  border-color:rgba(63,127,123,.30);
-  background:linear-gradient(180deg,#fff 0%,rgba(232,243,241,.62) 100%);
+  border-top:4px solid var(--accent-teal);
 }
 
 /* Early Years learning areas */
 .seven-grid > .seven-card:nth-child(3n+1){
-  border-color:rgba(47,107,63,.24);
+  border-top:4px solid var(--accent-green);
 }
 .seven-grid > .seven-card:nth-child(3n+2){
-  border-color:rgba(216,131,58,.32);
-  background:#fffaf5;
+  border-top:4px solid var(--accent-orange);
 }
 .seven-grid > .seven-card:nth-child(3n){
-  border-color:rgba(63,127,123,.30);
-  background:#f8fcfb;
+  border-top:4px solid var(--accent-teal);
 }
 
-/* Homepage quick links: border colour only */
+/* Homepage quick links: clean accent edge, consistent card surface */
 .quick-links .quick-card:nth-child(4n+1){
-  border-color:rgba(47,107,63,.28);
+  border-left:4px solid var(--accent-green);
 }
 .quick-links .quick-card:nth-child(4n+2){
-  border-color:rgba(216,131,58,.34);
+  border-left:4px solid var(--accent-orange);
 }
 .quick-links .quick-card:nth-child(4n+3){
-  border-color:rgba(63,127,123,.32);
+  border-left:4px solid var(--accent-teal);
 }
 .quick-links .quick-card:nth-child(4n){
-  border-color:rgba(47,107,63,.28);
+  border-left:4px solid var(--accent-green);
 }
 
 /* Occasional secondary-label colour on neutral sections */
@@ -82,9 +84,9 @@ main > section:not(.page-hero):not(.subhero):nth-of-type(3n) .kicker{
   color:var(--accent-teal);
 }
 
-/* GREEN values are identity elements, never part of the accent rotation */
+/* GREEN values are identity elements and remain entirely green */
 .values-grid > .value,
 .values > .value{
-  border-color:rgba(47,107,63,.20);
   background:#fff;
+  border:1px solid rgba(47,107,63,.20);
 }
