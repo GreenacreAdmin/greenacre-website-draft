@@ -161,7 +161,7 @@
 
     .hero {
       position: relative;
-      min-height: calc(100svh - 165px);
+
       display: flex;
       align-items: flex-end;
       isolation: isolate;
@@ -806,7 +806,7 @@
       }
 
       .hero {
-        min-height: calc(100svh - 169px);
+
         background-position: 58% center;
       }
 
@@ -832,7 +832,7 @@
     }
 
     @media (max-width: 1050px) and (min-width: 981px) {
-      .hero { min-height: calc(100svh - 179px); }
+
     }
 
     @media (max-width: 800px) {
@@ -849,7 +849,7 @@
     }
 
     @media (max-width: 720px) and (min-width: 561px) {
-      .hero { min-height: calc(100svh - 199px); }
+
     }
 
     @media (max-width: 560px) {
@@ -1613,5 +1613,39 @@
 })();
 </script>
 <script src="assets/desktop-navigation.js"></script>
+
+<script id="homepage-hero-fit">
+(function () {
+  const hero = document.querySelector('.hero');
+  const header = document.querySelector('.site-header');
+  const footer = document.querySelector('.site-footer');
+
+  if (!hero || !header || !footer) return;
+
+  function fitHero() {
+    if (window.innerWidth <= 560) {
+      hero.style.removeProperty('min-height');
+      return;
+    }
+
+    const height =
+      window.innerHeight -
+      header.getBoundingClientRect().height -
+      footer.getBoundingClientRect().height;
+
+    hero.style.minHeight = Math.max(0, height) + 'px';
+  }
+
+  fitHero();
+  window.addEventListener('resize', fitHero);
+
+  if ('ResizeObserver' in window) {
+    const observer = new ResizeObserver(fitHero);
+    observer.observe(header);
+    observer.observe(footer);
+  }
+})();
+</script>
+
 </body>
 </html>
