@@ -769,6 +769,11 @@
       border-radius: 50%;
       background: rgba(47,107,63,.22);
       transform: translate(-50%,-50%);
+      transition: background .18s ease, transform .18s ease;
+    }
+
+    .testimonial-dot:hover::before {
+      transform: translate(-50%,-50%) scale(1.18);
     }
 
     .testimonial-dot.active::before { background: var(--green); }
@@ -1561,6 +1566,7 @@
       let current = 0;
       let timer = null;
       const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const region = document.querySelector('.testimonials');
 
       const show = (index) => {
         current = (index + cards.length) % cards.length;
@@ -1571,18 +1577,32 @@
         });
       };
 
+      const stop = () => {
+        clearInterval(timer);
+        timer = null;
+      };
+
       const start = () => {
         if (reducedMotion) return;
-        clearInterval(timer);
+        stop();
         timer = setInterval(() => show(current + 1), 6500);
       };
 
       dots.forEach((dot, index) => {
         dot.addEventListener('click', () => {
           show(index);
-          start();
+          stop();
         });
       });
+
+      if (region) {
+        region.addEventListener('mouseenter', stop);
+        region.addEventListener('mouseleave', start);
+        region.addEventListener('focusin', stop);
+        region.addEventListener('focusout', event => {
+          if (!region.contains(event.relatedTarget)) start();
+        });
+      }
 
       show(0);
       start();

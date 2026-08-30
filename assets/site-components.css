@@ -10,6 +10,35 @@
   box-shadow: 0 0 0 2px #fff;
 }
 
+/* Consistent restrained feedback for component-style links and buttons. */
+:where(.action, .button, .btn, .phase-link) {
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    background-color .18s ease,
+    border-color .18s ease,
+    color .18s ease;
+}
+
+:where(a.action, a.button, a.btn, a.phase-link):hover {
+  transform: translateY(-2px);
+}
+
+/* Accreditation logos respond without moving. */
+.site-footer__logo {
+  transition: opacity .18s ease;
+}
+
+.site-footer__logo:hover {
+  opacity: .78;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where(a.action, a.button, a.btn, a.phase-link):hover {
+    transform: none;
+  }
+}
+
 
 .grid2 {
   display: grid;
