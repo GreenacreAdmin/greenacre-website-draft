@@ -83,15 +83,11 @@ main table {
 
 
 /* Preserve dark foregrounds inside pale content placed on green sections. */
-.green-section .mission-box,
 .green-section .phase-link,
 .green-section .dofe-card-stage42{
   color:var(--green-dark)!important;
 }
 
-.green-section .mission-box h2,
-.green-section .mission-box h3,
-.green-section .mission-box p,
 .green-section .phase-link strong,
 .green-section .dofe-card-stage42 h2,
 .green-section .dofe-card-stage42 h3,
