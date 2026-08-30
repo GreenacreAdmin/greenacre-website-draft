@@ -105,27 +105,51 @@ main > section:last-of-type:not(.page-hero):not(.subhero){padding-bottom:34px!im
 .identity-motto{
   display:flex;
   flex-wrap:wrap;
-  gap:8px;
+  justify-content:center;
   align-items:center;
-  margin:7px 0 20px;
+  gap:10px;
+  width:100%;
+  margin:8px 0 22px;
   font-size:.94rem;
   line-height:1.2;
   letter-spacing:0;
 }
 .identity-motto-chip{
-  display:inline-block;
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
   white-space:nowrap;
-  padding:9px 14px;
+  padding:9px 14px 9px 12px;
   border:1px solid rgba(31,79,49,.14);
   border-radius:11px;
   background:var(--green-dark);
   color:#fff;
   font-weight:700;
 }
+.identity-motto-chip::before{
+  content:"";
+  flex:0 0 14px;
+  width:14px;
+  height:14px;
+  background:
+    linear-gradient(var(--orange),var(--orange)) left bottom/3px 7px no-repeat;
+}
+.identity-motto-chip:nth-child(2)::before{
+  background:
+    linear-gradient(var(--orange),var(--orange)) left bottom/3px 7px no-repeat,
+    linear-gradient(var(--orange),var(--orange)) center bottom/3px 10px no-repeat;
+}
+.identity-motto-chip:nth-child(3)::before{
+  background:
+    linear-gradient(var(--orange),var(--orange)) left bottom/3px 7px no-repeat,
+    linear-gradient(var(--orange),var(--orange)) center bottom/3px 10px no-repeat,
+    linear-gradient(var(--orange),var(--orange)) right bottom/3px 14px no-repeat;
+}
 @media(max-width:560px){
   .identity-motto{
     flex-direction:column;
-    align-items:flex-start;
+    align-items:center;
   }
 }
 </style>
