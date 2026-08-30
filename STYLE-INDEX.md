@@ -10,19 +10,19 @@ Primary shared file:
 `assets/site-typography.css`
 
 Typography hierarchy:
-- `h1` — page title
-- `h2` — section title
-- `h3` — subsection title
-- `h4` — component/card title
-- `p` — normal body copy
-- `.lead` — introductory emphasis
-- `.supporting-text` — secondary supporting copy
-- `.caption-text` — captions/small explanatory text
+- `h1` - page title
+- `h2` - section title
+- `h3` - subsection title
+- `h4` - component/card title
+- `p` - normal body copy
+- `.lead` - introductory emphasis
+- `.supporting-text` - secondary supporting copy
+- `.caption-text` - captions/small explanatory text
 
 Fonts currently used:
-- Comfortaa — principal website typeface
-- Bree Serif — selected identity/footer use
-- Roboto — selected footer-detail use
+- Comfortaa - principal website typeface
+- Bree Serif - selected identity/footer use
+- Roboto - selected footer-detail use
 
 Related safeguards:
 `assets/formatting-safeguards.css`
@@ -86,10 +86,10 @@ Primary shared file:
 `assets/site-components.css`
 
 Reusable layout:
-- `.wrap` — normal content width, though some page-local definitions remain
-- `.grid2` — standard two-column layout
-- `.grid2.reverse` — reversed two-column proportions
-- `.cards` — standard three-column card grid, collapsing on smaller screens
+- `.wrap` - normal content width, though some page-local definitions remain
+- `.grid2` - standard two-column layout
+- `.grid2.reverse` - reversed two-column proportions
+- `.cards` - standard three-column card grid, collapsing on smaller screens
 
 Prefer these before creating a new generic grid.
 
@@ -116,11 +116,11 @@ This shared layer creates the common treatment:
 - common visual relationship between otherwise different card types
 
 Semantic card families include:
-- `.card` — ordinary contained content
-- `.feature` — short highlighted concept
-- `.info-card` — factual/information content
-- `.service` — service information
-- `.seven-card` — Early Years learning-area card
+- `.card` - ordinary contained content
+- `.feature` - short highlighted concept
+- `.info-card` - factual/information content
+- `.service` - service information
+- `.seven-card` - Early Years learning-area card
 - `.note`
 - `.notice`
 - `.step`
@@ -178,7 +178,7 @@ Page-specific classes such as `.photo-plan`, `.temp-photo` and specialist image 
 Therefore `stage11-photo-system.css` should not be treated as the owner of all website photography.
 
 Special media:
-- `.dofe-video` — embedded Duke of Edinburgh video
+- `.dofe-video` - embedded Duke of Edinburgh video
 
 When final photographs arrive, preserve the established section composition unless there is a genuine layout problem.
 
