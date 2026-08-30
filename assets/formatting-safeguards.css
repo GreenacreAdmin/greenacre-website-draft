@@ -65,3 +65,18 @@ main table {
   border-radius:18px;
   box-shadow:0 7px 20px rgba(31,79,49,.05);
 }
+
+
+.green-section{
+  background:var(--green-dark)!important;
+  color:#f4f8ef!important;
+}
+
+.green-section h2,
+.green-section h3{
+  color:#fff!important;
+}
+
+.green-section p{
+  color:#f4f8ef;
+}
