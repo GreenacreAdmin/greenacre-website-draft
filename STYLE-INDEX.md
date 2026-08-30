@@ -375,3 +375,10 @@ Before adding anything new:
 8. Update this index when a genuinely reusable component is introduced.
 
 The goal is controlled evolution of the established site rather than continued redesign.
+
+## 22. Exhaustive technical component map
+
+See `STYLE-MAP.md` for the repository-wide technical map of every class currently used in HTML, where it is used, where its CSS is defined, JavaScript-controlled states, multi-file definitions and possible legacy/orphan selectors.
+
+`STYLE-INDEX.md` explains the design system semantically. `STYLE-MAP.md` provides the exact technical lookup.
+
