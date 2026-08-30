@@ -36,7 +36,7 @@
   display:inline-block;
   margin-bottom:3px;
   color:var(--footer-ink);
-  font-family:"Bree Serif",Georgia,serif;
+  font-family:"Comfortaa",sans-serif;
   font-size:.98rem;
   line-height:1;
   text-decoration:none;
@@ -47,7 +47,7 @@
   flex-wrap:wrap;
   gap:1px 10px;
   color:rgba(17,23,17,.78);
-  font-family:"Roboto",Arial,sans-serif;
+  font-family:"Comfortaa",sans-serif;
   font-size:.60rem;
   line-height:1.28;
 }
