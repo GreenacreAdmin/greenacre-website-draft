@@ -51,10 +51,15 @@
   border-top:4px solid var(--accent-teal);
 }
 
-/* Early Years learning framework: one distinct, unified card family */
-.seven-grid > .seven-card{
-  border:1px solid rgba(47,107,63,.20);
-  background:linear-gradient(180deg,#fff 0%,rgba(234,242,228,.72) 100%);
+/* Early Years learning areas */
+.seven-grid > .seven-card:nth-child(3n+1){
+  border-top:4px solid var(--accent-green);
+}
+.seven-grid > .seven-card:nth-child(3n+2){
+  border-top:4px solid var(--accent-orange);
+}
+.seven-grid > .seven-card:nth-child(3n){
+  border-top:4px solid var(--accent-teal);
 }
 
 /* Homepage quick links: clean accent edge, consistent card surface */
