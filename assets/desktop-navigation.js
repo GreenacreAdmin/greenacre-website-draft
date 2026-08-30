@@ -48,10 +48,8 @@
       if(!desktopMQ.matches) return; // preserve existing mobile tap behaviour
       if(trigger.tagName === 'BUTTON'){
         e.preventDefault();
-        const isOpen = drop.classList.contains('nav-open');
-        closeAll(drop);
-        drop.classList.toggle('nav-open', !isOpen);
-        trigger.setAttribute('aria-expanded', String(!isOpen));
+        const firstLink = menu.querySelector('a[href]');
+        if(firstLink) window.location.href = firstLink.href;
       }
     });
 
