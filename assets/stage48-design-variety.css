@@ -256,3 +256,116 @@
     grid-template-columns: 1fr !important;
   }
 }
+
+
+/* Stage 53: About composition and Primary reflection */
+
+/* About: Mission and Aims as one composed feature */
+.about-purpose-stage53 {
+  background: #f7f5ed;
+  padding-top: 54px !important;
+  padding-bottom: 54px !important;
+}
+
+.about-purpose-stage53 > .wrap {
+  padding: clamp(30px, 4vw, 48px);
+  background: #fff;
+  border: 1px solid rgba(35, 96, 59, .13);
+  border-radius: 22px;
+  box-shadow: 0 14px 38px rgba(43, 69, 48, .055);
+}
+
+.about-purpose-grid-stage53 {
+  display: grid;
+  grid-template-columns: minmax(0, .82fr) minmax(0, 1.55fr);
+  gap: clamp(40px, 5vw, 78px);
+  align-items: start;
+}
+
+.about-purpose-stage53 .eyebrow {
+  color: var(--green-mid);
+}
+
+.about-purpose-stage53 h2 {
+  margin-bottom: 18px;
+}
+
+.about-purpose-stage53 .mission-box {
+  max-width: none;
+  margin: 0;
+  padding: 30px 32px;
+  font-size: 1rem;
+}
+
+.about-purpose-stage53 .aims-stage52-intro {
+  max-width: none;
+  margin-bottom: 24px;
+}
+
+/* About: paired institutional close */
+.about-closing-stage53 {
+  background: #fff;
+}
+
+.about-closing-grid-stage53 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border: 1px solid rgba(35, 96, 59, .13);
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.about-closing-panel-stage53 {
+  padding: clamp(30px, 4vw, 48px);
+}
+
+.about-closing-panel-stage53 + .about-closing-panel-stage53 {
+  border-left: 1px solid rgba(35, 96, 59, .13);
+}
+
+.about-closing-panel-stage53 .eyebrow {
+  color: var(--green-mid);
+}
+
+.about-closing-panel-stage53 h2 {
+  font-size: clamp(1.6rem, 2.45vw, 2.45rem);
+}
+
+.about-closing-panel-stage53 p:last-child {
+  margin-bottom: 0;
+}
+
+.safeguarding-panel-stage53 {
+  background: #eef4e8;
+}
+
+/* Primary: reflection content sits directly on the page */
+.primary-reflection-stage48 {
+  background: transparent !important;
+  padding-top: 54px !important;
+  padding-bottom: 54px !important;
+}
+
+.primary-reflection-stage48 > .wrap {
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 900px) {
+  .about-purpose-grid-stage53,
+  .about-closing-grid-stage53 {
+    grid-template-columns: 1fr;
+  }
+
+  .about-purpose-grid-stage53 {
+    gap: 34px;
+  }
+
+  .about-closing-panel-stage53 + .about-closing-panel-stage53 {
+    border-left: 0;
+    border-top: 1px solid rgba(35, 96, 59, .13);
+  }
+}
