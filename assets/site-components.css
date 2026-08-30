@@ -3,6 +3,14 @@
  * Consolidated from identical page-local rules.
  */
 
+/* Clear keyboard focus without affecting ordinary mouse interaction. */
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid #1f4f31;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+
 .grid2 {
   display: grid;
   grid-template-columns: 1.08fr .92fr;
