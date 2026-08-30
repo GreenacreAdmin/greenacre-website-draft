@@ -10,13 +10,14 @@
 .nav-drop>button.nav-section-current::after{
   content:"";
   position:absolute;
-  left:50%;
-  top:4px;
+  left:5px;
+  top:50%;
   width:3px;
   height:3px;
   border-radius:50%;
   background:var(--shell-ink,#172218);
-  transform:translateX(-50%);
+  transform:translateY(-50%);
+  pointer-events:none;
 }
 
 .nav-drop{position:relative}.nav-menu{display:none;position:absolute;top:calc(100% + 7px);left:0;min-width:245px;padding:9px;background:#fff;border:1px solid rgba(47,107,63,.14);border-radius:16px;box-shadow:0 18px 48px rgba(37,72,45,.16)}.nav-drop:hover .nav-menu,.nav-drop:focus-within .nav-menu{display:grid}.nav-menu a{border-radius:10px;padding:10px 12px;font-size:.74rem}
