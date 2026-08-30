@@ -25,7 +25,6 @@
     transform:translateY(0)!important;
   }
 
-  /* Invisible bridge preserves pointer movement without blocking the trigger beneath. */
   .nav-drop > .nav-menu::before{
     content:"";
     position:absolute;

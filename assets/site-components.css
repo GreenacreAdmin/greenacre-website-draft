@@ -117,18 +117,3 @@ main :where(p, li, details, .note, .small-note) a:not(.action):not(.button):not(
   color: var(--green);
   text-decoration-thickness: 2px;
 }
-
-
-/* Standard inline content links */
-main :where(p, li, details, .note, .small-note) a:not(.action):not(.button):not(.btn):not(.phase-link):not(.policy-link) {
-  color: var(--green-dark);
-  font-weight: 700;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-}
-
-main :where(p, li, details, .note, .small-note) a:not(.action):not(.button):not(.btn):not(.phase-link):not(.policy-link):hover {
-  color: var(--green);
-  text-decoration-thickness: 2px;
-}
