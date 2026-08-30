@@ -161,7 +161,7 @@
 
     .hero {
       position: relative;
-      min-height: calc(100svh - 82px);
+      min-height: min(calc(100svh - 82px), 624px);
       display: flex;
       align-items: flex-end;
       isolation: isolate;
@@ -872,7 +872,7 @@
 
       #home-title {
         max-width: 100%;
-        font-size: clamp(1.8rem, 6.8vw, 2.35rem);
+        font-size: clamp(1.26rem, 4.76vw, 1.645rem);
         line-height: 1.12;
         white-space: normal;
       }
