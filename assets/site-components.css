@@ -10,6 +10,12 @@
   box-shadow: 0 0 0 2px #fff;
 }
 
+.site-brand:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(31,79,49,.34);
+  border-radius: 4px;
+}
+
 /* Consistent restrained feedback for component-style links and buttons. */
 :where(.action, .button, .btn, .phase-link) {
   transition:
