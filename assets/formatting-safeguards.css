@@ -68,7 +68,7 @@ main table {
 
 
 .green-section{
-  background:var(--green-dark)!important;
+  background:var(--green-fill-dark)!important;
   color:var(--green-wash)!important;
 }
 
