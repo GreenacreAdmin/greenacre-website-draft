@@ -1,20 +1,41 @@
 /*
  * Greenacre global colour palette
  *
- * Site-wide colour changes should begin here.
- * Values below preserve the existing site colours exactly.
+ * Shared colour system for the Greenacre website.
+ * Adjust these values to refine the site-wide palette.
  */
 :root {
-  --green: #2f6b3f;
-  --green-dark: #1f4f31;
-  --green-mid: #4f895b;
-  --green-soft: #eaf2e4;
+  --green: #356b46;
+  --green-dark: #244f35;
+  --green-deep: #183f2b;
+  --green-mid: #64866a;
+  --green-soft: #edf1e8;
+  --green-pale: #dde8d8;
+  --green-wash: #f3f6ef;
+
   --cream: #f8f6ef;
+  --warm-surface: #f7f5ed;
+  --sand: #f2eadc;
   --paper: #ffffff;
+
   --ink: #243129;
   --muted: #667268;
-  --line: rgba(47, 107, 63, .14);
-  --orange: #d8833a;
-  --shell-green: #b4db8f;
+
+  --line: color-mix(in srgb, var(--green) 14%, transparent);
+
+  --orange: #c97b3d;
+
+  --blue: #4f7188;
+  --blue-dark: #355467;
+  --blue-soft: #e8eef2;
+
+  --hero-green-start: #244f35;
+  --hero-green-end: #55765f;
+  --hero-blue-start: #355467;
+  --hero-blue-end: #4f7188;
+  --hero-green-eyebrow: #d8e6d7;
+  --hero-blue-eyebrow: #dce8ef;
+
+  --shell-green: #c6d6b8;
   --shell-ink: #172218;
 }

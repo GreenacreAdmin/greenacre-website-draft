@@ -12,7 +12,7 @@
 
 .site-brand:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(31,79,49,.34);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--green-dark) 34%, transparent);
   border-radius: 4px;
 }
 
@@ -80,7 +80,7 @@
 
 .feature {
   background: #fff;
-  border: 1px solid rgba(47,107,63,.12);
+  border: 1px solid color-mix(in srgb, var(--green) 12%, transparent);
   border-radius: 18px;
   padding: 22px;
 }

@@ -4,7 +4,7 @@
 <link href="../../assets/site-palette.css" rel="stylesheet"/>
 <link href="../../assets/site-header-styles.css" rel="stylesheet"/>
 <style>
-:root{--max:1460px}*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.7 Comfortaa,sans-serif}.site-brand img{content:url('../../assets/images/greenacre-logo.png')}.wrap{width:min(calc(100% - 64px),var(--max));margin:auto}.page-hero{background:linear-gradient(135deg,#214f31,#3f7b4e);color:#fff}.eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#dcebd0}h1{font-size:clamp(2.3rem,4.3vw,4.2rem);line-height:1.03;letter-spacing:-.04em;margin:10px 0 18px}.page-hero p{max-width:760px;font-size:1rem}section{padding:44px 0}h2{color:var(--green-dark);font-size:clamp(1.75rem,3vw,3rem);line-height:1.12;letter-spacing:-.035em;margin:0 0 20px}h3{color:var(--green-dark)}p{margin-top:0}.intro-grid,.identity-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}.mission{background:#fff}.mission-box{max-width:1050px;margin:auto;padding:42px;border-left:5px solid var(--orange);background:#f4f8ef;border-radius:0 22px 22px 0;font-size:1.05rem}.values-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:34px}.value{background:#fff;padding:24px 20px;border-radius:18px;border:1px solid rgba(47,107,63,.12)}.value b{font-size:1.4rem;color:var(--orange)}.value strong{display:block;color:var(--green-dark);margin:5px 0}.aims{columns:2;column-gap:50px;padding-left:20px}.aims li{break-inside:avoid;margin-bottom:12px}.head-welcome{background:#eaf2e4}.signature{font-weight:700;color:var(--green-dark)}@media(max-width:800px){.motto-dot{display:none}}@media(max-width:900px){.wrap{width:min(calc(100% - 32px),var(--max))}.intro-grid,.identity-grid{grid-template-columns:1fr;gap:34px}.values-grid{grid-template-columns:1fr 1fr}.aims{columns:1}section{padding:55px 0}}@media(max-width:560px){.values-grid{grid-template-columns:1fr}}
+:root{--max:1460px}*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.7 Comfortaa,sans-serif}.site-brand img{content:url('../../assets/images/greenacre-logo.png')}.wrap{width:min(calc(100% - 64px),var(--max));margin:auto}.page-hero{background:linear-gradient(135deg,var(--hero-green-start),var(--hero-green-end));color:#fff}.eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--hero-green-eyebrow)}h1{font-size:clamp(2.3rem,4.3vw,4.2rem);line-height:1.03;letter-spacing:-.04em;margin:10px 0 18px}.page-hero p{max-width:760px;font-size:1rem}section{padding:44px 0}h2{color:var(--green-dark);font-size:clamp(1.75rem,3vw,3rem);line-height:1.12;letter-spacing:-.035em;margin:0 0 20px}h3{color:var(--green-dark)}p{margin-top:0}.intro-grid,.identity-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}.mission{background:#fff}.mission-box{max-width:1050px;margin:auto;padding:42px;border-left:5px solid var(--orange);background:var(--green-wash);border-radius:0 22px 22px 0;font-size:1.05rem}.values-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:34px}.value{background:#fff;padding:24px 20px;border-radius:18px;border:1px solid color-mix(in srgb, var(--green) 12%, transparent)}.value b{font-size:1.4rem;color:var(--orange)}.value strong{display:block;color:var(--green-dark);margin:5px 0}.aims{columns:2;column-gap:50px;padding-left:20px}.aims li{break-inside:avoid;margin-bottom:12px}.head-welcome{background:var(--green-soft)}.signature{font-weight:700;color:var(--green-dark)}@media(max-width:800px){.motto-dot{display:none}}@media(max-width:900px){.wrap{width:min(calc(100% - 32px),var(--max))}.intro-grid,.identity-grid{grid-template-columns:1fr;gap:34px}.values-grid{grid-template-columns:1fr 1fr}.aims{columns:1}section{padding:55px 0}}@media(max-width:560px){.values-grid{grid-template-columns:1fr}}
 </style>
 <link href="../../assets/stage11-photo-system.css" rel="stylesheet"/>
 <link href="../../assets/stage16-standard-navigation.css" rel="stylesheet"/>
@@ -144,7 +144,7 @@ main > section:last-of-type:not(.page-hero):not(.subhero){padding-bottom:34px!im
 /* About page composition */
 
 .about-purpose-stage54{
-  background:#f7f5ed;
+  background:var(--warm-surface);
   padding:58px 0;
 }
 
@@ -251,9 +251,9 @@ main > section:last-of-type:not(.page-hero):not(.subhero){padding-bottom:34px!im
 .about-whole-child-card-stage55{
   padding:clamp(26px,3vw,34px);
   background:#fff;
-  border:1px solid rgba(47,107,63,.12);
+  border:1px solid color-mix(in srgb, var(--green) 12%, transparent);
   border-radius:20px;
-  box-shadow:0 10px 28px rgba(31,79,49,.05);
+  box-shadow:0 10px 28px color-mix(in srgb, var(--green-dark) 5%, transparent);
 }
 
 .about-whole-child-card-stage55 h3{
@@ -271,7 +271,7 @@ main > section:last-of-type:not(.page-hero):not(.subhero){padding-bottom:34px!im
 
 /* Mission: simple editorial transition */
 .about-mission-stage56{
-  background:#f7f5ed;
+  background:var(--warm-surface);
 }
 
 .about-mission-inner-stage56{
@@ -297,7 +297,7 @@ main > section:last-of-type:not(.page-hero):not(.subhero){padding-bottom:34px!im
 
 /* Aims: same floating visual language as Secondary */
 .about-aims-stage56{
-  background:#f7f5ed;
+  background:var(--warm-surface);
   padding-top:0 !important;
   padding-bottom:54px !important;
 }

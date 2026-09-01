@@ -34,7 +34,7 @@
   font-weight: 700 !important;
   letter-spacing: .14em !important;
   text-transform: uppercase !important;
-  color: #dcebd0 !important;
+  color: var(--hero-green-eyebrow) !important;
   opacity: .86 !important;
 }
 

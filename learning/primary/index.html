@@ -4,7 +4,7 @@
 <link href="../../assets/site-palette.css" rel="stylesheet"/>
 <link href="../../assets/site-header-styles.css" rel="stylesheet"/>
 <style>
-:root{--max:1460px}*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.7 Comfortaa,sans-serif}.site-brand img{content:url('../../assets/images/greenacre-logo.png')}.wrap{width:min(calc(100% - 64px),var(--max));margin:auto}.page-hero{background:linear-gradient(135deg,#214f31,#3f7b4e);color:#fff}.eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#dcebd0}h1{font-size:clamp(2.3rem,4.3vw,4.2rem);line-height:1.03;letter-spacing:-.04em;margin:10px 0 18px}.page-hero p{max-width:760px;font-size:1rem}section{padding:46px 0}h2{color:var(--green-dark);font-size:clamp(1.75rem,3vw,3rem);line-height:1.12;letter-spacing:-.035em;margin:0 0 20px}h3{color:var(--green-dark)}p{margin-top:0}.intro-grid,.identity-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}.mission{background:#fff}.mission-box{max-width:1050px;margin:auto;padding:42px;border-left:5px solid var(--orange);background:#f4f8ef;border-radius:0 22px 22px 0;font-size:1.05rem}.values-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:34px}.value{background:#fff;padding:24px 20px;border-radius:18px;border:1px solid rgba(47,107,63,.12)}.value b{font-size:1.4rem;color:var(--orange)}.value strong{display:block;color:var(--green-dark);margin:5px 0}.aims{columns:2;column-gap:50px;padding-left:20px}.aims li{break-inside:avoid;margin-bottom:12px}.head-welcome{background:#eaf2e4}.signature{font-weight:700;color:var(--green-dark)}@media(max-width:900px){.wrap{width:min(calc(100% - 32px),var(--max))}.intro-grid,.identity-grid{grid-template-columns:1fr;gap:34px}.values-grid{grid-template-columns:1fr 1fr}.aims{columns:1}section{padding:55px 0}}@media(max-width:560px){.values-grid{grid-template-columns:1fr}}
+:root{--max:1460px}*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.7 Comfortaa,sans-serif}.site-brand img{content:url('../../assets/images/greenacre-logo.png')}.wrap{width:min(calc(100% - 64px),var(--max));margin:auto}.page-hero{background:linear-gradient(135deg,var(--hero-green-start),var(--hero-green-end));color:#fff}.eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--hero-green-eyebrow)}h1{font-size:clamp(2.3rem,4.3vw,4.2rem);line-height:1.03;letter-spacing:-.04em;margin:10px 0 18px}.page-hero p{max-width:760px;font-size:1rem}section{padding:46px 0}h2{color:var(--green-dark);font-size:clamp(1.75rem,3vw,3rem);line-height:1.12;letter-spacing:-.035em;margin:0 0 20px}h3{color:var(--green-dark)}p{margin-top:0}.intro-grid,.identity-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}.mission{background:#fff}.mission-box{max-width:1050px;margin:auto;padding:42px;border-left:5px solid var(--orange);background:var(--green-wash);border-radius:0 22px 22px 0;font-size:1.05rem}.values-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:34px}.value{background:#fff;padding:24px 20px;border-radius:18px;border:1px solid color-mix(in srgb, var(--green) 12%, transparent)}.value b{font-size:1.4rem;color:var(--orange)}.value strong{display:block;color:var(--green-dark);margin:5px 0}.aims{columns:2;column-gap:50px;padding-left:20px}.aims li{break-inside:avoid;margin-bottom:12px}.head-welcome{background:var(--green-soft)}.signature{font-weight:700;color:var(--green-dark)}@media(max-width:900px){.wrap{width:min(calc(100% - 32px),var(--max))}.intro-grid,.identity-grid{grid-template-columns:1fr;gap:34px}.values-grid{grid-template-columns:1fr 1fr}.aims{columns:1}section{padding:55px 0}}@media(max-width:560px){.values-grid{grid-template-columns:1fr}}
 </style>
 <link href="../../assets/stage11-photo-system.css" rel="stylesheet"/>
 <link href="../../assets/stage16-standard-navigation.css" rel="stylesheet"/>
@@ -81,14 +81,14 @@ h3{color:var(--green-dark);font-size:1.2rem;margin:0 0 10px}
 p{line-height:1.75}
 .kicker{color:var(--green-mid);font-size:.8rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;margin-bottom:10px}
 .temp-photo{min-height:390px;border-radius:24px;overflow:hidden;position:relative;background:
-linear-gradient(145deg,rgba(31,79,49,.15),rgba(216,131,58,.12)),
-linear-gradient(35deg,#dce9d6,#f2eadc);display:flex;align-items:center;justify-content:center;border:1px solid rgba(47,107,63,.14)}
-.temp-photo:before{content:"TEMP – REPLACE PHOTO";background:rgba(31,79,49,.92);color:#fff;padding:12px 18px;border-radius:999px;font-weight:700;letter-spacing:.06em;font-size:.78rem}
+linear-gradient(145deg,color-mix(in srgb, var(--green-dark) 15%, transparent),color-mix(in srgb, var(--orange) 12%, transparent)),
+linear-gradient(35deg,var(--green-pale),var(--sand));display:flex;align-items:center;justify-content:center;border:1px solid color-mix(in srgb, var(--green) 14%, transparent)}
+.temp-photo:before{content:"TEMP – REPLACE PHOTO";background:color-mix(in srgb, var(--green-dark) 92%, transparent);color:#fff;padding:12px 18px;border-radius:999px;font-weight:700;letter-spacing:.06em;font-size:.78rem}
 
-.card{background:#fff;border:1px solid rgba(47,107,63,.12);border-radius:20px;padding:26px;box-shadow:0 10px 28px rgba(31,79,49,.05)}
+.card{background:#fff;border:1px solid color-mix(in srgb, var(--green) 12%, transparent);border-radius:20px;padding:26px;box-shadow:0 10px 28px color-mix(in srgb, var(--green-dark) 5%, transparent)}
 .value-letter{font-size:2rem;color:var(--orange);font-weight:800}
 .staff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.staff{padding:22px;border-radius:18px;background:white;border:1px solid rgba(47,107,63,.12)}
+.staff{padding:22px;border-radius:18px;background:white;border:1px solid color-mix(in srgb, var(--green) 12%, transparent)}
 .staff strong{display:block;color:var(--green-dark);margin-bottom:4px}
 .staff span{font-size:.9rem;color:#59635c}
 .note{padding:24px;border-left:4px solid var(--orange);background:#fff;border-radius:0 16px 16px 0}
@@ -96,22 +96,22 @@ linear-gradient(35deg,#dce9d6,#f2eadc);display:flex;align-items:center;justify-c
 </style>
 <style id="learning-page-additions">
 .phase-links{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
-.phase-link{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid rgba(47,107,63,.12);border-radius:20px;padding:24px;box-shadow:0 10px 28px rgba(31,79,49,.05)}
+.phase-link{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid color-mix(in srgb, var(--green) 12%, transparent);border-radius:20px;padding:24px;box-shadow:0 10px 28px color-mix(in srgb, var(--green-dark) 5%, transparent)}
 .phase-link strong{display:block;color:var(--green-dark);font-size:1.02rem;margin-bottom:6px}
-.phase-link:hover{transform:translateY(-2px);box-shadow:0 15px 32px rgba(31,79,49,.09)}
+.phase-link:hover{transform:translateY(-2px);box-shadow:0 15px 32px color-mix(in srgb, var(--green-dark) 9%, transparent)}
 .pathway{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
-.pathway>div{background:#fff;border:1px solid rgba(47,107,63,.12);border-radius:18px;padding:22px}
+.pathway>div{background:#fff;border:1px solid color-mix(in srgb, var(--green) 12%, transparent);border-radius:18px;padding:22px}
 .pathway b{display:block;color:var(--orange);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
 .pathway strong{color:var(--green-dark)}
 .feature-list{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px}
 
 
-.photo-plan{min-height:390px;border-radius:24px;overflow:hidden;position:relative;background:linear-gradient(145deg,rgba(31,79,49,.12),rgba(216,131,58,.10)),linear-gradient(35deg,#dce9d6,#f2eadc);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:1px solid rgba(47,107,63,.14);padding:34px}
-.photo-plan .stamp{background:rgba(31,79,49,.94);color:#fff;padding:11px 17px;border-radius:999px;font-weight:700;letter-spacing:.06em;font-size:.76rem}
-.photo-plan .shot{max-width:470px;margin-top:16px;color:#fff;background:rgba(20,57,34,.80);padding:11px 14px;border-radius:12px;font-size:.78rem;line-height:1.5;font-weight:600}
-.photo-plan.early{background:linear-gradient(rgba(20,57,34,.10),rgba(20,57,34,.18)),url('../../assets/images/temp/classroom-teacher.webp') center/cover}
-.photo-plan.primary{background:linear-gradient(rgba(20,57,34,.10),rgba(20,57,34,.18)),url('../../assets/images/temp/primary-reading.webp') center/cover}
-.photo-plan.secondary{background:linear-gradient(rgba(20,57,34,.10),rgba(20,57,34,.18)),url('../../assets/images/temp/secondary-learning.webp') center/cover}
+.photo-plan{min-height:390px;border-radius:24px;overflow:hidden;position:relative;background:linear-gradient(145deg,color-mix(in srgb, var(--green-dark) 12%, transparent),color-mix(in srgb, var(--orange) 10%, transparent)),linear-gradient(35deg,var(--green-pale),var(--sand));display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:1px solid color-mix(in srgb, var(--green) 14%, transparent);padding:34px}
+.photo-plan .stamp{background:color-mix(in srgb, var(--green-dark) 94%, transparent);color:#fff;padding:11px 17px;border-radius:999px;font-weight:700;letter-spacing:.06em;font-size:.76rem}
+.photo-plan .shot{max-width:470px;margin-top:16px;color:#fff;background:color-mix(in srgb, var(--green-deep) 80%, transparent);padding:11px 14px;border-radius:12px;font-size:.78rem;line-height:1.5;font-weight:600}
+.photo-plan.early{background:linear-gradient(color-mix(in srgb, var(--green-deep) 10%, transparent),color-mix(in srgb, var(--green-deep) 18%, transparent)),url('../../assets/images/temp/classroom-teacher.webp') center/cover}
+.photo-plan.primary{background:linear-gradient(color-mix(in srgb, var(--green-deep) 10%, transparent),color-mix(in srgb, var(--green-deep) 18%, transparent)),url('../../assets/images/temp/primary-reading.webp') center/cover}
+.photo-plan.secondary{background:linear-gradient(color-mix(in srgb, var(--green-deep) 10%, transparent),color-mix(in srgb, var(--green-deep) 18%, transparent)),url('../../assets/images/temp/secondary-learning.webp') center/cover}
 .note-list{padding-left:20px}.note-list li{margin-bottom:10px}
 @media(max-width:850px){.phase-links,.pathway,.feature-list{grid-template-columns:1fr}.photo-plan{min-height:280px}}
 </style>

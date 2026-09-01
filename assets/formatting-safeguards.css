@@ -34,7 +34,7 @@ main [class*="flex"] > * {
 .cta-band .kicker,
 .cta-section .eyebrow,
 .cta-section .kicker {
-  color: #dcebd0 !important;
+  color: var(--hero-green-eyebrow) !important;
   opacity: 1 !important;
 }
 
@@ -51,25 +51,25 @@ main table {
 .service-list > .service,
 .seven-grid > .seven-card {
   background:#fff;
-  border:1px solid rgba(47,107,63,.12);
+  border:1px solid color-mix(in srgb, var(--green) 12%, transparent);
   border-left:4px solid var(--green-mid);
   border-radius:18px;
-  box-shadow:0 7px 20px rgba(31,79,49,.05);
+  box-shadow:0 7px 20px color-mix(in srgb, var(--green-dark) 5%, transparent);
 }
 
 /* Our Team: standard card family with mirrored accent */
 .team-grid-v2 > .team-person-v2 {
   background:#fff;
-  border:1px solid rgba(47,107,63,.12);
+  border:1px solid color-mix(in srgb, var(--green) 12%, transparent);
   border-right:4px solid var(--green-mid);
   border-radius:18px;
-  box-shadow:0 7px 20px rgba(31,79,49,.05);
+  box-shadow:0 7px 20px color-mix(in srgb, var(--green-dark) 5%, transparent);
 }
 
 
 .green-section{
   background:var(--green-dark)!important;
-  color:#f4f8ef!important;
+  color:var(--green-wash)!important;
 }
 
 .green-section h2,
@@ -78,7 +78,7 @@ main table {
 }
 
 .green-section p{
-  color:#f4f8ef;
+  color:var(--green-wash);
 }
 
 

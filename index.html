@@ -133,18 +133,18 @@
     .button-solid {
       background: var(--green);
       color: #fff;
-      box-shadow: 0 9px 22px rgba(47, 107, 63, .18);
+      box-shadow: 0 9px 22px color-mix(in srgb, var(--green) 18%, transparent);
     }
 
     .button-solid:hover { background: var(--green-dark); }
 
     .button-outline {
-      border-color: rgba(47, 107, 63, .34);
+      border-color: color-mix(in srgb, var(--green) 34%, transparent);
       color: var(--green-dark);
       background: transparent;
     }
 
-    .button-outline:hover { background: rgba(47, 107, 63, .06); }
+    .button-outline:hover { background: color-mix(in srgb, var(--green) 6%, transparent); }
 
     .button-light {
       color: var(--green-dark);
@@ -166,7 +166,7 @@
       align-items: flex-end;
       isolation: isolate;
       background:
-        linear-gradient(90deg, rgba(20, 57, 34, .86) 0%, rgba(20, 57, 34, .62) 42%, rgba(20, 57, 34, .22) 73%, rgba(20, 57, 34, .08) 100%),
+        linear-gradient(90deg, color-mix(in srgb, var(--green-deep) 86%, transparent) 0%, color-mix(in srgb, var(--green-deep) 62%, transparent) 42%, color-mix(in srgb, var(--green-deep) 22%, transparent) 73%, color-mix(in srgb, var(--green-deep) 8%, transparent) 100%),
         url("assets/images/homepage-embedded/homepage-image-01.png") 52% 50% / cover no-repeat;
     }
 
@@ -229,7 +229,7 @@
       min-height: 470px;
       border-radius: var(--radius);
       background:
-        linear-gradient(180deg, rgba(31,79,49,.04), rgba(31,79,49,.10)),
+        linear-gradient(180deg, color-mix(in srgb, var(--green-dark) 4%, transparent), color-mix(in srgb, var(--green-dark) 10%, transparent)),
         url("assets/images/homepage-embedded/homepage-image-02.webp") 52% 48% / cover no-repeat;
       box-shadow: var(--shadow);
     }
@@ -392,7 +392,7 @@
       min-height: 500px;
       border-radius: var(--radius);
       background:
-        linear-gradient(180deg, rgba(31,79,49,.03), rgba(31,79,49,.10)),
+        linear-gradient(180deg, color-mix(in srgb, var(--green-dark) 3%, transparent), color-mix(in srgb, var(--green-dark) 10%, transparent)),
         url("assets/images/homepage-embedded/homepage-image-06.webp") 55% 45% / cover no-repeat;
       box-shadow: 0 24px 52px rgba(0,0,0,.22);
     }
@@ -408,7 +408,7 @@
       gap: 50px;
       align-items: center;
       padding: clamp(30px, 4vw, 52px);
-      border: 1px solid rgba(47,107,63,.12);
+      border: 1px solid color-mix(in srgb, var(--green) 12%, transparent);
       border-radius: var(--radius);
       background: rgba(255,255,255,.78);
     }
@@ -450,7 +450,7 @@
       grid-template-columns: .82fr 1.18fr;
       min-height: 360px;
       overflow: hidden;
-      border: 1px solid rgba(47,107,63,.12);
+      border: 1px solid color-mix(in srgb, var(--green) 12%, transparent);
       border-radius: var(--radius);
       background: var(--cream);
       box-shadow: var(--shadow);
@@ -459,7 +459,7 @@
     .wellbeing-photo {
       min-height: 360px;
       background:
-        linear-gradient(180deg, rgba(31,79,49,.02), rgba(31,79,49,.08)),
+        linear-gradient(180deg, color-mix(in srgb, var(--green-dark) 2%, transparent), color-mix(in srgb, var(--green-dark) 8%, transparent)),
         url("assets/images/homepage-embedded/homepage-image-07.webp") 52% 32% / cover no-repeat;
     }
 
@@ -528,7 +528,7 @@
 
     .quick-card:hover {
       transform: translateY(-3px);
-      border-color: rgba(47,107,63,.28);
+      border-color: color-mix(in srgb, var(--green) 28%, transparent);
       box-shadow: 0 12px 32px rgba(37,72,45,.09);
     }
 
@@ -574,7 +574,7 @@
     .facebook-panel {
       min-width: 0;
       overflow: hidden;
-      border: 1px solid rgba(47,107,63,.12);
+      border: 1px solid color-mix(in srgb, var(--green) 12%, transparent);
       border-radius: var(--radius);
       background: #fff;
       box-shadow: var(--shadow);
@@ -767,7 +767,7 @@
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background: rgba(47,107,63,.22);
+      background: color-mix(in srgb, var(--green) 22%, transparent);
       transform: translate(-50%,-50%);
       transition: background .18s ease, transform .18s ease;
     }
@@ -782,7 +782,7 @@
       position: relative;
       padding: 70px 0;
       color: #fff;
-      background: linear-gradient(90deg, rgba(23,67,40,.94), rgba(36,91,53,.86)), var(--green);
+      background: linear-gradient(90deg, var(--blue-dark), var(--blue));
     }
 
     .final-cta-grid {
@@ -1018,7 +1018,7 @@
 </style>
 <style id="stage14-testimonial-placeholder-style">
 .stage14-testimonial-placeholder{
-  border:2px dashed rgba(47,107,63,.28)!important;
+  border:2px dashed color-mix(in srgb, var(--green) 28%, transparent)!important;
   background:rgba(234,242,228,.52)!important;
 }
 .stage14-testimonial-placeholder blockquote{
@@ -1354,7 +1354,7 @@
 <section class="final-cta">
 <div class="wrap final-cta-grid">
 <div>
-<p class="eyebrow" style="color:#c7dccb;">Admissions</p>
+<p class="eyebrow" style="color:var(--blue-soft);">Admissions</p>
 <h2>Come and see Greenacre for yourself</h2>
 <p>
             We encourage families to visit with their child during a normal school day,
@@ -1370,17 +1370,15 @@
 </main>
 <style>
   :root {
-    --footer-green: #B4DB8F;
-    --footer-ink: #111711;
     --footer-height: 82px;
   }
 
   .site-footer {
     position: relative;
     min-height: var(--footer-height);
-    background: var(--footer-green);
-    color: var(--footer-ink);
-    border-top: 1px solid rgba(17, 23, 17, .12);
+    background: var(--shell-green);
+    color: var(--shell-ink);
+    border-top: 1px solid color-mix(in srgb, var(--shell-ink) 12%, transparent);
   }
 
   .site-footer__inner {
@@ -1396,7 +1394,7 @@
   .site-footer__name {
     display: inline-block;
     margin-bottom: 3px;
-    color: var(--footer-ink);
+    color: var(--shell-ink);
     font-family: "Comfortaa", sans-serif;
     font-size: .98rem;
     line-height: 1;
@@ -1407,7 +1405,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1px 10px;
-    color: rgba(17, 23, 17, .78);
+    color: color-mix(in srgb, var(--shell-ink) 78%, transparent);
     font-family: "Comfortaa", sans-serif;
     font-size: .60rem;
     line-height: 1.28;

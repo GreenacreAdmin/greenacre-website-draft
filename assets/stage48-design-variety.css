@@ -3,7 +3,7 @@
    No content changes. */
 
 .env-opening-stage48 {
-  background: #f7f5ed;
+  background: var(--warm-surface);
 }
 
 .env-opening-stage48 > .wrap {
@@ -33,11 +33,11 @@
 }
 
 .env-closing-stage48 {
-  background: #f7f5ed;
+  background: var(--warm-surface);
 }
 
 .early-how-stage48 {
-  background: #f7f5ed;
+  background: var(--warm-surface);
 }
 
 .early-how-stage48 > .wrap {
@@ -90,7 +90,7 @@
 }
 
 .primary-reflection-stage48 {
-  background: #f7f5ed;
+  background: var(--warm-surface);
   padding-top: 54px !important;
   padding-bottom: 54px !important;
 }
@@ -110,7 +110,7 @@
 }
 
 .secondary-igcse-stage48 {
-  background: #f7f5ed;
+  background: var(--warm-surface);
   padding-top: 54px !important;
   padding-bottom: 54px !important;
 }
@@ -222,7 +222,7 @@
  * Early Years and Secondary.
  */
 .primary-whole-child-stage48 {
-  background: #f7f5ed;
+  background: var(--warm-surface);
   padding-top: 54px !important;
   padding-bottom: 54px !important;
 }
@@ -262,7 +262,7 @@
 
 /* About: Mission and Aims as one composed feature */
 .about-purpose-stage53 {
-  background: #f7f5ed;
+  background: var(--warm-surface);
   padding-top: 54px !important;
   padding-bottom: 54px !important;
 }
