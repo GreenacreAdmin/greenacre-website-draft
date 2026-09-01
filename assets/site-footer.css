@@ -8,8 +8,8 @@
 
 :root{
   --footer-height:118px;
-  --footer-green:#B4DB8F;
-  --footer-ink:#111711;
+  --footer-green:var(--shell-green);
+  --footer-ink:var(--shell-ink);
 }
 
 .site-footer{
