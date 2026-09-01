@@ -28,6 +28,8 @@ main [class*="flex"] > * {
 .subhero .kicker,
 .dark .eyebrow,
 .dark .kicker,
+.identity .eyebrow,
+.identity .kicker,
 .green-section .eyebrow,
 .green-section .kicker,
 .cta-band .eyebrow,
