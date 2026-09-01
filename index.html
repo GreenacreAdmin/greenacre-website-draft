@@ -982,7 +982,7 @@
 <title>Greenacre International School | Koh Samui</title>
 <link href="assets/site-header-styles.css" rel="stylesheet"/>
 <link href="assets/stage11-photo-system.css" rel="stylesheet"/>
-<link href="assets/stage11-footer-lock.css" rel="stylesheet"/>
+
 <style id="stage11-home-stamp-visibility">
 .home-photo-temp{position:relative!important}
 .home-photo-temp>.home-photo-stamp,
@@ -1085,7 +1085,7 @@
 <link href="assets/site-components.css" rel="stylesheet"/>
 <link rel="icon" type="image/png" href="assets/images/greenacre-favicon.png"/>
 </head>
-<body><header class="site-header"><div class="site-header__inner"><a aria-label="Greenacre International School home" class="site-brand" data-path="" href="/"><img alt="Greenacre International School" src="assets/images/greenacre-logo.png"/></a><button aria-expanded="false" class="menu-toggle" type="button">Menu</button><nav aria-label="Primary" class="site-nav">
+<body><header class="site-header"><div class="site-header__inner"><a aria-label="Greenacre International School home" class="site-brand" data-path="" href="/"><img alt="Greenacre International School" src="assets/images/greenacre-logo.png"/><span class="site-brand__name">Greenacre International School</span></a><button aria-expanded="false" class="menu-toggle" type="button">Menu</button><nav aria-label="Primary" class="site-nav">
 <a data-path="" href="/">Home</a>
 <div class="nav-drop">
 <button aria-expanded="false" aria-haspopup="true" type="button">Our School</button>
@@ -1377,24 +1377,17 @@
     --footer-height: 82px;
   }
 
-  body {
-    padding-bottom: var(--footer-height);
-  }
-
   .site-footer {
-    position: fixed;
-    inset: auto 0 0 0;
-    z-index: 9999;
-    height: var(--footer-height);
+    position: relative;
+    min-height: var(--footer-height);
     background: var(--footer-green);
     color: var(--footer-ink);
     border-top: 1px solid rgba(17, 23, 17, .12);
-    box-shadow: 0 -3px 12px rgba(0,0,0,.07);
   }
 
   .site-footer__inner {
     width: min(calc(100% - 46px), 1500px);
-    height: 100%;
+    min-height: var(--footer-height);
     margin: 0 auto;
     display: grid;
     grid-template-columns: minmax(285px, .72fr) minmax(680px, 1.28fr);
@@ -1645,37 +1638,25 @@
 </script>
 <script src="assets/desktop-navigation.js"></script>
 
-<script id="homepage-hero-fit">
-(function () {
-  const hero = document.querySelector('.hero');
-  const header = document.querySelector('.site-header');
-  const footer = document.querySelector('.site-footer');
+<style id="homepage-hero-fit">
+.hero {
+  min-height: min(820px, calc(100vh - 82px));
+  min-height: min(820px, calc(100dvh - 82px));
+}
 
-  if (!hero || !header || !footer) return;
-
-  function fitHero() {
-    if (window.innerWidth <= 560) {
-      hero.style.removeProperty('min-height');
-      return;
-    }
-
-    const height =
-      footer.getBoundingClientRect().top -
-      (hero.getBoundingClientRect().top + window.scrollY);
-
-    hero.style.minHeight = Math.max(0, Math.ceil(height)) + 'px';
+@media (max-width: 980px) {
+  .hero {
+    min-height: min(820px, calc(100vh - 72px));
+    min-height: min(820px, calc(100dvh - 72px));
   }
+}
 
-  fitHero();
-  window.addEventListener('resize', fitHero);
-
-  if ('ResizeObserver' in window) {
-    const observer = new ResizeObserver(fitHero);
-    observer.observe(header);
-    observer.observe(footer);
+@media (max-width: 560px) {
+  .hero {
+    min-height: max(560px, min(820px, calc(100dvh - 72px)));
   }
-})();
-</script>
+}
+</style>
 
 </body>
 </html>

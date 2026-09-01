@@ -1,7 +1,9 @@
 :root{--shell-green:#B4DB8F;--shell-ink:#172218}
 .site-header{position:sticky;top:0;z-index:10000;background:rgba(180,219,143,.97);border-bottom:1px solid rgba(23,34,24,.12);backdrop-filter:blur(10px)}
-.site-header__inner{width:min(calc(100% - 46px),1500px);height:82px;margin:auto;display:flex;align-items:center;gap:34px}
+.site-header__inner{width:min(calc(100% - 46px),1500px);height:82px;margin:auto;display:flex;align-items:center;gap:26px}
 .site-brand{display:flex;align-items:center;flex:0 0 auto;text-decoration:none}.site-brand img{width:auto;height:58px;object-fit:contain}
+.site-brand__name{margin-left:8px;color:var(--shell-ink);font:700 .82rem/1.25 "Comfortaa",sans-serif;white-space:nowrap;transform:translateY(1px)}
+@media(max-width:1150px){.site-brand__name{display:none}}
 .site-nav{margin-left:auto;display:flex;align-items:center;gap:4px}.site-nav a,.nav-drop>button{border:0;background:none;color:var(--shell-ink);font:700 .78rem/1.2 "Comfortaa",sans-serif;text-decoration:none;padding:12px 11px;border-radius:999px;cursor:pointer}.site-nav a:hover,.nav-drop>button:hover{background:rgba(255,255,255,.38)}
 .nav-drop.nav-open>button,
 .nav-drop>button.nav-section-current{
