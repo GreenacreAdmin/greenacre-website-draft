@@ -117,3 +117,14 @@ main :where(p, li, details, .note, .small-note) a:not(.action):not(.button):not(
   color: var(--green);
   text-decoration-thickness: 2px;
 }
+
+
+/* Standard blue primary actions */
+main a.action:not(.alt) {
+  background: var(--blue-dark);
+  color: #fff;
+}
+
+main a.action:not(.alt):hover {
+  background: var(--blue);
+}
