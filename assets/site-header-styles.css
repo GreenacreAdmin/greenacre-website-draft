@@ -1,4 +1,4 @@
-:root{--shell-green:#B4DB8F;--shell-ink:#172218}
+
 .site-header{position:sticky;top:0;z-index:10000;background:rgba(180,219,143,.97);border-bottom:1px solid rgba(23,34,24,.12);backdrop-filter:blur(10px)}
 .site-header__inner{width:min(calc(100% - 46px),1500px);height:82px;margin:auto;display:flex;align-items:center;gap:26px}
 .site-brand{display:flex;align-items:center;flex:0 0 auto;text-decoration:none;transform:translateX(-24px)}.site-brand img{width:auto;height:58px;object-fit:contain;transform:translate(8px,-4px)}
