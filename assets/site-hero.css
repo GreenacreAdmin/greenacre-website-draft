@@ -2,6 +2,8 @@
 
 .page-hero,
 .subhero {
+  background: linear-gradient(135deg, var(--hero-blue-start), var(--hero-blue-end)) !important;
+  color: #fff !important;
   box-sizing: border-box !important;
   position: relative !important;
   height: 272px !important;
