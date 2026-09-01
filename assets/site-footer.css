@@ -32,6 +32,9 @@
   align-items:center;
 }
 
+.site-footer__identity{
+  transform:translateX(-24px);
+}
 .site-footer__name{
   display:inline-block;
   margin-bottom:3px;
@@ -95,6 +98,9 @@
 .site-footer__logo--isqm img{max-height:50px}
 
 @media(max-width:980px){
+  .site-footer__identity{
+    transform:none;
+  }
   .site-footer__inner{
     width:min(calc(100% - 28px),1500px);
     grid-template-columns:220px 1fr;
