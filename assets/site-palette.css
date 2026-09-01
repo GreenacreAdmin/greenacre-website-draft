@@ -1,0 +1,18 @@
+/*
+ * Greenacre global colour palette
+ *
+ * Site-wide colour changes should begin here.
+ * Values below preserve the existing site colours exactly.
+ */
+:root {
+  --green: #2f6b3f;
+  --green-dark: #1f4f31;
+  --green-mid: #4f895b;
+  --green-soft: #eaf2e4;
+  --cream: #f8f6ef;
+  --ink: #243129;
+  --muted: #667268;
+  --orange: #d8833a;
+  --shell-green: #b4db8f;
+  --shell-ink: #172218;
+}
