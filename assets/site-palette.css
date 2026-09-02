@@ -9,7 +9,7 @@
   --green-dark: #244f35;
   --green-fill-dark: #3b694c;
   --green-deep: #183f2b;
-  --green-mid: #64866a;
+  --green-mid: #58755d;
   --green-soft: #edf1e8;
   --green-pale: #dde8d8;
   --green-wash: #f3f6ef;
@@ -20,7 +20,7 @@
   --paper: #ffffff;
 
   --ink: #243129;
-  --muted: #667268;
+  --muted: #616b63;
 
   --line: color-mix(in srgb, var(--green) 14%, transparent);
 
