@@ -62,7 +62,7 @@ body{padding-bottom:var(--footer-height)!important}
   .site-footer__logo--isat img{
     max-height:21px!important;
     max-width:48px!important;
-    transform:translateX(-9px)!important;
+    transform:translateX(-25px)!important;
   }
 
   .site-footer__logo--cambridge img{
