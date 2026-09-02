@@ -44,28 +44,40 @@ body{padding-bottom:var(--footer-height)!important}
 
 /* MOBILE FOOTER LOGO SCALE */
 @media(max-width:720px){
+  .site-footer__logos{
+    gap:0!important;
+  }
+
   .site-footer__logo img{
-    max-height:26px!important;
+    width:auto!important;
+    height:auto!important;
+    object-fit:contain!important;
   }
 
   .site-footer__logo--onesqa img{
-    width:auto!important;
-    height:auto!important;
-    max-height:40px!important;
-    max-width:71px!important;
+    max-height:32px!important;
+    max-width:48px!important;
   }
 
   .site-footer__logo--isat img{
-    max-height:26px!important;
+    max-height:21px!important;
+    max-width:48px!important;
+    transform:translateX(-2px)!important;
   }
 
-  .site-footer__logo--cambridge img,
+  .site-footer__logo--cambridge img{
+    max-height:17px!important;
+    max-width:52px!important;
+  }
+
   .site-footer__logo--edt img{
-    max-height:22px!important;
+    max-height:20px!important;
+    max-width:44px!important;
   }
 
   .site-footer__logo--isqm img{
-    max-height:26px!important;
+    max-height:23px!important;
+    max-width:38px!important;
   }
 }
 /* END MOBILE FOOTER LOGO SCALE */
