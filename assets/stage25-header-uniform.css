@@ -14,7 +14,7 @@
   }
 }
 
-@media(min-width:721px) and (max-width:980px){
+@media(min-width:641px) and (max-width:980px){
   .site-brand__name{
     display:inline;
   }
@@ -24,6 +24,9 @@
   .site-header__inner{
     height:57.6px !important;
   }
+}
+
+@media(max-width:640px){
   .site-brand__name{
     display:none;
   }
