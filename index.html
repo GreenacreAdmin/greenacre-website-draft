@@ -894,6 +894,18 @@
 
       .intro-photo, .identity-photo { min-height: 390px; }
       .section-heading { gap: 18px; }
+
+      .values {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 0;
+        width: 100%;
+        max-width: 680px;
+      }
+
+      .value {
+        font-size: .74rem;
+      }
+
       .phase-grid { grid-template-columns: 1fr; }
       .phase-card { min-height: 330px; }
       .pathway-mark { justify-content: flex-start; }
@@ -965,6 +977,23 @@
 
       #home-title > span {
         white-space: normal;
+      }
+
+      .values {
+        gap: 0;
+        margin-top: 26px;
+        margin-bottom: 30px;
+      }
+
+      .value {
+        gap: 6px;
+        font-size: .64rem;
+      }
+
+      .green-initial {
+        width: 28px;
+        height: 28px;
+        font-size: .90rem;
       }
 
       .quick-grid { grid-template-columns: 1fr; }
