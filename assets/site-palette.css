@@ -25,6 +25,7 @@
   --line: color-mix(in srgb, var(--green) 14%, transparent);
 
   --orange: #c97b3d;
+  --orange-text: #a05d2c;
 
   --blue: #4f7188;
   --blue-dark: #355467;
