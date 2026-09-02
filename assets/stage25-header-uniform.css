@@ -16,5 +16,6 @@
     height:38.4px !important;
     max-height:38.4px !important;
     width:auto !important;
+    transform:translate(0,-4px);
   }
 }
