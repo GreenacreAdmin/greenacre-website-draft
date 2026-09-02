@@ -111,8 +111,8 @@
   .site-footer__logos{gap:14px}
 }
 
-@media(max-width:760px){
-  :root{--footer-height:122px}
+@media(max-width:720px){
+  :root{--footer-height:126px}
   .site-footer__inner{
     grid-template-columns:1fr;
     grid-template-rows:42px 66px;
@@ -132,6 +132,7 @@
   }
   .site-footer__logo{flex:initial}
   .site-footer__logo img{max-height:34px}
+  .site-footer__logo--isat img{transform:translateX(-5px)}
   .site-footer__logo--cambridge img,
   .site-footer__logo--edt img{max-height:29px}
 }
