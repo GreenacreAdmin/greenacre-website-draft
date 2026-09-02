@@ -590,7 +590,7 @@
 
     .location-social-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.45fr) minmax(380px, .75fr);
+      grid-template-columns: minmax(0, 1fr) 500px;
       gap: 28px;
       align-items: stretch;
     }
@@ -1063,37 +1063,36 @@
 <link href="assets/stage16-standard-navigation.css" rel="stylesheet"/>
 <link href="assets/stage25-header-uniform.css" rel="stylesheet"/><style id="stage36-facebook-details">
 .facebook-panel{
-  overflow:visible!important;
+  overflow:hidden!important;
 }
 .facebook-plugin-wrap{
   position:relative;
   width:100%;
   max-width:500px;
-  min-height:1800px;
+  height:800px;
   margin:0 auto;
-  overflow:visible;
+  overflow:hidden;
+  background:#fff;
 }
-.facebook-plugin-wrap .fb-page{
-  width:100%;
-  max-width:500px;
-}
-.facebook-fallback{
-  display:none;
-  width:100%!important;
-  max-width:500px!important;
+.facebook-plugin-wrap .fb-page,
+.facebook-plugin-wrap .fb-page>span,
+.facebook-plugin-wrap .fb-page iframe{
+  width:500px!important;
+  max-width:100%!important;
   height:800px!important;
-  margin:0 auto;
 }
 @media(max-width:700px){
   .facebook-plugin-wrap{
-    min-height:680px;
+    width:100%;
+    max-width:500px;
+    height:800px;
   }
   .facebook-plugin-wrap .fb-page,
   .facebook-plugin-wrap .fb-page>span,
-  .facebook-plugin-wrap .fb-page iframe,
-  .facebook-fallback{
-    min-height:680px!important;
-    height:680px!important;
+  .facebook-plugin-wrap .fb-page iframe{
+    width:100%!important;
+    max-width:500px!important;
+    height:800px!important;
   }
 }
 </style><link href="assets/formatting-safeguards.css" rel="stylesheet"/><style id="stage51-section-rhythm">
@@ -1376,7 +1375,26 @@
 <div class="facebook-panel-head">
 <h3>Latest from Greenacre</h3>
 </div>
-<div id="fb-root"></div><div class="facebook-plugin-wrap"><div class="fb-page" data-adapt-container-width="1" data-height="1800" data-hide-cover="true" data-href="https://www.facebook.com/samuigreenacreschool/" data-show-facepile="false" data-show-posts="true" data-small-header="true" data-tabs="timeline" data-width="500"><blockquote cite="https://www.facebook.com/samuigreenacreschool/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/samuigreenacreschool/">Greenacre International School, Koh Samui</a></blockquote></div><iframe allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen="true" class="facebook-fallback" frameborder="0" height="800" scrolling="no" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsamuigreenacreschool%2F&amp;tabs=timeline&amp;width=500&amp;height=800&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=true&amp;show_facepile=false" style="border:none;overflow:hidden" title="Greenacre International School Facebook feed" width="500"></iframe></div></article>
+<div id="fb-root"></div>
+<div class="facebook-plugin-wrap">
+  <div
+    class="fb-page"
+    data-href="https://www.facebook.com/samuigreenacreschool/"
+    data-tabs="timeline"
+    data-width="500"
+    data-height="800"
+    data-small-header="false"
+    data-adapt-container-width="true"
+    data-hide-cover="false"
+    data-show-facepile="false">
+    <blockquote
+      cite="https://www.facebook.com/samuigreenacreschool/"
+      class="fb-xfbml-parse-ignore">
+      <a href="https://www.facebook.com/samuigreenacreschool/">Greenacre International School, Koh Samui</a>
+    </blockquote>
+  </div>
+</div>
+</article>
 </div>
 </div>
 </section>
@@ -1636,25 +1654,8 @@
     })();
   </script>
 <script src="assets/site-routing-mobile-nav.js"></script>
-<script async="1" crossorigin="anonymous" defer="1" nonce="fo1IS16s" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0"></script><script id="stage14-facebook-init">
-(()=>{
-  const plugin=document.querySelector('.facebook-plugin-wrap .fb-page');
-  if(!plugin) return;
-
-  const parse=()=>{
-    try{
-      if(window.FB&&FB.XFBML){
-        FB.XFBML.parse(plugin.parentElement);
-      }else{
-        window.setTimeout(parse,250);
-      }
-    }catch(e){}
-  };
-
-  window.addEventListener('load',()=>{
-    window.setTimeout(parse,150);
-  });
-})();
+<script async defer crossorigin="anonymous"
+  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0">
 </script>
 <script src="assets/desktop-navigation.js"></script>
 
