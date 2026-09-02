@@ -108,9 +108,11 @@ linear-gradient(35deg,var(--green-pale),var(--sand));display:flex;align-items:ce
 .phase-link span{color:#667268;font-size:.88rem}
 .phase-arrow{margin-top:22px;color:var(--orange);font-size:1.15rem;font-weight:700}
 .pathway{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
-.pathway>div{background:#fff;border:1px solid color-mix(in srgb, var(--green) 12%, transparent);border-radius:18px;padding:20px}
+.pathway>div{position:relative;background:#fff;border:1px solid color-mix(in srgb, var(--green) 12%, transparent);border-radius:18px;padding:20px}
 .pathway b{display:block;color:var(--orange-text);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
 .pathway strong{color:var(--green-dark)}
+.pathway>div:not(:last-child)::after{display:block;content:"›";position:absolute;right:-8px;top:50%;z-index:2;color:var(--orange);font-size:30px;font-weight:400;line-height:1;transform:translate(50%,-50%)}
+
 .feature-list{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px}
 
 
@@ -121,7 +123,7 @@ linear-gradient(35deg,var(--green-pale),var(--sand));display:flex;align-items:ce
 .photo-plan.primary{background:linear-gradient(color-mix(in srgb, var(--green-deep) 10%, transparent),color-mix(in srgb, var(--green-deep) 18%, transparent)),url('../../assets/images/temp/primary-reading.webp') center/cover}
 .photo-plan.secondary{background:linear-gradient(color-mix(in srgb, var(--green-deep) 10%, transparent),color-mix(in srgb, var(--green-deep) 18%, transparent)),url('../../assets/images/temp/secondary-learning.webp') center/cover}
 .note-list{padding-left:20px}.note-list li{margin-bottom:10px}
-@media(max-width:850px){.phase-links,.pathway,.feature-list{grid-template-columns:1fr}.photo-plan{min-height:280px}}
+@media(max-width:850px){.phase-links,.pathway,.feature-list{grid-template-columns:1fr}.pathway{row-gap:26px}.pathway>div:not(:last-child)::after{content:"⌄";left:50%;right:auto;top:auto;bottom:-13px;font-size:27px;transform:translate(-50%,50%)}.photo-plan{min-height:280px}}
 </style>
 <script src="../../assets/site-routing-mobile-nav.js"></script>
 <script src="../../assets/desktop-navigation.js"></script>
