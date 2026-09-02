@@ -137,6 +137,17 @@ linear-gradient(35deg,var(--green-pale),var(--sand));display:flex;align-items:ce
 .note-list{padding-left:20px}.note-list li{margin-bottom:10px}
 @media(max-width:850px){.phase-links,.pathway,.feature-list{grid-template-columns:1fr}.photo-plan{min-height:280px}}
 </style>
+<script>
+document.querySelectorAll('.faq details').forEach((item) => {
+  item.addEventListener('toggle', () => {
+    if (!item.open) return;
+
+    document.querySelectorAll('.faq details').forEach((other) => {
+      if (other !== item) other.open = false;
+    });
+  });
+});
+</script>
 <script src="../../assets/site-routing-mobile-nav.js"></script>
 <script src="../../assets/desktop-navigation.js"></script>
 <footer aria-label="Greenacre International School footer" class="site-footer">
