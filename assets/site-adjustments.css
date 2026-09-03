@@ -1,53 +1,20 @@
-:root{--max:1460px}
+/* Site adjustments: small overrides to harmonise hero, header, footer and provide homepage simplifications. */
 
-/* Navigation: slight text increase for readability and tap targets - only text sizes changed */
-.site-header .nav-menu a,
-.site-header a{
-  font-size:1.05rem;
-  line-height:1.25;
-}
+/* Header / nav fixes */
+.site-header__inner { align-items: center; }
+.site-header .site-brand img { max-height: 42px; }
 
-/* Responsive navigation sizing */
-@media (max-width:1100px){
-  .site-header .nav-menu a,
-  .site-header a{
-    font-size:1.00rem;
-  }
-}
-@media (max-width:600px){
-  .site-header .nav-menu a,
-  .site-header a{
-    font-size:0.98rem;
-  }
-}
+/* Footer fallback link visible states */
+.site-footer__name { text-decoration: none; }
 
-/* Hero scaling tuned for Greenacre */
-.subhero{
-  padding:clamp(2rem,4.5vw,5rem) clamp(1rem,2.5vw,4rem);
-  min-height:clamp(280px,40vh,640px);
-  display:flex;
-  align-items:center;
-}
-.subhero h1{
-  font-size:clamp(2rem,5.5vw,3.5rem);
-  line-height:1.12;
-  max-width:680px;
-  margin:0 0 0.6rem 0;
-}
-.subhero p{
-  font-size:clamp(1rem,2.2vw,1.5rem);
-  line-height:1.5;
-  max-width:620px;
-  margin:0;
-}
-.subhero .eyebrow{
-  font-size:0.72rem; /* mobile safe */
-  letter-spacing:.12em;
-  text-transform:uppercase;
-}
+/* Homepage simplifications */
+.igcse-home-blurb { padding: 18px 0; background: var(--paper); }
 
-/* Footer link presentation - ensure clickable and visible on small screens */
-.site-footer__name{ text-decoration:none; }
+/* NOTE: visibility of very long homepage paragraphs will be handled by homepage JS that truncates or toggles copy.
+   Removing a site-wide !important hide to avoid accidentally suppressing content on other pages during development. */
+/* .homepage-long-copy { display: none !important; } */
 
-/* Small safety: ensure footer link is not transformed by other scripts */
-.site-footer__name[data-path], .site-footer__name[href="index.html"]{ cursor:pointer; }
+/* Minor responsive tweaks */
+@media (max-width: 640px) {
+  .site-header__inner { padding: 8px 16px; }
+}
