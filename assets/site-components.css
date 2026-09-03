@@ -3,6 +3,24 @@
  * Consolidated from identical page-local rules.
  */
 
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 10000;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #fff;
+  color: #1f4f31;
+  font-weight: 700;
+  transform: translateY(-160%);
+  transition: transform .15s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 /* Clear keyboard focus without affecting ordinary mouse interaction. */
 :where(a, button, input, select, textarea, [tabindex]):focus-visible {
   outline: 2px solid #1f4f31;

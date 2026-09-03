@@ -97,7 +97,7 @@
 .site-footer__logo--edt img{max-height:46px}
 .site-footer__logo--isqm img{max-height:50px}
 
-@media(max-width:980px){
+@media(max-width:1040px){
   .site-footer__identity{
     transform:none;
   }
