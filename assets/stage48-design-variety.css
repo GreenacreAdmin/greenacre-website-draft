@@ -42,7 +42,7 @@
 
 .early-how-stage48 > .wrap {
   border-radius: 22px;
-  padding: clamp(30px, 4vw, 48px);
+  padding: 24px clamp(30px, 4vw, 48px);
   background: #fff;
   border: 1px solid rgba(35, 96, 59, .13);
   box-shadow: 0 14px 38px rgba(43, 69, 48, .05);
@@ -117,7 +117,7 @@
 
 .secondary-igcse-stage48 > .wrap {
   border-radius: 22px;
-  padding: clamp(30px, 4vw, 48px);
+  padding: 24px clamp(30px, 4vw, 48px);
   background: #fff;
   border: 1px solid rgba(35, 96, 59, .13);
   box-shadow: 0 14px 38px rgba(43, 69, 48, .055);
@@ -229,7 +229,7 @@
 
 .primary-whole-child-stage48 > .wrap {
   border-radius: 22px;
-  padding: clamp(30px, 4vw, 48px);
+  padding: 24px clamp(30px, 4vw, 48px);
   background: #fff;
   border: 1px solid rgba(35, 96, 59, .13);
   box-shadow: 0 14px 38px rgba(43, 69, 48, .055);
@@ -268,7 +268,7 @@
 }
 
 .about-purpose-stage53 > .wrap {
-  padding: clamp(30px, 4vw, 48px);
+  padding: 24px clamp(30px, 4vw, 48px);
   background: #fff;
   border: 1px solid rgba(35, 96, 59, .13);
   border-radius: 22px;
