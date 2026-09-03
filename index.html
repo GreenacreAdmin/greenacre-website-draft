@@ -7,10 +7,8 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&amp;family=Comfortaa:wght@400;500;600;700&amp;family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
-<link href="assets/site-palette.css" rel="stylesheet"/>
 <style>
     :root {
-
 
 
 
@@ -138,7 +136,7 @@
       box-shadow: 0 9px 22px color-mix(in srgb, var(--green) 18%, transparent);
     }
 
-    .button-solid:hover { background: var(--green-fill-dark); }
+    .button-solid:hover { background: var(--green-dark); }
 
     .button-blue {
       background: var(--blue-dark);
@@ -176,8 +174,8 @@
       align-items: flex-end;
       isolation: isolate;
       background:
-        linear-gradient(90deg, color-mix(in srgb, var(--green-deep) 86%, transparent) 0%, color-mix(in srgb, var(--green-deep) 62%, transparent) 42%, color-mix(in srgb, var(--green-deep) 22%, transparent) 78%),
-        url("assets/images/home-hero-temp-a.png") 50% 50% / cover no-repeat;
+        linear-gradient(90deg, color-mix(in srgb, var(--green-deep) 86%, transparent) 0%, color-mix(in srgb, var(--green-deep) 62%, transparent) 42%, color-mix(in srgb, var(--green-deep) 22%, transparent) 73%, color-mix(in srgb, var(--green-deep) 8%, transparent) 100%),
+        url("assets/images/homepage-embedded/homepage-image-01.png") 50% 50% / cover no-repeat;
     }
 
     .hero::after {
@@ -364,7 +362,7 @@
 
     .identity {
       padding: 68px 0;
-      background: var(--green-fill-dark);
+      background: var(--green-dark);
       color: #fff;
     }
 
@@ -376,45 +374,26 @@
     }
 
     .identity h2 { color: #fff; }
-    .identity .eyebrow {
-      color: var(--green-wash);
-      opacity: 1;
-      font-weight: 800;
-    }
+    .identity .eyebrow { color: #bed5c2; }
 
     .identity-copy { max-width: 720px; }
 
     .identity-copy > p { color: rgba(255,255,255,.84); }
 
     .values {
-      position: relative;
-      display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-      gap: 18px;
-      margin: 30px 0 34px;
-      max-width: 760px;
-    }
-
-    .values::before {
-      content: "";
-      position: absolute;
-      left: 10%;
-      right: 10%;
-      top: 15px;
-      height: 1px;
-      background: rgba(230,160,103,.55);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 28px 0 30px;
     }
 
     .value {
-      position: relative;
-      z-index: 1;
-      display: grid;
-      justify-items: center;
-      gap: 8px;
-      min-width: 0;
-      font-size: .82rem;
+      padding: 9px 13px;
+      border: 1px solid rgba(255,255,255,.20);
+      border-radius: 999px;
+      background: rgba(255,255,255,.06);
+      font-size: .84rem;
       font-weight: 700;
-      text-align: center;
     }
 
     .identity-photo {
@@ -509,46 +488,21 @@
 
 
     .green-initial {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background: #e6a067;
-      color: var(--green-deep);
-      font-size: .96rem;
+      display: inline-block;
+      margin-right: 1px;
+      color: var(--orange);
+      font-size: 1.18em;
       font-weight: 800;
       line-height: 1;
-      box-shadow: 0 0 0 6px var(--green);
-    }
-
-    .green-initial > span {
-      display: block;
-      transform: translate(-0.5px, 1px);
     }
 
     .green-rest {
-      color: #fff;
-      line-height: 1.25;
+      color: inherit;
     }
 
     .quick-links {
       padding: 60px 0;
-      color: #fff;
-      background: linear-gradient(90deg, var(--blue-dark), var(--blue));
-    }
-
-    .quick-links .eyebrow {
-      color: var(--hero-blue-eyebrow) !important;
-    }
-
-    .quick-links h2 {
-      color: #fff;
-    }
-
-    .quick-links .lead {
-      color: rgba(255,255,255,.82);
+      background: var(--paper);
     }
 
     .quick-grid {
@@ -619,7 +573,7 @@
 
     .location-social-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 500px;
+      grid-template-columns: minmax(0, 1.45fr) minmax(380px, .75fr);
       gap: 28px;
       align-items: stretch;
     }
@@ -755,7 +709,7 @@
     .testimonial-shell {
       position: relative;
       max-width: 980px;
-      min-height: 220px;
+      min-height: 320px;
       margin: 0 auto;
       display: grid;
       place-items: center;
@@ -764,7 +718,7 @@
     .testimonial-card {
       grid-area: 1 / 1;
       width: 100%;
-      padding: clamp(24px, 3vw, 36px);
+      padding: clamp(32px, 5vw, 58px);
       border-radius: var(--radius);
       background: #fff;
       box-shadow: var(--shadow);
@@ -900,18 +854,6 @@
 
       .intro-photo, .identity-photo { min-height: 390px; }
       .section-heading { gap: 18px; }
-
-      .values {
-        grid-template-columns: repeat(5, minmax(0, 1fr));
-        gap: 0;
-        width: 100%;
-        max-width: 680px;
-      }
-
-      .value {
-        font-size: .74rem;
-      }
-
       .phase-grid { grid-template-columns: 1fr; }
       .phase-card { min-height: 330px; }
       .pathway-mark { justify-content: flex-start; }
@@ -985,91 +927,176 @@
         white-space: normal;
       }
 
-      .values {
-        gap: 0;
-        margin-top: 26px;
-        margin-bottom: 30px;
-      }
+      .quick-grid { grid-template-columns: 1fr; }
+      .quick-card { min-height: 148px; }
+      .testimonial-shell { min-height: 390px; }
+    }
 
-      .value {
-        gap: 6px;
-        font-size: .64rem;
-      }
-
-      .green-initial {
-        width: 28px;
-        height: 28px;
-        font-size: .90rem;
-      }
-
-      .green-initial > span { transform: translate(-0.5px, 0.5px); }
-
-      .green-rest {
-        font-size: .92rem;
-      }
-
-      .pathway-card {
-        gap: 22px;
-      }
-
-      .pathway-mark-inner {
-        padding-left: 20px;
-      }
-
-      .quick-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .quick-card {
-        min-height: 164px;
-      }
-
-      .location-panel-head,
-      .facebook-panel-head {
-        padding-left: 22px;
-        padding-right: 22px;
-      }
-
-      .map-frame,
-      .facebook-xfbml-wrap {
-        min-height: 360px;
-      }
-
-      .map-link {
-        white-space: normal;
-      }
-
-      .testimonial-shell {
-        min-height: 250px;
-      }
-
-      blockquote {
-        font-size: 1.12rem;
-      }
-
-      .final-cta {
-        padding: 64px 0;
-      }
-
-      .final-cta h2 {
-        font-size: 1.95rem;
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        transition-duration: .001ms !important;
+        animation-duration: .001ms !important;
+        animation-iteration-count: 1 !important;
       }
     }
-  </style>
-<link href="assets/stage11-photo-system.css" rel="stylesheet"/>
-<link href="assets/stage16-standard-navigation.css" rel="stylesheet"/>
-<link href="assets/stage25-header-uniform.css" rel="stylesheet"/><link href="assets/formatting-safeguards.css" rel="stylesheet"/><style id="stage51-section-rhythm">main > section:not(.page-hero):not(.subhero){padding-top:32px!important;padding-bottom:32px!important}
 
-main > section:last-of-type:not(.page-hero):not(.subhero){padding-bottom:40px!important}</style>
+    .facebook-frame {
+      display: block;
+      flex: 0 0 auto;
+      max-width: 100%;
+      border: 0;
+      background: #fff;
+    }
+
+
+
+
+
+
+
+
+
+    .facebook-xfbml-wrap {
+      width: 100%;
+      min-height: 600px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      overflow: hidden;
+      padding: 0 18px 18px;
+      background: #fff;
+    }
+
+    .facebook-xfbml-wrap .fb-page {
+      width: 100%;
+      max-width: 600px;
+    }
+
+    @media (max-width: 700px) {
+      .facebook-xfbml-wrap {
+        min-height: 600px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+
+    .green-values-intro {
+      margin: 0 0 22px;
+      max-width: 760px;
+      color: rgba(255,255,255,.88);
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+  </style>
+<title>Greenacre International School | Koh Samui</title>
+<link href="assets/site-palette.css" rel="stylesheet"/>
+<link href="assets/site-header-styles.css" rel="stylesheet"/>
+<link href="assets/stage11-photo-system.css" rel="stylesheet"/>
+
+<style id="stage11-home-stamp-visibility">
+.home-photo-temp{position:relative!important}
+.home-photo-temp>.home-photo-stamp,
+.hero>.home-photo-stamp{
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+  position:absolute!important;
+  top:12px!important;
+  right:12px!important;
+  bottom:auto!important;
+  left:auto!important;
+  z-index:999!important;
+  width:auto!important;
+  height:auto!important;
+  margin:0!important;
+  padding:6px 9px!important;
+  border:1px solid rgba(255,255,255,.55)!important;
+  border-radius:999px!important;
+  background:rgba(25,55,34,.88)!important;
+  color:#fff!important;
+  font-family:Comfortaa,sans-serif!important;
+  font-size:9px!important;
+  font-weight:700!important;
+  line-height:1!important;
+  letter-spacing:.04em!important;
+  text-transform:none!important;
+  box-shadow:0 2px 9px rgba(0,0,0,.20)!important;
+  pointer-events:none!important;
+}
+/* Homepage hero replacement marker. */
+</style>
+<style id="stage14-testimonial-placeholder-style">
+.stage14-testimonial-placeholder{
+  border:2px dashed color-mix(in srgb, var(--green) 28%, transparent)!important;
+  background:rgba(234,242,228,.52)!important;
+}
+.stage14-testimonial-placeholder blockquote{
+  color:#667268!important;
+  font-style:italic!important;
+}
+.stage14-testimonial-placeholder cite{
+  color:#8f1710!important;
+  font-weight:800!important;
+  letter-spacing:.06em!important;
+}
+</style>
+<link href="assets/stage16-standard-navigation.css" rel="stylesheet"/>
+<link href="assets/stage25-header-uniform.css" rel="stylesheet"/><style id="stage36-facebook-details">
+.facebook-panel{
+  overflow:visible!important;
+}
+.facebook-plugin-wrap{
+  position:relative;
+  width:100%;
+  max-width:500px;
+  min-height:800px;
+  margin:0 auto;
+  overflow:visible;
+}
+.facebook-plugin-wrap .fb-page{
+  width:100%;
+  max-width:500px;
+}
+.facebook-fallback{
+  display:none;
+  width:100%!important;
+  max-width:500px!important;
+  height:800px!important;
+  margin:0 auto;
+}
+@media(max-width:700px){
+  .facebook-plugin-wrap{
+    min-height:680px;
+  }
+  .facebook-plugin-wrap .fb-page,
+  .facebook-plugin-wrap .fb-page>span,
+  .facebook-plugin-wrap .fb-page iframe,
+  .facebook-fallback{
+    min-height:680px!important;
+    height:680px!important;
+  }
+}
+</style><link href="assets/formatting-safeguards.css" rel="stylesheet"/><style id="stage51-section-rhythm">
+/* Stage 51: tighter boundaries between homepage sections */
+.intro{padding-top:40px!important;padding-bottom:40px!important}
+.phases{padding-top:40px!important;padding-bottom:40px!important}
+.identity{padding-top:40px!important;padding-bottom:40px!important}
+.pathway{padding-top:40px!important;padding-bottom:40px!important}
+.wellbeing-feature{padding-top:40px!important;padding-bottom:40px!important}
+.quick-links{padding-top:40px!important;padding-bottom:40px!important}
+.testimonials{padding-top:40px!important;padding-bottom:40px!important}
+.location-social{padding-top:40px!important;padding-bottom:40px!important}
+.final-cta{padding-top:48px!important;padding-bottom:48px!important}
+</style>
 <link href="assets/site-typography.css" rel="stylesheet"/>
 <link href="assets/site-components.css" rel="stylesheet"/>
-<link rel="stylesheet" href="assets/site-footer.css?v=20260903-2">
-<link href="assets/site-hero.css" rel="stylesheet"/>
-<link rel="stylesheet" href="assets/site-adjustments.css">
 <link rel="icon" type="image/png" href="assets/images/greenacre-favicon.png"/>
 </head>
-<body>
-<header class="site-header"><div class="site-header__inner"><a aria-label="Greenacre International School home" class="site-brand" data-path="" href="index.html"><img alt="Greenacre International School" src="assets/images/greenacre-logo.png"/></a><nav class="site-nav"><a data-path="" href="index.html">Home</a>
+<body><header class="site-header"><div class="site-header__inner"><a aria-label="Greenacre International School home" class="site-brand" data-path="" href="/"><img alt="Greenacre International School" src="assets/images/greenacre-logo.png"/><span class="site-brand__name">Greenacre International School</span></a><button aria-expanded="false" class="menu-toggle" type="button">Menu</button><nav aria-label="Primary" class="site-nav">
+<a data-path="" href="/">Home</a>
 <div class="nav-drop">
 <button aria-expanded="false" aria-haspopup="true" type="button">Our School</button>
 <div class="nav-menu">
@@ -1108,27 +1135,413 @@ main > section:last-of-type:not(.page-hero):not(.subhero){padding-bottom:40px!im
 <a data-path="parent-information/services/" href="/parent-information/services/">Services</a>
 </div>
 </div>
-<div class="nav-drop">
-<button aria-expanded="false" aria-haspopup="true" type="button">Contact</button>
-<div class="nav-menu">
-<a data-path="contact/" href="/contact/">Contact the School</a>
-<a data-path="work-with-us/" href="/work-with-us/">Work With Us</a>
-</div>
-</div>
+<a data-path="contact/" href="/contact/">Contact</a>
 </nav></div></header>
-<main>
-<!-- hero and sections unchanged -->
+<main class="page">
+<section aria-labelledby="home-title" class="hero">
+<span class="home-photo-stamp">PLACEHOLDER IMAGE</span>
+<div class="hero-inner">
+<p class="eyebrow">Greenacre International School · Koh Samui</p>
+<h1 id="home-title"><span class="motto-line">Growing Together</span> <span class="motto-dot">·</span> <span class="motto-line">Learning Together</span> <span class="motto-dot">·</span> <span class="motto-line">Working Together</span></h1>
+<p class="hero-copy">
+          An inclusive international school on Koh Samui, supporting students to grow
+          academically, personally and with a strong awareness of the natural world.
+        </p>
+<div class="button-row">
+<a class="button button-light" data-path="admissions/admissions-visits" href="/admissions/admissions-visits">Admissions &amp; Visits</a>
+<a class="button button-ghost-light" data-path="learning/curriculum" href="/learning/curriculum">Explore Learning</a>
+</div>
+</div>
+</section>
+<section class="intro">
+<div class="wrap intro-grid">
+<div aria-label="Greenacre pupils taking part in a classroom learning activity" class="intro-photo home-photo-temp" role="img"><span class="home-photo-stamp">Photo to be updated</span></div>
+<div class="intro-copy">
+<p class="eyebrow">Welcome to Greenacre</p>
+<div aria-hidden="true" class="orange-rule"></div>
+<h2>Welcome to Greenacre International School</h2>
+<p>Greenacre is an inclusive international school based in the natural surroundings of Koh Samui, providing a clear educational journey from age 3 through to Cambridge IGCSE.</p>
+<p>
+            We support students to be the best version of themselves through academic
+            learning, co-curricular opportunities, cultural understanding and a love
+            for the planet.
+          </p>
+<div class="button-row">
+<a class="button button-solid button-blue" data-path="our-school/about-greenacre" href="/our-school/about-greenacre">About Greenacre</a>
+<a class="button button-outline" data-path="our-school/our-team" href="/our-school/our-team">Meet Our Team</a>
+</div>
+</div>
+</div>
+</section>
+<section class="phases">
+<div class="wrap">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Learning at Greenacre</p>
+<h2>Learning through every stage</h2>
+</div>
+<p class="lead">
+            Greenacre combines internationally recognised programmes with aspects of
+            the UK curriculum, with clear progression through each stage of school life.
+          </p>
+</div>
+<div class="phase-grid">
+<a class="phase-card early home-photo-temp" data-path="learning/early-years" href="/learning/early-years">
+<div class="phase-content">
+<span class="phase-age">FS1–FS2</span>
+<h3>Early Years</h3>
+<p>A happy, secure and creative environment where children learn through play, investigation and doing.</p>
+<span class="card-link">Discover Early Years →</span>
+</div>
+<span class="home-photo-stamp">Photo to be updated</span></a>
+<a class="phase-card primary home-photo-temp" data-path="learning/primary" href="/learning/primary">
+<div class="phase-content">
+<span class="phase-age">Years 1–6</span>
+<h3>Primary</h3>
+<p>Cambridge-focused learning, alongside aspects of the UK Curriculum, with strong progression in English, Mathematics and Science.</p>
+<span class="card-link">Explore Primary →</span>
+</div>
+<span class="home-photo-stamp">Photo to be updated</span></a>
+<a class="phase-card secondary home-photo-temp" data-path="learning/secondary" href="/learning/secondary">
+<div class="phase-content">
+<span class="phase-age">Years 7–11</span>
+<h3>Secondary</h3>
+<p>Cambridge International learning in Years 7-9, progressing to Cambridge IGCSE in Years 10-11.</p>
+<span class="card-link">Explore Secondary →</span>
+</div>
+<span class="home-photo-stamp">Photo to be updated</span></a>
+</div>
+</div>
+</section>
+<section class="identity">
+<div class="wrap identity-grid">
+<div class="identity-copy">
+<p class="eyebrow">Environmentality</p>
+<h2>Environmentality is part of who we are</h2>
+<p>
+            Environmental education at Greenacre includes learning in the environment,
+            about the environment and for the environment, developing knowledge,
+            responsibility and more sustainable behaviours.
+          </p>
+<p class="green-values-intro">Our G.R.E.E.N. values shape how we learn, work and grow together.</p>
+<div aria-label="Greenacre GREEN values" class="values">
+<span class="value"><span class="green-initial">G</span><span class="green-rest">rowth</span></span>
+<span class="value"><span class="green-initial">R</span><span class="green-rest">espect</span></span>
+<span class="value"><span class="green-initial">E</span><span class="green-rest">nvironmental</span></span>
+<span class="value"><span class="green-initial">E</span><span class="green-rest">mpathy</span></span>
+<span class="value"><span class="green-initial">N</span><span class="green-rest">urture</span></span>
+</div>
+<a class="button button-light" data-path="our-school/environmentality" href="/our-school/environmentality">Discover Environmentality</a>
+</div>
+<div aria-label="Greenacre pupils learning in the school garden" class="identity-photo home-photo-temp" role="img"><span class="home-photo-stamp">Photo to be updated</span></div>
+</div>
+</section>
+<section class="pathway">
+<div class="wrap">
+<div class="pathway-card">
+<div>
+<p class="eyebrow">Cambridge pathway</p>
+<h2>A clear route to Cambridge IGCSE</h2>
+<p class="lead">
+              Greenacre is a Cambridge International School and Approved Examinations Centre,
+              with learning designed to build progressively towards Cambridge IGCSE.
+            </p>
+<a class="button button-solid button-blue" data-path="learning/curriculum" href="/learning/curriculum">View the Curriculum</a>
+</div>
+<div aria-label="Cambridge International status" class="pathway-mark">
+<div class="pathway-mark-inner">
+<strong>Cambridge International School</strong>
+<span>Internationally recognised learning and Cambridge IGCSE in Secondary.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="wellbeing-feature">
+<div class="wrap">
+<div class="wellbeing-card">
+<div aria-label="Greenacre pupils practising a calm outdoor wellbeing activity" class="wellbeing-photo home-photo-temp" role="img"><span class="home-photo-stamp">Photo to be updated</span></div>
+<div class="wellbeing-copy">
+<p class="eyebrow">Wellbeing</p>
+<h2>Wellbeing is part of learning</h2>
+<p class="lead">
+              We help students build resilience, self-worth and a sense of belonging,
+              with kindness, compassion and respect embedded in school life.
+            </p>
+<div class="button-row">
+<a class="button button-solid button-blue" data-path="our-school/wellbeing" href="/our-school/wellbeing">Explore Wellbeing</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="quick-links">
+<div class="wrap">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Find what you need</p>
+<h2>Useful links for families</h2>
+</div>
+<p class="lead">
+            Quick routes for both prospective and current families.
+          </p>
+</div>
+<div class="quick-grid">
+<a class="quick-card" data-path="admissions/admissions-visits" href="/admissions/admissions-visits">
+<div><strong>Admissions &amp; Visits</strong><span>Enquiries, visits and how to join Greenacre</span></div>
+<div class="quick-arrow">→</div>
+</a>
+<a class="quick-card" data-path="admissions/fees" href="/admissions/fees">
+<div><strong>School Fees</strong><span>Current fees and applicable charges</span></div>
+<div class="quick-arrow">→</div>
+</a>
+<a class="quick-card" data-path="parent-information/calendar-term-dates" href="/parent-information/calendar-term-dates">
+<div><strong>Calendar &amp; Term Dates</strong><span>Terms, holidays and important dates</span></div>
+<div class="quick-arrow">→</div>
+</a>
 
-<!-- Short IGCSE blurb for international parents - concise -->
-<section class="igcse-home-blurb"><div class="wrap"><p>Cambridge IGCSE - a two-year international qualification taken in Years 10-11 that builds subject knowledge and exam-ready skills for post-16 pathways.</p></div></section>
+<a class="quick-card" data-path="parent-information/key-information" href="/parent-information/key-information">
+<div><strong>Key Information</strong><span>School day, uniform, homework and procedures</span></div>
+<div class="quick-arrow">→</div>
+</a>
 
-<script src="assets/site-routing-mobile-nav.js"></script>
-<script src="assets/desktop-navigation.js"></script>
+
+
+</div>
+</div>
+</section>
+<section aria-labelledby="testimonial-heading" class="testimonials">
+<div class="wrap">
+<div class="narrow" style="text-align:center; margin-bottom:34px;">
+<p class="eyebrow">From our families</p>
+<h2 id="testimonial-heading">What parents say about Greenacre</h2>
+</div>
+<div class="testimonial-shell">
+<article class="testimonial-card active">
+<blockquote>
+              Since our daughter came to Greenacre she has completely blossomed there.
+              The many smiles and kindness towards the children gave her a lot of confidence
+              and gave Greenacre that extra soul.
+            </blockquote>
+<cite>Aurélie &amp; David Prudent</cite>
+</article>
+<article class="testimonial-card">
+<blockquote>
+              Our children have endured multiple schools across multiple countries, but
+              the transition here was effortless. They do not want to leave. Greenacre
+              is their favourite, hands down.
+            </blockquote>
+<cite>Greenacre parent testimonial</cite>
+</article>
+<article class="testimonial-card stage14-testimonial-placeholder"><blockquote>Approved Greenacre family testimonial to be added here.</blockquote><cite>TESTIMONIAL PLACEHOLDER</cite></article></div>
+<div aria-label="Choose testimonial" class="testimonial-dots"><button aria-label="Show testimonial 1" class="testimonial-dot active" type="button"></button><button aria-label="Show testimonial 2" class="testimonial-dot" type="button"></button><button aria-label="Show testimonial 3" class="testimonial-dot" type="button"></button></div>
+</div>
+</section>
+<section aria-labelledby="location-social-heading" class="location-social">
+<div class="wrap">
+<div class="location-social-heading">
+<p class="eyebrow">Greenacre on Koh Samui</p>
+<h2 id="location-social-heading">Find us and follow school life</h2>
+</div>
+<div class="location-social-grid">
+<article class="location-panel">
+<div class="location-panel-head">
+<div>
+<h3>Find Greenacre</h3>
+<p>108 Moo 2, Na Mueang, Koh Samui, Surat Thani 84140</p>
+</div>
+<a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Greenacre%20International%20School%20Koh%20Samui" rel="noopener" target="_blank">Open in Google Maps</a>
+</div>
+<iframe allowfullscreen="" class="map-frame" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.google.com/maps?q=Greenacre%20International%20School%2C%20Koh%20Samui%2C%20Thailand&amp;z=12&amp;output=embed" title="Map showing Greenacre International School, Koh Samui">
+</iframe>
+</article>
+<article class="facebook-panel">
+<div class="facebook-panel-head">
+<h3>Latest from Greenacre</h3>
+</div>
+<div id="fb-root"></div><div class="facebook-plugin-wrap"><div class="fb-page" data-adapt-container-width="1" data-height="800" data-hide-cover="true" data-href="https://www.facebook.com/samuigreenacreschool/" data-show-facepile="false" data-show-posts="true" data-small-header="true" data-tabs="timeline" data-width="500"><blockquote cite="https://www.facebook.com/samuigreenacreschool/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/samuigreenacreschool/">Greenacre International School, Koh Samui</a></blockquote></div><iframe allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen="true" class="facebook-fallback" frameborder="0" height="800" scrolling="no" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsamuigreenacreschool%2F&amp;tabs=timeline&amp;width=500&amp;height=800&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=true&amp;show_facepile=false" style="border:none;overflow:hidden" title="Greenacre International School Facebook feed" width="500"></iframe></div></article>
+</div>
+</div>
+</section>
+<section class="final-cta">
+<div class="wrap final-cta-grid">
+<div>
+<p class="eyebrow" style="color:var(--blue-soft);">Admissions</p>
+<h2>Come and see Greenacre for yourself</h2>
+<p>
+            We encourage families to visit with their child during a normal school day,
+            meet the team and experience the atmosphere of Greenacre for themselves.
+          </p>
+</div>
+<div class="button-row">
+<a class="button button-light" data-path="admissions/admissions-visits" href="/admissions/admissions-visits">Arrange a Visit</a>
+<a class="button button-ghost-light" data-path="contact" href="/contact">Contact Us</a>
+</div>
+</div>
+</section>
 </main>
+<style>
+  :root {
+    --footer-height: 82px;
+  }
+
+  .site-footer {
+    position: relative;
+    min-height: var(--footer-height);
+    background: var(--shell-green);
+    color: var(--shell-ink);
+    border-top: 1px solid color-mix(in srgb, var(--shell-ink) 12%, transparent);
+  }
+
+  .site-footer__inner {
+    width: min(calc(100% - 46px),1500px);
+    min-height: var(--footer-height);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(285px, .72fr) minmax(680px, 1.28fr);
+    gap: clamp(32px, 5vw, 84px);
+    align-items: center;
+  }
+
+  .site-footer__identity {
+    transform: translateX(14px);
+  }
+
+  .site-footer__name {
+    display: inline-block;
+    margin-bottom: 3px;
+    color: var(--shell-ink);
+    font-family: "Comfortaa", sans-serif;
+    font-size: .98rem;
+    line-height: 1;
+    text-decoration: none;
+  }
+
+  .site-footer__details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px 10px;
+    color: color-mix(in srgb, var(--shell-ink) 78%, transparent);
+    font-family: "Comfortaa", sans-serif;
+    font-size: .60rem;
+    line-height: 1.28;
+  }
+
+  .site-footer__details span,
+  .site-footer__details a {
+    white-space: nowrap;
+  }
+
+  .site-footer__details a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .site-footer__logos {
+    height: 58px;
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 24px;
+  }
+
+  .site-footer__logo {
+    flex: 0 0 auto;
+    min-width: 0;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .site-footer__logo img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 45px;
+    object-fit: contain;
+  }
+
+  .site-footer__logo--onesqa img { max-height: 46px; }
+  .site-footer__logo--isat img { max-height: 43px; }
+  .site-footer__logo--cambridge img { max-height: 38px; }
+  .site-footer__logo--edt img { max-height: 46px; }
+  .site-footer__logo--isqm img { max-height: 50px; }
+
+  .site-footer__logo:hover {
+    opacity: .78;
+  }
+
+  @media (max-width: 980px) {
+    .site-footer__identity {
+      transform: none;
+    }
+
+    :root { --footer-height: 96px; }
+
+    .site-footer__inner {
+      width: min(calc(100% - 28px), 1500px);
+      grid-template-columns: 220px 1fr;
+      gap: 22px;
+    }
+
+    .site-footer__name { font-size: .86rem; }
+    .site-footer__details { font-size: .54rem; gap: 1px 7px; }
+    .site-footer__logos {
+      gap: 14px;
+    }
+  }
+
+  @media (max-width: 720px) {
+    :root { --footer-height: 126px; }
+
+    .site-footer__inner {
+      grid-template-columns: 1fr;
+      grid-template-rows: 42px 66px;
+      gap: 4px;
+      padding: 7px 0;
+    }
+
+    .site-footer__identity {
+      text-align: center;
+    }
+
+    .site-footer__name { font-size: .80rem; }
+
+    .site-footer__details {
+      justify-content: center;
+      font-size: .51rem;
+    }
+
+    .site-footer__logos {
+      width: 100%;
+      justify-self: stretch;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 6px;
+    }
+
+    .site-footer__logo {
+      flex: initial;
+    }
+
+    .site-footer__logo img {
+      max-height: 34px;
+    }
+
+    .site-footer__logo--cambridge img,
+    .site-footer__logo--edt img {
+      max-height: 29px;
+    }
+  }
+</style>
 <footer aria-label="Greenacre International School footer" class="site-footer">
 <div class="site-footer__inner">
 <div class="site-footer__identity">
-<a class="site-footer__name" data-path="" href="index.html">Greenacre International School</a>
+<a class="site-footer__name" data-path="" href="/">Greenacre International School</a>
 <div class="site-footer__details">
 <span>108 Moo 2, Na Mueang, Koh Samui, Surat Thani 84140</span>
 <a href="tel:+6677430729">+66 77 430 729</a>
@@ -1137,22 +1550,138 @@ main > section:last-of-type:not(.page-hero):not(.subhero){padding-bottom:40px!im
 </div>
 <div aria-label="Accreditations and associations" class="site-footer__logos">
 <a aria-label="ONESQA" class="site-footer__logo site-footer__logo--onesqa" href="https://www.onesqa.or.th/en/" rel="noopener noreferrer" target="_blank">
-<img alt="ONESQA" src="assets/onesqa.png"/>
+<img alt="ONESQA" src="assets/onesqa.png" width="772" height="629"/>
 </a>
 <a aria-label="International Schools Association of Thailand" class="site-footer__logo site-footer__logo--isat" href="https://www.isat.or.th/" rel="noopener noreferrer" target="_blank">
-<img alt="International Schools Association of Thailand" src="assets/images/footer-local/isat.png"/>
+<img alt="International Schools Association of Thailand" src="assets/images/footer-local/isat.png" width="1473" height="671"/>
 </a>
 <a aria-label="Cambridge International School" class="site-footer__logo site-footer__logo--cambridge" href="https://www.cambridgeinternational.org/" rel="noopener noreferrer" target="_blank">
-<img alt="Cambridge International School" src="assets/images/homepage-embedded/homepage-image-08.png"/>
+<img alt="Cambridge International School" src="assets/images/homepage-embedded/homepage-image-08.png" width="473" height="140"/>
 </a>
 <a aria-label="Education Development Trust" class="site-footer__logo site-footer__logo--edt" href="https://www.edt.org/" rel="noopener noreferrer" target="_blank">
-<img alt="Education Development Trust" src="assets/images/footer-local/edt.png"/>
+<img alt="Education Development Trust" src="assets/images/footer-local/edt.png" width="3200" height="1800"/>
 </a>
-<a aria-label="International Schools Quality Mark candidate school" class="site-footer__logo site-footer__logo--isqm" href="https://www.edt.org/what-we-do/school-years/our-programmes/isqm-school-quality-mark/" rel="noopener noreferrer" target="_blank">
-<img alt="International Schools Quality Mark candidate school" src="assets/images/homepage-embedded/homepage-image-09.png"/>
+<a aria-label="International Schools Quality Mark candidate school" class="site-footer__logo site-footer__logo--isqm" href="https://www.edt.org/what-we-do/school-years/our-programmes/isqm-school-accreditation/" rel="noopener noreferrer" target="_blank">
+<img alt="International Schools Quality Mark candidate school" src="assets/images/homepage-embedded/homepage-image-09.png" width="216" height="170"/>
 </a>
 </div>
 </div>
 </footer>
+<script>
+    (() => {
+      const cards = Array.from(document.querySelectorAll('.testimonial-card'));
+      const dots = Array.from(document.querySelectorAll('.testimonial-dot'));
+      if (!cards.length || cards.length !== dots.length) return;
+
+      let current = 0;
+      let timer = null;
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const region = document.querySelector('.testimonials');
+
+      const show = (index) => {
+        current = (index + cards.length) % cards.length;
+        cards.forEach((card, i) => card.classList.toggle('active', i === current));
+        dots.forEach((dot, i) => {
+          dot.classList.toggle('active', i === current);
+          dot.setAttribute('aria-pressed', i === current ? 'true' : 'false');
+        });
+      };
+
+      const stop = () => {
+        clearInterval(timer);
+        timer = null;
+      };
+
+      const start = () => {
+        if (reducedMotion) return;
+        stop();
+        timer = setInterval(() => show(current + 1), 6500);
+      };
+
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          show(index);
+          stop();
+        });
+      });
+
+      if (region) {
+        region.addEventListener('mouseenter', stop);
+        region.addEventListener('mouseleave', start);
+        region.addEventListener('focusin', stop);
+        region.addEventListener('focusout', event => {
+          if (!region.contains(event.relatedTarget)) start();
+        });
+      }
+
+      show(0);
+      start();
+    })();
+  </script>
+<script src="assets/site-routing-mobile-nav.js"></script>
+<script async="1" crossorigin="anonymous" defer="1" nonce="fo1IS16s" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0"></script><script id="stage14-facebook-init">
+(()=>{
+  const plugin=document.querySelector('.facebook-plugin-wrap .fb-page');
+  const fallback=document.querySelector('.facebook-fallback');
+  if(!plugin||!fallback) return;
+
+  const showFallback=()=>{
+    if(!plugin.querySelector('iframe')){
+      plugin.style.display='none';
+      fallback.style.display='block';
+    }
+  };
+
+  const parse=()=>{
+    try{
+      if(window.FB&&FB.XFBML){
+        FB.XFBML.parse(plugin.parentElement,()=>{
+          window.setTimeout(showFallback,1200);
+        });
+      }else{
+        window.setTimeout(parse,250);
+      }
+    }catch(e){
+      showFallback();
+    }
+  };
+
+  window.addEventListener('load',()=>{
+    window.setTimeout(parse,150);
+    window.setTimeout(showFallback,3500);
+  });
+})();
+</script>
+<script src="assets/desktop-navigation.js"></script>
+
+<style id="homepage-hero-fit">
+.hero {
+  min-height: min(1000px, calc(100vh - 65.6px));
+  min-height: min(1000px, calc(100dvh - 65.6px));
+}
+
+@media (max-width: 720px) {
+  .hero {
+    min-height: min(1000px, calc(100vh - 57.6px));
+    min-height: min(1000px, calc(100dvh - 57.6px));
+  }
+}
+
+@media (max-width: 560px) {
+  .hero {
+    min-height: max(560px, min(1000px, calc(100dvh - 57.6px)));
+  }
+}
+</style>
+
 </body>
 </html>
+
+<style>
+.site-footer__name,
+.site-footer__details,
+.site-footer__details a,
+.site-footer__details span {
+  font-family:"Comfortaa",sans-serif!important;
+}
+</style>
