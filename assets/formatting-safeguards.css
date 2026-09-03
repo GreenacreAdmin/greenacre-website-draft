@@ -28,8 +28,6 @@ main [class*="flex"] > * {
 .subhero .kicker,
 .dark .eyebrow,
 .dark .kicker,
-.identity .eyebrow,
-.identity .kicker,
 .green-section .eyebrow,
 .green-section .kicker,
 .cta-band .eyebrow,
@@ -70,7 +68,7 @@ main table {
 
 
 .green-section{
-  background:var(--green-fill-dark)!important;
+  background:var(--green-dark)!important;
   color:var(--green-wash)!important;
 }
 
