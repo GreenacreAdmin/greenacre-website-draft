@@ -5,6 +5,7 @@
 .site-brand__name{margin-left:-10px;color:var(--shell-ink);font:700 .82rem/1.25 "Comfortaa",sans-serif;white-space:nowrap}
 @media(max-width:1150px){.site-brand__name{display:none}}
 .site-nav{margin-left:auto;display:flex;align-items:center;gap:4px}.site-nav a,.nav-drop>button{border:0;background:none;color:var(--shell-ink);font:700 .78rem/1.2 "Comfortaa",sans-serif;text-decoration:none;padding:12px 11px;border-radius:999px;cursor:pointer}.site-nav a:hover,.nav-drop>button:hover{background:rgba(255,255,255,.38)}
+@media(min-width:981px){.site-brand__name,.site-nav>a,.site-nav>.nav-drop>button{font-size:1rem}.site-nav .nav-menu a{font-size:.875rem}}
 .nav-drop.nav-open>button,
 .nav-drop>button.nav-section-current{
   background:rgba(255,255,255,.38)
