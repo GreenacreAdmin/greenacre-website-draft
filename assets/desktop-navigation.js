@@ -1,5 +1,5 @@
 (()=>{
-  const desktopMQ = window.matchMedia('(min-width:901px)');
+  const desktopMQ = window.matchMedia('(min-width:981px)');
   const drops = [...document.querySelectorAll('.nav-drop')];
 
   const closeAll = except => {

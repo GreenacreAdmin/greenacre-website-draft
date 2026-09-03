@@ -136,7 +136,7 @@
       box-shadow: 0 9px 22px color-mix(in srgb, var(--green) 18%, transparent);
     }
 
-    .button-solid:hover { background: var(--green-dark); }
+    .button-solid:hover { background: var(--green-fill-dark); }
 
     .button-blue {
       background: var(--blue-dark);
@@ -175,7 +175,7 @@
       isolation: isolate;
       background:
         linear-gradient(90deg, color-mix(in srgb, var(--green-deep) 86%, transparent) 0%, color-mix(in srgb, var(--green-deep) 62%, transparent) 42%, color-mix(in srgb, var(--green-deep) 22%, transparent) 73%, color-mix(in srgb, var(--green-deep) 8%, transparent) 100%),
-        url("assets/images/homepage-embedded/homepage-image-01.png") 50% 50% / cover no-repeat;
+        url("assets/images/home-hero-temp-a.png") 50% 50% / cover no-repeat;
     }
 
     .hero::after {
@@ -362,7 +362,7 @@
 
     .identity {
       padding: 68px 0;
-      background: var(--green-dark);
+      background: var(--green-fill-dark);
       color: #fff;
     }
 
@@ -374,26 +374,45 @@
     }
 
     .identity h2 { color: #fff; }
-    .identity .eyebrow { color: #bed5c2; }
+    .identity .eyebrow {
+      color: var(--green-wash);
+      opacity: 1;
+      font-weight: 800;
+    }
 
     .identity-copy { max-width: 720px; }
 
     .identity-copy > p { color: rgba(255,255,255,.84); }
 
     .values {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin: 28px 0 30px;
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 18px;
+      margin: 30px 0 34px;
+      max-width: 760px;
+    }
+
+    .values::before {
+      content: "";
+      position: absolute;
+      left: 10%;
+      right: 10%;
+      top: 15px;
+      height: 1px;
+      background: rgba(230,160,103,.55);
     }
 
     .value {
-      padding: 9px 13px;
-      border: 1px solid rgba(255,255,255,.20);
-      border-radius: 999px;
-      background: rgba(255,255,255,.06);
-      font-size: .84rem;
+      position: relative;
+      z-index: 1;
+      display: grid;
+      justify-items: center;
+      gap: 8px;
+      min-width: 0;
+      font-size: .82rem;
       font-weight: 700;
+      text-align: center;
     }
 
     .identity-photo {
@@ -488,21 +507,46 @@
 
 
     .green-initial {
-      display: inline-block;
-      margin-right: 1px;
-      color: var(--orange);
-      font-size: 1.18em;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #e6a067;
+      color: var(--green-deep);
+      font-size: .96rem;
       font-weight: 800;
       line-height: 1;
+      box-shadow: 0 0 0 6px var(--green);
+    }
+
+    .green-initial > span {
+      display: block;
+      transform: translate(-0.5px, 1px);
     }
 
     .green-rest {
-      color: inherit;
+      color: #fff;
+      line-height: 1.25;
     }
 
     .quick-links {
       padding: 60px 0;
-      background: var(--paper);
+      color: #fff;
+      background: linear-gradient(90deg, var(--blue-dark), var(--blue));
+    }
+
+    .quick-links .eyebrow {
+      color: var(--hero-blue-eyebrow) !important;
+    }
+
+    .quick-links h2 {
+      color: #fff;
+    }
+
+    .quick-links .lead {
+      color: rgba(255,255,255,.82);
     }
 
     .quick-grid {
@@ -573,7 +617,7 @@
 
     .location-social-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.45fr) minmax(380px, .75fr);
+      grid-template-columns: minmax(0, 1fr) 500px;
       gap: 28px;
       align-items: stretch;
     }
@@ -709,7 +753,7 @@
     .testimonial-shell {
       position: relative;
       max-width: 980px;
-      min-height: 320px;
+      min-height: 220px;
       margin: 0 auto;
       display: grid;
       place-items: center;
@@ -718,7 +762,7 @@
     .testimonial-card {
       grid-area: 1 / 1;
       width: 100%;
-      padding: clamp(32px, 5vw, 58px);
+      padding: clamp(24px, 3vw, 36px);
       border-radius: var(--radius);
       background: #fff;
       box-shadow: var(--shadow);
@@ -854,6 +898,18 @@
 
       .intro-photo, .identity-photo { min-height: 390px; }
       .section-heading { gap: 18px; }
+
+      .values {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 0;
+        width: 100%;
+        max-width: 680px;
+      }
+
+      .value {
+        font-size: .74rem;
+      }
+
       .phase-grid { grid-template-columns: 1fr; }
       .phase-card { min-height: 330px; }
       .pathway-mark { justify-content: flex-start; }
@@ -927,9 +983,26 @@
         white-space: normal;
       }
 
+      .values {
+        gap: 0;
+        margin-top: 26px;
+        margin-bottom: 30px;
+      }
+
+      .value {
+        gap: 6px;
+        font-size: .64rem;
+      }
+
+      .green-initial {
+        width: 28px;
+        height: 28px;
+        font-size: .90rem;
+      }
+
       .quick-grid { grid-template-columns: 1fr; }
       .quick-card { min-height: 148px; }
-      .testimonial-shell { min-height: 390px; }
+      .testimonial-shell { min-height: 260px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -1046,37 +1119,44 @@
 <link href="assets/stage16-standard-navigation.css" rel="stylesheet"/>
 <link href="assets/stage25-header-uniform.css" rel="stylesheet"/><style id="stage36-facebook-details">
 .facebook-panel{
-  overflow:visible!important;
+  overflow:hidden!important;
 }
 .facebook-plugin-wrap{
   position:relative;
   width:100%;
   max-width:500px;
-  min-height:800px;
+  height:800px;
   margin:0 auto;
-  overflow:visible;
+  overflow:hidden;
+  background:#fff;
 }
 .facebook-plugin-wrap .fb-page{
-  width:100%;
-  max-width:500px;
+  width:500px!important;
+  max-width:100%!important;
 }
-.facebook-fallback{
-  display:none;
-  width:100%!important;
-  max-width:500px!important;
-  height:800px!important;
-  margin:0 auto;
+.facebook-plugin-wrap .fb-page>span{
+  display:block!important;
+  width:500px!important;
+  max-width:100%!important;
+  height:1063px!important;
+  transform:translateY(-263px);
+}
+.facebook-plugin-wrap .fb-page iframe{
+  width:500px!important;
+  max-width:100%!important;
+  height:1063px!important;
 }
 @media(max-width:700px){
   .facebook-plugin-wrap{
-    min-height:680px;
+    width:100%;
+    max-width:500px;
+    height:800px;
   }
   .facebook-plugin-wrap .fb-page,
   .facebook-plugin-wrap .fb-page>span,
-  .facebook-plugin-wrap .fb-page iframe,
-  .facebook-fallback{
-    min-height:680px!important;
-    height:680px!important;
+  .facebook-plugin-wrap .fb-page iframe{
+    width:100%!important;
+    max-width:500px!important;
   }
 }
 </style><link href="assets/formatting-safeguards.css" rel="stylesheet"/><style id="stage51-section-rhythm">
@@ -1135,7 +1215,13 @@
 <a data-path="parent-information/services/" href="/parent-information/services/">Services</a>
 </div>
 </div>
-<a data-path="contact/" href="/contact/">Contact</a>
+<div class="nav-drop">
+<button aria-expanded="false" aria-haspopup="true" type="button">Contact</button>
+<div class="nav-menu">
+<a data-path="contact/" href="/contact/">Contact the School</a>
+<a data-path="work-with-us/" href="/work-with-us/">Work With Us</a>
+</div>
+</div>
 </nav></div></header>
 <main class="page">
 <section aria-labelledby="home-title" class="hero">
@@ -1181,14 +1267,13 @@
 <h2>Learning through every stage</h2>
 </div>
 <p class="lead">
-            Greenacre combines internationally recognised programmes with aspects of
-            the UK curriculum, with clear progression through each stage of school life.
+            Greenacre combines internationally recognised programmes with elements of the UK curriculum, providing clear progression from Early Years through Primary and Secondary towards Cambridge IGCSE.
           </p>
 </div>
 <div class="phase-grid">
 <a class="phase-card early home-photo-temp" data-path="learning/early-years" href="/learning/early-years">
 <div class="phase-content">
-<span class="phase-age">FS1–FS2</span>
+<span class="phase-age">FS1-FS2</span>
 <h3>Early Years</h3>
 <p>A happy, secure and creative environment where children learn through play, investigation and doing.</p>
 <span class="card-link">Discover Early Years →</span>
@@ -1196,15 +1281,15 @@
 <span class="home-photo-stamp">Photo to be updated</span></a>
 <a class="phase-card primary home-photo-temp" data-path="learning/primary" href="/learning/primary">
 <div class="phase-content">
-<span class="phase-age">Years 1–6</span>
+<span class="phase-age">Years 1-6</span>
 <h3>Primary</h3>
-<p>Cambridge-focused learning, alongside aspects of the UK Curriculum, with strong progression in English, Mathematics and Science.</p>
+<p>Cambridge-focused learning, incorporating elements of the UK curriculum, with strong progression in English, Mathematics and Science.</p>
 <span class="card-link">Explore Primary →</span>
 </div>
 <span class="home-photo-stamp">Photo to be updated</span></a>
 <a class="phase-card secondary home-photo-temp" data-path="learning/secondary" href="/learning/secondary">
 <div class="phase-content">
-<span class="phase-age">Years 7–11</span>
+<span class="phase-age">Years 7-11</span>
 <h3>Secondary</h3>
 <p>Cambridge International learning in Years 7-9, progressing to Cambridge IGCSE in Years 10-11.</p>
 <span class="card-link">Explore Secondary →</span>
@@ -1225,11 +1310,11 @@
           </p>
 <p class="green-values-intro">Our G.R.E.E.N. values shape how we learn, work and grow together.</p>
 <div aria-label="Greenacre GREEN values" class="values">
-<span class="value"><span class="green-initial">G</span><span class="green-rest">rowth</span></span>
-<span class="value"><span class="green-initial">R</span><span class="green-rest">espect</span></span>
-<span class="value"><span class="green-initial">E</span><span class="green-rest">nvironmental</span></span>
-<span class="value"><span class="green-initial">E</span><span class="green-rest">mpathy</span></span>
-<span class="value"><span class="green-initial">N</span><span class="green-rest">urture</span></span>
+<span class="value"><span class="green-initial"><span>G</span></span><span class="green-rest">Growth</span></span>
+<span class="value"><span class="green-initial"><span>R</span></span><span class="green-rest">Respect</span></span>
+<span class="value"><span class="green-initial"><span>E</span></span><span class="green-rest">Environmental</span></span>
+<span class="value"><span class="green-initial"><span>E</span></span><span class="green-rest">Empathy</span></span>
+<span class="value"><span class="green-initial"><span>N</span></span><span class="green-rest">Nurture</span></span>
 </div>
 <a class="button button-light" data-path="our-school/environmentality" href="/our-school/environmentality">Discover Environmentality</a>
 </div>
@@ -1243,8 +1328,8 @@
 <p class="eyebrow">Cambridge pathway</p>
 <h2>A clear route to Cambridge IGCSE</h2>
 <p class="lead">
-              Greenacre is a Cambridge International School and Approved Examinations Centre,
-              with learning designed to build progressively towards Cambridge IGCSE.
+              As a Cambridge International School, Greenacre provides a progressive learning
+              pathway designed to prepare students for Cambridge IGCSE.
             </p>
 <a class="button button-solid button-blue" data-path="learning/curriculum" href="/learning/curriculum">View the Curriculum</a>
 </div>
@@ -1358,8 +1443,28 @@
 <article class="facebook-panel">
 <div class="facebook-panel-head">
 <h3>Latest from Greenacre</h3>
+<p>Scroll our Facebook feed for recent updates.</p>
 </div>
-<div id="fb-root"></div><div class="facebook-plugin-wrap"><div class="fb-page" data-adapt-container-width="1" data-height="800" data-hide-cover="true" data-href="https://www.facebook.com/samuigreenacreschool/" data-show-facepile="false" data-show-posts="true" data-small-header="true" data-tabs="timeline" data-width="500"><blockquote cite="https://www.facebook.com/samuigreenacreschool/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/samuigreenacreschool/">Greenacre International School, Koh Samui</a></blockquote></div><iframe allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen="true" class="facebook-fallback" frameborder="0" height="800" scrolling="no" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsamuigreenacreschool%2F&amp;tabs=timeline&amp;width=500&amp;height=800&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=true&amp;show_facepile=false" style="border:none;overflow:hidden" title="Greenacre International School Facebook feed" width="500"></iframe></div></article>
+<div id="fb-root"></div>
+<div class="facebook-plugin-wrap">
+  <div
+    class="fb-page"
+    data-href="https://www.facebook.com/samuigreenacreschool/"
+    data-tabs="timeline"
+    data-width="500"
+    data-height="1063"
+    data-small-header="false"
+    data-adapt-container-width="true"
+    data-hide-cover="false"
+    data-show-facepile="false">
+    <blockquote
+      cite="https://www.facebook.com/samuigreenacreschool/"
+      class="fb-xfbml-parse-ignore">
+      <a href="https://www.facebook.com/samuigreenacreschool/">Greenacre International School, Koh Samui</a>
+    </blockquote>
+  </div>
+</div>
+</article>
 </div>
 </div>
 </section>
@@ -1532,6 +1637,10 @@
       max-height: 34px;
     }
 
+    .site-footer__logo--isat img {
+      transform: translateX(-5px);
+    }
+
     .site-footer__logo--cambridge img,
     .site-footer__logo--edt img {
       max-height: 29px;
@@ -1559,7 +1668,7 @@
 <img alt="Cambridge International School" src="assets/images/homepage-embedded/homepage-image-08.png" width="473" height="140"/>
 </a>
 <a aria-label="Education Development Trust" class="site-footer__logo site-footer__logo--edt" href="https://www.edt.org/" rel="noopener noreferrer" target="_blank">
-<img alt="Education Development Trust" src="assets/images/footer-local/edt.png" width="3200" height="1800"/>
+<img alt="Education Development Trust" src="assets/images/footer-local/edt.png" width="500" height="281"/>
 </a>
 <a aria-label="International Schools Quality Mark candidate school" class="site-footer__logo site-footer__logo--isqm" href="https://www.edt.org/what-we-do/school-years/our-programmes/isqm-school-accreditation/" rel="noopener noreferrer" target="_blank">
 <img alt="International Schools Quality Mark candidate school" src="assets/images/homepage-embedded/homepage-image-09.png" width="216" height="170"/>
@@ -1619,57 +1728,27 @@
     })();
   </script>
 <script src="assets/site-routing-mobile-nav.js"></script>
-<script async="1" crossorigin="anonymous" defer="1" nonce="fo1IS16s" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0"></script><script id="stage14-facebook-init">
-(()=>{
-  const plugin=document.querySelector('.facebook-plugin-wrap .fb-page');
-  const fallback=document.querySelector('.facebook-fallback');
-  if(!plugin||!fallback) return;
-
-  const showFallback=()=>{
-    if(!plugin.querySelector('iframe')){
-      plugin.style.display='none';
-      fallback.style.display='block';
-    }
-  };
-
-  const parse=()=>{
-    try{
-      if(window.FB&&FB.XFBML){
-        FB.XFBML.parse(plugin.parentElement,()=>{
-          window.setTimeout(showFallback,1200);
-        });
-      }else{
-        window.setTimeout(parse,250);
-      }
-    }catch(e){
-      showFallback();
-    }
-  };
-
-  window.addEventListener('load',()=>{
-    window.setTimeout(parse,150);
-    window.setTimeout(showFallback,3500);
-  });
-})();
+<script async defer crossorigin="anonymous"
+  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0">
 </script>
 <script src="assets/desktop-navigation.js"></script>
 
 <style id="homepage-hero-fit">
 .hero {
   min-height: min(1000px, calc(100vh - 65.6px));
-  min-height: min(1000px, calc(100dvh - 65.6px));
+  min-height: min(1000px, calc(100svh - 65.6px));
 }
 
 @media (max-width: 720px) {
   .hero {
     min-height: min(1000px, calc(100vh - 57.6px));
-    min-height: min(1000px, calc(100dvh - 57.6px));
+    min-height: min(1000px, calc(100svh - 57.6px));
   }
 }
 
 @media (max-width: 560px) {
   .hero {
-    min-height: max(560px, min(1000px, calc(100dvh - 57.6px)));
+    min-height: max(560px, min(1000px, calc(100svh - 57.6px)));
   }
 }
 </style>
