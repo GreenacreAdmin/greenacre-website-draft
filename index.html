@@ -1159,13 +1159,14 @@
   display:block!important;
   width:500px!important;
   max-width:100%!important;
-  height:800px!important;
-  transform:none;
+  height:870px!important;
+  /* Hide only the compact Facebook header; the first post begins at 77px. */
+  transform:translateY(-70px);
 }
 .facebook-plugin-wrap .fb-page iframe{
   width:500px!important;
   max-width:100%!important;
-  height:800px!important;
+  height:870px!important;
 }
 @media(max-width:700px){
   .facebook-plugin-wrap{
@@ -1432,7 +1433,7 @@
     data-href="https://www.facebook.com/samuigreenacreschool/"
     data-tabs="timeline"
     data-width="500"
-    data-height="800"
+    data-height="870"
     data-small-header="true"
     data-adapt-container-width="true"
     data-hide-cover="true"
