@@ -1,0 +1,43 @@
+/* Current public school photos, pending final photography. Homepage is excluded. */
+main .current-school-photo {
+  padding: 0 !important;
+  background: #e8eee2 !important;
+  overflow: hidden !important;
+  isolation: isolate;
+}
+main .plain-placeholder.current-school-photo { position: relative; }
+main .photo.current-school-photo { min-height: 280px; aspect-ratio: 4 / 3; }
+main .current-school-photo::before,
+main .current-school-photo::after { display: none !important; }
+main .current-school-photo > img {
+  position: absolute !important;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: none !important;
+  transform: none !important;
+  display: block;
+}
+main .head-welcome-photo.current-school-photo > img {
+  position: static !important;
+  height: auto !important;
+  aspect-ratio: auto;
+}
+main .current-school-photo > .current-photo-label {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 8;
+  padding: 6px 9px;
+  border: 1px solid rgba(255,255,255,.55);
+  border-radius: 999px;
+  background: rgba(25,55,34,.88);
+  color: #fff;
+  font: 700 9px/1 Comfortaa, sans-serif;
+  letter-spacing: .04em;
+  box-shadow: 0 2px 9px rgba(0,0,0,.20);
+  pointer-events: none;
+}
