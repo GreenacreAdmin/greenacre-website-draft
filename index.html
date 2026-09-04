@@ -677,7 +677,7 @@
     .map-frame {
       display: block;
       width: 100%;
-      min-height: 600px;
+      min-height: 460px;
       flex: 1 1 auto;
       border: 0;
     }
@@ -709,7 +709,7 @@
       }
 
       .map-frame {
-        min-height: 480px;
+        min-height: 380px;
       }
 
       .facebook-panel {
@@ -734,7 +734,7 @@
       }
 
       .map-frame {
-        min-height: 400px;
+        min-height: 340px;
       }
 
       .facebook-xfbml-wrap {
@@ -1146,7 +1146,7 @@
   position:relative;
   width:100%;
   max-width:500px;
-  height:800px;
+  height:600px;
   margin:0 auto;
   overflow:hidden;
   background:#fff;
@@ -1159,20 +1159,20 @@
   display:block!important;
   width:500px!important;
   max-width:100%!important;
-  height:880px!important;
+  height:680px!important;
   /* Crop the compact Facebook header with a small additional allowance. */
   transform:translateY(-80px);
 }
 .facebook-plugin-wrap .fb-page iframe{
   width:500px!important;
   max-width:100%!important;
-  height:880px!important;
+  height:680px!important;
 }
 @media(max-width:700px){
   .facebook-plugin-wrap{
     width:100%;
     max-width:500px;
-    height:800px;
+    height:600px;
   }
   .facebook-plugin-wrap .fb-page,
   .facebook-plugin-wrap .fb-page>span,
@@ -1418,7 +1418,7 @@
 </div>
 <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Greenacre%20International%20School%20Koh%20Samui" rel="noopener" target="_blank">Open in Google Maps</a>
 </div>
-<iframe allowfullscreen="" class="map-frame" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.google.com/maps?q=Greenacre%20International%20School%2C%20Koh%20Samui%2C%20Thailand&amp;z=12&amp;output=embed" title="Map showing Greenacre International School, Koh Samui">
+<iframe allowfullscreen="" class="map-frame" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.google.com/maps?q=Greenacre%20International%20School%2C%20Koh%20Samui%2C%20Thailand&amp;z=13&amp;output=embed" title="Map showing Greenacre International School, Koh Samui">
 </iframe>
 </article>
 <article class="facebook-panel">
@@ -1433,7 +1433,7 @@
     data-href="https://www.facebook.com/samuigreenacreschool/"
     data-tabs="timeline"
     data-width="500"
-    data-height="880"
+    data-height="680"
     data-small-header="true"
     data-adapt-container-width="true"
     data-hide-cover="true"
@@ -1741,6 +1741,22 @@
   })();
 </script>
 <script src="assets/desktop-navigation.js"></script>
+<script>
+  (() => {
+    const map = document.querySelector('.map-frame');
+    const phone = window.matchMedia('(max-width: 640px)');
+    const updateZoom = () => {
+      const url = new URL(map.src);
+      // Keep coastline context on phones; use one closer zoom step on wider screens.
+      const zoom = phone.matches ? '12' : '13';
+      if (url.searchParams.get('z') === zoom) return;
+      url.searchParams.set('z', zoom);
+      map.src = url.href;
+    };
+    updateZoom();
+    phone.addEventListener('change', updateZoom);
+  })();
+</script>
 
 <style id="homepage-hero-fit">
 .hero {
