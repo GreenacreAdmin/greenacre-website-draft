@@ -35,6 +35,37 @@ main .early-how-stage48 h2 + .feature-list { margin-top: 24px; }
 }
 
 /* Natural-height text area; no changes to logo sizing, order, gaps or columns. */
+@media (max-width: 980px) {
+  .site-header .site-nav a,
+  .site-header .site-nav > .nav-drop > button,
+  .site-header .menu-toggle { font-size: .875rem; }
+}
+
+/* Task-focused pages need less introductory space on phones. */
+@media (max-width: 720px) {
+  .page-hero.practical-page-hero { min-height: 0 !important; }
+  .page-hero.practical-page-hero > .wrap {
+    padding-top: 32px !important;
+    padding-bottom: 28px !important;
+  }
+}
+
+/* Keep timing tables readable without widening the document. */
+.timing-table-scroll { max-width: 100%; overflow-x: auto; }
+.timing-table-scroll:focus-visible { outline: 2px solid var(--green-dark); outline-offset: 3px; }
+.timing-table-hint { display: none; }
+@media (max-width: 360px) {
+  .timing-table-scroll .time-table { min-width: 360px; }
+  .timing-table-hint { display: block; font-size: .875rem; margin: 12px 0 8px; }
+}
+
+/* Visible group navigation; portraits remain available without expanding panels. */
+.team-jump-links { margin: 24px 0 32px; }
+.team-jump-links ul { display: flex; flex-wrap: wrap; gap: 8px 20px; list-style: none; padding: 0; margin: 8px 0 0; }
+.team-jump-links a { display: inline-block; padding: 8px 0; color: var(--green-dark); text-underline-offset: 3px; }
+.team-heading-v2[id] { scroll-margin-top: 100px; }
+.team-heading-v2[id]:focus-visible { outline: 2px solid var(--green-dark); outline-offset: 4px; }
+
 footer.site-footer { height: auto; min-height: var(--footer-height); }
 footer.site-footer .site-footer__inner {
   height: auto;

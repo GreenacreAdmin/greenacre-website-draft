@@ -60,7 +60,7 @@ When moving a section, preserve its complete component markup and any accessibil
 
 ## 4. Adding a staff member
 
-The staff roster is in `our-school/our-team/index.html`. Staff photographs are in `assets/images/team/`.
+The staff roster is in `our-school/our-team/index.html`. Original staff photographs are in `assets/images/team/`; the page now serves smaller WebP copies from `assets/images/optimized/`.
 
 Add the new person to the appropriate `.team-grid-v2` using the existing card structure:
 
@@ -68,7 +68,7 @@ Add the new person to the appropriate `.team-grid-v2` using the existing card st
 <article class="team-person-v2">
   <div class="team-avatar-v2">
     <img
-      src="../../assets/images/team/example-name.png"
+      src="../../assets/images/optimized/team-example-name.webp"
       alt="Ms. Example Name"
       loading="lazy"
       decoding="async"
@@ -99,7 +99,7 @@ To change a name or role, update the visible text and the image `alt` text where
 
 ## 6. Staff photograph standard
 
-Current staff photographs use square PNG files, normally `570 × 570` pixels, with transparent backgrounds. Match that established format when preparing a replacement.
+Original staff photographs use square PNG files, normally `570 × 570` pixels, with transparent backgrounds. Match that established format when preparing a replacement, then export a WebP copy for the website, preserving dimensions and transparency.
 
 - Use a square crop with the face positioned consistently with neighbouring portraits.
 - Keep the transparent background and existing visual treatment.
@@ -109,7 +109,11 @@ Current staff photographs use square PNG files, normally `570 × 570` pixels, wi
 - Keep the `<img>` attributes `loading="lazy"` and `decoding="async"`.
 - Set useful alternative text to the staff member's displayed name.
 
-For a straightforward replacement, retaining the existing filename is safest because the HTML does not need to change. After replacement, check the portrait on a normal desktop display and a real or accurately emulated mobile display.
+For a straightforward replacement, update both the original and its corresponding served WebP copy. Updating only the original PNG will not change the visible portrait. Retaining the served filename avoids changing the HTML, but use a cache-busting version when checking a replacement. After replacement, check the portrait on a normal desktop display and a real or accurately emulated mobile display.
+
+The homepage hero also uses an optimised WebP copy. Existing efficient WebP photos in `current-site/` and `homepage-embedded/` remain in use. Original files are retained for future editing; logos are not part of photo optimisation.
+
+Staff group headings have stable IDs used by the jump links above the roster. Preserve these IDs when editing group names, and update the jump-link labels to match.
 
 ## 7. Links and GitHub Pages paths
 

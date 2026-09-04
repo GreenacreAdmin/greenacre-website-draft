@@ -24,6 +24,7 @@
       if(!desktopMQ.matches) return;
       window.clearTimeout(closeTimer);
       closeAll(drop);
+      drop.classList.remove('nav-dismissed');
       drop.classList.add('nav-open');
       trigger.setAttribute('aria-expanded','true');
     };
@@ -54,19 +55,23 @@
     });
 
     drop.addEventListener('focusin', () => {
-      if(desktopMQ.matches) open();
+      if(desktopMQ.matches && !drop.classList.contains('nav-dismissed')) open();
     });
 
     drop.addEventListener('focusout', e => {
       if(desktopMQ.matches && !drop.contains(e.relatedTarget)){
         drop.classList.remove('nav-open');
+        drop.classList.remove('nav-dismissed');
         trigger.setAttribute('aria-expanded','false');
       }
     });
 
     drop.addEventListener('keydown', e => {
       if(e.key === 'Escape'){
+        e.preventDefault();
+        window.clearTimeout(closeTimer);
         drop.classList.remove('nav-open');
+        drop.classList.add('nav-dismissed');
         trigger.setAttribute('aria-expanded','false');
         trigger.focus();
       }

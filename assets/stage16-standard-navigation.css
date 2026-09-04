@@ -36,6 +36,13 @@
   }
 
   /* Keep the final navigation dropdown inside the viewport. */
+  .nav-drop.nav-dismissed > .nav-menu {
+    display:none!important;
+    visibility:hidden!important;
+    opacity:0!important;
+    pointer-events:none!important;
+  }
+
   .site-nav > .nav-drop:last-child > .nav-menu{
     left:auto!important;
     right:0!important;
