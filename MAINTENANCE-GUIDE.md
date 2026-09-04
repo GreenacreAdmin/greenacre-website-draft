@@ -113,7 +113,7 @@ For a straightforward replacement, update both the original and its correspondin
 
 The homepage hero also uses an optimised WebP copy. Existing efficient WebP photos in `current-site/` and `homepage-embedded/` remain in use. Original files are retained for future editing; logos are not part of photo optimisation.
 
-Staff group headings have stable IDs used by the jump links above the roster. Preserve these IDs when editing group names, and update the jump-link labels to match.
+Staff groups use native HTML accordions (`details.staff-disclosure`), styled by `assets/team-accordion.css`. Leadership has the `open` attribute by default. Keep each group's stable ID so saved direct links still work. Edit its title inside `summary > h3` and its staff cards inside `.staff-panel .team-grid-v2`. `assets/team-accordion.js` supplies Expand all / Collapse all and opens groups reached by a direct link. Individual groups still work without JavaScript. There are no staff-count labels to maintain.
 
 ## 7. Links and GitHub Pages paths
 
