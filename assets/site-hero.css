@@ -20,10 +20,12 @@
   z-index: 0;
   top: 50%;
   right: -35px;
-  width: min(41.4vw, 531px);
+  width: min(48vw, 640px);
   height: 270px;
   transform: translateY(-50%) scaleX(-1);
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 330'%3E%3Cg fill='none' stroke='%23fff' stroke-linecap='round'%3E%3Cpath stroke-width='3.2' d='M-50 278C86 316 143 219 218 137 307 40 430 24 690 116'/%3E%3Cpath opacity='.55' stroke-width='2' d='M-36 336C79 242 183 259 278 182 393 89 491 105 690 216'/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 330'%3E%3Cg fill='none' stroke='%23fff' stroke-linecap='round'%3E%3Cpath stroke-width='3.2' d='M-50 278C86 316 143 219 218 137 307 40 430 24 690 116'/%3E%3Cpath opacity='.55' stroke-width='2' d='M-36 336C79 242 183 259 278 182 393 89 491 105 690 216'/%3E%3C/g%3E%3C/svg%3E") center / 100% 100% no-repeat;
+  -webkit-mask-image: linear-gradient(to left, transparent 0%, rgba(0,0,0,.4) 16%, #000 38%);
+  mask-image: linear-gradient(to left, transparent 0%, rgba(0,0,0,.4) 16%, #000 38%);
   opacity: .065;
   pointer-events: none;
 }
