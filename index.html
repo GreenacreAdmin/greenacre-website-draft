@@ -368,8 +368,8 @@
 
     .identity-grid {
       display: grid;
-      grid-template-columns: 1.02fr .98fr;
-      gap: clamp(34px, 6vw, 88px);
+      grid-template-columns: 1.08fr .92fr;
+      gap: clamp(36px, 6vw, 96px);
       align-items: center;
     }
 
@@ -416,7 +416,7 @@
     }
 
     .identity-photo {
-      min-height: 500px;
+      min-height: 400px;
       border-radius: var(--radius);
       background:
         linear-gradient(180deg, color-mix(in srgb, var(--green-dark) 3%, transparent), color-mix(in srgb, var(--green-dark) 10%, transparent)),
@@ -916,8 +916,7 @@
         grid-template-columns: 1fr;
       }
 
-      .intro-photo { min-height: 340px; }
-      .identity-photo { min-height: 390px; }
+      .intro-photo, .identity-photo { min-height: 340px; }
       .section-heading { gap: 18px; }
 
       .values {
