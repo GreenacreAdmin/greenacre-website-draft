@@ -234,7 +234,8 @@
     }
 
     .intro-photo {
-      min-height: 400px;
+      min-height: 0;
+      aspect-ratio: 4 / 3;
       border-radius: var(--radius);
       background:
         linear-gradient(180deg, color-mix(in srgb, var(--green-dark) 4%, transparent), color-mix(in srgb, var(--green-dark) 10%, transparent)),
@@ -416,7 +417,8 @@
     }
 
     .identity-photo {
-      min-height: 400px;
+      min-height: 0;
+      aspect-ratio: 4 / 3;
       border-radius: var(--radius);
       background:
         linear-gradient(180deg, color-mix(in srgb, var(--green-dark) 3%, transparent), color-mix(in srgb, var(--green-dark) 10%, transparent)),
@@ -916,7 +918,6 @@
         grid-template-columns: 1fr;
       }
 
-      .intro-photo, .identity-photo { min-height: 340px; }
       .section-heading { gap: 18px; }
 
       .values {
@@ -974,7 +975,6 @@
       }
       .button-row { display: grid; grid-template-columns: 1fr; }
       .button { width: 100%; }
-      .intro-photo, .identity-photo { min-height: 300px; }
       .wellbeing-feature { padding: 64px 0; }
 
       .wellbeing-card {
