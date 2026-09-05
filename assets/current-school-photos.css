@@ -12,7 +12,7 @@ main .current-school-photo:not(.head-welcome-photo):not(.pool-specific-photo) {
   width: 100%;
   height: auto !important;
   min-height: 0 !important;
-  aspect-ratio: 4 / 3 !important;
+  aspect-ratio: 3 / 2 !important;
 }
 main .current-school-photo::before,
 main .current-school-photo::after { display: none !important; }
