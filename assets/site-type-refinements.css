@@ -18,6 +18,11 @@ main .kicker:has(+ h2) {
   margin-bottom: 4px;
 }
 
+/* Avoid doubled vertical padding where one content section continues another. */
+main > section.section-continuation:not(.page-hero):not(.subhero) {
+  padding-top: 24px !important;
+}
+
 main .page-hero h1,
 main .subhero h1 {
   font-size: clamp(2.185rem, 3.5vw, 3rem) !important;
