@@ -113,6 +113,8 @@ For a straightforward replacement, update both the original and its correspondin
 
 The homepage hero also uses an optimised WebP copy. Existing efficient WebP photos in `current-site/` and `homepage-embedded/` remain in use. Original files are retained for future editing; logos are not part of photo optimisation.
 
+Ordinary content photography is standardised by `assets/current-school-photos.css`. These frames use a responsive 3:2 ratio with `object-fit: cover`; source images do not need to share that ratio. The homepage is deliberately separate. The Head of School portrait and the full-width swimming-pool image are intentional composition-led exceptions. When adding a normal content photo, reuse `.current-school-photo` rather than introducing a page-specific height or aspect ratio. If the shared photo stylesheet changes, update its cache-version query consistently on every page that loads it.
+
 Staff groups use native HTML accordions (`details.staff-disclosure`), styled by `assets/team-accordion.css`. Leadership has the `open` attribute by default. Keep each group's stable ID so saved direct links still work. Edit its title inside `summary > h3` and its staff cards inside `.staff-panel .team-grid-v2`. `assets/team-accordion.js` supplies Expand all / Collapse all and opens groups reached by a direct link. Individual groups still work without JavaScript. There are no staff-count labels to maintain.
 
 ## 7. Links and GitHub Pages paths

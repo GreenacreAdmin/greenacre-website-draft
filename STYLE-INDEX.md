@@ -163,17 +163,22 @@ Preserve that distinction.
 ## 8. Photography and media
 
 Shared files:
+- `assets/current-school-photos.css`
 - `assets/site-components.css`
 - `assets/stage11-photo-system.css`
 
-`site-components.css` controls the reusable `.photo` container and standard image geometry.
+`current-school-photos.css` owns the final geometry and cropping of ordinary content photography. Standard content-photo frames are responsive 3:2 containers using `object-fit: cover`.
+
+The homepage has its own image compositions and is excluded from this rule. The Head of School portrait and full-width swimming-pool image are deliberate exceptions.
+
+`site-components.css` provides the reusable `.photo` container.
 
 `stage11-photo-system.css` primarily controls the development photography system:
 - temporary blur treatment
 - replacement stamps
 - review markers
 
-Page-specific classes such as `.photo-plan`, `.temp-photo` and specialist image compositions may provide their own dimensions and layouts.
+Page-specific classes such as `.photo-plan` and `.temp-photo` provide layout hooks, but their ordinary content-photo dimensions are overridden by `current-school-photos.css`. Specialist compositions may opt out explicitly.
 
 Therefore `stage11-photo-system.css` should not be treated as the owner of all website photography.
 
@@ -381,4 +386,3 @@ The goal is controlled evolution of the established site rather than continued r
 See `STYLE-MAP.md` for the repository-wide technical map of every class currently used in HTML, where it is used, where its CSS is defined, JavaScript-controlled states, multi-file definitions and possible legacy/orphan selectors.
 
 `STYLE-INDEX.md` explains the design system semantically. `STYLE-MAP.md` provides the exact technical lookup.
-
