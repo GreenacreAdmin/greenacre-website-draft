@@ -234,11 +234,11 @@
     }
 
     .intro-photo {
-      min-height: 470px;
+      min-height: 400px;
       border-radius: var(--radius);
       background:
         linear-gradient(180deg, color-mix(in srgb, var(--green-dark) 4%, transparent), color-mix(in srgb, var(--green-dark) 10%, transparent)),
-        url("assets/images/homepage-embedded/homepage-image-02.webp") 52% 48% / cover no-repeat;
+        url("assets/images/homepage-embedded/homepage-image-02.webp") 52% 22% / cover no-repeat;
       box-shadow: var(--shadow);
     }
 
@@ -835,14 +835,18 @@
     .testimonial-dot.active::before { background: var(--green); }
 
     .testimonial-pause {
-      display: block;
-      margin: 14px auto 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      min-height: 28px;
+      margin: 8px auto 0;
+      padding: 4px 6px;
       border: 0;
       background: transparent;
-      color: var(--green-dark);
-      font: 700 .78rem/1.2 "Comfortaa", sans-serif;
-      text-decoration: underline;
-      text-underline-offset: 3px;
+      color: color-mix(in srgb, var(--muted) 72%, transparent);
+      font: 500 .66rem/1.35 "Comfortaa", sans-serif;
+      text-decoration: none;
       cursor: pointer;
     }
 
@@ -912,7 +916,8 @@
         grid-template-columns: 1fr;
       }
 
-      .intro-photo, .identity-photo { min-height: 390px; }
+      .intro-photo { min-height: 340px; }
+      .identity-photo { min-height: 390px; }
       .section-heading { gap: 18px; }
 
       .values {
