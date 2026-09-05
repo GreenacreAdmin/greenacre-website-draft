@@ -12,6 +12,12 @@ main section h2 {
 }
 main .pathway-card h2 { font-size: clamp(1.615rem, 2.47vw, 2.47rem); }
 
+/* Keep content kickers visually attached to the headings they introduce. */
+main .kicker:has(+ h2) {
+  line-height: 1.35;
+  margin-bottom: 4px;
+}
+
 main .page-hero h1,
 main .subhero h1 {
   font-size: clamp(2.185rem, 3.5vw, 3rem) !important;
