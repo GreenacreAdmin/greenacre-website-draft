@@ -1,0 +1,9 @@
+/* Frames for externally maintained Secondary information. */
+.secondary-resource{scroll-margin-top:90px}
+.secondary-resource + .secondary-resource{background:var(--green-soft)}
+.secondary-resource-heading{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:20px}
+.secondary-resource-heading h2{color:var(--green-dark);font-size:clamp(1.5rem,2.8vw,2rem);margin:0}
+.secondary-resource-heading .action{flex-shrink:0}
+.secondary-resource-frame{height:1000px;min-height:75vh}
+#start-of-year .secondary-resource-frame{height:800px}
+@media(max-width:780px){.secondary-resource-heading{align-items:flex-start;flex-direction:column}.secondary-resource-frame{height:850px}#start-of-year .secondary-resource-frame{height:800px}}

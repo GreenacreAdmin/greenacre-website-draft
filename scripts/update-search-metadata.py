@@ -18,7 +18,7 @@ def outputs(base, launch=False):
         path=page.parent.relative_to(ROOT).as_posix()
         path='' if path=='.' else path
         source=page.read_text()
-        hidden=path=='parent-information/secondary-parent-information'
+        hidden=path in {'parent-information/secondary-parent-information','academics/secondary-information','academics/secondary-start-of-year'}
         target=aliases.get(path,path+'/') if path else ''
         canonical=base+target.split('#')[0]
         source=re.sub(r'<link\b(?=[^>]*rel=[\"\']canonical[\"\'])[^>]*>\s*','',source,flags=re.I)

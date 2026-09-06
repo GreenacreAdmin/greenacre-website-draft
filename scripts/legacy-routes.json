@@ -20,5 +20,6 @@
   "facilities/swimming-pool": "our-school/campus-facilities/",
   "community": "our-school/about-greenacre/",
   "contact-us": "contact/",
-  "parent-information/ecas": "learning/clubs-ecas/"
+  "parent-information/ecas": "learning/clubs-ecas/",
+  "parent-information/secondary-parent-information": "academics/secondary-information/"
 }

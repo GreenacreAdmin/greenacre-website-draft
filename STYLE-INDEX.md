@@ -394,3 +394,7 @@ See `STYLE-MAP.md` for the repository-wide technical map of every class currentl
 ## 24. Lunch menu
 
 `documents/lunch-menu/index.html` presents the alternating Week 1 / Week 2 menu using `assets/lunch-menu.css`. Each `.lunch-day` pairs the main dish and vegetarian option; these stack on phones. Meal descriptions and notes preserve the original PDF wording. Keep `assets/documents/lunch-menu-2026-27.pdf` unchanged and retain its open/download links. When updating the menu, verify every day and both options against the school-approved source.
+
+## 25. Live Secondary parent resources
+
+`academics/secondary-information/index.html` and `academics/secondary-start-of-year/index.html` use the shared Greenacre header, hero and footer, with `assets/site-resources.css` and `assets/secondary-parent-resources.css` framing the unchanged external Apps Script applications. These are unlisted, noindex pages; keep them out of public navigation and the sitemap. The former static draft parent page redirects to the live information wrapper.

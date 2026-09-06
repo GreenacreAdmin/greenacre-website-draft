@@ -23,7 +23,7 @@ for p,s in pages.items():
     path=p.parent.relative_to(ROOT).as_posix();path='' if path=='.' else path
     if len(s.ids)!=len(set(s.ids)):errors.append(f'{path}: duplicate IDs')
     if path not in aliases and s.h1!=1:errors.append(f'{path}: expected one h1')
-    if path=='parent-information/secondary-parent-information':
+    if path in {'parent-information/secondary-parent-information','academics/secondary-information','academics/secondary-start-of-year'}:
         if s.robots!='noindex, nofollow':errors.append('Secondary parent indexing changed')
     elif len(s.canonicals)!=1:errors.append(f'{path}: expected one canonical')
     for tag,attr,url in s.links:

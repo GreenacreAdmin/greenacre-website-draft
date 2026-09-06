@@ -28,3 +28,7 @@ The ECA app is maintained elsewhere and remains a live iframe, with a direct ext
 Known old Google Sites paths are listed in scripts/legacy-routes.json. GitHub Pages has no configurable per-path server redirects, so these are immediate HTML redirects with canonical targets and an explicit fallback link.
 
 Reference: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+
+## Unlisted Secondary resources
+
+Preserve `/academics/secondary-information/` and `/academics/secondary-start-of-year/` through cutover. Each embeds its original Apps Script deployment unchanged. Both remain outside public navigation and the sitemap, with `noindex, nofollow`. The earlier draft path `/parent-information/secondary-parent-information/` redirects to the information page. Include both live embeds in the cutover checks.
