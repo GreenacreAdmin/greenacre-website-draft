@@ -390,3 +390,7 @@ See `STYLE-MAP.md` for the repository-wide technical map of every class currentl
 ## 23. Document and ECA frames
 
 `assets/site-resources.css` styles the Greenacre wrapper pages in `documents/` and `eca/`. PDFs remain unchanged originals in `assets/documents/`. Each frame has an always-visible direct-open fallback. Reuse the shared header, footer and page hero. See `DOMAIN-LAUNCH.md` for domain and search-index maintenance.
+
+## 24. Lunch menu
+
+`documents/lunch-menu/index.html` presents the alternating Week 1 / Week 2 menu using `assets/lunch-menu.css`. Each `.lunch-day` pairs the main dish and vegetarian option; these stack on phones. Meal descriptions and notes preserve the original PDF wording. Keep `assets/documents/lunch-menu-2026-27.pdf` unchanged and retain its open/download links. When updating the menu, verify every day and both options against the school-approved source.
