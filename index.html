@@ -752,8 +752,9 @@
 
     .testimonial-shell {
       position: relative;
-      max-width: 1120px;
-      min-height: 200px;
+      width: 90%;
+      max-width: 1008px;
+      min-height: 180px;
       margin: 0 auto;
       display: grid;
       place-items: center;
@@ -762,9 +763,9 @@
     .testimonial-card {
       grid-area: 1 / 1;
       width: 100%;
-      padding: clamp(24px, 3vw, 36px);
+      padding: clamp(22px, 2.7vw, 32px);
       border-radius: var(--radius);
-      background: #fff;
+      background: rgba(234,242,228,.52);
       box-shadow: var(--shadow);
       text-align: center;
       opacity: 0;
@@ -788,7 +789,9 @@
     }
 
     .testimonial-card blockquote {
-      font-size: clamp(1.1rem, 1.8vw, 1.25rem);
+      font-size: clamp(1rem, 1.62vw, 1.125rem);
+      margin-bottom: 20px;
+      color: var(--green-dark);
     }
 
     cite {
@@ -796,6 +799,11 @@
       font-style: normal;
       font-weight: 700;
       font-size: .92rem;
+    }
+
+    .testimonial-card cite {
+      color: var(--green-dark);
+      font-size: .83rem;
     }
 
     .testimonial-dots {
@@ -1027,7 +1035,7 @@
 
       .quick-grid { grid-template-columns: 1fr; }
       .quick-card { min-height: 148px; }
-      .testimonial-shell { min-height: 240px; }
+      .testimonial-shell { min-height: 216px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -1132,11 +1140,11 @@
   background:rgba(234,242,228,.52)!important;
 }
 .stage14-testimonial-placeholder blockquote{
-  color:#667268!important;
+  color:var(--green-dark)!important;
   font-style:italic!important;
 }
 .stage14-testimonial-placeholder cite{
-  color:#8f1710!important;
+  color:var(--green-dark)!important;
   font-weight:800!important;
   letter-spacing:.06em!important;
 }
