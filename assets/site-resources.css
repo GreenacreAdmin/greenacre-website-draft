@@ -1,0 +1,19 @@
+/* Greenacre frames for unchanged PDFs and the externally maintained ECA app. */
+.resource-page{margin:0;background:var(--cream);color:var(--ink);font:16px/1.7 Comfortaa,sans-serif}
+.resource-page *{box-sizing:border-box}
+.resource-page .wrap{width:min(calc(100% - 64px),1460px);margin:auto}
+.resource-page .page-hero{background:linear-gradient(135deg,var(--hero-blue-start),var(--hero-blue-end));color:#fff}
+.resource-page .page-hero h1{margin:8px 0 16px;line-height:1.12}
+.resource-page .page-hero p{max-width:800px;margin:0}
+.resource-page .eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--hero-blue-eyebrow)}
+.resource-section{padding:32px 0 48px}
+.resource-toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.resource-page .action{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border:1px solid var(--blue-dark);border-radius:999px;font-weight:700;text-decoration:none;line-height:1.5}
+.resource-page .action.alt{background:#fff;color:var(--green-dark);border-color:var(--green-pale)}
+.resource-help{margin:16px 0 22px;max-width:950px;font-size:.9rem}
+.resource-frame{overflow:hidden;border:1px solid var(--green-pale);border-radius:20px;background:#fff;box-shadow:0 12px 30px rgba(37,72,45,.07)}
+.resource-frame iframe{display:block;width:100%;border:0;background:#fff}
+.document-frame{height:85vh;min-height:600px}
+.eca-frame{height:1000px;min-height:75vh}
+@media(max-width:780px){.resource-page .wrap{width:calc(100% - 32px)}.resource-section{padding:24px 0 32px}.document-frame{height:75vh;min-height:480px}.eca-frame{height:850px}.resource-frame{border-radius:14px}}
+@media(max-width:400px){.resource-toolbar .action{width:100%}}

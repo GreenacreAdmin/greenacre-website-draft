@@ -386,3 +386,7 @@ The goal is controlled evolution of the established site rather than continued r
 See `STYLE-MAP.md` for the repository-wide technical map of every class currently used in HTML, where it is used, where its CSS is defined, JavaScript-controlled states, multi-file definitions and possible legacy/orphan selectors.
 
 `STYLE-INDEX.md` explains the design system semantically. `STYLE-MAP.md` provides the exact technical lookup.
+
+## 23. Document and ECA frames
+
+`assets/site-resources.css` styles the Greenacre wrapper pages in `documents/` and `eca/`. PDFs remain unchanged originals in `assets/documents/`. Each frame has an always-visible direct-open fallback. Reuse the shared header, footer and page hero. See `DOMAIN-LAUNCH.md` for domain and search-index maintenance.

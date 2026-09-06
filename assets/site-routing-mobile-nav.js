@@ -1,5 +1,7 @@
 (()=>{
-  const project=location.hostname==='greenacreadmin.github.io'?'/greenacre-website-draft/':'/';
+  // Derive the base from this shared script so root and project-path previews agree.
+  const scriptURL=new URL(document.currentScript.src);
+  const project=new URL('../',scriptURL).pathname;
   const links=document.querySelectorAll('[data-path]');
 
   links.forEach(a=>a.href=project+(a.dataset.path||''));
@@ -18,6 +20,7 @@
     current='';
   }
 
+  current=(document.body.dataset.navPath||current).replace(/^\/+|\/+$/g,'');
   const nav=document.querySelector('.site-nav');
 
   if(nav){
