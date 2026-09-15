@@ -96,7 +96,6 @@ footer.site-footer .site-footer__copyright { flex-basis: 100%; font-size: .75rem
   align-items: center;
   gap: 8px;
 }
-.site-header .nav-drop > button::after,
 main .faq summary::after {
   content: "";
   display: block;
@@ -107,14 +106,6 @@ main .faq summary::after {
   border-bottom: 1.5px solid currentColor;
   transform: rotate(45deg);
   transition: transform .18s ease;
-}
-/* Navigation cues stay quiet and stationary when menus open. */
-.site-header .nav-drop > button::after {
-  width: 5px;
-  height: 5px;
-  border-width: 0 1px 1px 0;
-  opacity: .55;
-  transition: none;
 }
 main .faq details[open] > summary::after { transform: rotate(225deg); }
 @media (max-width: 980px) {
@@ -162,8 +153,7 @@ main .location-panel-head { background: #fff; }
 main .map-frame { background: #e8eee2; }
 
 @media (prefers-reduced-motion: reduce) {
-  .site-header .nav-drop > button::after,
-  main .faq summary::after,
+    main .faq summary::after,
   main .faq details,
   main .phase-card,
   main .phase-card::before,
