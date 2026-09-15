@@ -184,3 +184,15 @@ main .facebook-plugin-wrap .fb-xfbml-parse-ignore {
   line-height: 1.6;
   text-align: left;
 }
+
+/* Landscape frames match the first Curriculum photo. Portraits, banners and
+   square pathway cards retain their separate treatments. */
+main .current-school-photo:not(.head-welcome-photo):not(.pool-specific-photo),
+main .intro-photo,
+main .identity-photo {
+  border: 1px solid color-mix(in srgb, var(--green) 14%, transparent) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 10px 28px rgba(37,72,45,.11), 0 2px 5px rgba(37,72,45,.05), 0 0 0 1px rgba(37,72,45,.10);
+  outline: 1px solid rgba(255,255,255,.22);
+  outline-offset: -1px;
+}
