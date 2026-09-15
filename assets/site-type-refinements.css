@@ -42,7 +42,7 @@ main .early-how-stage48 h2 + .feature-list { margin-top: 24px; }
 @media (max-width: 980px) {
   .hero #home-title { width: fit-content; max-width: 100%; white-space: normal; }
   .hero #home-title .motto-dot { display: none; }
-  .hero #home-title .motto-line { display: block; text-align: center; }
+  .hero #home-title .motto-line { display: block; text-align: left; }
 }
 
 /* Natural-height text area; no changes to logo sizing, order, gaps or columns. */
@@ -87,4 +87,93 @@ footer.site-footer .site-footer__details a { white-space: normal; overflow-wrap:
 footer.site-footer .site-footer__copyright { flex-basis: 100%; font-size: .75rem; }
 @media (max-width: 720px) {
   footer.site-footer .site-footer__inner { grid-template-rows: auto 66px; }
+}
+
+
+/* Finishing details: clear disclosure cues and quiet tactile feedback. */
+.site-header .nav-drop > button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.site-header .nav-drop > button::after,
+main .faq summary::after {
+  content: "";
+  display: block;
+  flex: 0 0 auto;
+  width: 6px;
+  height: 6px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform .18s ease;
+}
+.site-header .nav-drop > button[aria-expanded="true"]::after,
+main .faq details[open] > summary::after { transform: rotate(225deg); }
+@media (max-width: 980px) {
+  .site-header .nav-drop > button { justify-content: space-between; }
+}
+@media (min-width: 981px) and (max-width: 1200px) {
+  .site-header .site-nav > a,
+  .site-header .site-nav > .nav-drop > button { padding-inline: 8px; font-size: .84rem; }
+  .site-header .site-brand__name { font-size: .84rem; }
+}
+main .faq summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  list-style: none;
+}
+main .faq summary::-webkit-details-marker { display: none; }
+main .faq details { transition: background-color .18s ease, border-color .18s ease; }
+main .faq details[open] {
+  background: #f0f4ec;
+  border-color: color-mix(in srgb, var(--green-dark) 20%, transparent);
+}
+main .faq summary:focus-visible { outline: 2px solid var(--green-dark); outline-offset: 4px; border-radius: 4px; }
+
+/* Consistent photo depth, with a fine edge highlight and no image filters. */
+main :is(.current-school-photo, .intro-photo, .identity-photo, .phase-card) {
+  box-shadow: 0 10px 28px rgba(37,72,45,.11), 0 2px 5px rgba(37,72,45,.05), 0 0 0 1px rgba(37,72,45,.10);
+  outline: 1px solid rgba(255,255,255,.22);
+  outline-offset: -1px;
+}
+main .phase-card .card-arrow { display: inline-block; transition: transform .18s ease; }
+@media (hover: hover) and (pointer: fine) {
+  main .phase-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 36px rgba(37,72,45,.16), 0 0 0 1px rgba(37,72,45,.14);
+  }
+  main .phase-card:hover .card-arrow { transform: translateX(3px); }
+}
+main :is(a.button, a.action, a.btn, a.phase-link):active { transform: translateY(1px) scale(.99); }
+main .phase-card:active { transform: translateY(1px); }
+main .phase-card:focus-visible { outline: 2px solid var(--green-dark); outline-offset: 4px; }
+main .location-panel { background: #e8eee2; }
+main .location-panel-head { background: #fff; }
+main .map-frame { background: #e8eee2; }
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header .nav-drop > button::after,
+  main .faq summary::after,
+  main .faq details,
+  main .phase-card,
+  main .phase-card::before,
+  main .phase-card .card-arrow,
+  main :is(a.button, a.action, a.btn, a.phase-link) { transition: none !important; }
+  main .phase-card:hover,
+  main .phase-card:hover::before,
+  main .phase-card:hover .card-arrow,
+  main .phase-card:active,
+  main :is(a.button, a.action, a.btn, a.phase-link):active { transform: none !important; }
+}
+
+/* Keep the social fallback tidy while Facebook loads or is unavailable. */
+main .facebook-plugin-wrap .fb-xfbml-parse-ignore {
+  margin: 0;
+  padding: 24px 28px;
+  font-size: .95rem;
+  line-height: 1.6;
+  text-align: left;
 }

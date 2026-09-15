@@ -99,6 +99,7 @@
     t.addEventListener('click',()=>{
       const open=n.classList.toggle('open');
       t.setAttribute('aria-expanded',String(open));
+      t.textContent=open?'Close':'Menu';
     });
   }
 })();
