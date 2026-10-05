@@ -226,22 +226,22 @@
         {
           "width": 480,
           "height": 480,
-          "file": "early-years-nature-480-v5.webp",
-          "bytes": 41290,
+          "file": "early-years-nature-480-v6.webp",
+          "bytes": 41458,
           "quality": 80
         },
         {
           "width": 960,
           "height": 960,
-          "file": "early-years-nature-960-v5.webp",
-          "bytes": 110880,
+          "file": "early-years-nature-960-v6.webp",
+          "bytes": 111880,
           "quality": 80
         },
         {
           "width": 1254,
           "height": 1254,
-          "file": "early-years-nature-1254-v5.webp",
-          "bytes": 153330,
+          "file": "early-years-nature-1254-v6.webp",
+          "bytes": 155140,
           "quality": 80
         }
       ],
@@ -249,7 +249,8 @@
         "outputColourProfile": "sRGB (embedded)",
         "generativeEditing": true,
         "description": "User-approved fresh generation from original IMG_4830.PNG and supplied crest reference; square composition, restrained colour and original walking posture on right.",
-        "upscaled": false
+        "upscaled": false,
+        "colourAdjustment": "Conventional feathered selective green adjustment: hue 6 degrees towards yellow and saturation +8% at full mask; skin hues excluded, to harmonise with Primary card."
       },
       "generatedMasterSize": [
         1254,
@@ -348,22 +349,22 @@
         {
           "width": 480,
           "height": 320,
-          "file": "secondary-maths-480-v5.webp",
-          "bytes": 20126,
+          "file": "secondary-maths-480-v6.webp",
+          "bytes": 20746,
           "quality": 80
         },
         {
           "width": 960,
           "height": 640,
-          "file": "secondary-maths-960-v5.webp",
-          "bytes": 63566,
+          "file": "secondary-maths-960-v6.webp",
+          "bytes": 63688,
           "quality": 80
         },
         {
           "width": 1214,
           "height": 809,
-          "file": "secondary-maths-1214-v5.webp",
-          "bytes": 90966,
+          "file": "secondary-maths-1214-v6.webp",
+          "bytes": 90264,
           "quality": 80
         }
       ],
@@ -373,7 +374,7 @@
         "generativeEditing": true,
         "description": "User-approved imagegen classroom tidy-up, neutral white walls and whiteboard, 3:2 expansion, left whiteboard extended beyond frame. Original IMG_5024.PNG retained as provenance.",
         "upscaled": false,
-        "crop": "10% zoom followed by another 15% zoom (1.265x total), horizontally centred and top-aligned"
+        "crop": "1.265x zoom, horizontally centred, shifted down to 70% of available vertical crop offset"
       },
       "generatedMasterSize": [
         1536,

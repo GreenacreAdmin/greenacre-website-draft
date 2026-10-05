@@ -107,3 +107,7 @@ Secondary first photo: user-requested approximately 10% tighter crop, top-aligne
 Secondary photo allocation update: homepage Secondary card now uses science-practical v2, right-aligned (100% 0%). The enhanced science-independent v4 image is the temporary placeholder in the Secondary page’s Expectations and challenge section. No duplicated placement.
 
 Final Secondary maths crop: additional 15% zoom after the requested 10%, totalling 1.265x; v5 exports supersede the unpublished v4 crop.
+
+FS v6 colour refinement: conventional selective green hue shifted gently towards yellow with slight saturation increase to match the Primary card; skin hues excluded. No additional generative editing.
+
+Secondary maths v6: same crop scale, shifted downward to regain more of the pupils and desks and remove more from the top, at user request.
