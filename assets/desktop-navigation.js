@@ -70,8 +70,11 @@
     trigger.addEventListener('keydown', e => {
       if(!desktopMQ.matches || e.key !== 'ArrowDown') return;
       e.preventDefault();
+      // Skip the fade so the first link is visible, and focusable, straight away.
+      menu.style.setProperty('transition','none','important');
       open();
       menu.querySelector('a[href]')?.focus();
+      requestAnimationFrame(() => menu.style.removeProperty('transition'));
     });
 
     menu.addEventListener('keydown', e => {
