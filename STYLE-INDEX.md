@@ -58,7 +58,7 @@ Behaviour:
 Important ownership:
 `site-header-styles.css` contains the base header appearance and mobile layout.
 
-`stage16-standard-navigation.css` contains the desktop dropdown visibility/transition behaviour.
+The "Navigation: desktop dropdowns" section of `assets/site.css` contains the desktop dropdown visibility/transition behaviour.
 
 `stage25-header-uniform.css` is an override layer which deliberately forces the final compact header/logo dimensions. Its dimensions override earlier values in `site-header-styles.css`.
 
