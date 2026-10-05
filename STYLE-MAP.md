@@ -113,9 +113,8 @@ This file maps the current repository state. Regenerate it after substantial str
 | Homepage | `.quick-card` | 4 | `index.html` | `index.html` line(s) 507, 508, 512, 516, 529, 535, 540, 919 |
 | Homepage | `.quick-grid` | 1 | `index.html` | `index.html` line(s) 500, 816, 918 |
 | Homepage | `.quick-links` | 1 | `index.html` | `index.html` line(s) 495, 830, 1079 |
-| Homepage | `.stage14-testimonial-placeholder` | 1 | `index.html` | `index.html` line(s) 1019, 1023, 1027 |
-| Homepage | `.testimonial-card` | 3 | `index.html` | `index.html` line(s) 710, 724 |
-| Homepage | `.testimonial-dot` | 3 | `index.html` | `index.html` line(s) 752, 762, 775, 779 |
+| Homepage | `.testimonial-card` | 2 | `index.html` | `index.html` line(s) 710, 724 |
+| Homepage | `.testimonial-dot` | 2 | `index.html` | `index.html` line(s) 752, 762, 775, 779 |
 | Homepage | `.testimonial-dots` | 1 | `index.html` | `index.html` line(s) 745 |
 | Homepage | `.testimonial-shell` | 1 | `index.html` | `index.html` line(s) 701, 920 |
 | Homepage | `.testimonials` | 1 | `index.html` | `index.html` line(s) 696, 830, 1080 |

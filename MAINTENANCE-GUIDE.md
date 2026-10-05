@@ -111,7 +111,9 @@ Original staff photographs use square PNG files, normally `570 × 570` pixels, w
 
 For a straightforward replacement, update both the original and its corresponding served WebP copy. Updating only the original PNG will not change the visible portrait. Retaining the served filename avoids changing the HTML, but use a cache-busting version when checking a replacement. After replacement, check the portrait on a normal desktop display and a real or accurately emulated mobile display.
 
-The homepage hero also uses an optimised WebP copy. Existing efficient WebP photos in `current-site/` and `homepage-embedded/` remain in use. Original files are retained for future editing; logos are not part of photo optimisation.
+The homepage hero uses the optimised JPEG `assets/images/optimized/home-hero-seedlings-v3.jpg`, preloaded in the homepage `<head>`; update both references if it changes. Existing efficient WebP photos in `current-site/` and `homepage-embedded/` remain in use. Original files are retained for future editing.
+
+The header crest and footer accreditation logos are served as small WebP copies from `assets/images/optimized/logos/` (sized for their displayed height at high-density screens). The original PNG logos are retained unchanged. When a logo is replaced, export a new copy at the same height and keep its `width` and `height` attributes in the footer markup in step with the new file.
 
 Ordinary content photography is standardised by `assets/current-school-photos.css`. These frames use a responsive 3:2 ratio with `object-fit: cover`; source images do not need to share that ratio. The homepage is deliberately separate. The Head of School portrait and the full-width swimming-pool image are intentional composition-led exceptions. When adding a normal content photo, reuse `.current-school-photo` rather than introducing a page-specific height or aspect ratio. If the shared photo stylesheet changes, update its cache-version query consistently on every page that loads it.
 

@@ -8,6 +8,28 @@ ROOT=Path(__file__).resolve().parents[1]
 DRAFT='https://greenacreadmin.github.io/greenacre-website-draft/'
 LIVE='https://www.greenacre.ac.th/'
 
+SHARE_IMAGE='assets/images/optimized/home-hero-seedlings-v3.jpg'
+
+def sharing(source, base, canonical, home=False):
+    """Social preview tags from the page's own title and description; school details on the homepage only."""
+    title=re.search(r'<title>(.*?)</title>',source,re.S)
+    desc=re.search(r'<meta name="description" content="([^"]*)"',source)
+    title=html.unescape(title.group(1).strip()) if title else 'Greenacre International School'
+    desc=html.unescape(desc.group(1)) if desc else ''
+    tags=[('property','og:type','website'),('property','og:site_name','Greenacre International School'),
+          ('property','og:title',title),('property','og:description',desc),('property','og:url',canonical),
+          ('property','og:image',base+SHARE_IMAGE),('property','og:locale','en_GB'),('name','twitter:card','summary_large_image')]
+    out=''.join(f'<meta {kind}="{key}" content="{html.escape(value)}">\n' for kind,key,value in tags if value)
+    if home:
+        school={'@context':'https://schema.org','@type':'School','name':'Greenacre International School','url':base,
+                'logo':base+'assets/images/greenacre-logo.png','image':base+SHARE_IMAGE,'description':desc,
+                'telephone':'+66 77 430 729','email':'contact@greenacre.ac.th',
+                'address':{'@type':'PostalAddress','streetAddress':'108 Moo 2, Na Mueang','addressLocality':'Koh Samui',
+                           'addressRegion':'Surat Thani','postalCode':'84140','addressCountry':'TH'},
+                'sameAs':['https://www.facebook.com/samuigreenacreschool/']}
+        out+='<script type="application/ld+json" id="school-data">'+json.dumps(school,ensure_ascii=False).replace('</','<\\/')+'</script>\n'
+    return out
+
 def outputs(base, launch=False):
     if not base.endswith('/'):
         raise ValueError('Base URL must end in /')
@@ -22,8 +44,12 @@ def outputs(base, launch=False):
         target=aliases.get(path,path+'/') if path else ''
         canonical=base+target.split('#')[0]
         source=re.sub(r'<link\b(?=[^>]*rel=[\"\']canonical[\"\'])[^>]*>\s*','',source,flags=re.I)
+        source=re.sub(r'<meta (?:property="og:|name="twitter:)[^>]*>\s*','',source)
+        source=re.sub(r'<script type="application/ld\+json" id="school-data">.*?</script>\s*','',source,flags=re.S)
         if not hidden:
             source=source.replace('</head>',f'<link rel="canonical" href="{html.escape(canonical)}">\n</head>')
+        if not hidden and path not in aliases:
+            source=source.replace('</head>',sharing(source,base,canonical,home=not path)+'</head>')
         if not hidden and path not in aliases:
             urls.append(canonical)
         result[page]=source
