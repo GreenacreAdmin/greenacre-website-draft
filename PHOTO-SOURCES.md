@@ -95,3 +95,5 @@ science-independent: 480px / 17672 bytes, 960px / 46024 bytes, 1440px / 78192 by
 FS card refinement supersedes the preceding v3 export: square composition with the children closer together and a slight smile on the boy at right, as requested. 480px / 45548 bytes, 960px / 132396 bytes, 1254px / 191778 bytes.
 
 Secondary homepage card refinement supersedes v3: brighter window daylight, neutral white lab coat and foreground hand moved outside the bottom edge. 480px / 18044 bytes, 960px / 49240 bytes, 1440px / 84130 bytes.
+
+FS homepage card reverted at user request to the original photographic v2 exports (IMG_4830), before imagegen enhancement and recomposition. Welcome and Secondary enhancements remain in place.

@@ -225,37 +225,34 @@
       "exports": [
         {
           "width": 480,
-          "height": 480,
-          "file": "early-years-nature-480-v4.webp",
-          "bytes": 45548,
+          "height": 385,
+          "file": "early-years-nature-480-v2.webp",
+          "bytes": 31174,
           "quality": 80
         },
         {
           "width": 960,
-          "height": 960,
-          "file": "early-years-nature-960-v4.webp",
-          "bytes": 132396,
+          "height": 770,
+          "file": "early-years-nature-960-v2.webp",
+          "bytes": 71516,
           "quality": 80
         },
         {
-          "width": 1254,
-          "height": 1254,
-          "file": "early-years-nature-1254-v4.webp",
-          "bytes": 191778,
+          "width": 1310,
+          "height": 1051,
+          "file": "early-years-nature-1310-v2.webp",
+          "bytes": 99102,
           "quality": 80
         }
       ],
       "processing": {
-        "sourceColourProfile": "untagged (assumed sRGB)",
+        "sourceColourProfile": "Display P3",
         "outputColourProfile": "sRGB (embedded)",
-        "generativeEditing": true,
-        "description": "User-requested imagegen clarity enhancement, recomposed for the square homepage card with all three faces inside the frame and a gentle smile on the boy at right.",
+        "colourAdjustment": null,
+        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
+        "generativeEditing": false,
         "upscaled": false
-      },
-      "generatedMasterSize": [
-        1254,
-        1254
-      ]
+      }
     },
     "classroom-welcome": {
       "source": "IMG_4998.PNG",
