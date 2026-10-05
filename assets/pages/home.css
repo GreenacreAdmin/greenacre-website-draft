@@ -1,0 +1,293 @@
+/* homepage: page-specific styles. */
+
+/* ---- stage11-home-stamp-visibility ---- */
+.home-photo-temp{position:relative!important}
+.home-photo-temp>.home-photo-stamp{
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+  position:absolute!important;
+  top:12px!important;
+  right:12px!important;
+  bottom:auto!important;
+  left:auto!important;
+  z-index:999!important;
+  width:auto!important;
+  height:auto!important;
+  margin:0!important;
+  padding:6px 9px!important;
+  border:1px solid rgba(255,255,255,.55)!important;
+  border-radius:999px!important;
+  background:rgba(25,55,34,.88)!important;
+  color:#fff!important;
+  font-family:Comfortaa,sans-serif!important;
+  font-size:9px!important;
+  font-weight:700!important;
+  line-height:1!important;
+  letter-spacing:.04em!important;
+  text-transform:none!important;
+  box-shadow:0 2px 9px rgba(0,0,0,.20)!important;
+  pointer-events:none!important;
+}
+
+/* ---- stage36-facebook-details ---- */
+.facebook-panel{
+  overflow:hidden!important;
+}
+.facebook-plugin-wrap{
+  position:relative;
+  width:100%;
+  max-width:500px;
+  height:440px;
+  margin:0 auto;
+  overflow:hidden;
+  background:#fff;
+}
+.facebook-plugin-wrap .fb-page{
+  width:500px!important;
+  max-width:100%!important;
+}
+.facebook-plugin-wrap .fb-page>span{
+  display:block!important;
+  width:500px!important;
+  max-width:100%!important;
+  height:520px!important;
+  /* Crop the compact Facebook header with a small additional allowance. */
+  transform:translateY(-80px);
+}
+.facebook-plugin-wrap .fb-page iframe{
+  width:500px!important;
+  max-width:100%!important;
+  height:520px!important;
+}
+@media(max-width:700px){
+  .facebook-plugin-wrap{
+    width:100%;
+    max-width:500px;
+    height:440px;
+  }
+  .facebook-plugin-wrap .fb-page,
+  .facebook-plugin-wrap .fb-page>span,
+  .facebook-plugin-wrap .fb-page iframe{
+    width:100%!important;
+    max-width:500px!important;
+  }
+}
+
+/* ---- stage51-section-rhythm ---- */
+/* Stage 51: tighter boundaries between homepage sections */
+.intro{padding-top:40px!important;padding-bottom:40px!important}
+.phases{padding-top:40px!important;padding-bottom:40px!important}
+.identity{padding-top:40px!important;padding-bottom:40px!important}
+.pathway{padding-top:40px!important;padding-bottom:40px!important}
+.wellbeing-feature{padding-top:40px!important;padding-bottom:40px!important}
+.quick-links{padding-top:40px!important;padding-bottom:40px!important}
+.testimonials{padding-top:32px!important;padding-bottom:32px!important}
+.location-social{padding-top:40px!important;padding-bottom:40px!important}
+.final-cta{padding-top:40px!important;padding-bottom:40px!important}
+
+/* ---- homepage-content-photo-ratio ---- */
+/* Match ordinary homepage photography to the responsive site-wide 3:2 frame. */
+.intro-photo,
+.identity-photo {
+  min-height: 0 !important;
+  aspect-ratio: 3 / 2;
+}
+
+/* ---- homepage-responsive-photos ---- */
+@media (max-width: 560px) {
+  .intro-photo { --school-photo-individual-support: image-set(url("../images/school-2026/individual-support-480-v3.webp") 1x, url("../images/school-2026/individual-support-960-v3.webp") 2x); }
+  .phase-card.early::before { --school-photo-early-years-nature: image-set(url("../images/school-2026/early-years-nature-480-v6.webp") 1x, url("../images/school-2026/early-years-nature-960-v6.webp") 2x); }
+  .phase-card.primary::before { --school-photo-reading-together: image-set(url("../images/school-2026/reading-together-480-v2.webp") 1x, url("../images/school-2026/reading-together-960-v2.webp") 2x); }
+  .phase-card.secondary::before { --school-photo-science-practical: image-set(url("../images/school-2026/science-practical-480-v2.webp") 1x, url("../images/school-2026/science-practical-960-v2.webp") 2x); }
+  .identity-photo { --school-photo-watering-together: image-set(url("../images/school-2026/watering-together-480-v3.webp") 1x, url("../images/school-2026/watering-together-960-v3.webp") 2x); }
+}
+
+/* ---- page ---- */
+:root {
+    --footer-height: 118px;
+  }
+
+  .site-footer {
+    position: relative;
+    min-height: var(--footer-height);
+    background: var(--shell-green);
+    color: var(--shell-ink);
+    border-top: 1px solid color-mix(in srgb, var(--shell-ink) 12%, transparent);
+  }
+
+  .site-footer__inner {
+    width: min(calc(100% - 46px),1500px);
+    min-height: var(--footer-height);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(285px, .72fr) minmax(680px, 1.28fr);
+    gap: clamp(32px, 5vw, 84px);
+    align-items: center;
+  }
+
+  .site-footer__identity {
+    transform: translateX(14px);
+  }
+
+  .site-footer__name {
+    display: inline-block;
+    margin-bottom: 3px;
+    color: var(--shell-ink);
+    font-family: "Comfortaa", sans-serif;
+    font-size: .98rem;
+    line-height: 1;
+    text-decoration: none;
+  }
+
+  .site-footer__details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px 10px;
+    color: color-mix(in srgb, var(--shell-ink) 78%, transparent);
+    font-family: "Comfortaa", sans-serif;
+    font-size: .60rem;
+    line-height: 1.28;
+  }
+
+  .site-footer__details span,
+  .site-footer__details a {
+    white-space: nowrap;
+  }
+
+  .site-footer__details a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .site-footer__logos {
+    height: 58px;
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 24px;
+  }
+
+  .site-footer__logo {
+    flex: 0 0 auto;
+    min-width: 0;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .site-footer__logo img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 45px;
+    object-fit: contain;
+  }
+
+  .site-footer__logo--onesqa img { max-height: 46px; }
+  .site-footer__logo--isat img { max-height: 43px; }
+  .site-footer__logo--cambridge img { max-height: 38px; }
+  .site-footer__logo--edt img { max-height: 46px; }
+  .site-footer__logo--isqm img { max-height: 50px; }
+
+  .site-footer__logo:hover {
+    opacity: .78;
+  }
+
+  @media (max-width: 1040px) {
+    .site-footer__identity {
+      transform: none;
+    }
+
+    :root { --footer-height: 118px; }
+
+    .site-footer__inner {
+      width: min(calc(100% - 28px), 1500px);
+      grid-template-columns: 220px 1fr;
+      gap: 22px;
+    }
+
+    .site-footer__name { font-size: .86rem; }
+    .site-footer__details { font-size: .54rem; gap: 1px 7px; }
+    .site-footer__logos {
+      gap: 14px;
+    }
+  }
+
+  @media (max-width: 720px) {
+    :root { --footer-height: 126px; }
+
+    .site-footer__inner {
+      grid-template-columns: 1fr;
+      grid-template-rows: 42px 66px;
+      gap: 4px;
+      padding: 7px 0;
+    }
+
+    .site-footer__identity {
+      text-align: center;
+    }
+
+    .site-footer__name { font-size: .80rem; }
+
+    .site-footer__details {
+      justify-content: center;
+      font-size: .51rem;
+    }
+
+    .site-footer__logos {
+      width: 100%;
+      justify-self: stretch;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 6px;
+    }
+
+    .site-footer__logo {
+      flex: initial;
+    }
+
+    .site-footer__logo img {
+      max-height: 34px;
+    }
+
+    .site-footer__logo--isat img {
+      transform: translateX(-5px);
+    }
+
+    .site-footer__logo--cambridge img,
+    .site-footer__logo--edt img {
+      max-height: 29px;
+    }
+  }
+
+/* ---- homepage-hero-fit ---- */
+.hero {
+  min-height: min(1000px, calc(100vh - 65.6px));
+  min-height: min(1000px, calc(100svh - 65.6px));
+}
+
+@media (max-width: 720px) {
+  .hero {
+    min-height: min(1000px, calc(100vh - 57.6px));
+    min-height: min(1000px, calc(100svh - 57.6px));
+  }
+}
+
+@media (max-width: 560px) {
+  .hero {
+    min-height: max(560px, min(1000px, calc(100svh - 57.6px)));
+  }
+}
+
+/* ---- page ---- */
+.site-footer__name,
+.site-footer__details,
+.site-footer__details a,
+.site-footer__details span {
+  font-family:"Comfortaa",sans-serif!important;
+}

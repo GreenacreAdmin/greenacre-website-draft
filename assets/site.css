@@ -1,0 +1,1459 @@
+/* Greenacre website: shared stylesheet.
+   Sections keep the names of the files they replaced, in the original cascade order. */
+
+/* ==== Colours (brand palette tokens) (was site-palette.css) ==== */
+/*
+ * Greenacre global colour palette
+ *
+ * Shared colour system for the Greenacre website.
+ * Adjust these values to refine the site-wide palette.
+ */
+:root {
+  --green: #356b46;
+  --green-dark: #244f35;
+  --green-fill-dark: #3b694c;
+  --green-deep: #183f2b;
+  --green-mid: #58755d;
+  --green-soft: #edf1e8;
+  --green-pale: #dde8d8;
+  --green-wash: #f3f6ef;
+
+  --cream: #f8f6ef;
+  --warm-surface: #f7f5ed;
+  --sand: #f2eadc;
+  --paper: #ffffff;
+
+  --ink: #243129;
+  --muted: #616b63;
+
+  --line: color-mix(in srgb, var(--green) 14%, transparent);
+
+  --orange: #c97b3d;
+  --orange-text: #a05d2c;
+
+  --blue: #4f7188;
+  --blue-dark: #355467;
+  --blue-soft: #e8eef2;
+
+  --hero-green-start: #244f35;
+  --hero-green-end: #55765f;
+  --hero-blue-start: #355467;
+  --hero-blue-end: #4f7188;
+  --hero-green-eyebrow: #edf2e9;
+  --hero-blue-eyebrow: #eef4f7;
+
+  --shell-green: #c6d6b8;
+  --shell-ink: #172218;
+}
+
+/* ==== Header: base and mobile layout (was site-header-styles.css) ==== */
+.site-header{position:sticky;top:0;z-index:10000;background:color-mix(in srgb, var(--shell-green) 97%, transparent);border-bottom:1px solid rgba(23,34,24,.12);backdrop-filter:blur(10px)}
+.site-header__inner{width:min(calc(100% - 46px),1500px);height:82px;margin:auto;display:flex;align-items:center;gap:26px}
+.site-brand{display:flex;align-items:center;flex:0 0 auto;text-decoration:none;transform:translateX(-24px)}.site-brand img{width:auto;height:58px;object-fit:contain;transform:translate(8px,-4px)}
+.site-brand__name{margin-left:-10px;color:var(--shell-ink);font:700 .82rem/1.25 "Comfortaa",sans-serif;white-space:nowrap}
+@media(max-width:1150px){.site-brand__name{display:none}}
+.site-nav{margin-left:auto;display:flex;align-items:center;gap:4px}.site-nav a,.nav-drop>button{border:0;background:none;color:var(--shell-ink);font:700 .78rem/1.2 "Comfortaa",sans-serif;text-decoration:none;padding:12px 11px;border-radius:999px;cursor:pointer}.site-nav a:hover,.nav-drop>button:hover{background:rgba(255,255,255,.38)}
+@media(min-width:981px){.site-brand__name,.site-nav>a,.site-nav>.nav-drop>button{font-size:1rem}.site-nav .nav-menu a{font-size:.875rem}}
+.nav-drop.nav-open>button,
+.nav-drop>button.nav-section-current{
+  background:rgba(255,255,255,.38)
+}
+
+.nav-drop{position:relative}.nav-menu{display:none;position:absolute;top:calc(100% + 7px);left:0;min-width:245px;padding:9px;background:#fff;border:1px solid color-mix(in srgb, var(--green) 14%, transparent);border-radius:16px;box-shadow:0 18px 48px rgba(37,72,45,.16)}.nav-menu a{border-radius:10px;padding:10px 12px;font-size:.74rem}@media(min-width:981px){.nav-drop:focus-within .nav-menu{display:grid}}@media(min-width:981px) and (hover:hover) and (pointer:fine){.nav-drop:hover .nav-menu{display:grid}}
+.menu-toggle{display:none;margin-left:auto;border:0;background:rgba(255,255,255,.4);border-radius:999px;padding:10px 15px;font:700 .78rem "Comfortaa",sans-serif}
+@media(max-width:980px){.site-brand{transform:none}.site-header__inner{height:72px;width:min(calc(100% - 28px),1500px)}.site-brand img{height:49px}.menu-toggle{display:block}.site-nav{display:none;position:absolute;top:72px;left:0;right:0;background:var(--shell-green);padding:12px 18px 20px;box-shadow:0 16px 30px rgba(0,0,0,.12);max-height:calc(100dvh - 72px);overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}.site-nav.open{display:grid}.nav-drop>button{width:100%;text-align:left}.nav-menu{display:none;position:static;box-shadow:none;background:rgba(255,255,255,.28);border:0;margin:2px 0 8px;padding:5px 10px}.nav-drop.nav-open>.nav-menu{display:grid}.site-nav>a{display:block}}
+
+.site-nav a[aria-current="page"]{
+  background:color-mix(in srgb, var(--green) 10%, transparent);
+  color:var(--green-dark);
+}
+
+/* ==== Photo frames: shared treatment (was stage11-photo-system.css) ==== */
+/* Secondary page temporary photos: image stays attractive but is unmistakably unfinished. */
+.temp-photo,.photo-plan,.review-secondary-photo{
+  position:relative!important;overflow:hidden!important;isolation:isolate;
+}
+.photo-blur-layer{
+  position:absolute;inset:-18px;z-index:1;pointer-events:none;
+  -webkit-backdrop-filter:blur(15px);backdrop-filter:blur(15px);
+  background:rgba(255,255,255,.04);
+}
+.temp-photo::before,.temp-photo::after,
+.photo-plan>.stamp,.photo-plan>.shot,
+.review-secondary-photo>.temp-stamp,
+.review-secondary-photo>.temp-note{
+  position:relative;z-index:3;
+}
+.review-secondary-photo>.temp-stamp{
+  position:absolute;left:18px;top:18px;padding:9px 14px;border-radius:999px;
+  background:color-mix(in srgb, var(--green-dark) 94%, transparent);color:#fff;font:700 11px/1.2 Comfortaa,sans-serif;
+  letter-spacing:.07em;text-transform:uppercase;
+}
+.review-secondary-photo>.temp-note{
+  position:absolute;left:18px;right:18px;bottom:18px;padding:10px 13px;border-radius:12px;
+  background:color-mix(in srgb, var(--green-deep) 84%, transparent);color:#fff;font-size:.76rem;line-height:1.45;
+}
+.review-secondary-photo>img{display:block;width:100%;height:100%;object-fit:cover}
+
+/* Homepage photography: real photos stay clear, with a small replacement marker. */
+.home-photo-temp{position:relative!important;isolation:isolate}
+.home-photo-temp>.home-photo-stamp{
+  position:absolute;right:10px;bottom:10px;z-index:8;padding:5px 8px;border-radius:999px;
+  background:color-mix(in srgb, var(--green-dark) 82%, transparent);color:#fff;font:700 9px/1 Comfortaa,sans-serif;
+  letter-spacing:.035em;box-shadow:0 2px 10px rgba(0,0,0,.14)
+}
+
+/* Dara and staff avatars are placeholders, not blurred photography. */
+.head-welcome-photo img,.person-avatar{filter:none!important;transform:none!important}
+
+/* ==== Navigation: desktop dropdowns (was stage16-standard-navigation.css) ==== */
+@media (min-width:981px){
+  .nav-drop{
+    position:relative!important;
+  }
+
+  .nav-drop > .nav-menu{
+    position:absolute!important;
+    top:100%!important;
+    left:0!important;
+    margin-top:0!important;
+    visibility:hidden!important;
+    opacity:0!important;
+    pointer-events:none!important;
+    transform:translateY(6px)!important;
+    transition:opacity .14s ease, transform .14s ease, visibility .14s ease!important;
+    z-index:100!important;
+  }
+
+  .nav-drop:hover > .nav-menu,
+  .nav-drop:focus-within > .nav-menu,
+  .nav-drop.nav-open > .nav-menu{
+    visibility:visible!important;
+    opacity:1!important;
+    pointer-events:auto!important;
+    transform:translateY(0)!important;
+  }
+
+  .nav-drop > .nav-menu::before{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    top:-10px;
+    height:10px;
+    pointer-events:none;
+  }
+
+  /* Keep the final navigation dropdown inside the viewport. */
+  .nav-drop.nav-dismissed > .nav-menu {
+    display:none!important;
+    visibility:hidden!important;
+    opacity:0!important;
+    pointer-events:none!important;
+  }
+
+  .site-nav > .nav-drop:last-child > .nav-menu{
+    left:auto!important;
+    right:0!important;
+  }
+}
+
+/* ==== Header: final compact dimensions (was stage25-header-uniform.css) ==== */
+/* Uniform site header dimensions */
+.site-header__inner{
+  height:65.6px !important;
+}
+.site-brand img{
+  display:block;
+  height:38.4px !important;
+  width:auto !important;
+  max-height:38.4px !important;
+}
+@media(max-width:980px){
+  .site-brand{
+    transform:translateX(-14px);
+  }
+}
+
+@media(min-width:561px) and (max-width:980px){
+  .site-brand__name{
+    display:inline;
+  }
+}
+
+@media(max-width:720px){
+  .site-header__inner{
+    height:57.6px !important;
+  }
+}
+
+@media(max-width:560px){
+  .site-brand__name{
+    display:none;
+  }
+  .site-brand img{
+    height:38.4px !important;
+    max-height:38.4px !important;
+    width:auto !important;
+    transform:translate(-4px,-2px);
+  }
+}
+
+/* ==== Formatting safeguards (headings, green sections) (was formatting-safeguards.css) ==== */
+/* Site-wide formatting safeguards added after full formatting audit. */
+
+/* Prevent media or long grid/flex children from forcing accidental horizontal misalignment. */
+main img,
+main video,
+main iframe {
+  max-width: 100%;
+}
+
+main [class*="grid"] > *,
+main [class*="flex"] > * {
+  min-width: 0;
+}
+
+/* Section labels: readable by default on pale/light backgrounds. */
+.eyebrow,
+.kicker {
+  color: var(--green-mid) !important;
+  opacity: 1 !important;
+}
+
+/* Pale label text is reserved for dark presentation areas. */
+.page-hero .eyebrow,
+.page-hero .kicker,
+.hero .eyebrow,
+.hero .kicker,
+.subhero .eyebrow,
+.subhero .kicker,
+.dark .eyebrow,
+.dark .kicker,
+.identity .eyebrow,
+.identity .kicker,
+.green-section .eyebrow,
+.green-section .kicker,
+.cta-band .eyebrow,
+.cta-band .kicker,
+.cta-section .eyebrow,
+.cta-section .kicker {
+  color: var(--hero-green-eyebrow) !important;
+  opacity: 1 !important;
+}
+
+/* Keep tables inside their available content width. */
+main table {
+  max-width: 100%;
+}
+
+/* Consistent treatment for standard grouped content cards */
+.cards > .card,
+.feature-list > .feature,
+.info-grid > .info-card,
+.info-card-grid > .info-card,
+.service-list > .service,
+.seven-grid > .seven-card {
+  background:#fff;
+  border:1px solid color-mix(in srgb, var(--green) 12%, transparent);
+  border-left:4px solid var(--blue);
+  border-radius:18px;
+  box-shadow:0 7px 20px color-mix(in srgb, var(--green-dark) 5%, transparent);
+}
+
+/* Our Team: standard card family with mirrored accent */
+.team-grid-v2 > .team-person-v2 {
+  background:#fff;
+  border:1px solid color-mix(in srgb, var(--green) 12%, transparent);
+  border-right:4px solid var(--blue);
+  border-radius:18px;
+  box-shadow:0 7px 20px color-mix(in srgb, var(--green-dark) 5%, transparent);
+}
+
+
+.green-section{
+  background:var(--green-fill-dark)!important;
+  color:var(--green-wash)!important;
+}
+
+.green-section h2,
+.green-section h3{
+  color:#fff!important;
+}
+
+.green-section p{
+  color:var(--green-wash);
+}
+
+
+/* Preserve dark foregrounds inside pale content placed on green sections. */
+.green-section .phase-link,
+.green-section .dofe-card-stage42{
+  color:var(--green-dark)!important;
+}
+
+.green-section .phase-link strong,
+.green-section .dofe-card-stage42 h2,
+.green-section .dofe-card-stage42 h3,
+.green-section .dofe-card-stage42 p{
+  color:var(--green-dark)!important;
+}
+
+/* ==== Section variety (contained panels on inner pages) (was stage48-design-variety.css) ==== */
+/* Greenacre Stage 48
+   Selective design variety using the successful contained-composition logic.
+   No content changes. */
+
+.env-opening-stage48 {
+  background: var(--warm-surface);
+}
+
+.env-opening-stage48 > .wrap {
+  border: 1px solid rgba(35, 96, 59, .14);
+  border-radius: 22px;
+  padding: clamp(28px, 4vw, 48px);
+  background: #fff;
+  box-shadow: 0 14px 38px rgba(43, 69, 48, .055);
+  align-items: center;
+}
+
+.env-three-stage48 {
+  background: #fff;
+}
+
+.env-three-stage48 .cards {
+  padding: 22px;
+  border-radius: 22px;
+  background: #eef4e8;
+  gap: 16px;
+}
+
+.env-three-stage48 .card {
+  background: #fff;
+  border: 1px solid rgba(35, 96, 59, .10);
+  box-shadow: none;
+}
+
+.env-closing-stage48 {
+  background: var(--warm-surface);
+}
+
+.early-how-stage48 {
+  background: var(--warm-surface);
+}
+
+.early-how-stage48 > .wrap {
+  border-radius: 22px;
+  padding: 24px clamp(30px, 4vw, 48px);
+  background: #fff;
+  border: 1px solid rgba(35, 96, 59, .13);
+  box-shadow: 0 14px 38px rgba(43, 69, 48, .05);
+}
+
+.early-how-stage48 .feature-list {
+  margin-top: 26px;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 14px !important;
+}
+
+.early-how-stage48 .feature {
+  min-width: 0;
+  padding: 20px 22px !important;
+  border-radius: 16px;
+  background: #eef4e8;
+  border: 1px solid rgba(35, 96, 59, .09);
+}
+
+.eyfs-seven .seven-grid {
+  display: grid !important;
+  grid-template-columns: repeat(8, minmax(0, 1fr)) !important;
+  gap: 18px !important;
+  align-items: stretch;
+}
+
+.eyfs-seven .seven-card {
+  grid-column: span 2 !important;
+  width: auto !important;
+  max-width: none !important;
+  min-width: 0;
+}
+
+.eyfs-seven .seven-card:nth-child(5) {
+  grid-column: 2 / span 2 !important;
+}
+
+.eyfs-seven .seven-card:nth-child(6) {
+  grid-column: 4 / span 2 !important;
+}
+
+.eyfs-seven .seven-card:nth-child(7) {
+  grid-column: 6 / span 2 !important;
+}
+
+.primary-reflection-stage48 {
+  background: var(--warm-surface);
+  padding-top: 54px !important;
+  padding-bottom: 54px !important;
+}
+
+.primary-reflection-stage48 > .wrap {
+  border-radius: 22px;
+  padding: clamp(28px, 4vw, 46px);
+  background: #fff;
+  border: 1px solid rgba(35, 96, 59, .13);
+  box-shadow: 0 14px 38px rgba(43, 69, 48, .055);
+  align-items: center;
+  gap: clamp(28px, 4vw, 52px) !important;
+}
+
+.primary-reflection-stage48 .photo-plan {
+  min-height: 330px;
+}
+
+.secondary-igcse-stage48 {
+  background: var(--warm-surface);
+  padding-top: 54px !important;
+  padding-bottom: 54px !important;
+}
+
+.secondary-igcse-stage48 > .wrap {
+  border-radius: 22px;
+  padding: 24px clamp(30px, 4vw, 48px);
+  background: #fff;
+  border: 1px solid rgba(35, 96, 59, .13);
+  box-shadow: 0 14px 38px rgba(43, 69, 48, .055);
+}
+
+.secondary-igcse-stage48 .feature-list {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 14px !important;
+  margin-top: 26px;
+}
+
+.secondary-igcse-stage48 .feature {
+  min-width: 0;
+  padding: 20px 22px !important;
+  border-radius: 16px;
+  background: #eef4e8;
+  border: 1px solid rgba(35, 96, 59, .09);
+}
+
+@media (max-width: 1000px) {
+  .eyfs-seven .seven-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+
+  .eyfs-seven .seven-card {
+    grid-column: span 2 !important;
+  }
+
+  .eyfs-seven .seven-card:nth-child(5),
+  .eyfs-seven .seven-card:nth-child(6) {
+    grid-column: span 2 !important;
+  }
+
+  .eyfs-seven .seven-card:nth-child(7) {
+    grid-column: 2 / span 2 !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .early-how-stage48 .feature-list,
+  .secondary-igcse-stage48 .feature-list {
+    grid-template-columns: 1fr !important;
+  }
+
+  .eyfs-seven .seven-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  .eyfs-seven .seven-card,
+  .eyfs-seven .seven-card:nth-child(5),
+  .eyfs-seven .seven-card:nth-child(6),
+  .eyfs-seven .seven-card:nth-child(7) {
+    grid-column: 1 !important;
+  }
+
+  .primary-reflection-stage48 .photo-plan {
+    min-height: 260px;
+  }
+}
+
+/* Stage 52: aims and learning-page normalisation */
+
+.aims-section-stage40 .aims-stage52-wrap {
+  display: block;
+}
+
+.aims-stage52-intro {
+  max-width: 900px;
+  margin: 0 0 28px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--green-dark);
+}
+
+.aims-stage52-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.aim-stage52 {
+  padding: 20px 22px;
+  border-radius: 16px;
+  background: #eef4e8;
+  border: 1px solid rgba(35, 96, 59, .09);
+}
+
+.aim-stage52 strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--green-dark);
+}
+
+.aim-stage52 p {
+  margin: 0;
+}
+
+/*
+ * Primary uses the same contained feature treatment already used by
+ * Early Years and Secondary.
+ */
+.primary-whole-child-stage48 {
+  background: var(--warm-surface);
+  padding-top: 54px !important;
+  padding-bottom: 54px !important;
+}
+
+.primary-whole-child-stage48 > .wrap {
+  border-radius: 22px;
+  padding: 24px clamp(30px, 4vw, 48px);
+  background: #fff;
+  border: 1px solid rgba(35, 96, 59, .13);
+  box-shadow: 0 14px 38px rgba(43, 69, 48, .055);
+}
+
+.primary-whole-child-stage48 .feature-list {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 14px !important;
+  margin-top: 26px;
+}
+
+.primary-whole-child-stage48 .feature {
+  min-width: 0;
+  padding: 20px 22px !important;
+  border-radius: 16px;
+  background: #eef4e8;
+  border: 1px solid rgba(35, 96, 59, .09);
+}
+
+@media (max-width: 720px) {
+  .aims-stage52-grid,
+  .primary-whole-child-stage48 .feature-list {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+
+/* Stage 53: About composition and Primary reflection */
+
+/* About: Mission and Aims as one composed feature */
+.about-purpose-stage53 {
+  background: var(--warm-surface);
+  padding-top: 54px !important;
+  padding-bottom: 54px !important;
+}
+
+.about-purpose-stage53 > .wrap {
+  padding: 24px clamp(30px, 4vw, 48px);
+  background: #fff;
+  border: 1px solid rgba(35, 96, 59, .13);
+  border-radius: 22px;
+  box-shadow: 0 14px 38px rgba(43, 69, 48, .055);
+}
+
+.about-purpose-grid-stage53 {
+  display: grid;
+  grid-template-columns: minmax(0, .82fr) minmax(0, 1.55fr);
+  gap: clamp(40px, 5vw, 78px);
+  align-items: start;
+}
+
+.about-purpose-stage53 .eyebrow {
+  color: var(--green-mid);
+}
+
+.about-purpose-stage53 h2 {
+  margin-bottom: 18px;
+}
+
+.about-purpose-stage53 .mission-box {
+  max-width: none;
+  margin: 0;
+  padding: 30px 32px;
+  font-size: 1rem;
+}
+
+.about-purpose-stage53 .aims-stage52-intro {
+  max-width: none;
+  margin-bottom: 24px;
+}
+
+/* About: paired institutional close */
+.about-closing-stage53 {
+  background: #fff;
+}
+
+.about-closing-grid-stage53 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border: 1px solid rgba(35, 96, 59, .13);
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.about-closing-panel-stage53 {
+  padding: clamp(30px, 4vw, 48px);
+}
+
+.about-closing-panel-stage53 + .about-closing-panel-stage53 {
+  border-left: 1px solid rgba(35, 96, 59, .13);
+}
+
+.about-closing-panel-stage53 .eyebrow {
+  color: var(--green-mid);
+}
+
+.about-closing-panel-stage53 h2 {
+  font-size: clamp(1.6rem, 2.45vw, 2.45rem);
+}
+
+.about-closing-panel-stage53 p:last-child {
+  margin-bottom: 0;
+}
+
+.safeguarding-panel-stage53 {
+  background: #eef4e8;
+}
+
+/* Primary: reflection content sits directly on the page */
+.primary-reflection-stage48 {
+  background: transparent !important;
+  padding-top: 54px !important;
+  padding-bottom: 54px !important;
+}
+
+.primary-reflection-stage48 > .wrap {
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 900px) {
+  .about-purpose-grid-stage53,
+  .about-closing-grid-stage53 {
+    grid-template-columns: 1fr;
+  }
+
+  .about-purpose-grid-stage53 {
+    gap: 34px;
+  }
+
+  .about-closing-panel-stage53 + .about-closing-panel-stage53 {
+    border-left: 0;
+    border-top: 1px solid rgba(35, 96, 59, .13);
+  }
+}
+
+/* ==== Typography (was site-typography.css) ==== */
+/*
+ * GREENACRE INTERNATIONAL SCHOOL
+ * Shared production typography
+ *
+ * Primary text hierarchy only.
+ * Component-specific typography remains controlled by component rules.
+ */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Standard page title */
+h1 {
+  font-size: clamp(2.15rem, 3.6vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: -.035em;
+}
+
+/* Homepage display title */
+.hero h1 {
+  font-size: clamp(2.4rem, 4.4vw, 4rem);
+  line-height: 1.03;
+}
+
+/* Page/subpage hero titles */
+.page-hero h1,
+.subhero h1 {
+  font-size: clamp(2.3rem, 4vw, 3.5rem) !important;
+  line-height: 1.05 !important;
+}
+
+/* Standard internal-page hero spacing: matches Admissions */
+.page-hero,
+.subhero {
+  padding: 84px 0 70px !important;
+}
+
+/* Main section headings */
+h2 {
+  font-size: clamp(1.7rem, 2.5vw, 2.4rem);
+  line-height: 1.15;
+  letter-spacing: -.025em;
+}
+
+/* Subsection headings */
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+/*
+ * GREENACRE TYPOGRAPHY CONTRACT
+ *
+ * PAGE TITLE        = h1
+ * SECTION TITLE     = h2
+ * SUBSECTION TITLE  = h3
+ * COMPONENT TITLE   = h4
+ * BODY COPY         = plain <p>
+ * LEAD / INTRO      = <p class="lead">
+ * SUPPORTING COPY   = .supporting-text
+ * CAPTION / NOTE    = .caption-text
+ * SPECIALIST UI     = explicit component-specific rule
+ *
+ * New ordinary paragraphs require no class.
+ * Do not add arbitrary font-size declarations to ordinary content.
+ */
+
+/* Standard body copy */
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Introductory or deliberately emphasised paragraph */
+.lead {
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+/* Hero introductory copy */
+.page-hero p,
+.subhero p,
+.hero-copy {
+  font-size: 1.08rem;
+  line-height: 1.65;
+  font-weight: 500;
+}
+
+/* Smaller supporting information */
+.supporting-text {
+  font-size: .875rem;
+  line-height: 1.6;
+}
+
+/* Captions, notes and descriptive metadata */
+.caption-text {
+  font-size: .8rem;
+  line-height: 1.5;
+}
+
+/* ==== Components (buttons, cards, focus, skip link) (was site-components.css) ==== */
+/*
+ * Shared Greenacre content components.
+ * Consolidated from identical page-local rules.
+ */
+
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 10000;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #fff;
+  color: #1f4f31;
+  font-weight: 700;
+  transform: translateY(-160%);
+  transition: transform .15s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+/* Clear keyboard focus without affecting ordinary mouse interaction. */
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid #1f4f31;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+.site-brand:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--green-dark) 34%, transparent);
+  border-radius: 4px;
+}
+
+/* Consistent restrained feedback for component-style links and buttons. */
+:where(.action, .button, .btn, .phase-link) {
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    background-color .18s ease,
+    border-color .18s ease,
+    color .18s ease;
+}
+
+:where(a.action, a.button, a.btn, a.phase-link):hover {
+  transform: translateY(-2px);
+}
+
+/* Accreditation logos respond without moving. */
+.site-footer__logo {
+  transition: opacity .18s ease;
+}
+
+.site-footer__logo:hover {
+  opacity: .78;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where(a.action, a.button, a.btn, a.phase-link):hover {
+    transform: none;
+  }
+}
+
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1.08fr .92fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.grid2.reverse {
+  grid-template-columns: .92fr 1.08fr;
+}
+
+.photo {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 18px 48px rgba(37,72,45,.12);
+}
+
+.photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.feature {
+  background: #fff;
+  border: 1px solid color-mix(in srgb, var(--green) 12%, transparent);
+  border-radius: 18px;
+  padding: 22px;
+}
+
+.feature strong {
+  display: block;
+  color: var(--green-dark);
+  margin-bottom: 5px;
+}
+
+@media (max-width:850px) {
+  .grid2,
+  .grid2.reverse {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Standard inline content links */
+main :where(p, li, details, .note, .small-note) > a:not(.action):not(.button):not(.btn):not(.phase-link):not(.policy-link),
+main :where(p, li, details, .note, .small-note) a:not(.action):not(.button):not(.btn):not(.phase-link):not(.policy-link) {
+  color: var(--green-dark);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+main :where(p, li, details, .note, .small-note) a:not(.action):not(.button):not(.btn):not(.phase-link):not(.policy-link):hover {
+  color: var(--green);
+  text-decoration-thickness: 2px;
+}
+
+
+/* Standard blue primary actions */
+main a.action:not(.alt) {
+  background: var(--blue-dark);
+  color: #fff;
+}
+
+main a.action:not(.alt):hover {
+  background: var(--blue);
+}
+
+/* ==== Footer (was site-footer.css) ==== */
+/*
+ * GREENACRE INTERNAL PAGE FOOTER
+ *
+ * Internal pages use the same footer design as the homepage,
+ * but remain in normal document flow.
+ * The homepage retains its separate fixed-footer behaviour.
+ */
+
+:root{
+  --footer-height:118px;
+  --footer-green:var(--shell-green);
+  --footer-ink:var(--shell-ink);
+}
+
+.site-footer{
+  position:static;
+  width:100%;
+  height:var(--footer-height);
+  background:var(--footer-green)!important;
+  color:var(--footer-ink);
+  border-top:1px solid rgba(17,23,17,.12);
+  box-shadow:0 -3px 12px rgba(0,0,0,.07);
+}
+
+.site-footer__inner{
+  width:min(calc(100% - 46px),1500px);
+  height:100%;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:minmax(285px,.72fr) minmax(680px,1.28fr);
+  gap:clamp(32px,5vw,84px);
+  align-items:center;
+}
+
+.site-footer__identity{
+  transform:translateX(14px);
+}
+.site-footer__name{
+  display:inline-block;
+  margin-bottom:3px;
+  color:var(--footer-ink);
+  font-family:"Comfortaa",sans-serif;
+  font-size:.98rem;
+  line-height:1;
+  text-decoration:none;
+}
+
+.site-footer__details{
+  display:flex;
+  flex-wrap:wrap;
+  gap:1px 10px;
+  color:rgba(17,23,17,.78);
+  font-family:"Comfortaa",sans-serif;
+  font-size:.60rem;
+  line-height:1.28;
+}
+
+.site-footer__details span,
+.site-footer__details a{white-space:nowrap}
+
+.site-footer__details a{
+  color:inherit;
+  text-decoration:none;
+}
+
+.site-footer__logos{
+  height:58px;
+  justify-self:end;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:24px;
+}
+
+.site-footer__logo{
+  flex:0 0 auto;
+  min-width:0;
+  height:54px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+}
+
+.site-footer__logo img{
+  display:block;
+  width:auto;
+  max-width:100%;
+  height:auto;
+  max-height:45px;
+  object-fit:contain;
+}
+
+.site-footer__logo--onesqa img{max-height:53px;max-width:95px}
+.site-footer__logo--isat img{max-height:43px}
+.site-footer__logo--cambridge img{max-height:38px}
+.site-footer__logo--edt img{max-height:46px}
+.site-footer__logo--isqm img{max-height:50px}
+
+@media(max-width:1040px){
+  .site-footer__identity{
+    transform:none;
+  }
+  .site-footer__inner{
+    width:min(calc(100% - 28px),1500px);
+    grid-template-columns:220px 1fr;
+    gap:22px;
+  }
+  .site-footer__name{font-size:.86rem}
+  .site-footer__details{font-size:.54rem;gap:1px 7px}
+  .site-footer__logos{gap:14px}
+}
+
+@media(max-width:720px){
+  :root{--footer-height:126px}
+  .site-footer__inner{
+    grid-template-columns:1fr;
+    grid-template-rows:42px 66px;
+    gap:4px;
+    padding:7px 0;
+    box-sizing:border-box;
+  }
+  .site-footer__identity{text-align:center}
+  .site-footer__name{font-size:.80rem}
+  .site-footer__details{justify-content:center;font-size:.51rem}
+  .site-footer__logos{
+    width:100%;
+    justify-self:stretch;
+    display:grid;
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    gap:6px;
+  }
+  .site-footer__logo{flex:initial}
+  .site-footer__logo img{max-height:34px}
+  .site-footer__logo--isat img{transform:translateX(-5px)}
+  .site-footer__logo--cambridge img,
+  .site-footer__logo--edt img{max-height:29px}
+}
+
+/* ==== Inner-page banner (was site-hero.css) ==== */
+/* Shared internal-page hero system */
+
+.page-hero,
+.subhero {
+  background: linear-gradient(135deg, var(--hero-blue-start), var(--hero-blue-end)) !important;
+  color: #fff !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+  overflow: hidden !important;
+  height: 240px !important;
+  padding: 0 !important;
+  display: block !important;
+}
+
+/* A quiet brand motif for internal-page banners. */
+.page-hero::after,
+.subhero::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  right: -35px;
+  width: min(48vw, 640px);
+  height: 270px;
+  transform: translateY(-50%) scaleX(-1);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 330'%3E%3Cg fill='none' stroke='%23fff' stroke-linecap='round'%3E%3Cpath stroke-width='3.2' d='M-50 278C86 316 143 219 218 137 307 40 430 24 690 116'/%3E%3Cpath opacity='.55' stroke-width='2' d='M-36 336C79 242 183 259 278 182 393 89 491 105 690 216'/%3E%3C/g%3E%3C/svg%3E") center / 100% 100% no-repeat;
+  -webkit-mask-image: linear-gradient(to left, transparent 0%, rgba(0,0,0,.4) 16%, #000 38%);
+  mask-image: linear-gradient(to left, transparent 0%, rgba(0,0,0,.4) 16%, #000 38%);
+  opacity: .065;
+  pointer-events: none;
+}
+
+/* Hero alignment is independent of page-specific .wrap rules. */
+.page-hero > .wrap,
+.subhero > .wrap {
+  position: relative !important;
+  z-index: 1 !important;
+  width: min(calc(100% - 64px), 1360px) !important;
+  padding-top: 54px !important;
+  box-sizing: border-box !important;
+  max-width: none !important;
+  height: 100% !important;
+  margin: 0 auto !important;
+}
+
+/* Fixed top anchor with natural title/intro spacing. */
+.page-hero .eyebrow,
+.subhero .eyebrow {
+  position: static !important;
+  display: block !important;
+  height: 16px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: .82rem !important;
+  line-height: 16px !important;
+  font-weight: 700 !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+  color: var(--hero-blue-eyebrow) !important;
+  opacity: .86 !important;
+}
+
+.page-hero h1,
+.subhero h1 {
+  position: static !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-width: 1000px !important;
+  margin: 12px 0 8px !important;
+  padding: 0 !important;
+  font-size: clamp(2.185rem, 3.5vw, 3rem) !important;
+  line-height: 1.05 !important;
+  letter-spacing: -.035em !important;
+}
+
+.page-hero p,
+.subhero p,
+.page-hero p.lead,
+.subhero p.lead {
+  position: static !important;
+  width: 100% !important;
+  max-width: 912px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 1.08rem !important;
+  line-height: 1.65 !important;
+  font-weight: 500 !important;
+}
+
+
+
+.page-hero.secondary-parent-info-hero {
+  height: auto !important;
+  min-height: 240px !important;
+}
+
+.page-hero.secondary-parent-info-hero > .wrap {
+  height: auto !important;
+  padding-bottom: 42px !important;
+}
+
+.page-hero h1.secondary-parent-info-title {
+  max-width: 1280px !important;
+}
+
+@media (min-width: 721px) {
+  .page-hero h1.secondary-parent-info-title {
+    font-size: clamp(2.3rem, 3.4vw, 3.1rem) !important;
+  }
+}
+
+@media (max-width: 980px) {
+  .page-hero::after,
+  .subhero::after {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .page-hero,
+  .subhero {
+    height: auto !important;
+    min-height: 220px !important;
+  }
+
+  .page-hero > .wrap,
+  .subhero > .wrap {
+    width: min(calc(100% - 32px), 1360px) !important;
+    height: auto !important;
+    padding-top: 36px !important;
+    padding-bottom: 32px !important;
+  }
+
+  .page-hero .eyebrow,
+  .subhero .eyebrow {
+    font-size: .70rem !important;
+    line-height: 1.25 !important;
+    letter-spacing: .10em !important;
+    height: auto !important;
+  }
+
+}
+
+/* ==== Content photos (3:2 frames) (was current-school-photos.css) ==== */
+/* Current public school photos, pending final photography. Homepage is excluded. */
+main .current-school-photo {
+  padding: 0 !important;
+  background: #e8eee2 !important;
+  overflow: hidden !important;
+  isolation: isolate;
+}
+main .plain-placeholder.current-school-photo { position: relative; }
+/* Standard content-photo frame. Portrait and panoramic editorial images opt out. */
+main .current-school-photo:not(.head-welcome-photo):not(.pool-specific-photo) {
+  position: relative;
+  width: 100%;
+  height: auto !important;
+  min-height: 0 !important;
+  aspect-ratio: 3 / 2 !important;
+}
+main .current-school-photo::before,
+main .current-school-photo::after { display: none !important; }
+main .current-school-photo > img {
+  position: absolute !important;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: none !important;
+  transform: none !important;
+  display: block;
+}
+main .head-welcome-photo.current-school-photo > img {
+  position: static !important;
+  height: auto !important;
+  aspect-ratio: auto;
+}
+main .current-school-photo > .current-photo-label {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 8;
+  padding: 6px 9px;
+  border: 1px solid rgba(255,255,255,.55);
+  border-radius: 999px;
+  background: rgba(25,55,34,.88);
+  color: #fff;
+  font: 700 9px/1 Comfortaa, sans-serif;
+  letter-spacing: .04em;
+  box-shadow: 0 2px 9px rgba(0,0,0,.20);
+  pointer-events: none;
+}
+
+/* ==== Type and layout refinements (was site-type-refinements.css) ==== */
+/* Small typography refinements. Body copy and footer logo layout stay unchanged. */
+@media (min-width: 981px) {
+  .site-header .site-brand__name,
+  .site-header .site-nav > a,
+  .site-header .site-nav > .nav-drop > button {
+    font-size: .9375rem;
+  }
+}
+
+main section h2 {
+  font-size: clamp(1.615rem, 2.375vw, 2.28rem);
+}
+main .pathway-card h2 { font-size: clamp(1.615rem, 2.47vw, 2.47rem); }
+
+/* Keep content kickers visually attached to the headings they introduce. */
+main .kicker:has(+ h2) {
+  line-height: 1.35;
+  margin-bottom: 4px;
+}
+
+/* Avoid doubled vertical padding where one content section continues another. */
+main > section.section-continuation:not(.page-hero):not(.subhero) {
+  padding-top: 24px !important;
+}
+
+main .page-hero h1,
+main .subhero h1 {
+  font-size: clamp(2.185rem, 3.5vw, 3rem) !important;
+}
+
+main h2:has(+ p) { margin-bottom: 16px; }
+
+main h2:has(+ :is(.steps, .faq, .phase-links, .cards, .values-grid, .info-grid, .service-list, .pathway, .facility-grid-stage24, .timing-grid-stage42, .feature-list, .action-row)) {
+  margin-bottom: 24px;
+}
+main h2 + :is(.steps, .faq, .phase-links, .cards, .values-grid, .info-grid, .service-list, .pathway, .facility-grid-stage24, .timing-grid-stage42, .feature-list, .action-row) {
+  margin-top: 24px;
+}
+main .early-how-stage48 h2 + .feature-list { margin-top: 24px; }
+
+/* Keep every motto phrase available at tablet widths. */
+@media (max-width: 980px) {
+  .hero #home-title { width: fit-content; max-width: 100%; white-space: normal; }
+  .hero #home-title .motto-dot { display: none; }
+  .hero #home-title .motto-line { display: block; text-align: left; }
+}
+
+/* Natural-height text area; no changes to logo sizing, order, gaps or columns. */
+@media (max-width: 980px) {
+  .site-header .site-nav a,
+  .site-header .site-nav > .nav-drop > button,
+  .site-header .menu-toggle { font-size: .875rem; }
+}
+
+/* Task-focused pages need less introductory space on phones. */
+@media (max-width: 720px) {
+  .page-hero.practical-page-hero { min-height: 0 !important; }
+  .page-hero.practical-page-hero > .wrap {
+    padding-top: 32px !important;
+    padding-bottom: 28px !important;
+  }
+}
+
+/* Keep timing tables readable without widening the document. */
+.timing-table-scroll { max-width: 100%; overflow-x: auto; }
+.timing-table-scroll:focus-visible { outline: 2px solid var(--green-dark); outline-offset: 3px; }
+.timing-table-hint { display: none; }
+@media (max-width: 360px) {
+  .timing-table-scroll .time-table { min-width: 360px; }
+  .timing-table-hint { display: block; font-size: .875rem; margin: 12px 0 8px; }
+}
+
+
+footer.site-footer { height: auto; min-height: var(--footer-height); }
+footer.site-footer .site-footer__inner {
+  height: auto;
+  min-height: var(--footer-height);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  box-sizing: border-box;
+}
+footer.site-footer .site-footer__identity { min-width: 0; }
+footer.site-footer .site-footer__name { font-size: .9375rem; line-height: 1.4; }
+footer.site-footer .site-footer__details { font-size: .875rem; line-height: 1.5; gap: 4px 10px; }
+footer.site-footer .site-footer__details span,
+footer.site-footer .site-footer__details a { white-space: normal; overflow-wrap: anywhere; }
+footer.site-footer .site-footer__copyright { flex-basis: 100%; font-size: .75rem; }
+@media (max-width: 720px) {
+  footer.site-footer .site-footer__inner { grid-template-rows: auto 66px; }
+}
+
+
+/* Finishing details: clear disclosure cues and quiet tactile feedback. */
+.site-header .nav-drop > button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+main .faq summary::after {
+  content: "";
+  display: block;
+  flex: 0 0 auto;
+  width: 6px;
+  height: 6px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform .18s ease;
+}
+main .faq details[open] > summary::after { transform: rotate(225deg); }
+@media (max-width: 980px) {
+  .site-header .nav-drop > button { justify-content: space-between; }
+}
+@media (min-width: 981px) and (max-width: 1200px) {
+  .site-header .site-nav > a,
+  .site-header .site-nav > .nav-drop > button { padding-inline: 8px; font-size: .84rem; }
+  .site-header .site-brand__name { font-size: .84rem; }
+}
+main .faq summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  list-style: none;
+}
+main .faq summary::-webkit-details-marker { display: none; }
+main .faq details { transition: background-color .18s ease, border-color .18s ease; }
+main .faq details[open] {
+  background: #f0f4ec;
+  border-color: color-mix(in srgb, var(--green-dark) 20%, transparent);
+}
+main .faq summary:focus-visible { outline: 2px solid var(--green-dark); outline-offset: 4px; border-radius: 4px; }
+
+/* Consistent photo depth, with a fine edge highlight and no image filters. */
+main :is(.current-school-photo, .intro-photo, .identity-photo, .phase-card) {
+  box-shadow: 0 10px 28px rgba(37,72,45,.11), 0 2px 5px rgba(37,72,45,.05), 0 0 0 1px rgba(37,72,45,.10);
+  outline: 1px solid rgba(255,255,255,.22);
+  outline-offset: -1px;
+}
+main .phase-card .card-arrow { display: inline-block; transition: transform .18s ease; }
+@media (hover: hover) and (pointer: fine) {
+  main .phase-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 36px rgba(37,72,45,.16), 0 0 0 1px rgba(37,72,45,.14);
+  }
+  main .phase-card:hover .card-arrow { transform: translateX(3px); }
+}
+main :is(a.button, a.action, a.btn, a.phase-link):active { transform: translateY(1px) scale(.99); }
+main .phase-card:active { transform: translateY(1px); }
+main .phase-card:focus-visible { outline: 2px solid var(--green-dark); outline-offset: 4px; }
+main .location-panel { background: #e8eee2; }
+main .location-panel-head { background: #fff; }
+main .map-frame { background: #e8eee2; }
+
+@media (prefers-reduced-motion: reduce) {
+    main .faq summary::after,
+  main .faq details,
+  main .phase-card,
+  main .phase-card::before,
+  main .phase-card .card-arrow,
+  main :is(a.button, a.action, a.btn, a.phase-link) { transition: none !important; }
+  main .phase-card:hover,
+  main .phase-card:hover::before,
+  main .phase-card:hover .card-arrow,
+  main .phase-card:active,
+  main :is(a.button, a.action, a.btn, a.phase-link):active { transform: none !important; }
+}
+
+/* Keep the social fallback tidy while Facebook loads or is unavailable. */
+main .facebook-plugin-wrap .fb-xfbml-parse-ignore {
+  margin: 0;
+  padding: 24px 28px;
+  font-size: .95rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Landscape frames match the first Curriculum photo. Portraits, banners and
+   square pathway cards retain their separate treatments. */
+main .current-school-photo:not(.head-welcome-photo):not(.pool-specific-photo),
+main .intro-photo,
+main .identity-photo {
+  border: 1px solid color-mix(in srgb, var(--green) 14%, transparent) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 10px 28px rgba(37,72,45,.11), 0 2px 5px rgba(37,72,45,.05), 0 0 0 1px rgba(37,72,45,.10);
+  outline: 1px solid rgba(255,255,255,.22);
+  outline-offset: -1px;
+}

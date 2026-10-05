@@ -1,0 +1,265 @@
+/* our-school/campus-facilities: page-specific styles. */
+
+/* ---- page layout ---- */
+section{padding:56px 0}
+
+/* ---- stage22-pool-photo ---- */
+.pool-specific-photo{
+  position:relative;
+  min-height:360px;
+  margin-top:28px;
+  overflow:hidden;
+  border-radius:20px;
+  background:#8da58f;
+}
+.pool-specific-photo .photo-blur-layer{
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(135deg,rgba(48,105,64,.34),rgba(38,89,111,.24)),
+    url("https://images.unsplash.com/photo-1576610616656-d3aa5d1f4534?auto=format&fit=crop&w=1600&q=55") center/cover;
+  filter:blur(18px);
+  transform:scale(1.08);
+}
+.pool-specific-photo .photo-stamp{
+  position:absolute;
+  top:22px;
+  left:22px;
+  z-index:2;
+  padding:9px 13px;
+  border-radius:8px;
+  background:rgba(255,255,255,.94);
+  color:#8d2e25;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.05em;
+}
+.pool-specific-photo .photo-instruction{
+  position:absolute;
+  left:22px;
+  right:22px;
+  bottom:22px;
+  z-index:2;
+  max-width:760px;
+  padding:14px 17px;
+  border-radius:12px;
+  background:rgba(255,255,255,.92);
+  color:#3f5144;
+  font-size:13px;
+  line-height:1.55;
+}
+@media(max-width:720px){
+  .pool-specific-photo{min-height:310px}
+}
+
+/* ---- stage24-campus-grid ---- */
+.facility-grid-stage24{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+  margin:30px 0 0;
+}
+.facility-card-stage24{
+  padding:23px 24px 22px;
+  min-height:168px;
+  background:#fff;
+  border:1px solid color-mix(in srgb, var(--green) 14%, transparent);
+  border-radius:18px;
+  box-shadow:0 8px 24px color-mix(in srgb, var(--green-dark) 6%, transparent);
+}
+.facility-card-stage24::before{
+  content:"";
+  display:block;
+  width:42px;height:4px;
+  margin-bottom:16px;
+  border-radius:999px;
+  background:var(--orange);
+}
+.facility-card-stage24 h3{
+  margin:0 0 9px;
+  color:var(--green-dark);
+  font-size:18px;
+  line-height:1.35;
+}
+.facility-card-stage24 p{
+  margin:0;
+  color:#617066;
+  font-size:14px;
+  line-height:1.65;
+}
+@media(max-width:980px){.facility-grid-stage24{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.facility-grid-stage24{grid-template-columns:1fr}.facility-card-stage24{min-height:0}}
+
+/* ---- stage46-campus-redesign ---- */
+/* Campus & Facilities page: one clear job per section. */
+
+.campus-visit-stage46{
+  padding:64px 0;
+  background:#fff;
+}
+.campus-visit-grid-stage46{
+  max-width:1180px!important;
+  display:grid!important;
+  grid-template-columns:minmax(280px,40%) minmax(0,60%)!important;
+  gap:48px!important;
+  align-items:center!important;
+}
+.campus-visit-photo-stage46{
+  min-width:0;
+}
+.campus-visit-photo-stage46 .campus-two,
+.campus-visit-photo-stage46 .visit-campus-photo-stage44,
+.campus-visit-photo-stage46 .temp-photo{
+  width:100%!important;
+  height:auto!important;
+  aspect-ratio:4/3!important;
+  min-height:0!important;
+  margin:0!important;
+  border-radius:22px!important;
+  overflow:hidden!important;
+}
+.campus-visit-copy-stage46{
+  min-width:0;
+  max-width:680px;
+}
+.campus-visit-copy-stage46 h2{
+  margin-bottom:18px;
+}
+.campus-visit-copy-stage46 p:last-child{
+  margin-top:22px;
+  margin-bottom:0;
+}
+
+.campus-facilities-stage46{
+  padding:64px 0 68px;
+  background:var(--cream);
+}
+.campus-facilities-stage46 > .wrap{
+  max-width:1180px;
+}
+.campus-facilities-stage46 h2{
+  margin-bottom:28px;
+}
+.campus-facilities-stage46 .facility-grid-stage24{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:16px!important;
+}
+.campus-facilities-stage46 .facility-card-stage24{
+  min-width:0;
+}
+
+.campus-pool-stage46{
+  padding:64px 0 72px;
+  background:#fff;
+}
+.campus-pool-stage46 > .wrap{
+  max-width:1180px;
+}
+.campus-pool-stage46 h2{
+  margin-bottom:24px;
+}
+.campus-pool-stage46 .pool-specific-photo{
+  width:100%!important;
+  max-width:none!important;
+  height:auto!important;
+  aspect-ratio:16/6!important;
+  margin:0!important;
+  border-radius:22px!important;
+  overflow:hidden!important;
+}
+
+@media(max-width:950px){
+  .campus-visit-grid-stage46{
+    grid-template-columns:1fr!important;
+    gap:32px!important;
+  }
+  .campus-visit-photo-stage46 .campus-two,
+  .campus-visit-photo-stage46 .visit-campus-photo-stage44,
+  .campus-visit-photo-stage46 .temp-photo{
+    max-width:620px;
+  }
+  .campus-facilities-stage46 .facility-grid-stage24{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+}
+@media(max-width:640px){
+  .campus-visit-stage46,
+  .campus-facilities-stage46,
+  .campus-pool-stage46{
+    padding-top:48px;
+    padding-bottom:52px;
+  }
+  .campus-facilities-stage46 .facility-grid-stage24{
+    grid-template-columns:1fr!important;
+  }
+  .campus-pool-stage46 .pool-specific-photo{
+    aspect-ratio:16/9!important;
+  }
+}
+
+/* ---- campus-final-layout-fix ---- */
+/* Final Campus layout refinements. */
+.campus-visit-photo-stage46 .campus-two,
+.campus-visit-photo-stage46 .visit-campus-photo-stage44,
+.campus-visit-photo-stage46 .temp-photo {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  aspect-ratio: 4 / 3 !important;
+}
+.campus-facilities-stage46 { padding-bottom: 8px !important; }
+.campus-pool-stage46 { padding-top: 18px !important; }
+@media (max-width: 640px) {
+  .campus-facilities-stage46 { padding-bottom: 8px !important; }
+  .campus-pool-stage46 { padding-top: 14px !important; }
+}
+
+/* ---- stage51-section-rhythm ---- */
+main > section:not(.page-hero):not(.subhero){padding-top:40px!important;padding-bottom:40px!important}
+
+/* ---- campus-pool-spacing-final ---- */
+main > section.campus-pool-stage46{
+  padding-top:12px!important;
+}
+@media(max-width:640px){
+  main > section.campus-pool-stage46{
+    padding-top:10px!important;
+  }
+}
+
+/* ---- page ---- */
+:root{--max:1460px}
+.subhero{background:linear-gradient(135deg,var(--green-fill-dark),var(--green));color:white}
+.wrap{width:min(calc(100% - 64px),var(--max));margin:auto}
+.subhero .eyebrow{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;opacity:.86}
+.subhero h1{margin:12px 0 18px;max-width:900px}
+.subhero p{font-size:1rem;line-height:1.6;max-width:760px;margin:0}
+main section:not(.subhero){padding:48px 0}
+main section:nth-child(odd):not(.subhero):not(.page-hero){background:var(--cream)}
+
+
+h2{font-size:clamp(1.7rem,2.6vw,2.6rem);line-height:1.14;color:var(--green-dark);margin:0 0 16px}
+h3{color:var(--green-dark);font-size:1.2rem;margin:0 0 8px}
+p{line-height:1.75}
+.kicker{color:var(--green-mid);font-size:.8rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;margin-bottom:8px}
+.temp-photo{min-height:390px;border-radius:24px;overflow:hidden;position:relative;background-position:center;background-size:cover;box-shadow:0 18px 48px rgba(37,72,45,.12)}
+.temp-photo:before{content:"TEMP - REPLACE PHOTO";position:absolute;top:18px;left:18px;z-index:2;background:color-mix(in srgb, var(--green-dark) 94%, transparent);color:#fff;padding:10px 16px;border-radius:999px;font-weight:700;letter-spacing:.06em;font-size:.74rem}
+.temp-photo:after{content:attr(data-note);position:absolute;left:18px;right:18px;bottom:18px;z-index:2;background:color-mix(in srgb, var(--green-deep) 82%, transparent);color:#fff;padding:11px 14px;border-radius:12px;font-size:.76rem;line-height:1.45}
+.temp-photo.env-one{background-image:linear-gradient(color-mix(in srgb, var(--green-deep) 8%, transparent),color-mix(in srgb, var(--green-deep) 16%, transparent)),url('../images/temp/environment-hydroponics.webp')}
+.temp-photo.env-two{background-image:linear-gradient(color-mix(in srgb, var(--green-deep) 8%, transparent),color-mix(in srgb, var(--green-deep) 16%, transparent)),url('../images/temp/garden-learning.webp')}
+.temp-photo.well-one{background-image:linear-gradient(color-mix(in srgb, var(--green-deep) 6%, transparent),color-mix(in srgb, var(--green-deep) 14%, transparent)),url('../images/temp/classroom-teacher.webp')}
+.temp-photo.well-two{background-image:linear-gradient(color-mix(in srgb, var(--green-deep) 6%, transparent),color-mix(in srgb, var(--green-deep) 14%, transparent)),url('../images/temp/primary-reading.webp')}
+.temp-photo.team-one{background-image:linear-gradient(color-mix(in srgb, var(--green-deep) 8%, transparent),color-mix(in srgb, var(--green-deep) 18%, transparent)),url('../images/temp/classroom-teacher.webp')}
+.temp-photo.campus-one{background-image:linear-gradient(color-mix(in srgb, var(--green-deep) 6%, transparent),color-mix(in srgb, var(--green-deep) 14%, transparent)),url('../images/temp/outdoor-learning.webp')}
+.temp-photo.campus-two{background-image:linear-gradient(color-mix(in srgb, var(--green-deep) 6%, transparent),color-mix(in srgb, var(--green-deep) 14%, transparent)),url('../images/temp/garden-learning.webp')}
+
+.card{background:#fff;border:1px solid color-mix(in srgb, var(--green) 12%, transparent);border-radius:20px;padding:24px;box-shadow:0 10px 28px color-mix(in srgb, var(--green-dark) 5%, transparent)}
+.value-letter{font-size:2rem;color:var(--orange);font-weight:800}
+.staff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.staff{padding:22px;border-radius:18px;background:white;border:1px solid color-mix(in srgb, var(--green) 12%, transparent)}
+.staff strong{display:block;color:var(--green-dark);margin-bottom:4px}
+.staff span{font-size:.9rem;color:#59635c}
+.note{padding:24px;border-left:4px solid var(--orange);background:#fff;border-radius:0 16px 16px 0}
+@media(max-width:850px){.wrap{width:min(calc(100% - 32px),var(--max))}.staff-grid{grid-template-columns:1fr}.temp-photo{min-height:280px}main section{padding:52px 0}}
