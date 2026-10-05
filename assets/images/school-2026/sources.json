@@ -53,33 +53,38 @@
         {
           "width": 480,
           "height": 360,
-          "file": "growing-area-480-v2.webp",
-          "bytes": 43354,
+          "file": "growing-area-480-v3.webp",
+          "bytes": 50834,
           "quality": 78
         },
         {
           "width": 960,
           "height": 720,
-          "file": "growing-area-960-v2.webp",
-          "bytes": 142996,
+          "file": "growing-area-960-v3.webp",
+          "bytes": 163608,
           "quality": 78
         },
         {
           "width": 1440,
           "height": 1080,
-          "file": "growing-area-1440-v2.webp",
-          "bytes": 281728,
+          "file": "growing-area-1440-v3.webp",
+          "bytes": 292304,
           "quality": 78
         }
       ],
       "processing": {
-        "sourceColourProfile": "Display P3",
+        "sourceColourProfile": "Imagegen output",
         "outputColourProfile": "sRGB (embedded)",
         "colourAdjustment": null,
         "sharpening": null,
-        "generativeEditing": false,
-        "upscaled": false
-      }
+        "generativeEditing": true,
+        "upscaled": false,
+        "selection": "User requested a faithful imagegen enhancement and placement above the library photo on 5 October 2026."
+      },
+      "editedMasterSize": [
+        1448,
+        1086
+      ]
     },
     "watering-together": {
       "source": "IMG_4188.HEIC",
@@ -645,6 +650,45 @@
         "generativeEditing": false,
         "upscaled": false
       }
+    },
+    "about-classroom": {
+      "source": "unnamed (1).jpg",
+      "alt": "Two Greenacre pupils writing in their exercise books during a classroom lesson",
+      "position": "50% 50%",
+      "originalSize": [
+        1280,
+        724
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 272,
+          "file": "about-classroom-480-v1.webp",
+          "bytes": 21578,
+          "quality": 80
+        },
+        {
+          "width": 960,
+          "height": 543,
+          "file": "about-classroom-960-v1.webp",
+          "bytes": 65878,
+          "quality": 80
+        },
+        {
+          "width": 1280,
+          "height": 724,
+          "file": "about-classroom-1280-v1.webp",
+          "bytes": 106934,
+          "quality": 80
+        }
+      ],
+      "processing": {
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": null,
+        "sharpening": null,
+        "generativeEditing": false,
+        "upscaled": false
+      }
     }
   },
   "placements": {
@@ -669,11 +713,11 @@
         "badminton"
       ],
       "our-school/about-greenacre/": [
-        "current:community-02.webp"
+        "about-classroom"
       ],
       "our-school/campus-facilities/": [
-        "library-reading",
         "growing-area",
+        "library-reading",
         "current:facilities-swimming-pool-03.webp"
       ],
       "our-school/environmentality/": [
