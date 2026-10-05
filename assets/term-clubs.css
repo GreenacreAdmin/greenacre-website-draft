@@ -1,0 +1,36 @@
+/* Fixed 2026-27 Term 1 catalogue. Shared site typography and navigation apply. */
+.clubs-catalogue .wrap{max-width:1180px}
+.clubs-toolbar{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-bottom:24px}
+.clubs-back{font-weight:700;color:var(--green-dark)}
+.clubs-filters{display:flex;align-items:end;gap:16px;flex-wrap:wrap;padding:18px 20px;background:#fff;border:1px solid var(--green-pale);border-radius:16px;margin:0 0 28px}
+.clubs-filters label{display:block;font-size:.83rem;font-weight:700;margin-bottom:6px}
+.clubs-filters select{min-width:180px;min-height:44px;padding:9px 34px 9px 12px;border:1px solid #758775;border-radius:8px;background:#fff;color:var(--ink);font:inherit;font-size:.9rem}
+.clubs-reset{min-height:44px;padding:9px 12px;border:0;background:transparent;color:var(--green-dark);text-decoration:underline;font:inherit;font-size:.85rem;cursor:pointer}
+#club-results{margin:0 0 10px auto;font-size:.85rem;color:var(--green-dark)}
+.clubs-day{margin:0 0 30px;padding:0!important;scroll-margin-top:90px}
+.clubs-day h2{display:flex;align-items:baseline;gap:14px;margin:0 0 12px!important;font-size:1.35rem!important;line-height:1.4!important}
+.day-count{font-size:.8rem;font-weight:500;color:#526654}
+.clubs-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-items:start}
+.term-club{background:#fff;border:1px solid var(--green-pale);border-radius:12px;overflow:hidden}
+.term-club summary{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 16px;cursor:pointer;list-style:none;min-height:90px}
+.term-club summary::-webkit-details-marker{display:none}
+.club-summary{min-width:0}
+.club-name{display:block;font-weight:700;line-height:1.45;font-size:.94rem;color:var(--green-dark);overflow-wrap:anywhere}
+.club-meta{display:flex;gap:14px;flex-wrap:wrap;margin-top:6px;font-size:.78rem;line-height:1.5;color:#526654}
+.club-meta span+span{font-weight:700;color:var(--blue-dark)}
+.club-toggle{flex-shrink:0;width:24px;height:24px;display:grid;place-items:center;border-radius:50%;background:var(--green-soft);color:var(--green-dark);font-size:1.25rem;line-height:1}
+.term-club[open] .club-toggle{transform:rotate(45deg)}
+.term-club[open] summary{border-bottom:1px solid var(--green-pale)}
+.club-description{padding:14px 16px 16px;font-size:.87rem;line-height:1.75}
+.club-description p{margin:0 0 10px}
+.club-description p:last-child{margin-bottom:0}
+.club-teacher{color:var(--green-dark)}
+.clubs-friday{padding:20px 24px;background:var(--green-soft);border-radius:14px;margin-top:8px}
+.clubs-friday h2{font-size:1.1rem!important;margin:0 0 8px!important}
+.clubs-friday p,.clubs-help{font-size:.88rem;margin:0;line-height:1.7}
+.clubs-help{margin-top:20px}
+.clubs-empty{padding:24px;border:1px solid var(--green-pale);border-radius:12px;background:white}
+.clubs-catalogue [hidden]{display:none!important}
+.clubs-catalogue :is(summary,select,button,a):focus-visible{outline:3px solid var(--blue-dark);outline-offset:4px}
+@media(max-width:650px){.clubs-grid{grid-template-columns:1fr}.clubs-toolbar{gap:12px}.clubs-filters{gap:12px;padding:16px}.clubs-filters>div{flex:1 1 120px;min-width:0}.clubs-filters select{width:100%;min-width:0}#club-results{margin:0 0 10px auto}.term-club summary{min-height:84px}.clubs-friday{padding:18px}}
+@media print{.clubs-filters,.clubs-toolbar{display:none}.club-description{display:block!important}.clubs-grid{display:block}.term-club{break-inside:avoid;margin-bottom:10px}}

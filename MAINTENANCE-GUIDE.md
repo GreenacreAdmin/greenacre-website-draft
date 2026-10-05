@@ -175,3 +175,9 @@ Before requesting approval, confirm:
 - the complete diff is small enough to review confidently
 
 After deployment, inspect the actual GitHub Pages URL and the affected nested page before considering the update complete.
+
+## 11. Fixed term clubs catalogue
+
+`eca/index.html` contains the manually maintained 2026–27 Term 1 club catalogue, captured on 5 October 2026. It has no Apps Script iframe, document fetch or automatic refresh. Edit the club details directly in that HTML when a change is approved. Preserve each club’s day, fee, teacher and description, and update its comma-separated `data-years` values when eligibility changes. `fs1` and `fs2` represent Foundation Stage; numeric values represent individual years.
+
+`assets/term-clubs.js` only filters the existing HTML by year and day. Native `details` elements make descriptions available without JavaScript. Keep the term label, registration link, Friday collection information and the link from `learning/clubs-ecas/index.html` consistent when preparing a new term. Do not reintroduce automatic document synchronisation. The source omitted Wednesday’s FS Childcare teacher; the user confirmed Ms. Pat.
