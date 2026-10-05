@@ -1,6 +1,8 @@
 (()=>{
   const desktopMQ = window.matchMedia('(min-width:981px)');
   const drops = [...document.querySelectorAll('.nav-drop')];
+  // Keyboard focus alone no longer opens a menu (see the Navigation section of site.css).
+  document.documentElement.classList.add('nav-js');
 
   const closeAll = except => {
     drops.forEach(drop => {
@@ -45,17 +47,40 @@
     menu.addEventListener('mouseenter', () => window.clearTimeout(closeTimer));
     menu.addEventListener('mouseleave', closeSoon);
 
+    const close = () => {
+      window.clearTimeout(closeTimer);
+      drop.classList.remove('nav-open');
+      trigger.setAttribute('aria-expanded','false');
+    };
+
     trigger.addEventListener('click', e => {
       if(!desktopMQ.matches) return; // preserve existing mobile tap behaviour
-      if(trigger.tagName === 'BUTTON'){
-        e.preventDefault();
-        const firstLink = menu.querySelector('a[href]');
-        if(firstLink) window.location.href = firstLink.href;
+      if(trigger.tagName !== 'BUTTON') return;
+      e.preventDefault();
+      if(e.detail === 0){
+        // Enter or Space from the keyboard: show or hide the menu.
+        drop.classList.contains('nav-open') ? close() : open();
+        return;
       }
+      // Mouse click on a section name goes to its first page.
+      const firstLink = menu.querySelector('a[href]');
+      if(firstLink) window.location.href = firstLink.href;
     });
 
-    drop.addEventListener('focusin', () => {
-      if(desktopMQ.matches && !drop.classList.contains('nav-dismissed')) open();
+    trigger.addEventListener('keydown', e => {
+      if(!desktopMQ.matches || e.key !== 'ArrowDown') return;
+      e.preventDefault();
+      open();
+      menu.querySelector('a[href]')?.focus();
+    });
+
+    menu.addEventListener('keydown', e => {
+      if(!desktopMQ.matches || !['ArrowDown','ArrowUp'].includes(e.key)) return;
+      const links = [...menu.querySelectorAll('a[href]')];
+      const i = links.indexOf(document.activeElement);
+      if(i < 0) return;
+      e.preventDefault();
+      links[(i + (e.key === 'ArrowDown' ? 1 : links.length - 1)) % links.length].focus();
     });
 
     drop.addEventListener('focusout', e => {
