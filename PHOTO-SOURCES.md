@@ -70,7 +70,7 @@ The current homepage reading image was downloaded through the browser asset expo
 - Converted embedded Display P3 originals to sRGB before WebP export; every revised WebP embeds the sRGB profile. Untagged sources are treated as sRGB.
 - Watering-together (IMG_4188) now uses the earlier imagegen colour edit, explicitly selected by the user on 5 October 2026. This supersedes the conventional colour-corrected v2 exports; v3 WebP variants preserve the existing homepage frame and crop position.
 - Smaller source images receive light output-size unsharp masking (0.6px radius, 60%, threshold 3; 40% at 480px). The Head portrait is already sufficiently detailed for its smaller frame and receives no sharpening. No upscaling was used.
-- Maths, chess and sand retain the authentic photographs with conventional sharpening. Their imagegen trials remain unused. The watering-together, growing-area and swimming-pool images use imagegen versions requested by the user.
+- Chess and sand retain the authentic photographs with conventional sharpening. Their imagegen trials remain unused. Maths now uses the user-approved imagegen revision described below. The watering-together, growing-area and swimming-pool images use imagegen versions requested by the user.
 - WebP quality is 80, or 78 for the detail-heavy badminton and growing-area photographs, with method 6 compression. Revised filenames use `-v2` to avoid stale cached versions.
 - In the initial conventional-correction pass, across all 48 responsive variants, file weight fell from 4,789,924 to 4,259,834 bytes (11.1%). This is the whole asset set, not a per-page transfer total or measured speed improvement. All 480px variants are below 50 KB; 960px variants are below 143 KB. The largest 1440px variant is 306 KB.
 - Homepage cards retain larger desktop sources to avoid softening the tall cover crops. Mobile backgrounds select 480px at 1× or 960px at 2×; internal images retain responsive source selection, lazy loading and asynchronous decoding.
@@ -83,3 +83,5 @@ Campus update: enhanced growing-area image is first; library image is second. Ex
 About Greenacre first image: user-supplied classroom photograph, full source 1280×724, fitted to the existing 3:2 frame. Both faces and writing activity remain visible.
 
 Pool update: user-requested imagegen quality and colour enhancement, retaining the original photographic composition. Existing desktop and mobile frame rules retained. Original WebP retained for provenance. Responsive exports: 480px / 36822 bytes, 960px / 102922 bytes, 1432px / 171040 bytes.
+
+Secondary maths update: user-approved imagegen revision with tidier uniforms, neutral white walls, cleaner whiteboard, 3:2 landscape composition and whiteboard continuing beyond the left edge. Existing page frame retained. Responsive WebP exports: 480px / 17928 bytes, 960px / 55438 bytes, 1536px / 111722 bytes.

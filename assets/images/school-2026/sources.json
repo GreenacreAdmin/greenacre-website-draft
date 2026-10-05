@@ -342,34 +342,37 @@
       "exports": [
         {
           "width": 480,
-          "height": 420,
-          "file": "secondary-maths-480-v2.webp",
-          "bytes": 28468,
+          "height": 320,
+          "file": "secondary-maths-480-v3.webp",
+          "bytes": 17928,
           "quality": 80
         },
         {
           "width": 960,
-          "height": 839,
-          "file": "secondary-maths-960-v2.webp",
-          "bytes": 81992,
+          "height": 640,
+          "file": "secondary-maths-960-v3.webp",
+          "bytes": 55438,
           "quality": 80
         },
         {
-          "width": 1034,
-          "height": 904,
-          "file": "secondary-maths-1034-v2.webp",
-          "bytes": 92390,
+          "width": 1536,
+          "height": 1024,
+          "file": "secondary-maths-1536-v3.webp",
+          "bytes": 111722,
           "quality": 80
         }
       ],
       "processing": {
-        "sourceColourProfile": "Display P3",
+        "sourceColourProfile": "untagged (assumed sRGB)",
         "outputColourProfile": "sRGB (embedded)",
-        "colourAdjustment": null,
-        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
-        "generativeEditing": false,
+        "generativeEditing": true,
+        "description": "User-approved imagegen classroom tidy-up, neutral white walls and whiteboard, 3:2 expansion, left whiteboard extended beyond frame. Original IMG_5024.PNG retained as provenance.",
         "upscaled": false
-      }
+      },
+      "generatedMasterSize": [
+        1536,
+        1024
+      ]
     },
     "science-independent": {
       "source": "IMG_5029.JPG",
