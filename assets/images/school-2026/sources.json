@@ -777,7 +777,7 @@
         "outdoor-chess"
       ],
       "admissions/admissions-visits/": [
-        "individual-support"
+        "classroom-welcome"
       ],
       "parent-information/services/": [
         "current:academics-environmentality-02.webp"
@@ -789,7 +789,7 @@
     "homepage": [
       {
         "frame": "intro-photo",
-        "photo": "classroom-welcome"
+        "photo": "individual-support"
       },
       {
         "frame": "phase-card.early::before",

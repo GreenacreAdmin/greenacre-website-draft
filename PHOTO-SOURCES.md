@@ -9,7 +9,7 @@ The selection combines 14 photographs from the supplied ZIP, the separately supp
 | Frame | Source | Served asset |
 |---|---|---|
 | Hero | Existing approved seedlings image; retained | `assets/images/optimized/home-hero-seedlings-v3.*` |
-| intro-photo | `IMG_4998.PNG` | `assets/images/school-2026/classroom-welcome-*.webp` |
+| intro-photo | `IMG_4518.PNG` | `assets/images/school-2026/individual-support-*.webp`; 50% 35% |
 | phase-card.early::before | `IMG_4830.PNG` | `assets/images/school-2026/early-years-nature-*.webp` |
 | phase-card.primary::before | [https://www.greenacre.ac.th/](https://www.greenacre.ac.th/) | `assets/images/school-2026/reading-together-*.webp` |
 | phase-card.secondary::before | `IMG_5029.JPG` | `assets/images/school-2026/science-independent-*.webp` |
@@ -36,7 +36,7 @@ The selection combines 14 photographs from the supplied ZIP, the separately supp
 | `our-school/environmentality/` / 2 | [Current school site](https://www.greenacre.ac.th/academics/environmentality) | `assets/images/current-site/academics-environmentality-03.webp` |
 | `our-school/wellbeing/` / 1 | [Current school site](https://www.greenacre.ac.th/extra-curricular/wellbeing) | `assets/images/current-site/extra-curricular-wellbeing-02.webp` |
 | `our-school/wellbeing/` / 2 | `IMG_5038.PNG` | `assets/images/school-2026/outdoor-chess-*.webp`; 50% 72% |
-| `admissions/admissions-visits/` / 1 | `IMG_4518.PNG` | `assets/images/school-2026/individual-support-*.webp`; 50% 35% |
+| `admissions/admissions-visits/` / 1 | `IMG_4998.PNG` | `assets/images/school-2026/classroom-welcome-*.webp`; 50% 55% |
 | `parent-information/services/` / 1 | [Current school site](https://www.greenacre.ac.th/academics/environmentality) | `assets/images/current-site/academics-environmentality-02.webp` |
 | `our-school/head-of-school-welcome/` / 1 | `1742964487955 (1).jpg` | `assets/images/school-2026/head-dara-nagle-*.webp`; 50% 0% |
 | `work-with-us/` / 1 | Existing teacher-at-desk selection; retained | Existing responsive recruitment photo; bottom-aligned 3:2 crop |
