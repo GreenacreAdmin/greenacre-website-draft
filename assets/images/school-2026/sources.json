@@ -348,22 +348,22 @@
         {
           "width": 480,
           "height": 320,
-          "file": "secondary-maths-480-v3.webp",
-          "bytes": 17928,
+          "file": "secondary-maths-480-v5.webp",
+          "bytes": 20126,
           "quality": 80
         },
         {
           "width": 960,
           "height": 640,
-          "file": "secondary-maths-960-v3.webp",
-          "bytes": 55438,
+          "file": "secondary-maths-960-v5.webp",
+          "bytes": 63566,
           "quality": 80
         },
         {
-          "width": 1536,
-          "height": 1024,
-          "file": "secondary-maths-1536-v3.webp",
-          "bytes": 111722,
+          "width": 1214,
+          "height": 809,
+          "file": "secondary-maths-1214-v5.webp",
+          "bytes": 90966,
           "quality": 80
         }
       ],
@@ -372,7 +372,8 @@
         "outputColourProfile": "sRGB (embedded)",
         "generativeEditing": true,
         "description": "User-approved imagegen classroom tidy-up, neutral white walls and whiteboard, 3:2 expansion, left whiteboard extended beyond frame. Original IMG_5024.PNG retained as provenance.",
-        "upscaled": false
+        "upscaled": false,
+        "crop": "10% zoom followed by another 15% zoom (1.265x total), horizontally centred and top-aligned"
       },
       "generatedMasterSize": [
         1536,
@@ -802,7 +803,7 @@
       ],
       "learning/secondary/": [
         "secondary-maths",
-        "science-practical"
+        "science-independent"
       ],
       "learning/clubs-ecas/": [
         "table-tennis"
@@ -848,7 +849,7 @@
       },
       {
         "frame": "phase-card.secondary::before",
-        "photo": "science-independent"
+        "photo": "science-practical"
       },
       {
         "frame": "identity-photo",

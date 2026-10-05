@@ -12,7 +12,7 @@ The selection combines 14 photographs from the supplied ZIP, the separately supp
 | intro-photo | `IMG_4518.PNG` | `assets/images/school-2026/individual-support-*.webp`; 50% 35% |
 | phase-card.early::before | `IMG_4830.PNG` | `assets/images/school-2026/early-years-nature-*.webp` |
 | phase-card.primary::before | [https://www.greenacre.ac.th/](https://www.greenacre.ac.th/) | `assets/images/school-2026/reading-together-*.webp` |
-| phase-card.secondary::before | `IMG_5029.JPG` | `assets/images/school-2026/science-independent-*.webp` |
+| phase-card.secondary::before | `IMG_5037.PNG` | `assets/images/school-2026/science-practical-*.webp`; 100% 0% |
 | identity-photo | User-selected imagegen edit of `IMG_4188.HEIC` | `assets/images/school-2026/watering-together-*.webp` |
 
 ## Internal pages
@@ -26,7 +26,7 @@ The selection combines 14 photographs from the supplied ZIP, the separately supp
 | `learning/primary/` / 1 | `IMG_5023.PNG` | `assets/images/school-2026/primary-teaching-*.webp`; 50% 15% |
 | `learning/primary/` / 2 | [Current school site](https://www.greenacre.ac.th/academics/primary) | `assets/images/current-site/academics-primary-02.webp` |
 | `learning/secondary/` / 1 | `IMG_5024.PNG` | `assets/images/school-2026/secondary-maths-*.webp`; 50% 50% |
-| `learning/secondary/` / 2 | `IMG_5037.PNG` | `assets/images/school-2026/science-practical-*.webp`; 50% 0% |
+| `learning/secondary/` / 2 | `IMG_5029.JPG`, enhanced placeholder | `assets/images/school-2026/science-independent-*.webp`; 50% 0% |
 | `learning/clubs-ecas/` / 1 | User-supplied `unnamed (2).jpg` | `assets/images/school-2026/table-tennis-*.webp`; 25% 50% |
 | `our-school/about-greenacre/` / 1 | Separately supplied `unnamed (1).jpg` | `assets/images/school-2026/about-classroom-*.webp`; 50% 50% |
 | `our-school/campus-facilities/` / 1 | User-requested imagegen enhancement of `IMG_4184.HEIC` | `assets/images/school-2026/growing-area-*.webp`; 50% 85% |
@@ -101,3 +101,9 @@ FS homepage card reverted at user request to the original photographic v2 export
 ECA replacement: authentic supplied table-tennis photo, sRGB conversion, saturation reduced 3% and light conventional sharpening. Crop removes the rightmost girl and a small amount at left, as requested. No generative editing.
 
 FS latest approved selection: fresh generation from the original IMG_4830.PNG and supplied crest reference, superseding earlier versions and the temporary original-photo revert. Square composition and original walking posture on right. Responsive v5 WebP exports: 480px / 41290 bytes, 960px / 110880 bytes, 1254px / 153330 bytes.
+
+Secondary first photo: user-requested approximately 10% tighter crop, top-aligned to preserve the maths display, exported as v4 WebP variants. Existing frame dimensions retained.
+
+Secondary photo allocation update: homepage Secondary card now uses science-practical v2, right-aligned (100% 0%). The enhanced science-independent v4 image is the temporary placeholder in the Secondary page’s Expectations and challenge section. No duplicated placement.
+
+Final Secondary maths crop: additional 15% zoom after the requested 10%, totalling 1.265x; v5 exports supersede the unpublished v4 crop.
