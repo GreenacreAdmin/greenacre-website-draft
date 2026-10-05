@@ -1,0 +1,718 @@
+{
+  "date": "2026-10-05",
+  "photographs": {
+    "primary-art": {
+      "source": "IMG_4117.HEIC",
+      "alt": "Greenacre pupils painting in an art lesson",
+      "position": "50% 100%",
+      "originalSize": [
+        5097,
+        3823
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 360,
+          "file": "primary-art-480-v2.webp",
+          "bytes": 24842,
+          "quality": 80
+        },
+        {
+          "width": 960,
+          "height": 720,
+          "file": "primary-art-960-v2.webp",
+          "bytes": 64788,
+          "quality": 80
+        },
+        {
+          "width": 1440,
+          "height": 1080,
+          "file": "primary-art-1440-v2.webp",
+          "bytes": 113996,
+          "quality": 80
+        }
+      ],
+      "processing": {
+        "sourceColourProfile": "Display P3",
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": null,
+        "sharpening": null,
+        "generativeEditing": false,
+        "upscaled": false
+      }
+    },
+    "growing-area": {
+      "source": "IMG_4184.HEIC",
+      "alt": "A Greenacre pupil watering plants in the school growing area",
+      "position": "50% 85%",
+      "originalSize": [
+        5712,
+        4284
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 360,
+          "file": "growing-area-480-v2.webp",
+          "bytes": 43354,
+          "quality": 78
+        },
+        {
+          "width": 960,
+          "height": 720,
+          "file": "growing-area-960-v2.webp",
+          "bytes": 142996,
+          "quality": 78
+        },
+        {
+          "width": 1440,
+          "height": 1080,
+          "file": "growing-area-1440-v2.webp",
+          "bytes": 281728,
+          "quality": 78
+        }
+      ],
+      "processing": {
+        "sourceColourProfile": "Display P3",
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": null,
+        "sharpening": null,
+        "generativeEditing": false,
+        "upscaled": false
+      }
+    },
+    "watering-together": {
+      "source": "IMG_4188.HEIC",
+      "alt": "Two Greenacre pupils watering plants together",
+      "position": "50% 50%",
+      "originalSize": [
+        3462,
+        2764
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 383,
+          "file": "watering-together-480-v2.webp",
+          "bytes": 40202,
+          "quality": 80
+        },
+        {
+          "width": 960,
+          "height": 766,
+          "file": "watering-together-960-v2.webp",
+          "bytes": 109644,
+          "quality": 80
+        },
+        {
+          "width": 1440,
+          "height": 1150,
+          "file": "watering-together-1440-v2.webp",
+          "bytes": 185694,
+          "quality": 80
+        }
+      ],
+      "processing": {
+        "sourceColourProfile": "Display P3",
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": {
+          "contrast": 1.08,
+          "saturation": 1.06
+        },
+        "sharpening": null,
+        "generativeEditing": false,
+        "upscaled": false
+      }
+    },
+    "library-reading": {
+      "source": "IMG_4219.PNG",
+      "alt": "Greenacre pupils reading in the school library",
+      "position": "50% 65%",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 360,
+          "file": "library-reading-480-v2.webp",
+          "bytes": 41316,
+          "quality": 80
+        },
+        {
+          "width": 960,
+          "height": 720,
+          "file": "library-reading-960-v2.webp",
+          "bytes": 118306,
+          "quality": 80
+        },
+        {
+          "width": 1440,
+          "height": 1080,
+          "file": "library-reading-1440-v2.webp",
+          "bytes": 193096,
+          "quality": 80
+        }
+      ],
+      "processing": {
+        "sourceColourProfile": "untagged (assumed sRGB)",
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": null,
+        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
+        "generativeEditing": false,
+        "upscaled": false
+      }
+    },
+    "individual-support": {
+      "source": "IMG_4518.PNG",
+      "alt": "A Greenacre teacher supporting a pupil with classroom work",
+      "position": "50% 35%",
+      "originalSize": [
+        1320,
+        960
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 349,
+          "file": "individual-support-480-v2.webp",
+          "bytes": 21846,
+          "quality": 80
+        },
+        {
+          "width": 960,
+          "height": 698,
+          "file": "individual-support-960-v2.webp",
+          "bytes": 56802,
+          "quality": 80
+        },
+        {
+          "width": 1320,
+          "height": 960,
+          "file": "individual-support-1320-v2.webp",
+          "bytes": 82538,
+          "quality": 80
+        }
+      ],
+      "processing": {
+        "sourceColourProfile": "Display P3",
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": null,
+        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
+        "generativeEditing": false,
+        "upscaled": false
+      }
+    },
+    "early-years-nature": {
+      "source": "IMG_4830.PNG",
+      "alt": "Greenacre Early Years children exploring flowers and leaves outdoors",
+      "position": "50% 40%",
+      "originalSize": [
+        1310,
+        1051
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 385,
+          "file": "early-years-nature-480-v2.webp",
+          "bytes": 31174,
+          "quality": 80
+        },
+        {
+          "width": 960,
+          "height": 770,
+          "file": "early-years-nature-960-v2.webp",
+          "bytes": 71516,
+          "quality": 80
+        },
+        {
+          "width": 1310,
+          "height": 1051,
+          "file": "early-years-nature-1310-v2.webp",
+          "bytes": 99102,
+          "quality": 80
+        }
+      ],
+      "processing": {
+        "sourceColourProfile": "Display P3",
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": null,
+        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
+        "generativeEditing": false,
+        "upscaled": false
+      }
+    },
+    "classroom-welcome": {
+      "source": "IMG_4998.PNG",
+      "alt": "Greenacre pupils smiling during a classroom activity",
+      "position": "50% 55%",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 360,
+          "file": "classroom-welcome-480-v2.webp",
+          "bytes": 29658,
+          "quality": 80
+        },
+        {
+          "width": 960,
+          "height": 720,
+          "file": "classroom-welcome-960-v2.webp",
+          "bytes": 77614,
+          "quality": 80
+        },
+        {
+          "width": 1440,
+          "height": 1080,
+          "file": "classroom-welcome-1440-v2.webp",
+          "bytes": 127448,
+          "quality": 80
+        }
+      ],
+      "processing": {
+        "sourceColourProfile": "untagged (assumed sRGB)",
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": null,
+        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
+        "generativeEditing": false,
+        "upscaled": false
+      }
+    },
+    "primary-teaching": {
+      "source": "IMG_5023.PNG",
+      "alt": "A Greenacre teacher leading a Primary classroom lesson",
+      "position": "50% 15%",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 360,
+          "file": "primary-teaching-480-v2.webp",
+          "bytes": 29520,
+          "quality": 80
+        },
+        {
+          "width": 960,
+          "height": 720,
+          "file": "primary-teaching-960-v2.webp",
+          "bytes": 70620,
+          "quality": 80
+        },
+        {
+          "width": 1440,
+          "height": 1080,
+          "file": "primary-teaching-1440-v2.webp",
+          "bytes": 113516,
+          "quality": 80
+        }
+      ],
+      "processing": {
+        "sourceColourProfile": "untagged (assumed sRGB)",
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": null,
+        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
+        "generativeEditing": false,
+        "upscaled": false
+      }
+    },
+    "secondary-maths": {
+      "source": "IMG_5024.PNG",
+      "alt": "Greenacre Secondary pupils studying mathematics with laptops",
+      "position": "50% 50%",
+      "originalSize": [
+        1034,
+        904
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 420,
+          "file": "secondary-maths-480-v2.webp",
+          "bytes": 28468,
+          "quality": 80
+        },
+        {
+          "width": 960,
+          "height": 839,
+          "file": "secondary-maths-960-v2.webp",
+          "bytes": 81992,
+          "quality": 80
+        },
+        {
+          "width": 1034,
+          "height": 904,
+          "file": "secondary-maths-1034-v2.webp",
+          "bytes": 92390,
+          "quality": 80
+        }
+      ],
+      "processing": {
+        "sourceColourProfile": "Display P3",
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": null,
+        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
+        "generativeEditing": false,
+        "upscaled": false
+      }
+    },
+    "science-independent": {
+      "source": "IMG_5029.JPG",
+      "alt": "A Greenacre Secondary pupil studying at a science laboratory bench",
+      "position": "80% 0%",
+      "originalSize": [
+        1477,
+        1108
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 360,
+          "file": "science-independent-480-v2.webp",
+          "bytes": 15970,
+          "quality": 80
+        },
+        {
+          "width": 960,
+          "height": 720,
+          "file": "science-independent-960-v2.webp",
+          "bytes": 41158,
+          "quality": 80
+        },
+        {
+          "width": 1440,
+          "height": 1080,
+          "file": "science-independent-1440-v2.webp",
+          "bytes": 69320,
+          "quality": 80
+        }
+      ],
+      "processing": {
+        "sourceColourProfile": "untagged (assumed sRGB)",
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": null,
+        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
+        "generativeEditing": false,
+        "upscaled": false
+      }
+    },
+    "science-practical": {
+      "source": "IMG_5037.PNG",
+      "alt": "Greenacre Secondary pupils wearing safety goggles during practical science",
+      "position": "50% 0%",
+      "originalSize": [
+        1447,
+        1087
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 361,
+          "file": "science-practical-480-v2.webp",
+          "bytes": 24936,
+          "quality": 80
+        },
+        {
+          "width": 960,
+          "height": 721,
+          "file": "science-practical-960-v2.webp",
+          "bytes": 60394,
+          "quality": 80
+        },
+        {
+          "width": 1440,
+          "height": 1082,
+          "file": "science-practical-1440-v2.webp",
+          "bytes": 95966,
+          "quality": 80
+        }
+      ],
+      "processing": {
+        "sourceColourProfile": "untagged (assumed sRGB)",
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": null,
+        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
+        "generativeEditing": false,
+        "upscaled": false
+      }
+    },
+    "outdoor-chess": {
+      "source": "IMG_5038.PNG",
+      "alt": "Two Greenacre pupils playing chess outdoors",
+      "position": "50% 72%",
+      "originalSize": [
+        1085,
+        1082
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 479,
+          "file": "outdoor-chess-480-v2.webp",
+          "bytes": 49438,
+          "quality": 80
+        },
+        {
+          "width": 960,
+          "height": 957,
+          "file": "outdoor-chess-960-v2.webp",
+          "bytes": 124224,
+          "quality": 80
+        },
+        {
+          "width": 1085,
+          "height": 1082,
+          "file": "outdoor-chess-1085-v2.webp",
+          "bytes": 141934,
+          "quality": 80
+        }
+      ],
+      "processing": {
+        "sourceColourProfile": "Display P3",
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": null,
+        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
+        "generativeEditing": false,
+        "upscaled": false
+      }
+    },
+    "early-years-sand": {
+      "source": "IMG_5039.PNG",
+      "alt": "Greenacre Early Years children exploring sand with a scoop and bowl",
+      "position": "50% 25%",
+      "originalSize": [
+        1086,
+        980
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 433,
+          "file": "early-years-sand-480-v2.webp",
+          "bytes": 40398,
+          "quality": 80
+        },
+        {
+          "width": 960,
+          "height": 866,
+          "file": "early-years-sand-960-v2.webp",
+          "bytes": 121796,
+          "quality": 80
+        },
+        {
+          "width": 1086,
+          "height": 980,
+          "file": "early-years-sand-1086-v2.webp",
+          "bytes": 143370,
+          "quality": 80
+        }
+      ],
+      "processing": {
+        "sourceColourProfile": "Display P3",
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": null,
+        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
+        "generativeEditing": false,
+        "upscaled": false
+      }
+    },
+    "badminton": {
+      "source": "IMG_4094.HEIC",
+      "alt": "Greenacre pupils playing badminton in the covered sports area",
+      "position": "50% 60%",
+      "originalSize": [
+        4595,
+        3446
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 360,
+          "file": "badminton-480-v2.webp",
+          "bytes": 32616,
+          "quality": 78
+        },
+        {
+          "width": 960,
+          "height": 720,
+          "file": "badminton-960-v2.webp",
+          "bytes": 140042,
+          "quality": 78
+        },
+        {
+          "width": 1440,
+          "height": 1080,
+          "file": "badminton-1440-v2.webp",
+          "bytes": 306024,
+          "quality": 78
+        }
+      ],
+      "processing": {
+        "sourceColourProfile": "Display P3",
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": null,
+        "sharpening": null,
+        "generativeEditing": false,
+        "upscaled": false
+      }
+    },
+    "reading-together": {
+      "source": "https://www.greenacre.ac.th/",
+      "alt": "Greenacre Primary pupils reading together",
+      "position": "55% 30%",
+      "originalSize": [
+        1273,
+        1108
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 418,
+          "file": "reading-together-480-v2.webp",
+          "bytes": 33710,
+          "quality": 80
+        },
+        {
+          "width": 960,
+          "height": 836,
+          "file": "reading-together-960-v2.webp",
+          "bytes": 86576,
+          "quality": 80
+        },
+        {
+          "width": 1273,
+          "height": 1108,
+          "file": "reading-together-1273-v2.webp",
+          "bytes": 123800,
+          "quality": 80
+        }
+      ],
+      "processing": {
+        "sourceColourProfile": "untagged (assumed sRGB)",
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": null,
+        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
+        "generativeEditing": false,
+        "upscaled": false
+      }
+    },
+    "head-dara-nagle": {
+      "source": "1742964487955 (1).jpg",
+      "alt": "Mr Dara Nagle, Head of School at Greenacre International School",
+      "position": "50% 0%",
+      "originalSize": [
+        1163,
+        1408
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 581,
+          "file": "head-dara-nagle-480-v2.webp",
+          "bytes": 36244,
+          "quality": 80
+        },
+        {
+          "width": 960,
+          "height": 1162,
+          "file": "head-dara-nagle-960-v2.webp",
+          "bytes": 85668,
+          "quality": 80
+        },
+        {
+          "width": 1163,
+          "height": 1408,
+          "file": "head-dara-nagle-1163-v2.webp",
+          "bytes": 112084,
+          "quality": 80
+        }
+      ],
+      "processing": {
+        "sourceColourProfile": "sRGB",
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": null,
+        "sharpening": null,
+        "generativeEditing": false,
+        "upscaled": false
+      }
+    }
+  },
+  "placements": {
+    "internal": {
+      "learning/curriculum/": [
+        "current:academics-curriculum-02.webp",
+        "primary-art"
+      ],
+      "learning/early-years/": [
+        "current:academics-early-years-foundation-years-02.webp",
+        "early-years-sand"
+      ],
+      "learning/primary/": [
+        "primary-teaching",
+        "current:academics-primary-02.webp"
+      ],
+      "learning/secondary/": [
+        "secondary-maths",
+        "science-practical"
+      ],
+      "learning/clubs-ecas/": [
+        "badminton"
+      ],
+      "our-school/about-greenacre/": [
+        "current:community-02.webp"
+      ],
+      "our-school/campus-facilities/": [
+        "library-reading",
+        "growing-area",
+        "current:facilities-swimming-pool-03.webp"
+      ],
+      "our-school/environmentality/": [
+        "current:home-02.webp",
+        "current:academics-environmentality-03.webp"
+      ],
+      "our-school/wellbeing/": [
+        "current:extra-curricular-wellbeing-02.webp",
+        "outdoor-chess"
+      ],
+      "admissions/admissions-visits/": [
+        "individual-support"
+      ],
+      "parent-information/services/": [
+        "current:academics-environmentality-02.webp"
+      ],
+      "our-school/head-of-school-welcome/": [
+        "head-dara-nagle"
+      ]
+    },
+    "homepage": [
+      {
+        "frame": "intro-photo",
+        "photo": "classroom-welcome"
+      },
+      {
+        "frame": "phase-card.early::before",
+        "photo": "early-years-nature"
+      },
+      {
+        "frame": "phase-card.primary::before",
+        "photo": "reading-together"
+      },
+      {
+        "frame": "phase-card.secondary::before",
+        "photo": "science-independent"
+      },
+      {
+        "frame": "identity-photo",
+        "photo": "watering-together"
+      }
+    ]
+  }
+}

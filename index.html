@@ -234,11 +234,12 @@
     }
 
     .intro-photo {
+      --school-photo-classroom-welcome: image-set(url("assets/images/school-2026/classroom-welcome-960-v2.webp") 1x, url("assets/images/school-2026/classroom-welcome-1440-v2.webp") 2x);
       min-height: 400px;
       border-radius: var(--radius);
       background:
         linear-gradient(180deg, color-mix(in srgb, var(--green-dark) 4%, transparent), color-mix(in srgb, var(--green-dark) 10%, transparent)),
-        url("assets/images/homepage-embedded/homepage-image-02.webp") 52% 22% / cover no-repeat;
+        var(--school-photo-classroom-welcome) 50% 55% / cover no-repeat;
       box-shadow: var(--shadow);
     }
 
@@ -313,18 +314,21 @@
     }
 
     .phase-card.early::before {
-      background-image: url("assets/images/homepage-embedded/homepage-image-03.webp");
-      background-position: 50% 32%;
+      --school-photo-early-years-nature: image-set(url("assets/images/school-2026/early-years-nature-960-v2.webp") 1x, url("assets/images/school-2026/early-years-nature-1310-v2.webp") 2x);
+      background-image: var(--school-photo-early-years-nature);
+      background-position: 55% 30%;
     }
 
     .phase-card.primary::before {
-      background-image: url("assets/images/homepage-embedded/homepage-image-04.webp");
-      background-position: 52% 48%;
+      --school-photo-reading-together: image-set(url("assets/images/school-2026/reading-together-960-v2.webp") 1x, url("assets/images/school-2026/reading-together-1273-v2.webp") 2x);
+      background-image: var(--school-photo-reading-together);
+      background-position: 55% 20%;
     }
 
     .phase-card.secondary::before {
-      background-image: url("assets/images/homepage-embedded/homepage-image-05.webp");
-      background-position: 50% 48%;
+      --school-photo-science-independent: image-set(url("assets/images/school-2026/science-independent-960-v2.webp") 1x, url("assets/images/school-2026/science-independent-1440-v2.webp") 2x);
+      background-image: var(--school-photo-science-independent);
+      background-position: 82% 0%;
     }
 
     .phase-content {
@@ -416,11 +420,12 @@
     }
 
     .identity-photo {
+      --school-photo-watering-together: image-set(url("assets/images/school-2026/watering-together-960-v2.webp") 1x, url("assets/images/school-2026/watering-together-1440-v2.webp") 2x);
       min-height: 400px;
       border-radius: var(--radius);
       background:
         linear-gradient(180deg, color-mix(in srgb, var(--green-dark) 3%, transparent), color-mix(in srgb, var(--green-dark) 10%, transparent)),
-        url("assets/images/homepage-embedded/homepage-image-06.webp") 55% 45% / cover no-repeat;
+        var(--school-photo-watering-together) 50% 50% / cover no-repeat;
       box-shadow: 0 24px 52px rgba(0,0,0,.22);
     }
 
@@ -1215,6 +1220,15 @@
 <link href="assets/site-components.css" rel="stylesheet"/>
 <link rel="icon" type="image/png" href="assets/images/greenacre-favicon.png"/>
 <link rel="stylesheet" href="assets/site-type-refinements.css?v=20260915-2">
+<style id="homepage-responsive-photos">
+@media (max-width: 560px) {
+  .intro-photo { --school-photo-classroom-welcome: image-set(url("assets/images/school-2026/classroom-welcome-480-v2.webp") 1x, url("assets/images/school-2026/classroom-welcome-960-v2.webp") 2x); }
+  .phase-card.early::before { --school-photo-early-years-nature: image-set(url("assets/images/school-2026/early-years-nature-480-v2.webp") 1x, url("assets/images/school-2026/early-years-nature-960-v2.webp") 2x); }
+  .phase-card.primary::before { --school-photo-reading-together: image-set(url("assets/images/school-2026/reading-together-480-v2.webp") 1x, url("assets/images/school-2026/reading-together-960-v2.webp") 2x); }
+  .phase-card.secondary::before { --school-photo-science-independent: image-set(url("assets/images/school-2026/science-independent-480-v2.webp") 1x, url("assets/images/school-2026/science-independent-960-v2.webp") 2x); }
+  .identity-photo { --school-photo-watering-together: image-set(url("assets/images/school-2026/watering-together-480-v2.webp") 1x, url("assets/images/school-2026/watering-together-960-v2.webp") 2x); }
+}
+</style>
 <link rel="canonical" href="https://greenacreadmin.github.io/greenacre-website-draft/">
 </head>
 <body><a class="skip-link" href="#main-content">Skip to main content</a><header class="site-header"><div class="site-header__inner"><a aria-label="Greenacre International School home" class="site-brand" data-path="" href="./"><img alt="Greenacre International School" src="assets/images/greenacre-logo.png"/><span class="site-brand__name">Greenacre International School</span></a><button aria-expanded="false" class="menu-toggle" type="button">Menu</button><nav aria-label="Primary" class="site-nav">
@@ -1282,7 +1296,7 @@
 </section>
 <section class="intro">
 <div class="wrap intro-grid">
-<div aria-label="Greenacre pupils taking part in a classroom learning activity" class="intro-photo home-photo-temp" role="img"><span class="home-photo-stamp">Photo to be updated</span></div>
+<div aria-label="Greenacre pupils smiling during a classroom activity" class="intro-photo home-photo-temp" role="img"></div>
 <div class="intro-copy">
 <p class="eyebrow">Welcome to Greenacre</p>
 <div aria-hidden="true" class="orange-rule"></div>
@@ -1314,7 +1328,7 @@
 <p>A happy, secure and creative environment where children learn through play, investigation and doing.</p>
 <span class="card-link">Discover Early Years <span class="card-arrow" aria-hidden="true">→</span></span>
 </div>
-<span class="home-photo-stamp">Photo to be updated</span></a>
+</a>
 <a class="phase-card primary home-photo-temp" data-path="learning/primary" href="learning/primary/">
 <div class="phase-content">
 <span class="phase-age">Years 1-6</span>
@@ -1322,7 +1336,7 @@
 <p>Cambridge-focused learning, incorporating elements of the UK curriculum, with strong progression in English, Mathematics and Science.</p>
 <span class="card-link">Explore Primary <span class="card-arrow" aria-hidden="true">→</span></span>
 </div>
-<span class="home-photo-stamp">Photo to be updated</span></a>
+</a>
 <a class="phase-card secondary home-photo-temp" data-path="learning/secondary" href="learning/secondary/">
 <div class="phase-content">
 <span class="phase-age">Years 7-11</span>
@@ -1330,7 +1344,7 @@
 <p>Cambridge International learning in Years 7-9, progressing to Cambridge IGCSE in Years 10-11.</p>
 <span class="card-link">Explore Secondary <span class="card-arrow" aria-hidden="true">→</span></span>
 </div>
-<span class="home-photo-stamp">Photo to be updated</span></a>
+</a>
 </div>
 </div>
 </section>
@@ -1354,7 +1368,7 @@
 </div>
 <a class="button button-light" data-path="our-school/environmentality" href="our-school/environmentality/">Discover Environmentality</a>
 </div>
-<div aria-label="Greenacre pupils learning in the school garden" class="identity-photo home-photo-temp" role="img"><span class="home-photo-stamp">Photo to be updated</span></div>
+<div aria-label="Two Greenacre pupils watering plants together" class="identity-photo home-photo-temp" role="img"></div>
 </div>
 </section>
 <section aria-labelledby="testimonial-heading" class="testimonials">

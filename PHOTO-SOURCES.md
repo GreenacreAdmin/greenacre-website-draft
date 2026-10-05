@@ -1,27 +1,77 @@
-# Current school photo sources
+# Website photo selections
 
-Selected from the public school site on 4 September 2026. These are interim photos marked “Photo to be updated”. Homepage photos and staff-roster portraits were not changed.
+Updated 5 October 2026. Each photograph is used once across the 27 photography-checklist slots. Logos and staff-roster portraits are outside this list.
 
-- admissions/admissions-visits/index.html: A Greenacre teacher supporting a pupil in the classroom. Asset: assets/images/current-site/work-with-us-03.webp. Source: https://www.greenacre.ac.th/work-with-us
-- learning/clubs-ecas/index.html: Greenacre pupils watering plants during an activity. Asset: assets/images/current-site/extra-curricular-after-school-clubs-02.webp. Source: https://www.greenacre.ac.th/extra-curricular/after-school-clubs
-- learning/curriculum/index.html: Greenacre pupils participating in a classroom lesson. Asset: assets/images/current-site/academics-curriculum-02.webp. Source: https://www.greenacre.ac.th/academics/curriculum
-- learning/curriculum/index.html: Greenacre pupils learning in the garden with a teacher. Asset: assets/images/current-site/academics-environmentality-03.webp. Source: https://www.greenacre.ac.th/academics/environmentality
-- learning/early-years/index.html: Young Greenacre children exploring together outdoors. Asset: assets/images/current-site/academics-early-years-foundation-years-02.webp. Source: https://www.greenacre.ac.th/academics/early-years-foundation-years
-- learning/early-years/index.html: A young Greenacre pupil working on an early literacy activity. Asset: assets/images/current-site/academics-early-years-foundation-years-03.webp. Source: https://www.greenacre.ac.th/academics/early-years-foundation-years
-- learning/primary/index.html: Greenacre Primary pupils working together in class. Asset: assets/images/current-site/academics-primary-02.webp. Source: https://www.greenacre.ac.th/academics/primary
-- learning/primary/index.html: Greenacre pupils learning with computers. Asset: assets/images/current-site/facilities-computer-ict-room-06.webp. Source: https://www.greenacre.ac.th/facilities/computer-ict-room
-- learning/secondary/index.html: Greenacre Secondary pupils working in class. Asset: assets/images/current-site/academics-secondary-02.webp. Source: https://www.greenacre.ac.th/academics/secondary
-- learning/secondary/index.html: Greenacre students carrying out a science practical. Asset: assets/images/current-site/facilities-science-lab-02.webp. Source: https://www.greenacre.ac.th/facilities/science-lab
-- our-school/about-greenacre/index.html: Greenacre pupils sharing a reading activity. Asset: assets/images/current-site/community-02.webp. Source: https://www.greenacre.ac.th/community
-- our-school/campus-facilities/index.html: Greenacre pupils using the school library. Asset: assets/images/current-site/facilities-library-02.webp. Source: https://www.greenacre.ac.th/facilities/library
-- our-school/campus-facilities/index.html: Greenacre pupils in the school growing area. Asset: assets/images/current-site/home-02.webp. Source: https://www.greenacre.ac.th/home
-- our-school/campus-facilities/index.html: A Greenacre pupil practising swimming in the school pool. Asset: assets/images/current-site/facilities-swimming-pool-03.webp. Source: https://www.greenacre.ac.th/facilities/swimming-pool
-- our-school/environmentality/index.html: Greenacre pupils harvesting produce in the school garden. Asset: assets/images/current-site/academics-environmentality-02.webp. Source: https://www.greenacre.ac.th/academics/environmentality
-- our-school/environmentality/index.html: Greenacre pupils learning outdoors with their teacher. Asset: assets/images/current-site/academics-environmentality-03.webp. Source: https://www.greenacre.ac.th/academics/environmentality
-- our-school/head-of-school-welcome/index.html: The Head of School speaking at Greenacre. Asset: assets/images/current-site/about-us-head-of-school-welcome-02.webp. Source: https://www.greenacre.ac.th/about-us/head-of-school-welcome
-- our-school/wellbeing/index.html: Greenacre pupils taking part in a calm outdoor activity. Asset: assets/images/current-site/extra-curricular-wellbeing-02.webp. Source: https://www.greenacre.ac.th/extra-curricular/wellbeing
-- our-school/wellbeing/index.html: Greenacre pupils creating together outdoors. Asset: assets/images/current-site/extra-curricular-wellbeing-03.webp. Source: https://www.greenacre.ac.th/extra-curricular/wellbeing
-- parent-information/services/index.html: Greenacre pupils with fresh produce from the school garden. Asset: assets/images/current-site/academics-environmentality-02.webp. Source: https://www.greenacre.ac.th/academics/environmentality
-- work-with-us/index.html: A Greenacre teacher working with a small group of pupils. Asset: assets/images/current-site/work-with-us-02.webp. Source: https://www.greenacre.ac.th/work-with-us
+The selection combines 14 photographs from the supplied ZIP, the separately supplied Head of School portrait, 10 retained or reused photographs from the public school site, and the existing homepage hero and Work with Us photograph. The user confirmed the Early Years and Secondary year groups, approved the tighter sand-play crop and mixed selection, and asked to retain the current pool photograph.
 
-The public services page did not include a dining photograph. The meals section uses the school garden produce photograph as the closest food-related image; it is not described as a dining photograph.
+## Homepage
+
+| Frame | Source | Served asset |
+|---|---|---|
+| Hero | Existing approved seedlings image; retained | `assets/images/optimized/home-hero-seedlings-v3.*` |
+| intro-photo | `IMG_4998.PNG` | `assets/images/school-2026/classroom-welcome-*.webp` |
+| phase-card.early::before | `IMG_4830.PNG` | `assets/images/school-2026/early-years-nature-*.webp` |
+| phase-card.primary::before | [https://www.greenacre.ac.th/](https://www.greenacre.ac.th/) | `assets/images/school-2026/reading-together-*.webp` |
+| phase-card.secondary::before | `IMG_5029.JPG` | `assets/images/school-2026/science-independent-*.webp` |
+| identity-photo | `IMG_4188.HEIC` | `assets/images/school-2026/watering-together-*.webp` |
+
+## Internal pages
+
+| Page / photo slot | Source | Served asset / crop |
+|---|---|---|
+| `learning/curriculum/` / 1 | [Current school site](https://www.greenacre.ac.th/academics/curriculum) | `assets/images/current-site/academics-curriculum-02.webp` |
+| `learning/curriculum/` / 2 | `IMG_4117.HEIC` | `assets/images/school-2026/primary-art-*.webp`; 50% 100% |
+| `learning/early-years/` / 1 | [Current school site](https://www.greenacre.ac.th/academics/early-years-foundation-years) | `assets/images/current-site/academics-early-years-foundation-years-02.webp` |
+| `learning/early-years/` / 2 | `IMG_5039.PNG` | `assets/images/school-2026/early-years-sand-*.webp`; 50% 25% |
+| `learning/primary/` / 1 | `IMG_5023.PNG` | `assets/images/school-2026/primary-teaching-*.webp`; 50% 15% |
+| `learning/primary/` / 2 | [Current school site](https://www.greenacre.ac.th/academics/primary) | `assets/images/current-site/academics-primary-02.webp` |
+| `learning/secondary/` / 1 | `IMG_5024.PNG` | `assets/images/school-2026/secondary-maths-*.webp`; 50% 50% |
+| `learning/secondary/` / 2 | `IMG_5037.PNG` | `assets/images/school-2026/science-practical-*.webp`; 50% 0% |
+| `learning/clubs-ecas/` / 1 | `IMG_4094.HEIC` | `assets/images/school-2026/badminton-*.webp`; 50% 60% |
+| `our-school/about-greenacre/` / 1 | [Current school site](https://www.greenacre.ac.th/community) | `assets/images/current-site/community-02.webp` |
+| `our-school/campus-facilities/` / 1 | `IMG_4219.PNG` | `assets/images/school-2026/library-reading-*.webp`; 50% 65% |
+| `our-school/campus-facilities/` / 2 | `IMG_4184.HEIC` | `assets/images/school-2026/growing-area-*.webp`; 50% 85% |
+| `our-school/campus-facilities/` / 3 | [Current school site](https://www.greenacre.ac.th/facilities/swimming-pool) | `assets/images/current-site/facilities-swimming-pool-03.webp` |
+| `our-school/environmentality/` / 1 | [Current school site](https://www.greenacre.ac.th/home) | `assets/images/current-site/home-02.webp` |
+| `our-school/environmentality/` / 2 | [Current school site](https://www.greenacre.ac.th/academics/environmentality) | `assets/images/current-site/academics-environmentality-03.webp` |
+| `our-school/wellbeing/` / 1 | [Current school site](https://www.greenacre.ac.th/extra-curricular/wellbeing) | `assets/images/current-site/extra-curricular-wellbeing-02.webp` |
+| `our-school/wellbeing/` / 2 | `IMG_5038.PNG` | `assets/images/school-2026/outdoor-chess-*.webp`; 50% 72% |
+| `admissions/admissions-visits/` / 1 | `IMG_4518.PNG` | `assets/images/school-2026/individual-support-*.webp`; 50% 35% |
+| `parent-information/services/` / 1 | [Current school site](https://www.greenacre.ac.th/academics/environmentality) | `assets/images/current-site/academics-environmentality-02.webp` |
+| `our-school/head-of-school-welcome/` / 1 | `1742964487955 (1).jpg` | `assets/images/school-2026/head-dara-nagle-*.webp`; 50% 0% |
+| `work-with-us/` / 1 | Existing teacher-at-desk selection; retained | Existing responsive recruitment photo; bottom-aligned 3:2 crop |
+
+## Crop and delivery notes
+
+- Original ZIP and separate portrait remain outside the deployed repository. New web assets are full-frame WebP derivatives at 480, 960 and up to 1440 pixels wide, with no upscaling. HTML `srcset` and homepage CSS `image-set` serve responsive versions.
+- The existing frame sizes, border treatments, spacing and responsive layouts are retained. Individual images use crop positions that keep the main faces and interaction visible.
+- The Head of School portrait keeps the previous displayed ratio of 902:1327; it is cropped within that frame.
+- Sand play is used only on the Early Years page. The 3:2 crop prioritises both faces and the activity; it cannot retain the whole bowl from the tight original.
+- `IMG_5026.JPG` remains a reserve because its portrait composition fits the ordinary landscape frames poorly. The two `IMG_4218` versions are already represented by Work with Us and are not added elsewhere.
+- All replacement badges have been removed from the selected photo frames, including intentionally retained images.
+- Parent Services retains a produce photograph as a food-related illustration. It is not labelled as dining. A dedicated dining image would still improve specificity.
+
+## Current-site review
+
+Reviewed the live homepage, Early Years, Primary, Curriculum, Environmentality, Wellbeing, Swimming Pool, Services, Community and Head of School Welcome pages on 5 October 2026. Strong reading, collaboration, classroom participation, outdoor learning, meditation, produce and pool images were retained or reassigned.
+
+The current homepage reading image was downloaded through the browser asset export and optimised as `reading-together-*.webp`. Other reused photographs were already stored in `assets/images/current-site/`. The supplied new portrait supersedes the live site’s lectern photograph.
+
+## Verification
+
+- Visual review at browser viewport widths 1440, 768 and 390 pixels.
+- No horizontal overflow or missing photo assets across the 13 selected pages.
+- Existing ordinary-content and homepage frame dimensions preserved at all three sizes; portrait ratio explicitly preserved.
+- Site checker verifies all 49 pages, relative links, fragments, search metadata and original document checksums.
+- No push or deployment was performed as part of this local update.
+
+## Colour and compression review — 5 October 2026
+
+- Converted embedded Display P3 originals to sRGB before WebP export; every revised WebP embeds the sRGB profile. Untagged sources are treated as sRGB.
+- Watering-together (IMG_4188) received restrained conventional contrast (1.08×) and saturation (1.06×) correction. No faces, objects, uniforms, text or geometry were regenerated.
+- Smaller source images receive light output-size unsharp masking (0.6px radius, 60%, threshold 3; 40% at 480px). The Head portrait is already sufficiently detailed for its smaller frame and receives no sharpening. No upscaling was used.
+- Imagegen trials for watering, maths, chess and sand were rejected because they changed scene details. The user approved conventional correction and sharpening instead. No generated trials are deployed.
+- WebP quality is 80, or 78 for the detail-heavy badminton and growing-area photographs, with method 6 compression. Revised filenames use `-v2` to avoid stale cached versions.
+- Across all 48 responsive variants, file weight fell from 4,789,924 to 4,259,834 bytes (11.1%). This is the whole asset set, not a per-page transfer total or measured speed improvement. All 480px variants are below 50 KB; 960px variants are below 143 KB. The largest 1440px variant is 306 KB.
+- Homepage cards retain larger desktop sources to avoid softening the tall cover crops. Mobile backgrounds select 480px at 1× or 960px at 2×; internal images retain responsive source selection, lazy loading and asynchronous decoding.
+- Original sources and pre-correction exports remain outside the deployed repository. Detailed processing settings and exact output sizes are in `assets/images/school-2026/sources.json`.
