@@ -919,6 +919,13 @@ main :where(p, li, details, .note, .small-note) a:not(.action):not(.button):not(
   text-decoration-thickness: 2px;
 }
 
+/* Inline links on dark green panels stay white so they remain readable. */
+main .green-section :where(p, li, details, .note, .small-note) a:not(.action):not(.button):not(.btn):not(.phase-link):not(.policy-link),
+main .green-section :where(p, li, details, .note, .small-note) a:not(.action):not(.button):not(.btn):not(.phase-link):not(.policy-link):hover {
+  color: #fff;
+  text-decoration-color: rgba(255, 255, 255, .7);
+}
+
 
 /* Standard blue primary actions */
 main a.action:not(.alt) {
@@ -1402,8 +1409,9 @@ main .faq details[open] {
 }
 main .faq summary:focus-visible { outline: 2px solid var(--green-dark); outline-offset: 4px; border-radius: 4px; }
 
-/* Consistent photo depth, with a fine edge highlight and no image filters. */
-main :is(.current-school-photo, .intro-photo, .identity-photo, .phase-card) {
+/* Consistent photo depth and corners, with a fine edge highlight and no image filters. */
+main :is(.current-school-photo, .intro-photo, .identity-photo, .phase-card, .recruitment-photo) {
+  border-radius: 24px;
   box-shadow: 0 10px 28px rgba(37,72,45,.11), 0 2px 5px rgba(37,72,45,.05), 0 0 0 1px rgba(37,72,45,.10);
   outline: 1px solid rgba(255,255,255,.22);
   outline-offset: -1px;
@@ -1485,12 +1493,6 @@ main .identity-photo {
   .site-brand img { transition: scale .3s ease; transform-origin: left center; }
   .is-scrolled .site-header { box-shadow: 0 8px 24px rgba(23, 34, 24, .08); }
   @media (min-width: 981px) { .is-scrolled .site-brand img { scale: .9; } }
-
-  /* Content photos ease in slightly on hover (mouse and trackpad only). */
-  @media (hover: hover) {
-    main .current-school-photo > img { transition: scale .9s cubic-bezier(.2, .65, .25, 1); }
-    main .current-school-photo:hover > img { scale: 1.035; }
-  }
 
   /* Disclosures (staff groups, FAQs, club details) slide open where supported. */
   @supports (interpolate-size: allow-keywords) and selector(::details-content) {
