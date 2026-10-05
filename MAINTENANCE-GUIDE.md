@@ -99,7 +99,7 @@ To change a name or role, update the visible text and the image `alt` text where
 
 ## 6. Staff photograph standard
 
-Original staff photographs use square PNG files, normally `570 × 570` pixels, with transparent backgrounds. Match that established format when preparing a replacement, then export a WebP copy for the website, preserving dimensions and transparency.
+Original staff photographs use square PNG files, normally `570 × 570` pixels, with transparent backgrounds. Match that established format when preparing a replacement, then export a WebP copy for the website at `384 × 384` pixels (three times the largest displayed portrait, so it stays sharp on high-density screens), preserving transparency.
 
 - Use a square crop with the face positioned consistently with neighbouring portraits.
 - Keep the transparent background and existing visual treatment.
