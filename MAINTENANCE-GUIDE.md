@@ -4,6 +4,15 @@ This guide covers routine content and layout maintenance for the Greenacre websi
 
 Use `STYLE-INDEX.md` to choose an existing design pattern. Use `STYLE-MAP.md` to locate the HTML and CSS that control it.
 
+### Site structure (October 2026)
+
+- `assets/site.css` is the shared stylesheet for every page. Its sections are named by purpose (Colours, Header, Navigation, Typography, Components, Footer, Inner-page banner, Content photos, Motion and so on) and keep the original cascade order. Each section notes the old file it replaced.
+- `assets/page-base.css` is the shared inner-page layout that used to be copied into every page. It loads before `site.css`.
+- `assets/pages/<page>.css` holds styles specific to one page; it loads after `site.css`. Pages no longer contain `<style>` blocks; add page-specific CSS to that page's file.
+- Feature stylesheets stay separate: `site-resources.css`, `secondary-parent-resources.css`, `lunch-menu.css`, `term-clubs.css` and `team-accordion.css`.
+- `partials/header.html` and `partials/footer.html` are the single source for the header and footer on every page and the 404 template. Edit them, then run `python3 scripts/build-shared.py`. The same script writes the "Learning › Early Years" trail in each page banner from the menu (pages reached from another page are listed in `TRAIL_PARENTS`; the unlisted Secondary pages keep their original label). `scripts/check-site.py` fails if any page is out of step.
+- `assets/motion.js` adds gentle scroll reveals and the header shadow. Every page loads it after `desktop-navigation.js`. It hides nothing without JavaScript or when the device asks for reduced motion. Add `data-no-motion` to a section that should not animate.
+
 ## 1. Safe working process
 
 1. Work only in the confirmed Greenacre repository.
@@ -115,7 +124,7 @@ The homepage hero uses the optimised JPEG `assets/images/optimized/home-hero-see
 
 The header crest and footer accreditation logos are served as small WebP copies from `assets/images/optimized/logos/` (sized for their displayed height at high-density screens). The original PNG logos are retained unchanged. When a logo is replaced, export a new copy at the same height and keep its `width` and `height` attributes in the footer markup in step with the new file.
 
-Ordinary content photography is standardised by `assets/current-school-photos.css`. These frames use a responsive 3:2 ratio with `object-fit: cover`; source images do not need to share that ratio. The homepage is deliberately separate. The Head of School portrait and the full-width swimming-pool image are intentional composition-led exceptions. When adding a normal content photo, reuse `.current-school-photo` rather than introducing a page-specific height or aspect ratio. If the shared photo stylesheet changes, update its cache-version query consistently on every page that loads it.
+Ordinary content photography is standardised by the "Content photos" section of `assets/site.css`. These frames use a responsive 3:2 ratio with `object-fit: cover`; source images do not need to share that ratio. The homepage is deliberately separate. The Head of School portrait and the full-width swimming-pool image are intentional composition-led exceptions. When adding a normal content photo, reuse `.current-school-photo` rather than introducing a page-specific height or aspect ratio. If the shared photo stylesheet changes, update its cache-version query consistently on every page that loads it.
 
 Staff groups use native HTML accordions (`details.staff-disclosure`), styled by `assets/team-accordion.css`. Leadership has the `open` attribute by default. Keep each group's stable ID so saved direct links still work. Edit its title inside `summary > h3` and its staff cards inside `.staff-panel .team-grid-v2`. `assets/team-accordion.js` supplies Expand all / Collapse all and opens groups reached by a direct link. Individual groups still work without JavaScript. There are no staff-count labels to maintain.
 
@@ -136,16 +145,11 @@ External links should use a complete `https://` URL. Links opening a new tab sho
 
 ## 8. Shared headers, navigation and footers
 
-Header and navigation ownership is documented in `STYLE-INDEX.md`. In particular:
+The header and footer markup lives only in `partials/header.html` and `partials/footer.html`. Edit the partial, run `python3 scripts/build-shared.py`, then `python3 scripts/check-site.py`. Use `{{ROOT}}` for links to site files and `{{HOME}}` for links to the homepage; the script fills in the right relative path for each page.
 
-- `assets/site-header-styles.css` owns the base header and mobile layout
-- `assets/stage16-standard-navigation.css` owns desktop dropdown behaviour
-- `assets/stage25-header-uniform.css` enforces the final compact header dimensions
-- `assets/site-routing-mobile-nav.js` controls deployment-aware navigation and mobile state
+Header and navigation styling is in the "Header" and "Navigation" sections of `assets/site.css`; `assets/site-routing-mobile-nav.js` controls deployment-aware navigation and mobile state. Do not create another navigation implementation or change header height while making a text-only adjustment.
 
-Do not create another navigation implementation or change header height while making a text-only adjustment.
-
-Footer styling belongs in `assets/site-footer.css`. Do not introduce page-specific footer styling. Check accreditation logos, school details and the homepage link after any footer edit.
+Footer styling belongs in the "Footer" section of `assets/site.css`. Do not introduce page-specific footer styling. Check accreditation logos, school details and the homepage link after any footer edit.
 
 ## 9. Responsive verification
 

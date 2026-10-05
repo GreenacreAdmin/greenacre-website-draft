@@ -1,5 +1,7 @@
 # Greenacre Website Exhaustive Style Map
 
+> **Out of date since October 2026.** This map was generated before the styling was restructured. The class names are still valid, but the files and line numbers are not: the old `assets/*.css` layers are now sections of `assets/site.css` (each section names the file it replaced), and inline `<style>` blocks are now in `assets/page-base.css` or `assets/pages/<page>.css`. Search those files for a class name.
+
 Machine-generated technical companion to `STYLE-INDEX.md`.
 
 Use `STYLE-INDEX.md` to understand which design pattern should be used.

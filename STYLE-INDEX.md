@@ -7,7 +7,7 @@ Before creating a new component, inspect the current source and reuse an existin
 ## 1. Typography
 
 Primary shared file:
-`assets/site-typography.css`
+the "Typography" section of `assets/site.css`
 
 Typography hierarchy:
 - `h1` - page title
@@ -25,16 +25,16 @@ Fonts currently used:
 - Roboto - selected footer-detail use
 
 Related safeguards:
-`assets/formatting-safeguards.css`
+the "Formatting safeguards" section of `assets/site.css`
 
 Do not introduce page-specific typography unless an existing hierarchy genuinely cannot express the content.
 
 ## 2. Header and navigation
 
 Files:
-- `assets/site-header-styles.css`
-- `assets/stage16-standard-navigation.css`
-- `assets/stage25-header-uniform.css`
+- the "Header: base and mobile layout" section of `assets/site.css`
+- the "Navigation: desktop dropdowns" section of `assets/site.css`
+- the "Header: final compact dimensions" section of `assets/site.css`
 - `assets/site-routing-mobile-nav.js`
 
 Core classes:
@@ -67,7 +67,7 @@ Do not create a second navigation implementation.
 ## 3. Heroes and section headings
 
 Primary file:
-`assets/site-hero.css`
+the "Inner-page banner" section of `assets/site.css`
 
 Common classes:
 - `.page-hero`
@@ -83,7 +83,7 @@ The homepage hero is bespoke and remains primarily defined in `index.html`.
 ## 4. Core layout
 
 Primary shared file:
-`assets/site-components.css`
+the "Components" section of `assets/site.css`
 
 Reusable layout:
 - `.wrap` - normal content width, though some page-local definitions remain
@@ -98,7 +98,7 @@ Prefer these before creating a new generic grid.
 The website has several semantic card types whose base structures often originate in page-local CSS.
 
 Their common visual family is imposed principally by:
-`assets/formatting-safeguards.css`
+the "Formatting safeguards" section of `assets/site.css`
 
 The shared card selector includes:
 - `.cards > .card`
@@ -133,7 +133,7 @@ Before creating a new card, choose an existing semantic type where possible.
 ## 6. Buttons and links
 
 Primary shared file:
-`assets/site-components.css`
+the "Components" section of `assets/site.css`
 
 Component-style links:
 - `.action`
@@ -152,7 +152,7 @@ Navigation and footer links have their own component styling and should not inhe
 ## 7. Keyboard focus
 
 Primary file:
-`assets/site-components.css`
+the "Components" section of `assets/site.css`
 
 Global interactive controls use `:focus-visible`.
 
@@ -163,9 +163,9 @@ Preserve that distinction.
 ## 8. Photography and media
 
 Shared files:
-- `assets/current-school-photos.css`
-- `assets/site-components.css`
-- `assets/stage11-photo-system.css`
+- the "Content photos" section of `assets/site.css`
+- the "Components" section of `assets/site.css`
+- the "Photo frames" section of `assets/site.css`
 
 `current-school-photos.css` owns the final geometry and cropping of ordinary content photography. Standard content-photo frames are responsive 3:2 containers using `object-fit: cover`.
 
@@ -190,7 +190,7 @@ When final photographs arrive, preserve the established section composition unle
 ## 9. Footer
 
 Primary file:
-`assets/site-footer.css`
+the "Footer" section of `assets/site.css`
 
 Classes:
 - `.site-footer`
@@ -201,7 +201,7 @@ Classes:
 - `.site-footer__logos`
 - `.site-footer__logo`
 
-`assets/stage11-footer-lock.css` is an older override layer and is currently exceptional rather than the main footer definition.
+The former footer-lock override layer was unused and has been removed; it was exceptional rather than the main footer definition.
 
 Do not add page-specific footer styling.
 
@@ -318,7 +318,7 @@ The card receives part of its shared visual treatment from `formatting-safeguard
 ## 18. Design-variety layer
 
 File:
-`assets/stage48-design-variety.css`
+the "Section variety" section of `assets/site.css`
 
 This is not a general global stylesheet.
 
