@@ -85,3 +85,13 @@ About Greenacre first image: user-supplied classroom photograph, full source 128
 Pool update: user-requested imagegen quality and colour enhancement, retaining the original photographic composition. Existing desktop and mobile frame rules retained. Original WebP retained for provenance. Responsive exports: 480px / 36822 bytes, 960px / 102922 bytes, 1432px / 171040 bytes.
 
 Secondary maths update: user-approved imagegen revision with tidier uniforms, neutral white walls, cleaner whiteboard, 3:2 landscape composition and whiteboard continuing beyond the left edge. Existing page frame retained. Responsive WebP exports: 480px / 17928 bytes, 960px / 55438 bytes, 1536px / 111722 bytes.
+
+Homepage clarity update: imagegen enhancements of the teacher-and-pupil welcome photograph, FS flower activity and Secondary science card. Existing frames, crop positions and Primary photograph retained.
+
+individual-support: 480px / 22046 bytes, 960px / 58452 bytes, 1440px / 96766 bytes
+early-years-nature: 480px / 36956 bytes, 960px / 98330 bytes, 1400px / 154032 bytes
+science-independent: 480px / 17672 bytes, 960px / 46024 bytes, 1440px / 78192 bytes
+
+FS card refinement supersedes the preceding v3 export: square composition with the children closer together and a slight smile on the boy at right, as requested. 480px / 45548 bytes, 960px / 132396 bytes, 1254px / 191778 bytes.
+
+Secondary homepage card refinement supersedes v3: brighter window daylight, neutral white lab coat and foreground hand moved outside the bottom edge. 480px / 18044 bytes, 960px / 49240 bytes, 1440px / 84130 bytes.

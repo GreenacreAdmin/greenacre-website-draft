@@ -183,33 +183,36 @@
         {
           "width": 480,
           "height": 349,
-          "file": "individual-support-480-v2.webp",
-          "bytes": 21846,
+          "file": "individual-support-480-v3.webp",
+          "bytes": 22046,
           "quality": 80
         },
         {
           "width": 960,
-          "height": 698,
-          "file": "individual-support-960-v2.webp",
-          "bytes": 56802,
+          "height": 699,
+          "file": "individual-support-960-v3.webp",
+          "bytes": 58452,
           "quality": 80
         },
         {
-          "width": 1320,
-          "height": 960,
-          "file": "individual-support-1320-v2.webp",
-          "bytes": 82538,
+          "width": 1440,
+          "height": 1048,
+          "file": "individual-support-1440-v3.webp",
+          "bytes": 96766,
           "quality": 80
         }
       ],
       "processing": {
-        "sourceColourProfile": "Display P3",
+        "sourceColourProfile": "untagged (assumed sRGB)",
         "outputColourProfile": "sRGB (embedded)",
-        "colourAdjustment": null,
-        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
-        "generativeEditing": false,
+        "generativeEditing": true,
+        "description": "User-requested professional photographic clarity enhancement, with colour, composition and facial features retained as closely as possible. Original source retained.",
         "upscaled": false
-      }
+      },
+      "generatedMasterSize": [
+        1470,
+        1070
+      ]
     },
     "early-years-nature": {
       "source": "IMG_4830.PNG",
@@ -222,34 +225,37 @@
       "exports": [
         {
           "width": 480,
-          "height": 385,
-          "file": "early-years-nature-480-v2.webp",
-          "bytes": 31174,
+          "height": 480,
+          "file": "early-years-nature-480-v4.webp",
+          "bytes": 45548,
           "quality": 80
         },
         {
           "width": 960,
-          "height": 770,
-          "file": "early-years-nature-960-v2.webp",
-          "bytes": 71516,
+          "height": 960,
+          "file": "early-years-nature-960-v4.webp",
+          "bytes": 132396,
           "quality": 80
         },
         {
-          "width": 1310,
-          "height": 1051,
-          "file": "early-years-nature-1310-v2.webp",
-          "bytes": 99102,
+          "width": 1254,
+          "height": 1254,
+          "file": "early-years-nature-1254-v4.webp",
+          "bytes": 191778,
           "quality": 80
         }
       ],
       "processing": {
-        "sourceColourProfile": "Display P3",
+        "sourceColourProfile": "untagged (assumed sRGB)",
         "outputColourProfile": "sRGB (embedded)",
-        "colourAdjustment": null,
-        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
-        "generativeEditing": false,
+        "generativeEditing": true,
+        "description": "User-requested imagegen clarity enhancement, recomposed for the square homepage card with all three faces inside the frame and a gentle smile on the boy at right.",
         "upscaled": false
-      }
+      },
+      "generatedMasterSize": [
+        1254,
+        1254
+      ]
     },
     "classroom-welcome": {
       "source": "IMG_4998.PNG",
@@ -386,33 +392,36 @@
         {
           "width": 480,
           "height": 360,
-          "file": "science-independent-480-v2.webp",
-          "bytes": 15970,
+          "file": "science-independent-480-v4.webp",
+          "bytes": 18044,
           "quality": 80
         },
         {
           "width": 960,
           "height": 720,
-          "file": "science-independent-960-v2.webp",
-          "bytes": 41158,
+          "file": "science-independent-960-v4.webp",
+          "bytes": 49240,
           "quality": 80
         },
         {
           "width": 1440,
           "height": 1080,
-          "file": "science-independent-1440-v2.webp",
-          "bytes": 69320,
+          "file": "science-independent-1440-v4.webp",
+          "bytes": 84130,
           "quality": 80
         }
       ],
       "processing": {
         "sourceColourProfile": "untagged (assumed sRGB)",
         "outputColourProfile": "sRGB (embedded)",
-        "colourAdjustment": null,
-        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
-        "generativeEditing": false,
+        "generativeEditing": true,
+        "description": "User-requested imagegen clarity enhancement, brighter daylight outside, neutral white lab coat and foreground hand moved outside the bottom frame.",
         "upscaled": false
-      }
+      },
+      "generatedMasterSize": [
+        1448,
+        1086
+      ]
     },
     "science-practical": {
       "source": "IMG_5037.PNG",
