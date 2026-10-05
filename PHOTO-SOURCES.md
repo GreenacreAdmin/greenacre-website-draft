@@ -27,7 +27,7 @@ The selection combines 14 photographs from the supplied ZIP, the separately supp
 | `learning/primary/` / 2 | [Current school site](https://www.greenacre.ac.th/academics/primary) | `assets/images/current-site/academics-primary-02.webp` |
 | `learning/secondary/` / 1 | `IMG_5024.PNG` | `assets/images/school-2026/secondary-maths-*.webp`; 50% 50% |
 | `learning/secondary/` / 2 | `IMG_5037.PNG` | `assets/images/school-2026/science-practical-*.webp`; 50% 0% |
-| `learning/clubs-ecas/` / 1 | `IMG_4094.HEIC` | `assets/images/school-2026/badminton-*.webp`; 50% 60% |
+| `learning/clubs-ecas/` / 1 | User-supplied `unnamed (2).jpg` | `assets/images/school-2026/table-tennis-*.webp`; 25% 50% |
 | `our-school/about-greenacre/` / 1 | Separately supplied `unnamed (1).jpg` | `assets/images/school-2026/about-classroom-*.webp`; 50% 50% |
 | `our-school/campus-facilities/` / 1 | User-requested imagegen enhancement of `IMG_4184.HEIC` | `assets/images/school-2026/growing-area-*.webp`; 50% 85% |
 | `our-school/campus-facilities/` / 2 | `IMG_4219.PNG` | `assets/images/school-2026/library-reading-*.webp`; 50% 65% |
@@ -97,3 +97,7 @@ FS card refinement supersedes the preceding v3 export: square composition with t
 Secondary homepage card refinement supersedes v3: brighter window daylight, neutral white lab coat and foreground hand moved outside the bottom edge. 480px / 18044 bytes, 960px / 49240 bytes, 1440px / 84130 bytes.
 
 FS homepage card reverted at user request to the original photographic v2 exports (IMG_4830), before imagegen enhancement and recomposition. Welcome and Secondary enhancements remain in place.
+
+ECA replacement: authentic supplied table-tennis photo, sRGB conversion, saturation reduced 3% and light conventional sharpening. Crop removes the rightmost girl and a small amount at left, as requested. No generative editing.
+
+FS latest approved selection: fresh generation from the original IMG_4830.PNG and supplied crest reference, superseding earlier versions and the temporary original-photo revert. Square composition and original walking posture on right. Responsive v5 WebP exports: 480px / 41290 bytes, 960px / 110880 bytes, 1254px / 153330 bytes.

@@ -225,34 +225,36 @@
       "exports": [
         {
           "width": 480,
-          "height": 385,
-          "file": "early-years-nature-480-v2.webp",
-          "bytes": 31174,
+          "height": 480,
+          "file": "early-years-nature-480-v5.webp",
+          "bytes": 41290,
           "quality": 80
         },
         {
           "width": 960,
-          "height": 770,
-          "file": "early-years-nature-960-v2.webp",
-          "bytes": 71516,
+          "height": 960,
+          "file": "early-years-nature-960-v5.webp",
+          "bytes": 110880,
           "quality": 80
         },
         {
-          "width": 1310,
-          "height": 1051,
-          "file": "early-years-nature-1310-v2.webp",
-          "bytes": 99102,
+          "width": 1254,
+          "height": 1254,
+          "file": "early-years-nature-1254-v5.webp",
+          "bytes": 153330,
           "quality": 80
         }
       ],
       "processing": {
-        "sourceColourProfile": "Display P3",
         "outputColourProfile": "sRGB (embedded)",
-        "colourAdjustment": null,
-        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
-        "generativeEditing": false,
+        "generativeEditing": true,
+        "description": "User-approved fresh generation from original IMG_4830.PNG and supplied crest reference; square composition, restrained colour and original walking posture on right.",
         "upscaled": false
-      }
+      },
+      "generatedMasterSize": [
+        1254,
+        1254
+      ]
     },
     "classroom-welcome": {
       "source": "IMG_4998.PNG",
@@ -743,6 +745,45 @@
         "upscaled": false,
         "selection": "User requested imagegen quality and colour enhancement and publication on 5 October 2026."
       }
+    },
+    "table-tennis": {
+      "source": "User-supplied /Users/george/Downloads/unnamed (2).jpg",
+      "alt": "Greenacre pupils playing table tennis outdoors",
+      "originalSize": [
+        1280,
+        608
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 228,
+          "file": "table-tennis-480-v1.webp",
+          "bytes": 35064,
+          "quality": 80
+        },
+        {
+          "width": 960,
+          "height": 456,
+          "file": "table-tennis-960-v1.webp",
+          "bytes": 119772,
+          "quality": 80
+        },
+        {
+          "width": 1280,
+          "height": 608,
+          "file": "table-tennis-1280-v1.webp",
+          "bytes": 206872,
+          "quality": 80
+        }
+      ],
+      "processing": {
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": "Saturation reduced by 3%; otherwise existing colour retained",
+        "sharpening": "Unsharp mask radius 0.5px, 40%, threshold 3",
+        "generativeEditing": false,
+        "upscaled": false
+      },
+      "position": "25% 50%"
     }
   },
   "placements": {
@@ -764,7 +805,7 @@
         "science-practical"
       ],
       "learning/clubs-ecas/": [
-        "badminton"
+        "table-tennis"
       ],
       "our-school/about-greenacre/": [
         "about-classroom"
