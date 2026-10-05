@@ -31,7 +31,7 @@ The selection combines 14 photographs from the supplied ZIP, the separately supp
 | `our-school/about-greenacre/` / 1 | Separately supplied `unnamed (1).jpg` | `assets/images/school-2026/about-classroom-*.webp`; 50% 50% |
 | `our-school/campus-facilities/` / 1 | User-requested imagegen enhancement of `IMG_4184.HEIC` | `assets/images/school-2026/growing-area-*.webp`; 50% 85% |
 | `our-school/campus-facilities/` / 2 | `IMG_4219.PNG` | `assets/images/school-2026/library-reading-*.webp`; 50% 65% |
-| `our-school/campus-facilities/` / 3 | [Current school site](https://www.greenacre.ac.th/facilities/swimming-pool) | `assets/images/current-site/facilities-swimming-pool-03.webp` |
+| `our-school/campus-facilities/` / 3 | User-requested imagegen enhancement of the current school pool photo | `assets/images/school-2026/swimming-pool-*.webp`; centred in the existing wide frame |
 | `our-school/environmentality/` / 1 | [Current school site](https://www.greenacre.ac.th/home) | `assets/images/current-site/home-02.webp` |
 | `our-school/environmentality/` / 2 | [Current school site](https://www.greenacre.ac.th/academics/environmentality) | `assets/images/current-site/academics-environmentality-03.webp` |
 | `our-school/wellbeing/` / 1 | [Current school site](https://www.greenacre.ac.th/extra-curricular/wellbeing) | `assets/images/current-site/extra-curricular-wellbeing-02.webp` |
@@ -70,7 +70,7 @@ The current homepage reading image was downloaded through the browser asset expo
 - Converted embedded Display P3 originals to sRGB before WebP export; every revised WebP embeds the sRGB profile. Untagged sources are treated as sRGB.
 - Watering-together (IMG_4188) now uses the earlier imagegen colour edit, explicitly selected by the user on 5 October 2026. This supersedes the conventional colour-corrected v2 exports; v3 WebP variants preserve the existing homepage frame and crop position.
 - Smaller source images receive light output-size unsharp masking (0.6px radius, 60%, threshold 3; 40% at 480px). The Head portrait is already sufficiently detailed for its smaller frame and receives no sharpening. No upscaling was used.
-- Maths, chess and sand retain the authentic photographs with conventional sharpening. Their imagegen trials remain unused. The watering-together and growing-area images use imagegen versions requested by the user.
+- Maths, chess and sand retain the authentic photographs with conventional sharpening. Their imagegen trials remain unused. The watering-together, growing-area and swimming-pool images use imagegen versions requested by the user.
 - WebP quality is 80, or 78 for the detail-heavy badminton and growing-area photographs, with method 6 compression. Revised filenames use `-v2` to avoid stale cached versions.
 - In the initial conventional-correction pass, across all 48 responsive variants, file weight fell from 4,789,924 to 4,259,834 bytes (11.1%). This is the whole asset set, not a per-page transfer total or measured speed improvement. All 480px variants are below 50 KB; 960px variants are below 143 KB. The largest 1440px variant is 306 KB.
 - Homepage cards retain larger desktop sources to avoid softening the tall cover crops. Mobile backgrounds select 480px at 1× or 960px at 2×; internal images retain responsive source selection, lazy loading and asynchronous decoding.
@@ -81,3 +81,5 @@ Latest watering selection: imagegen master 1404×1120; exports 480px / 46202 byt
 Campus update: enhanced growing-area image is first; library image is second. Existing frames and pool photograph are retained. Growing-area exports: 480px / 50834 bytes, 960px / 163608 bytes, 1440px / 292304 bytes.
 
 About Greenacre first image: user-supplied classroom photograph, full source 1280×724, fitted to the existing 3:2 frame. Both faces and writing activity remain visible.
+
+Pool update: user-requested imagegen quality and colour enhancement, retaining the original photographic composition. Existing desktop and mobile frame rules retained. Original WebP retained for provenance. Responsive exports: 480px / 36822 bytes, 960px / 102922 bytes, 1432px / 171040 bytes.

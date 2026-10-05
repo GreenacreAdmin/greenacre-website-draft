@@ -689,6 +689,51 @@
         "generativeEditing": false,
         "upscaled": false
       }
+    },
+    "swimming-pool": {
+      "source": "https://www.greenacre.ac.th/facilities/swimming-pool",
+      "sourceAsset": "assets/images/current-site/facilities-swimming-pool-03.webp",
+      "alt": "A Greenacre pupil practising swimming in the school pool",
+      "position": "50% 50%",
+      "originalSize": [
+        1280,
+        982
+      ],
+      "editedMasterSize": [
+        1432,
+        1098
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 368,
+          "file": "swimming-pool-480-v1.webp",
+          "bytes": 36822,
+          "quality": 80
+        },
+        {
+          "width": 960,
+          "height": 736,
+          "file": "swimming-pool-960-v1.webp",
+          "bytes": 102922,
+          "quality": 80
+        },
+        {
+          "width": 1432,
+          "height": 1098,
+          "file": "swimming-pool-1432-v1.webp",
+          "bytes": 171040,
+          "quality": 80
+        }
+      ],
+      "processing": {
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": null,
+        "sharpening": null,
+        "generativeEditing": true,
+        "upscaled": false,
+        "selection": "User requested imagegen quality and colour enhancement and publication on 5 October 2026."
+      }
     }
   },
   "placements": {
@@ -718,7 +763,7 @@
       "our-school/campus-facilities/": [
         "growing-area",
         "library-reading",
-        "current:facilities-swimming-pool-03.webp"
+        "swimming-pool"
       ],
       "our-school/environmentality/": [
         "current:home-02.webp",
