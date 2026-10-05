@@ -93,36 +93,38 @@
         {
           "width": 480,
           "height": 383,
-          "file": "watering-together-480-v2.webp",
-          "bytes": 40202,
+          "file": "watering-together-480-v3.webp",
+          "bytes": 46202,
           "quality": 80
         },
         {
           "width": 960,
           "height": 766,
-          "file": "watering-together-960-v2.webp",
-          "bytes": 109644,
+          "file": "watering-together-960-v3.webp",
+          "bytes": 123614,
           "quality": 80
         },
         {
-          "width": 1440,
-          "height": 1150,
-          "file": "watering-together-1440-v2.webp",
-          "bytes": 185694,
+          "width": 1404,
+          "height": 1120,
+          "file": "watering-together-1404-v3.webp",
+          "bytes": 198968,
           "quality": 80
         }
       ],
       "processing": {
-        "sourceColourProfile": "Display P3",
+        "sourceColourProfile": "Imagegen output",
         "outputColourProfile": "sRGB (embedded)",
-        "colourAdjustment": {
-          "contrast": 1.08,
-          "saturation": 1.06
-        },
+        "colourAdjustment": null,
         "sharpening": null,
-        "generativeEditing": false,
-        "upscaled": false
-      }
+        "generativeEditing": true,
+        "upscaled": false,
+        "selection": "User explicitly selected the earlier imagegen watering-can version on 5 October 2026."
+      },
+      "editedMasterSize": [
+        1404,
+        1120
+      ]
     },
     "library-reading": {
       "source": "IMG_4219.PNG",

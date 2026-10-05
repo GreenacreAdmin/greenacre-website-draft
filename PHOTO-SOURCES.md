@@ -13,7 +13,7 @@ The selection combines 14 photographs from the supplied ZIP, the separately supp
 | phase-card.early::before | `IMG_4830.PNG` | `assets/images/school-2026/early-years-nature-*.webp` |
 | phase-card.primary::before | [https://www.greenacre.ac.th/](https://www.greenacre.ac.th/) | `assets/images/school-2026/reading-together-*.webp` |
 | phase-card.secondary::before | `IMG_5029.JPG` | `assets/images/school-2026/science-independent-*.webp` |
-| identity-photo | `IMG_4188.HEIC` | `assets/images/school-2026/watering-together-*.webp` |
+| identity-photo | User-selected imagegen edit of `IMG_4188.HEIC` | `assets/images/school-2026/watering-together-*.webp` |
 
 ## Internal pages
 
@@ -68,10 +68,12 @@ The current homepage reading image was downloaded through the browser asset expo
 ## Colour and compression review — 5 October 2026
 
 - Converted embedded Display P3 originals to sRGB before WebP export; every revised WebP embeds the sRGB profile. Untagged sources are treated as sRGB.
-- Watering-together (IMG_4188) received restrained conventional contrast (1.08×) and saturation (1.06×) correction. No faces, objects, uniforms, text or geometry were regenerated.
+- Watering-together (IMG_4188) now uses the earlier imagegen colour edit, explicitly selected by the user on 5 October 2026. This supersedes the conventional colour-corrected v2 exports; v3 WebP variants preserve the existing homepage frame and crop position.
 - Smaller source images receive light output-size unsharp masking (0.6px radius, 60%, threshold 3; 40% at 480px). The Head portrait is already sufficiently detailed for its smaller frame and receives no sharpening. No upscaling was used.
-- Imagegen trials for watering, maths, chess and sand were rejected because they changed scene details. The user approved conventional correction and sharpening instead. No generated trials are deployed.
+- Maths, chess and sand retain the authentic photographs with conventional sharpening. Their imagegen trials remain unused. The watering image is the sole user-approved imagegen version in this selection.
 - WebP quality is 80, or 78 for the detail-heavy badminton and growing-area photographs, with method 6 compression. Revised filenames use `-v2` to avoid stale cached versions.
-- Across all 48 responsive variants, file weight fell from 4,789,924 to 4,259,834 bytes (11.1%). This is the whole asset set, not a per-page transfer total or measured speed improvement. All 480px variants are below 50 KB; 960px variants are below 143 KB. The largest 1440px variant is 306 KB.
+- In the initial conventional-correction pass, across all 48 responsive variants, file weight fell from 4,789,924 to 4,259,834 bytes (11.1%). This is the whole asset set, not a per-page transfer total or measured speed improvement. All 480px variants are below 50 KB; 960px variants are below 143 KB. The largest 1440px variant is 306 KB.
 - Homepage cards retain larger desktop sources to avoid softening the tall cover crops. Mobile backgrounds select 480px at 1× or 960px at 2×; internal images retain responsive source selection, lazy loading and asynchronous decoding.
 - Original sources and pre-correction exports remain outside the deployed repository. Detailed processing settings and exact output sizes are in `assets/images/school-2026/sources.json`.
+
+Latest watering selection: imagegen master 1404×1120; exports 480px / 46202 bytes, 960px / 123614 bytes, 1404px / 198968 bytes. No further colour changes or generative edits were applied.
