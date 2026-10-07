@@ -8,7 +8,7 @@ ROOT=Path(__file__).resolve().parents[1]
 DRAFT='https://greenacreadmin.github.io/greenacre-website-draft/'
 LIVE='https://www.greenacre.ac.th/'
 
-SHARE_IMAGE='assets/images/optimized/home-hero-seedlings-v3.jpg'
+SHARE_IMAGE='assets/images/optimized/home-hero-seedlings-v3-colour-v1.jpg'
 
 def sharing(source, base, canonical, home=False):
     """Social preview tags from the page's own title and description; school details on the homepage only."""

@@ -1,0 +1,1104 @@
+{
+  "method": "Conventional RGB balance, saturation and feathered green hue/saturation; no generative edits",
+  "photos": [
+    {
+      "source": "assets/images/school-2026/head-dara-nagle-960-v2.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/school-2026/head-dara-nagle-1163-v2.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-dara.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-mark.webp",
+      "adjustment": [
+        [
+          0.99,
+          1,
+          1.025
+        ],
+        0.97,
+        1,
+        0
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/optimized/team-mark.webp",
+          "output": "assets/images/optimized/team-mark-colour-v1.webp",
+          "bytes": 153712
+        }
+      ]
+    },
+    {
+      "source": "assets/images/optimized/team-tip.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-vanessa.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-chloe.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-amber.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-amy.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-james.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-santana.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-jordan.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-ethan.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-caleb.webp",
+      "adjustment": [
+        [
+          0.99,
+          1,
+          1.02
+        ],
+        0.98,
+        1,
+        0
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/optimized/team-caleb.webp",
+          "output": "assets/images/optimized/team-caleb-colour-v1.webp",
+          "bytes": 142862
+        }
+      ]
+    },
+    {
+      "source": "assets/images/optimized/team-pixie.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-rachel.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-hannah.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-ellis.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-owen.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-kevin.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-tatiana.webp",
+      "adjustment": [
+        [
+          0.99,
+          1,
+          1.025
+        ],
+        0.98,
+        1,
+        0
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/optimized/team-tatiana.webp",
+          "output": "assets/images/optimized/team-tatiana-colour-v1.webp",
+          "bytes": 145936
+        }
+      ]
+    },
+    {
+      "source": "assets/images/optimized/team-richard.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-nadia.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-eh-nyaw.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-piaew.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-milk.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-ann.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-vicky.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-cherry.webp",
+      "adjustment": [
+        [
+          0.995,
+          1,
+          1.015
+        ],
+        0.98,
+        1,
+        0
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/optimized/team-cherry.webp",
+          "output": "assets/images/optimized/team-cherry-colour-v1.webp",
+          "bytes": 152052
+        }
+      ]
+    },
+    {
+      "source": "assets/images/optimized/team-jen.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-pat.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-fon-ta.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-aom.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-milky.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-lorie.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-jeab.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-shirley.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-tiew.webp",
+      "adjustment": [
+        [
+          0.995,
+          1,
+          1.02
+        ],
+        0.98,
+        1,
+        0
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/optimized/team-tiew.webp",
+          "output": "assets/images/optimized/team-tiew-colour-v1.webp",
+          "bytes": 136924
+        }
+      ]
+    },
+    {
+      "source": "assets/images/optimized/team-sunny.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-honey.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/optimized/team-krung.webp",
+      "adjustment": [
+        [
+          0.985,
+          1,
+          1.025
+        ],
+        0.96,
+        1,
+        0
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/optimized/team-krung.webp",
+          "output": "assets/images/optimized/team-krung-colour-v1.webp",
+          "bytes": 134206
+        }
+      ]
+    },
+    {
+      "source": "assets/images/school-2026/about-classroom-1280-v1.webp",
+      "adjustment": [
+        [
+          1,
+          1,
+          1.01
+        ],
+        0.98,
+        0.98,
+        1.5
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/school-2026/about-classroom-960-v1.webp",
+          "output": "assets/images/school-2026/about-classroom-960-v1-colour-v1.webp",
+          "bytes": 86962
+        },
+        {
+          "original": "assets/images/school-2026/about-classroom-480-v1.webp",
+          "output": "assets/images/school-2026/about-classroom-480-v1-colour-v1.webp",
+          "bytes": 27528
+        },
+        {
+          "original": "assets/images/school-2026/about-classroom-1280-v1.webp",
+          "output": "assets/images/school-2026/about-classroom-1280-v1-colour-v1.webp",
+          "bytes": 149148
+        }
+      ]
+    },
+    {
+      "source": "assets/images/current-site/academics-environmentality-02.webp",
+      "adjustment": [
+        [
+          1,
+          1,
+          1
+        ],
+        0.97,
+        0.95,
+        0
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/current-site/academics-environmentality-02.webp",
+          "output": "assets/images/current-site/academics-environmentality-02-colour-v1.webp",
+          "bytes": 185306
+        }
+      ]
+    },
+    {
+      "source": "assets/images/current-site/academics-curriculum-02.webp",
+      "adjustment": [
+        [
+          1.025,
+          1,
+          0.985
+        ],
+        0.96,
+        0.98,
+        -1
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/current-site/academics-curriculum-02.webp",
+          "output": "assets/images/current-site/academics-curriculum-02-colour-v1.webp",
+          "bytes": 114370
+        }
+      ]
+    },
+    {
+      "source": "assets/images/school-2026/primary-art-1440-v2.webp",
+      "adjustment": [
+        [
+          1,
+          1,
+          1
+        ],
+        1.025,
+        1,
+        0
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/school-2026/primary-art-960-v2.webp",
+          "output": "assets/images/school-2026/primary-art-960-v2-colour-v1.webp",
+          "bytes": 88448
+        },
+        {
+          "original": "assets/images/school-2026/primary-art-480-v2.webp",
+          "output": "assets/images/school-2026/primary-art-480-v2-colour-v1.webp",
+          "bytes": 30424
+        },
+        {
+          "original": "assets/images/school-2026/primary-art-1440-v2.webp",
+          "output": "assets/images/school-2026/primary-art-1440-v2-colour-v1.webp",
+          "bytes": 162064
+        }
+      ]
+    },
+    {
+      "source": "assets/images/current-site/academics-early-years-foundation-years-02.webp",
+      "adjustment": [
+        [
+          1,
+          1,
+          1.01
+        ],
+        0.97,
+        0.96,
+        1
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/current-site/academics-early-years-foundation-years-02.webp",
+          "output": "assets/images/current-site/academics-early-years-foundation-years-02-colour-v1.webp",
+          "bytes": 240144
+        }
+      ]
+    },
+    {
+      "source": "assets/images/school-2026/early-years-sand-960-v2.webp",
+      "adjustment": [
+        [
+          1,
+          1,
+          1
+        ],
+        0.97,
+        0.98,
+        0
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/school-2026/early-years-sand-960-v2.webp",
+          "output": "assets/images/school-2026/early-years-sand-960-v2-colour-v1.webp",
+          "bytes": 161008
+        },
+        {
+          "original": "assets/images/school-2026/early-years-sand-480-v2.webp",
+          "output": "assets/images/school-2026/early-years-sand-480-v2-colour-v1.webp",
+          "bytes": 50258
+        }
+      ]
+    },
+    {
+      "source": "assets/images/school-2026/early-years-sand-1086-v2.webp",
+      "adjustment": [
+        [
+          1,
+          1,
+          1
+        ],
+        0.97,
+        0.98,
+        0
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/school-2026/early-years-sand-1086-v2.webp",
+          "output": "assets/images/school-2026/early-years-sand-1086-v2-colour-v1.webp",
+          "bytes": 200492
+        }
+      ]
+    },
+    {
+      "source": "assets/images/school-2026/environment-harvest-v1-1440.webp",
+      "adjustment": [
+        [
+          1,
+          1,
+          1
+        ],
+        0.96,
+        0.92,
+        0
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/school-2026/environment-harvest-v1-960.webp",
+          "output": "assets/images/school-2026/environment-harvest-v1-960-colour-v1.webp",
+          "bytes": 170760
+        },
+        {
+          "original": "assets/images/school-2026/environment-harvest-v1-480.webp",
+          "output": "assets/images/school-2026/environment-harvest-v1-480-colour-v1.webp",
+          "bytes": 57910
+        },
+        {
+          "original": "assets/images/school-2026/environment-harvest-v1-1440.webp",
+          "output": "assets/images/school-2026/environment-harvest-v1-1440-colour-v1.webp",
+          "bytes": 293650
+        }
+      ]
+    },
+    {
+      "source": "assets/images/school-2026/environment-garden-v1-1440.webp",
+      "adjustment": [
+        [
+          1.01,
+          1,
+          1.015
+        ],
+        0.94,
+        0.86,
+        2
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/school-2026/environment-garden-v1-960.webp",
+          "output": "assets/images/school-2026/environment-garden-v1-960-colour-v1.webp",
+          "bytes": 349484
+        },
+        {
+          "original": "assets/images/school-2026/environment-garden-v1-480.webp",
+          "output": "assets/images/school-2026/environment-garden-v1-480-colour-v1.webp",
+          "bytes": 134514
+        },
+        {
+          "original": "assets/images/school-2026/environment-garden-v1-1440.webp",
+          "output": "assets/images/school-2026/environment-garden-v1-1440-colour-v1.webp",
+          "bytes": 381870
+        }
+      ]
+    },
+    {
+      "source": "assets/images/school-2026/primary-teaching-1440-v2.webp",
+      "adjustment": [
+        [
+          1,
+          1,
+          1.01
+        ],
+        0.97,
+        0.94,
+        1
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/school-2026/primary-teaching-960-v2.webp",
+          "output": "assets/images/school-2026/primary-teaching-960-v2-colour-v1.webp",
+          "bytes": 98708
+        },
+        {
+          "original": "assets/images/school-2026/primary-teaching-480-v2.webp",
+          "output": "assets/images/school-2026/primary-teaching-480-v2-colour-v1.webp",
+          "bytes": 36076
+        },
+        {
+          "original": "assets/images/school-2026/primary-teaching-1440-v2.webp",
+          "output": "assets/images/school-2026/primary-teaching-1440-v2-colour-v1.webp",
+          "bytes": 163764
+        }
+      ]
+    },
+    {
+      "source": "assets/images/current-site/academics-primary-02.webp",
+      "adjustment": [
+        [
+          1,
+          1,
+          1.015
+        ],
+        0.97,
+        0.96,
+        1
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/current-site/academics-primary-02.webp",
+          "output": "assets/images/current-site/academics-primary-02-colour-v1.webp",
+          "bytes": 155548
+        }
+      ]
+    },
+    {
+      "source": "assets/images/school-2026/secondary-maths-v7-1440.webp",
+      "adjustment": [
+        [
+          1,
+          1,
+          1.012
+        ],
+        0.97,
+        0.96,
+        1
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/school-2026/secondary-maths-v7-960.webp",
+          "output": "assets/images/school-2026/secondary-maths-v7-960-colour-v1.webp",
+          "bytes": 141580
+        },
+        {
+          "original": "assets/images/school-2026/secondary-maths-v7-480.webp",
+          "output": "assets/images/school-2026/secondary-maths-v7-480-colour-v1.webp",
+          "bytes": 45720
+        },
+        {
+          "original": "assets/images/school-2026/secondary-maths-v7-1440.webp",
+          "output": "assets/images/school-2026/secondary-maths-v7-1440-colour-v1.webp",
+          "bytes": 236898
+        }
+      ]
+    },
+    {
+      "source": "assets/images/school-2026/science-independent-1440-v4.webp",
+      "adjustment": null,
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/school-2026/classroom-welcome-1440-v2.webp",
+      "adjustment": [
+        [
+          1,
+          1,
+          1.018
+        ],
+        0.96,
+        0.9,
+        2
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/school-2026/classroom-welcome-960-v2.webp",
+          "output": "assets/images/school-2026/classroom-welcome-960-v2-colour-v1.webp",
+          "bytes": 104452
+        },
+        {
+          "original": "assets/images/school-2026/classroom-welcome-480-v2.webp",
+          "output": "assets/images/school-2026/classroom-welcome-480-v2-colour-v1.webp",
+          "bytes": 35840
+        },
+        {
+          "original": "assets/images/school-2026/classroom-welcome-1440-v2.webp",
+          "output": "assets/images/school-2026/classroom-welcome-1440-v2-colour-v1.webp",
+          "bytes": 182364
+        }
+      ]
+    },
+    {
+      "source": "assets/images/school-2026/table-tennis-1280-v1.webp",
+      "adjustment": [
+        [
+          1,
+          1,
+          1
+        ],
+        1,
+        1,
+        0
+      ],
+      "status": "reviewed; retained",
+      "exports": []
+    },
+    {
+      "source": "assets/images/school-2026/wellbeing-garden-v1-1440.webp",
+      "adjustment": [
+        [
+          1.01,
+          1,
+          1
+        ],
+        0.94,
+        0.9,
+        0
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/school-2026/wellbeing-garden-v1-960.webp",
+          "output": "assets/images/school-2026/wellbeing-garden-v1-960-colour-v1.webp",
+          "bytes": 169774
+        },
+        {
+          "original": "assets/images/school-2026/wellbeing-garden-v1-480.webp",
+          "output": "assets/images/school-2026/wellbeing-garden-v1-480-colour-v1.webp",
+          "bytes": 59022
+        },
+        {
+          "original": "assets/images/school-2026/wellbeing-garden-v1-1440.webp",
+          "output": "assets/images/school-2026/wellbeing-garden-v1-1440-colour-v1.webp",
+          "bytes": 303086
+        }
+      ]
+    },
+    {
+      "source": "assets/images/school-2026/outdoor-chess-1085-v2.webp",
+      "adjustment": [
+        [
+          0.995,
+          1,
+          1.015
+        ],
+        0.96,
+        0.96,
+        0
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/school-2026/outdoor-chess-960-v2.webp",
+          "output": "assets/images/school-2026/outdoor-chess-960-v2-colour-v1.webp",
+          "bytes": 171102
+        },
+        {
+          "original": "assets/images/school-2026/outdoor-chess-480-v2.webp",
+          "output": "assets/images/school-2026/outdoor-chess-480-v2-colour-v1.webp",
+          "bytes": 59796
+        },
+        {
+          "original": "assets/images/school-2026/outdoor-chess-1085-v2.webp",
+          "output": "assets/images/school-2026/outdoor-chess-1085-v2-colour-v1.webp",
+          "bytes": 187006
+        }
+      ]
+    },
+    {
+      "source": "assets/images/school-2026/growing-area-1440-v3.webp",
+      "adjustment": [
+        [
+          1,
+          1,
+          1
+        ],
+        0.98,
+        0.97,
+        0
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/school-2026/growing-area-960-v3.webp",
+          "output": "assets/images/school-2026/growing-area-960-v3-colour-v1.webp",
+          "bytes": 210788
+        },
+        {
+          "original": "assets/images/school-2026/growing-area-480-v3.webp",
+          "output": "assets/images/school-2026/growing-area-480-v3-colour-v1.webp",
+          "bytes": 66266
+        },
+        {
+          "original": "assets/images/school-2026/growing-area-1440-v3.webp",
+          "output": "assets/images/school-2026/growing-area-1440-v3-colour-v1.webp",
+          "bytes": 387098
+        }
+      ]
+    },
+    {
+      "source": "assets/images/school-2026/library-reading-1440-v2.webp",
+      "adjustment": [
+        [
+          1,
+          1,
+          1.015
+        ],
+        0.97,
+        0.96,
+        0
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/school-2026/library-reading-960-v2.webp",
+          "output": "assets/images/school-2026/library-reading-960-v2-colour-v1.webp",
+          "bytes": 146572
+        },
+        {
+          "original": "assets/images/school-2026/library-reading-480-v2.webp",
+          "output": "assets/images/school-2026/library-reading-480-v2-colour-v1.webp",
+          "bytes": 51632
+        },
+        {
+          "original": "assets/images/school-2026/library-reading-1440-v2.webp",
+          "output": "assets/images/school-2026/library-reading-1440-v2-colour-v1.webp",
+          "bytes": 256252
+        }
+      ]
+    },
+    {
+      "source": "assets/images/school-2026/swimming-pool-960-v1.webp",
+      "adjustment": [
+        [
+          1,
+          1,
+          1
+        ],
+        0.94,
+        1,
+        0
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/school-2026/swimming-pool-960-v1.webp",
+          "output": "assets/images/school-2026/swimming-pool-960-v1-colour-v1.webp",
+          "bytes": 137464
+        },
+        {
+          "original": "assets/images/school-2026/swimming-pool-480-v1.webp",
+          "output": "assets/images/school-2026/swimming-pool-480-v1-colour-v1.webp",
+          "bytes": 45402
+        }
+      ]
+    },
+    {
+      "source": "assets/images/school-2026/swimming-pool-1432-v1.webp",
+      "adjustment": [
+        [
+          1,
+          1,
+          1
+        ],
+        0.94,
+        1,
+        0
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/school-2026/swimming-pool-1432-v1.webp",
+          "output": "assets/images/school-2026/swimming-pool-1432-v1-colour-v1.webp",
+          "bytes": 241696
+        }
+      ]
+    },
+    {
+      "source": "assets/images/optimized/home-hero-seedlings-v3.jpg",
+      "adjustment": [
+        [
+          0.995,
+          1,
+          1.012
+        ],
+        0.97,
+        0.97,
+        0
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/optimized/home-hero-seedlings-v3.jpg",
+          "output": "assets/images/optimized/home-hero-seedlings-v3-colour-v1.jpg",
+          "bytes": 554074
+        }
+      ]
+    },
+    {
+      "source": "assets/images/school-2026/individual-support-1440-v3.webp",
+      "adjustment": [
+        [
+          1,
+          1,
+          1
+        ],
+        0.96,
+        0.95,
+        0
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/school-2026/individual-support-960-v3.webp",
+          "output": "assets/images/school-2026/individual-support-960-v3-colour-v1.webp",
+          "bytes": 82514
+        },
+        {
+          "original": "assets/images/school-2026/individual-support-1440-v3.webp",
+          "output": "assets/images/school-2026/individual-support-1440-v3-colour-v1.webp",
+          "bytes": 134124
+        },
+        {
+          "original": "assets/images/school-2026/individual-support-480-v3.webp",
+          "output": "assets/images/school-2026/individual-support-480-v3-colour-v1.webp",
+          "bytes": 28078
+        }
+      ]
+    },
+    {
+      "source": "assets/images/school-2026/watering-together-960-v3.webp",
+      "adjustment": [
+        [
+          1,
+          1,
+          1
+        ],
+        0.97,
+        0.97,
+        0
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/school-2026/watering-together-960-v3.webp",
+          "output": "assets/images/school-2026/watering-together-960-v3-colour-v1.webp",
+          "bytes": 157340
+        },
+        {
+          "original": "assets/images/school-2026/watering-together-480-v3.webp",
+          "output": "assets/images/school-2026/watering-together-480-v3-colour-v1.webp",
+          "bytes": 56510
+        }
+      ]
+    },
+    {
+      "source": "assets/images/school-2026/watering-together-1404-v3.webp",
+      "adjustment": [
+        [
+          1,
+          1,
+          1
+        ],
+        0.97,
+        0.97,
+        0
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/school-2026/watering-together-1404-v3.webp",
+          "output": "assets/images/school-2026/watering-together-1404-v3-colour-v1.webp",
+          "bytes": 259134
+        }
+      ]
+    },
+    {
+      "source": "assets/images/recruitment/teacher-with-pupils-1440.webp",
+      "adjustment": [
+        [
+          1,
+          1,
+          1
+        ],
+        0.98,
+        0.97,
+        0
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/recruitment/teacher-with-pupils-960.webp",
+          "output": "assets/images/recruitment/teacher-with-pupils-960-colour-v1.webp",
+          "bytes": 83622
+        },
+        {
+          "original": "assets/images/recruitment/teacher-with-pupils-480.webp",
+          "output": "assets/images/recruitment/teacher-with-pupils-480-colour-v1.webp",
+          "bytes": 27714
+        },
+        {
+          "original": "assets/images/recruitment/teacher-with-pupils-1440.webp",
+          "output": "assets/images/recruitment/teacher-with-pupils-1440-colour-v1.webp",
+          "bytes": 142210
+        }
+      ]
+    },
+    {
+      "source": "assets/images/school-2026/early-years-nature-1254-v6.webp",
+      "adjustment": [
+        [
+          1,
+          1,
+          1
+        ],
+        0.98,
+        0.98,
+        0
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/school-2026/early-years-nature-960-v6.webp",
+          "output": "assets/images/school-2026/early-years-nature-960-v6-colour-v1.webp",
+          "bytes": 154906
+        },
+        {
+          "original": "assets/images/school-2026/early-years-nature-1254-v6.webp",
+          "output": "assets/images/school-2026/early-years-nature-1254-v6-colour-v1.webp",
+          "bytes": 230272
+        },
+        {
+          "original": "assets/images/school-2026/early-years-nature-480-v6.webp",
+          "output": "assets/images/school-2026/early-years-nature-480-v6-colour-v1.webp",
+          "bytes": 50206
+        }
+      ]
+    },
+    {
+      "source": "assets/images/school-2026/reading-together-1273-v2.webp",
+      "adjustment": [
+        [
+          1,
+          1,
+          1.015
+        ],
+        0.97,
+        0.96,
+        1
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/school-2026/reading-together-960-v2.webp",
+          "output": "assets/images/school-2026/reading-together-960-v2-colour-v1.webp",
+          "bytes": 118582
+        },
+        {
+          "original": "assets/images/school-2026/reading-together-1273-v2.webp",
+          "output": "assets/images/school-2026/reading-together-1273-v2-colour-v1.webp",
+          "bytes": 182970
+        },
+        {
+          "original": "assets/images/school-2026/reading-together-480-v2.webp",
+          "output": "assets/images/school-2026/reading-together-480-v2-colour-v1.webp",
+          "bytes": 41288
+        }
+      ]
+    },
+    {
+      "source": "assets/images/school-2026/science-practical-1440-v2.webp",
+      "adjustment": [
+        [
+          1.01,
+          1,
+          0.99
+        ],
+        1,
+        1,
+        0
+      ],
+      "status": "adjusted",
+      "exports": [
+        {
+          "original": "assets/images/school-2026/science-practical-960-v2.webp",
+          "output": "assets/images/school-2026/science-practical-960-v2-colour-v1.webp",
+          "bytes": 85750
+        },
+        {
+          "original": "assets/images/school-2026/science-practical-1440-v2.webp",
+          "output": "assets/images/school-2026/science-practical-1440-v2-colour-v1.webp",
+          "bytes": 143468
+        },
+        {
+          "original": "assets/images/school-2026/science-practical-480-v2.webp",
+          "output": "assets/images/school-2026/science-practical-480-v2-colour-v1.webp",
+          "bytes": 32506
+        }
+      ]
+    }
+  ]
+}

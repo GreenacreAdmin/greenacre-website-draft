@@ -111,3 +111,13 @@ Final Secondary maths crop: additional 15% zoom after the requested 10%, totalli
 FS v6 colour refinement: conventional selective green hue shifted gently towards yellow with slight saturation increase to match the Primary card; skin hues excluded. No additional generative editing.
 
 Secondary maths v6: same crop scale, shifted downward to regain more of the pupils and desks and remove more from the top, at user request.
+
+## Site-wide conventional colour pass, 7 October 2026
+
+Reviewed rendered photographs at desktop and mobile sizes, including CSS background images and homepage card pseudo-elements. The `-colour-v1` assets use restrained, individually selected saturation, RGB balance and feathered green adjustments. This pass uses no ImageGen, content reconstruction, denoising, sharpening, cropping or resizing. Photographs already consistent with the site were retained. Different fabrics and lighting retain natural variation.
+
+Adjusted exports embed sRGB. Content WebP files use quality 92; the six adjusted staff portraits use lossless WebP, with unchanged alpha and opaque outer-border pixels checked against the originals. Existing photo dimensions, responsive sizing, object positions and layout are unchanged. Original assets remain available. The social preview uses the corrected homepage hero; its metadata generator was updated accordingly.
+
+Adjustment settings and output paths: `scripts/photo-colour-pass-2026-10-07.json`. Original backups, lossless corrected masters, before/after sheets and browser QA are retained in the workspace at `output/colour-pass-2026-10-07/` outside this deployment repository.
+
+Conventions consulted: [Adobe: sRGB for online viewing](https://helpx.adobe.com/ca/photoshop/using/color-managing-documents-online-viewing.html) and [Adobe: white balance and neutral tones](https://www.adobe.com/au/creativecloud/photography/discover/white-balance.html).
