@@ -297,7 +297,7 @@
 .home-useful-links > strong{color:var(--blue-dark);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;line-height:1.5}
 .home-useful-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
 .home-useful-grid a{display:flex;justify-content:space-between;align-items:center;gap:12px;min-width:0;min-height:60px;padding:12px 16px;background:#fff;border:1px solid color-mix(in srgb,var(--blue-dark) 14%,transparent);border-radius:12px;color:var(--green-dark);font-size:.9rem;font-weight:700;line-height:1.45;text-decoration:none;transition:background .15s,border-color .15s}
-.home-useful-grid a span{flex-shrink:0;color:var(--blue-dark);font-size:1.2rem}
+.home-useful-grid a svg{flex-shrink:0;width:22px;height:22px;color:var(--blue-dark)}
 .home-useful-grid a:hover{background:var(--green-soft);border-color:var(--green)}
 .home-useful-grid a:focus-visible{outline:3px solid var(--blue-dark);outline-offset:3px}
 @media(max-width:1000px){.home-useful-links{grid-template-columns:1fr;gap:12px}.home-useful-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.home-useful-grid a:last-child{grid-column:1 / -1}}
