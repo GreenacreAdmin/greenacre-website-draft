@@ -95,6 +95,11 @@
 }
 
 /* ---- homepage-responsive-photos ---- */
+/* The first homepage content photograph is intentionally unframed. */
+main .intro-photo:not(:focus-visible) {
+  outline: none;
+}
+
 /* A pale sage edge distinguishes the photograph on its dark green section. */
 main .identity .identity-photo:not(:focus-visible) {
   outline-color: var(--shell-green);
