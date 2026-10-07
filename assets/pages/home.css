@@ -95,6 +95,9 @@
 }
 
 /* ---- homepage-responsive-photos ---- */
+/* Avoid a pale rim where the photograph meets the dark green section. */
+main .identity-photo { outline: none; }
+
 @media (max-width: 560px) {
   .intro-photo { --school-photo-individual-support: image-set(url("../images/school-2026/individual-support-480-v3-colour-v1.webp") 1x, url("../images/school-2026/individual-support-960-v3-colour-v1.webp") 2x); }
   .phase-card.early::before { --school-photo-early-years-nature: image-set(url("../images/school-2026/early-years-nature-480-v6-colour-v1.webp") 1x, url("../images/school-2026/early-years-nature-960-v6-colour-v1.webp") 2x); }
