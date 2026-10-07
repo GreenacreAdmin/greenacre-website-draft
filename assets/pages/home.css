@@ -96,7 +96,7 @@
 
 /* ---- homepage-responsive-photos ---- */
 /* The first homepage content photograph is intentionally unframed. */
-main .intro-photo:not(:focus-visible) {
+main .intro .intro-photo:not(:focus-visible) {
   outline: none;
 }
 
