@@ -95,6 +95,11 @@
 }
 
 /* ---- homepage-responsive-photos ---- */
+/* A pale sage edge distinguishes the photograph on its dark green section. */
+main .identity .identity-photo:not(:focus-visible) {
+  outline-color: var(--shell-green);
+}
+
 @media (max-width: 560px) {
   .intro-photo { --school-photo-individual-support: image-set(url("../images/school-2026/individual-support-480-v3-colour-v1.webp") 1x, url("../images/school-2026/individual-support-960-v3-colour-v1.webp") 2x); }
   .phase-card.early::before { --school-photo-early-years-nature: image-set(url("../images/school-2026/early-years-nature-480-v6-colour-v1.webp") 1x, url("../images/school-2026/early-years-nature-960-v6-colour-v1.webp") 2x); }
