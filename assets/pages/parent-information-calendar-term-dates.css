@@ -62,3 +62,6 @@ linear-gradient(35deg,var(--green-pale),var(--sand));display:flex;align-items:ce
 .photo-plan.secondary{background:linear-gradient(color-mix(in srgb, var(--green-deep) 10%, transparent),color-mix(in srgb, var(--green-deep) 18%, transparent)),url('../images/temp/secondary-learning.webp') center/cover}
 .note-list{padding-left:20px}.note-list li{margin-bottom:10px}
 @media(max-width:850px){.phase-links,.pathway,.feature-list{grid-template-columns:1fr}.photo-plan{min-height:280px}}
+
+/* Upcoming calendar matches the current card without offering a link. */
+.resource-card .calendar-pending{background:var(--blue-dark);color:#fff;cursor:default}
