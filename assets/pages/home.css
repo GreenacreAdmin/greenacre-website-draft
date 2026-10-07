@@ -291,3 +291,10 @@
 .site-footer__details span {
   font-family:"Comfortaa",sans-serif!important;
 }
+
+/* ---- homepage useful links ---- */
+.home-useful-links{display:flex;flex-wrap:wrap;align-items:center;gap:4px 24px;margin-top:24px;padding-top:14px;border-top:1px solid color-mix(in srgb,var(--green-dark) 18%,transparent);font-size:.9rem}
+.home-useful-links strong{color:var(--green-dark);margin-right:4px}
+.home-useful-links a{display:inline-flex;align-items:center;min-height:44px;color:var(--green-dark);font-weight:700;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.home-useful-links a:hover{color:var(--green);text-decoration-thickness:2px}
+@media(max-width:560px){.home-useful-links{gap:0 20px}.home-useful-links strong{flex-basis:100%;margin:0 0 4px}}
