@@ -65,3 +65,5 @@ linear-gradient(35deg,var(--green-pale),var(--sand));display:flex;align-items:ce
 
 /* Upcoming calendar matches the current card without offering a link. */
 .resource-card .calendar-pending{background:var(--blue-dark);color:#fff;cursor:default}
+
+.calendar-overview .resource-card .action{width:250px;max-width:100%;text-align:center}
