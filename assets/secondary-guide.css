@@ -1,0 +1,377 @@
+/* Styles scoped to the direct Secondary guide resource. */
+#secondary-resource{
+    --forest:#1B4332;
+    --deep:#0F2A1D;
+    --mid:#2C5F2D;
+    --moss:#97BC62;
+    --leaf:#6FA84B;
+    --gold:#E8A33D;
+    --cream:#F4F7F0;
+    --card:#EEF4E7;
+    --ink:#1A2418;
+    --grey:#5B6B57;
+    --font:"Comfortaa",sans-serif;
+  }
+#secondary-resource *{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+  }
+#secondary-resource{
+    scroll-behavior:smooth;
+  }
+#secondary-resource{
+    font-family:var(--font);
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.6;
+  }
+#secondary-resource .wrap{
+    max-width:900px;
+    margin:0 auto;
+    padding:0 20px 60px;
+  }
+#secondary-resource header{
+    background:var(--deep);
+    color:#fff;
+    padding:44px 20px 36px;
+    text-align:center;
+  }
+#secondary-resource header .school{
+    font-weight:700;
+    letter-spacing:.06em;
+    color:var(--moss);
+    text-transform:uppercase;
+    font-size:14px;
+  }
+#secondary-resource header h1{
+    font-size:clamp(28px,5vw,44px);
+    margin-top:10px;
+    line-height:1.25;
+  }
+#secondary-resource header p{
+    color:var(--moss);
+    margin-top:10px;
+    font-size:17px;
+    max-width:62ch;
+    margin-left:auto;
+    margin-right:auto;
+  }
+#secondary-resource .section-nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:8px;
+    margin:22px 0 8px;
+  }
+#secondary-resource .section-nav a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:42px;
+    padding:9px 14px;
+    border:2px solid var(--moss);
+    border-radius:999px;
+    background:#fff;
+    color:var(--forest);
+    font-size:13px;
+    font-weight:700;
+    text-decoration:none;
+    text-align:center;
+  }
+#secondary-resource .section-nav a:hover,#secondary-resource .section-nav a:focus{
+    background:var(--forest);
+    border-color:var(--forest);
+    color:#fff;
+    outline:none;
+  }
+#secondary-resource h2{
+    color:var(--forest);
+    font-size:clamp(21px,3.4vw,28px);
+    margin:44px 0 6px;
+    padding-top:8px;
+    border-top:3px solid var(--moss);
+    scroll-margin-top:16px;
+  }
+#secondary-resource .lede{
+    color:var(--grey);
+    margin-bottom:16px;
+    font-size:15px;
+  }
+#secondary-resource table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 1px 3px rgba(15,42,29,.08);
+    font-size:14px;
+  }
+#secondary-resource th{
+    background:var(--forest);
+    color:#fff;
+    text-align:left;
+    padding:10px 14px;
+    font-size:12px;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+  }
+#secondary-resource td{
+    padding:10px 14px;
+    border-top:1px solid var(--card);
+    vertical-align:top;
+  }
+#secondary-resource td.d{
+    font-weight:700;
+    color:var(--mid);
+    white-space:nowrap;
+    width:34%;
+  }
+#secondary-resource tr.hl td{
+    background:#FBF3E2;
+  }
+#secondary-resource tr.hl td.d{
+    color:#B07A1E;
+  }
+#secondary-resource tr.assess td{
+    background:#E4F1D5;
+  }
+#secondary-resource tr.assess td.d{
+    color:var(--mid);
+  }
+#secondary-resource tr.igcse td{
+    background:var(--forest);
+    color:#fff;
+    font-weight:700;
+    font-size:15px;
+    padding:13px 14px;
+  }
+#secondary-resource tr.igcse td.d{
+    color:var(--gold);
+  }
+#secondary-resource .day-schedule{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 1px 3px rgba(15,42,29,.08);
+  }
+#secondary-resource .day-row{
+    display:grid;
+    grid-template-columns:130px 1fr 1fr;
+    align-items:stretch;
+    border-top:1px solid var(--card);
+  }
+#secondary-resource .day-row:first-child{
+    border-top:0;
+  }
+#secondary-resource .day-row > div{
+    padding:11px 14px;
+    min-width:0;
+    font-size:14px;
+  }
+#secondary-resource .day-row .time{
+    font-weight:700;
+    color:var(--mid);
+    background:#F7FAF4;
+  }
+#secondary-resource .day-row .y79,#secondary-resource .day-row .y1011{
+    border-left:1px solid var(--card);
+  }
+#secondary-resource .day-row.head{
+    background:var(--forest);
+    color:#fff;
+  }
+#secondary-resource .day-row.head > div{
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+  }
+#secondary-resource .day-row.head .time{
+    color:#fff;
+    background:var(--forest);
+  }
+#secondary-resource .day-row.finish79 .y79{
+    background:#E4F1D5;
+    color:var(--forest);
+    font-weight:700;
+  }
+#secondary-resource .day-row.finish1011 .y1011{
+    background:#E4F1D5;
+    color:var(--forest);
+    font-weight:700;
+  }
+#secondary-resource .day-notes{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    margin-top:12px;
+  }
+#secondary-resource .day-note{
+    background:var(--card);
+    border-radius:10px;
+    padding:12px 14px;
+    color:var(--grey);
+    font-size:13.5px;
+  }
+#secondary-resource .day-note strong{
+    color:var(--forest);
+  }
+#secondary-resource .subsection-title{
+    color:var(--forest);
+    font-size:18px;
+    margin:24px 0 10px;
+  }
+#secondary-resource .callout{
+    background:var(--forest);
+    color:#fff;
+    border-radius:12px;
+    padding:20px 22px;
+    margin:28px 0 18px;
+  }
+#secondary-resource .callout h3{
+    color:var(--gold);
+    font-size:20px;
+    margin-bottom:8px;
+  }
+#secondary-resource .callout p{
+    color:var(--card);
+    font-size:14px;
+  }
+#secondary-resource .grid2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+  }
+#secondary-resource .minicard{
+    background:#fff;
+    border-radius:10px;
+    padding:16px 18px;
+    box-shadow:0 1px 3px rgba(15,42,29,.08);
+  }
+#secondary-resource .minicard h3{
+    color:var(--forest);
+    font-size:17px;
+    margin-bottom:6px;
+  }
+#secondary-resource .minicard p{
+    font-size:14px;
+    color:var(--grey);
+  }
+#secondary-resource .contacts{
+    margin:8px 0 0 18px;
+    font-size:14px;
+    color:var(--grey);
+  }
+#secondary-resource .contacts li{
+    margin-top:4px;
+  }
+#secondary-resource .contacts a{
+    color:var(--mid);
+    font-weight:700;
+    text-decoration:none;
+  }
+#secondary-resource .contacts a:hover{
+    text-decoration:underline;
+  }
+#secondary-resource .mailplain{
+    color:var(--mid);
+    font-weight:700;
+    text-decoration:none;
+  }
+#secondary-resource .mailplain:hover{
+    text-decoration:underline;
+  }
+#secondary-resource .note{
+    font-size:13px;
+    color:var(--grey);
+    font-style:italic;
+    margin-top:10px;
+  }
+#secondary-resource footer{
+    margin-top:52px;
+    padding-top:16px;
+    border-top:3px solid var(--moss);
+    font-size:13px;
+    color:var(--grey);
+  }
+#secondary-resource footer strong{
+    color:var(--forest);
+  }
+@media (max-width:640px){#secondary-resource .grid2,#secondary-resource .day-notes{
+      grid-template-columns:1fr;
+    }
+#secondary-resource .wrap{
+      padding-left:14px;
+      padding-right:14px;
+    }
+#secondary-resource .section-nav{
+      gap:7px;
+      margin-top:18px;
+    }
+#secondary-resource .section-nav a{
+      flex:1 1 calc(50% - 7px);
+      padding:8px 10px;
+      font-size:12px;
+    }
+#secondary-resource td.d{
+      white-space:normal;
+    }
+#secondary-resource th,#secondary-resource td{
+      padding:9px 10px;
+    }
+#secondary-resource .day-row{
+      grid-template-columns:88px 1fr;
+    }
+#secondary-resource .day-row.head{
+      display:none;
+    }
+#secondary-resource .day-row .time{
+      grid-row:1 / span 2;
+      display:flex;
+      align-items:center;
+    }
+#secondary-resource .day-row .y79,#secondary-resource .day-row .y1011{
+      border-left:1px solid var(--card);
+      padding-top:9px;
+      padding-bottom:9px;
+    }
+#secondary-resource .day-row .y79::before,#secondary-resource .day-row .y1011::before{
+      display:block;
+      margin-bottom:2px;
+      color:var(--forest);
+      font-size:10px;
+      font-weight:700;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+    }
+#secondary-resource .day-row .y79::before{
+      content:"Years 7 - 9";
+    }
+#secondary-resource .day-row .y1011::before{
+      content:"Years 10 - 11";
+    }
+#secondary-resource .day-row .y1011{
+      border-top:1px solid var(--card);
+    }
+
+  }
+@media print{#secondary-resource{
+      background:#fff;
+    }
+#secondary-resource header{
+      padding:24px 0;
+    }
+#secondary-resource .section-nav{
+      display:none;
+    }
+#secondary-resource h2{
+      page-break-after:avoid;
+    }
+#secondary-resource table,#secondary-resource .callout,#secondary-resource .minicard,#secondary-resource .day-schedule{
+      box-shadow:none;
+    }
+
+  }
+
+

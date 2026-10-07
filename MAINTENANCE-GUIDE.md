@@ -187,3 +187,9 @@ After deployment, inspect the actual GitHub Pages URL and the affected nested pa
 `eca/index.html` contains the manually maintained 2026–27 Term 1 club catalogue, captured on 5 October 2026. It has no Apps Script iframe, document fetch or automatic refresh. Edit the club details directly in that HTML when a change is approved. Preserve each club’s day, fee, teacher and description, and update its comma-separated `data-years` values when eligibility changes. `fs1` and `fs2` represent Foundation Stage; numeric values represent individual years.
 
 `assets/term-clubs.js` only filters the existing HTML by year and day. Native `details` elements make descriptions available without JavaScript. Keep the term label, Friday collection information and the link from `learning/clubs-ecas/index.html` consistent when preparing a new term. Do not reintroduce automatic document synchronisation. The source omitted Wednesday’s FS Childcare teacher; the user confirmed Ms. Pat. The "Sign up for clubs" form button was removed on 5 October 2026 at the user's request; families are directed to email the school office for registration help.
+
+## 12. Secondary family resources
+
+The Secondary page banner links to `academics/secondary-information/` and `academics/secondary-start-of-year/`. Both resources are served directly from the website and retain the shared navigation and footer. They no longer embed or fetch Google Apps Script deployments.
+
+Edit guide content in its HTML page. The presentation content and its controls are in the inline script in its HTML page; keep all 35 slides and keyboard controls working. Their styles are scoped to `#secondary-resource` in `assets/secondary-guide.css` and `assets/secondary-presentation.css` so they do not affect the shared navigation. Keep dates, tutor assignments, contact details and club arrangements current when updating these resources.
