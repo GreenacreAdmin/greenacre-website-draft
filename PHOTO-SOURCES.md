@@ -53,6 +53,7 @@ This register reflects the latest user-selected photos for Campus, Secondary, Pr
 
 ## Staff roster portraits
 
+- `our-school/our-team/` / Mr Dara: new HEIC portrait supplied 11 October 2026; sRGB, cropped closer to a head-and-shoulders circle to match the roster, 570 × 570 circular transparent PNG master in `assets/images/team/dara.png`, served as `assets/images/optimized/team-dara-v2.webp`. The Head of School welcome page photo is unchanged.
 - `our-school/our-team/` / Mr Mark: `Mark.HEIC`; sRGB, square 530 × 530 circular transparent PNG master in `assets/images/team/mark.png` (the green ring baked into the earlier export was removed so only the page's own frame shows), served as `assets/images/optimized/team-mark-colour-v3.webp` with a slightly closer head-and-shoulders crop to match the other portraits.
 
 ## Earlier photo-selection history
