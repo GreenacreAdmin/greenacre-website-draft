@@ -31,7 +31,7 @@ This register reflects the latest user-selected photos for Campus, Secondary, Pr
 | `our-school/about-greenacre/` / 1 | `IMG_4998.PNG` (reused from Admissions / “Start with a visit”) | `assets/images/school-2026/classroom-welcome-*.webp`; 50% 55% |
 | `our-school/campus-facilities/` / 1 | `IMG_5700.PNG` | `assets/images/school-2026/campus-walkway-*.webp`; 50% 50% |
 | `our-school/campus-facilities/` / 2 | `IMG_5544.PNG` | `assets/images/school-2026/campus-courts-*.webp`; 50% 50%; displayed in the same 3:2 style as the other content photos |
-| `our-school/campus-facilities/` / 3 | `IMG_5487.HEIC` | `assets/images/school-2026/swimming-pool-long-*.webp` desktop and `swimming-pool-mobile-*.webp` at 640px and below; 16:6 desktop and 16:9 mobile source crops |
+| `our-school/campus-facilities/` / 3 | George-supplied pool photo (2048x768 PNG, 11 Oct 2026) | `assets/images/school-2026/swimming-pool-long-*-v2.webp` desktop (full frame, 8:3) and `swimming-pool-mobile-*-v2.webp` at 640px and below (16:9 crop from the left, keeping the instructor); WebP quality 76 |
 | `our-school/environmentality/` / 1 | [Current school site](https://www.greenacre.ac.th/home) | `assets/images/current-site/home-02.webp` |
 | `our-school/environmentality/` / 2 ("Our values in action") | User-selected imagegen edit of `IMG_4188.HEIC`, swapped from the homepage on 11 October 2026 | `assets/images/school-2026/watering-together-*.webp`; 50% 50% |
 | `our-school/wellbeing/` / 1 | [Current school site](https://www.greenacre.ac.th/extra-curricular/wellbeing) | `assets/images/current-site/extra-curricular-wellbeing-02.webp` |
