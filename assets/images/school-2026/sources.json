@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-05",
+  "date": "2026-10-11",
   "photographs": {
     "primary-art": {
       "source": "IMG_4117.HEIC",
@@ -703,7 +703,46 @@
         "upscaled": false
       }
     },
-    "swimming-pool": {
+    "table-tennis": {
+      "source": "User-supplied /Users/george/Downloads/unnamed (2).jpg",
+      "alt": "Greenacre pupils playing table tennis outdoors",
+      "originalSize": [
+        1280,
+        608
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 228,
+          "file": "table-tennis-480-v1.webp",
+          "bytes": 35064,
+          "quality": 80
+        },
+        {
+          "width": 960,
+          "height": 456,
+          "file": "table-tennis-960-v1.webp",
+          "bytes": 119772,
+          "quality": 80
+        },
+        {
+          "width": 1280,
+          "height": 608,
+          "file": "table-tennis-1280-v1.webp",
+          "bytes": 206872,
+          "quality": 80
+        }
+      ],
+      "processing": {
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": "Saturation reduced by 3%; otherwise existing colour retained",
+        "sharpening": "Unsharp mask radius 0.5px, 40%, threshold 3",
+        "generativeEditing": false,
+        "upscaled": false
+      },
+      "position": "25% 50%"
+    },
+    "swimming-pool-previous": {
       "source": "https://www.greenacre.ac.th/facilities/swimming-pool",
       "sourceAsset": "assets/images/current-site/facilities-swimming-pool-03.webp",
       "alt": "A Greenacre pupil practising swimming in the school pool",
@@ -748,44 +787,485 @@
         "selection": "User requested imagegen quality and colour enhancement and publication on 5 October 2026."
       }
     },
-    "table-tennis": {
-      "source": "User-supplied /Users/george/Downloads/unnamed (2).jpg",
-      "alt": "Greenacre pupils playing table tennis outdoors",
+    "campus-walkway": {
+      "source": "IMG_5700.PNG",
+      "alt": "The leafy walkway and classroom buildings on Greenacre campus",
+      "position": "50% 50%",
       "originalSize": [
-        1280,
-        608
+        1448,
+        1086
+      ],
+      "cropBox": [
+        1,
+        61,
+        1446,
+        964
+      ],
+      "frameRatio": [
+        3,
+        2
       ],
       "exports": [
         {
           "width": 480,
-          "height": 228,
-          "file": "table-tennis-480-v1.webp",
-          "bytes": 35064,
+          "height": 320,
+          "file": "campus-walkway-480-v1.webp",
+          "bytes": 45512,
           "quality": 80
         },
         {
           "width": 960,
-          "height": 456,
-          "file": "table-tennis-960-v1.webp",
-          "bytes": 119772,
+          "height": 640,
+          "file": "campus-walkway-960-v1.webp",
+          "bytes": 158312,
           "quality": 80
         },
         {
-          "width": 1280,
-          "height": 608,
-          "file": "table-tennis-1280-v1.webp",
-          "bytes": 206872,
+          "width": 1440,
+          "height": 960,
+          "file": "campus-walkway-1440-v1.webp",
+          "bytes": 288690,
           "quality": 80
         }
       ],
       "processing": {
+        "sourceColourProfile": "untagged (assumed sRGB)",
         "outputColourProfile": "sRGB (embedded)",
-        "colourAdjustment": "Saturation reduced by 3%; otherwise existing colour retained",
-        "sharpening": "Unsharp mask radius 0.5px, 40%, threshold 3",
+        "colourAdjustment": {
+          "saturation": 0.97,
+          "contrast": 1.025,
+          "brightness": 1.01
+        },
+        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
         "generativeEditing": false,
-        "upscaled": false
+        "upscaled": false,
+        "selection": "User-selected replacement photo, 11 October 2026."
+      }
+    },
+    "campus-courts": {
+      "source": "IMG_5544.PNG",
+      "alt": "The covered Greenacre sports court and school buildings",
+      "position": "50% 50%",
+      "originalSize": [
+        1327,
+        995
+      ],
+      "cropBox": [
+        0,
+        56,
+        1326,
+        884
+      ],
+      "frameRatio": [
+        3,
+        2
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 320,
+          "file": "campus-courts-480-v1.webp",
+          "bytes": 36560,
+          "quality": 80
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "file": "campus-courts-960-v1.webp",
+          "bytes": 108908,
+          "quality": 80
+        },
+        {
+          "width": 1326,
+          "height": 884,
+          "file": "campus-courts-1326-v1.webp",
+          "bytes": 157344,
+          "quality": 80
+        }
+      ],
+      "processing": {
+        "sourceColourProfile": "Display P3",
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": {
+          "saturation": 0.97,
+          "contrast": 1.025,
+          "brightness": 1.01
+        },
+        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
+        "generativeEditing": false,
+        "upscaled": false,
+        "selection": "User-selected replacement photo, 11 October 2026."
+      }
+    },
+    "secondary-practical": {
+      "source": "IMG_5603.HEIC",
+      "alt": "Greenacre Secondary pupils carrying out a practical science lesson",
+      "position": "50% 50%",
+      "originalSize": [
+        5179,
+        3884
+      ],
+      "cropBox": [
+        0,
+        216,
+        5178,
+        3452
+      ],
+      "frameRatio": [
+        3,
+        2
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 320,
+          "file": "secondary-practical-480-v1.webp",
+          "bytes": 26716,
+          "quality": 80
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "file": "secondary-practical-960-v1.webp",
+          "bytes": 64308,
+          "quality": 80
+        },
+        {
+          "width": 1440,
+          "height": 960,
+          "file": "secondary-practical-1440-v1.webp",
+          "bytes": 106516,
+          "quality": 80
+        }
+      ],
+      "processing": {
+        "sourceColourProfile": "Display P3",
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": {
+          "saturation": 0.96,
+          "contrast": 1.025,
+          "brightness": 1.01
+        },
+        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
+        "generativeEditing": false,
+        "upscaled": false,
+        "selection": "User-selected replacement photo, 11 October 2026."
+      }
+    },
+    "secondary-guided-lesson": {
+      "source": "IMG_5469.PNG",
+      "alt": "A teacher guiding Greenacre Secondary pupils through a lesson at the interactive board",
+      "position": "50% 2%",
+      "originalSize": [
+        1323,
+        1189
+      ],
+      "cropBox": [
+        0,
+        6,
+        1323,
+        882
+      ],
+      "frameRatio": [
+        3,
+        2
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 320,
+          "file": "secondary-guided-lesson-480-v1.webp",
+          "bytes": 19140,
+          "quality": 80
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "file": "secondary-guided-lesson-960-v1.webp",
+          "bytes": 46850,
+          "quality": 80
+        },
+        {
+          "width": 1323,
+          "height": 882,
+          "file": "secondary-guided-lesson-1323-v1.webp",
+          "bytes": 66908,
+          "quality": 80
+        }
+      ],
+      "processing": {
+        "sourceColourProfile": "untagged (assumed sRGB)",
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": {
+          "saturation": 0.96,
+          "contrast": 1.025,
+          "brightness": 1.0
+        },
+        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
+        "generativeEditing": false,
+        "upscaled": false,
+        "selection": "User-selected replacement photo, 11 October 2026."
+      }
+    },
+    "primary-garden-learning": {
+      "source": "IMG_5472.PNG",
+      "alt": "Greenacre Primary pupils planting seedlings together in the school garden",
+      "position": "50% 0%",
+      "originalSize": [
+        1333,
+        1180
+      ],
+      "cropBox": [
+        0,
+        0,
+        1332,
+        888
+      ],
+      "frameRatio": [
+        3,
+        2
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 320,
+          "file": "primary-garden-learning-480-v1.webp",
+          "bytes": 34768,
+          "quality": 80
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "file": "primary-garden-learning-960-v1.webp",
+          "bytes": 111984,
+          "quality": 80
+        },
+        {
+          "width": 1332,
+          "height": 888,
+          "file": "primary-garden-learning-1332-v1.webp",
+          "bytes": 176434,
+          "quality": 80
+        }
+      ],
+      "processing": {
+        "sourceColourProfile": "untagged (assumed sRGB)",
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": {
+          "saturation": 0.94,
+          "contrast": 1.025,
+          "brightness": 1.01
+        },
+        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
+        "generativeEditing": false,
+        "upscaled": false,
+        "selection": "User-selected replacement photo, 11 October 2026."
+      }
+    },
+    "early-years-drawing": {
+      "source": "IMG_6830.HEIC",
+      "alt": "Greenacre Early Years children drawing together at a table",
+      "position": "50% 47%",
+      "originalSize": [
+        3559,
+        2821
+      ],
+      "cropBox": [
+        0,
+        211,
+        3558,
+        2372
+      ],
+      "frameRatio": [
+        3,
+        2
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 320,
+          "file": "early-years-drawing-480-v1.webp",
+          "bytes": 25700,
+          "quality": 80
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "file": "early-years-drawing-960-v1.webp",
+          "bytes": 68224,
+          "quality": 80
+        },
+        {
+          "width": 1440,
+          "height": 960,
+          "file": "early-years-drawing-1440-v1.webp",
+          "bytes": 112078,
+          "quality": 80
+        }
+      ],
+      "processing": {
+        "sourceColourProfile": "Display P3",
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": {
+          "saturation": 0.95,
+          "contrast": 1.02,
+          "brightness": 1.01
+        },
+        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
+        "generativeEditing": false,
+        "upscaled": false,
+        "selection": "User-selected replacement photo, 11 October 2026."
+      }
+    },
+    "about-classroom-support": {
+      "source": "IMG_5703.PNG",
+      "alt": "Teachers supporting Greenacre pupils as they work in their books",
+      "position": "50% 0%",
+      "originalSize": [
+        1331,
+        1181
+      ],
+      "cropBox": [
+        1,
+        0,
+        1329,
+        886
+      ],
+      "frameRatio": [
+        3,
+        2
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 320,
+          "file": "about-classroom-support-480-v1.webp",
+          "bytes": 23632,
+          "quality": 80
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "file": "about-classroom-support-960-v1.webp",
+          "bytes": 61862,
+          "quality": 80
+        },
+        {
+          "width": 1329,
+          "height": 886,
+          "file": "about-classroom-support-1329-v1.webp",
+          "bytes": 92066,
+          "quality": 80
+        }
+      ],
+      "processing": {
+        "sourceColourProfile": "untagged (assumed sRGB)",
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": {
+          "saturation": 0.95,
+          "contrast": 1.025,
+          "brightness": 1.0
+        },
+        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
+        "generativeEditing": false,
+        "upscaled": false,
+        "selection": "User-selected replacement photo, 11 October 2026."
+      }
+    },
+    "swimming-pool": {
+      "source": "IMG_5487.HEIC",
+      "alt": "Greenacre pupils swimming in the school pool while an instructor supervises from the poolside",
+      "position": "50% 50%",
+      "originalSize": [
+        5089,
+        3813
+      ],
+      "cropBox": [
+        0,
+        952,
+        5088,
+        1908
+      ],
+      "frameRatio": [
+        8,
+        3
+      ],
+      "exports": [
+        {
+          "width": 480,
+          "height": 180,
+          "file": "swimming-pool-long-480-v1.webp",
+          "bytes": 29290,
+          "quality": 78
+        },
+        {
+          "width": 960,
+          "height": 360,
+          "file": "swimming-pool-long-960-v1.webp",
+          "bytes": 114730,
+          "quality": 78
+        },
+        {
+          "width": 1440,
+          "height": 540,
+          "file": "swimming-pool-long-1440-v1.webp",
+          "bytes": 258072,
+          "quality": 78
+        }
+      ],
+      "processing": {
+        "sourceColourProfile": "Display P3",
+        "outputColourProfile": "sRGB (embedded)",
+        "colourAdjustment": {
+          "saturation": 0.95,
+          "contrast": 1.02,
+          "brightness": 1.015
+        },
+        "sharpening": "Unsharp mask radius 0.6px, 60% (40% at 480w), threshold 3",
+        "generativeEditing": false,
+        "upscaled": false,
+        "selection": "User-selected replacement photo, 11 October 2026.",
+        "mobileCropPosition": "50% 50%"
       },
-      "position": "25% 50%"
+      "responsiveFrameRatio": [
+        8,
+        3
+      ],
+      "mobileVariant": "swimming-pool-mobile",
+      "mobileFrameRatio": [
+        16,
+        9
+      ],
+      "mobileCropBox": [
+        0,
+        476,
+        5088,
+        2862
+      ],
+      "mobileExports": [
+        {
+          "width": 480,
+          "height": 270,
+          "file": "swimming-pool-mobile-480-v1.webp",
+          "bytes": 42988,
+          "quality": 78
+        },
+        {
+          "width": 960,
+          "height": 540,
+          "file": "swimming-pool-mobile-960-v1.webp",
+          "bytes": 163814,
+          "quality": 78
+        },
+        {
+          "width": 1440,
+          "height": 810,
+          "file": "swimming-pool-mobile-1440-v1.webp",
+          "bytes": 368718,
+          "quality": 78
+        }
+      ],
+      "displayObjectPosition": "0% 50%"
     }
   },
   "placements": {
@@ -795,26 +1275,26 @@
         "primary-art"
       ],
       "learning/early-years/": [
-        "current:academics-early-years-foundation-years-02.webp",
+        "early-years-drawing",
         "early-years-sand"
       ],
       "learning/primary/": [
         "primary-teaching",
-        "current:academics-primary-02.webp"
+        "primary-garden-learning"
       ],
       "learning/secondary/": [
-        "secondary-maths",
-        "science-independent"
+        "secondary-practical",
+        "secondary-guided-lesson"
       ],
       "learning/clubs-ecas/": [
         "table-tennis"
       ],
       "our-school/about-greenacre/": [
-        "about-classroom"
+        "about-classroom-support"
       ],
       "our-school/campus-facilities/": [
-        "growing-area",
-        "library-reading",
+        "campus-walkway",
+        "campus-courts",
         "swimming-pool"
       ],
       "our-school/environmentality/": [

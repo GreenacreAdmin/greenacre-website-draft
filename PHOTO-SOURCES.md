@@ -1,8 +1,8 @@
 # Website photo selections
 
-Updated 5 October 2026. Each photograph is used once across the 27 photography-checklist slots. Logos and staff-roster portraits are outside this list.
+Updated 11 October 2026. Each photograph is used once across the 27 photography-checklist slots. Logos and staff-roster portraits are outside this list.
 
-The selection combines 14 photographs from the supplied ZIP, the separately supplied Head of School portrait and About classroom photograph, 9 retained or reused photographs from the public school site, and the existing homepage hero and Work with Us photograph. The user confirmed the Early Years and Secondary year groups, approved the tighter sand-play crop and mixed selection, and asked to retain the current pool photograph.
+This register reflects the latest user-selected photos for Campus, Secondary, Primary, Early Years, About Greenacre and the swimming pool. Primary photo 1 and Early Years photo 2 remain unchanged. All newly supplied images use conventional colour correction and responsive WebP exports; no generative image editing was used for this replacement set.
 
 ## Homepage
 
@@ -21,17 +21,17 @@ The selection combines 14 photographs from the supplied ZIP, the separately supp
 |---|---|---|
 | `learning/curriculum/` / 1 | [Current school site](https://www.greenacre.ac.th/academics/curriculum) | `assets/images/current-site/academics-curriculum-02.webp` |
 | `learning/curriculum/` / 2 | `IMG_4117.HEIC` | `assets/images/school-2026/primary-art-*.webp`; 50% 100% |
-| `learning/early-years/` / 1 | [Current school site](https://www.greenacre.ac.th/academics/early-years-foundation-years) | `assets/images/current-site/academics-early-years-foundation-years-02.webp` |
+| `learning/early-years/` / 1 | `IMG_6830.HEIC` | `assets/images/school-2026/early-years-drawing-*.webp`; 50% 47% |
 | `learning/early-years/` / 2 | `IMG_5039.PNG` | `assets/images/school-2026/early-years-sand-*.webp`; 50% 25% |
 | `learning/primary/` / 1 | `IMG_5023.PNG` | `assets/images/school-2026/primary-teaching-*.webp`; 50% 15% |
-| `learning/primary/` / 2 | [Current school site](https://www.greenacre.ac.th/academics/primary) | `assets/images/current-site/academics-primary-02.webp` |
-| `learning/secondary/` / 1 | `IMG_5024.PNG` | `assets/images/school-2026/secondary-maths-*.webp`; 50% 50% |
-| `learning/secondary/` / 2 | `IMG_5029.JPG`, enhanced placeholder | `assets/images/school-2026/science-independent-*.webp`; 50% 0% |
+| `learning/primary/` / 2 | `IMG_5472.PNG` | `assets/images/school-2026/primary-garden-learning-*.webp`; 50% 0% |
+| `learning/secondary/` / 1 | `IMG_5603.HEIC` | `assets/images/school-2026/secondary-practical-*.webp`; 50% 50% |
+| `learning/secondary/` / 2 | `IMG_5469.PNG` | `assets/images/school-2026/secondary-guided-lesson-*.webp`; 50% 2% |
 | `learning/clubs-ecas/` / 1 | User-supplied `unnamed (2).jpg` | `assets/images/school-2026/table-tennis-*.webp`; 25% 50% |
-| `our-school/about-greenacre/` / 1 | Separately supplied `unnamed (1).jpg` | `assets/images/school-2026/about-classroom-*.webp`; 50% 50% |
-| `our-school/campus-facilities/` / 1 | User-requested imagegen enhancement of `IMG_4184.HEIC` | `assets/images/school-2026/growing-area-*.webp`; 50% 85% |
-| `our-school/campus-facilities/` / 2 | `IMG_4219.PNG` | `assets/images/school-2026/library-reading-*.webp`; 50% 65% |
-| `our-school/campus-facilities/` / 3 | User-requested imagegen enhancement of the current school pool photo | `assets/images/school-2026/swimming-pool-*.webp`; centred in the existing wide frame |
+| `our-school/about-greenacre/` / 1 | `IMG_5703.PNG` | `assets/images/school-2026/about-classroom-support-*.webp`; 50% 0% |
+| `our-school/campus-facilities/` / 1 | `IMG_5700.PNG` | `assets/images/school-2026/campus-walkway-*.webp`; 50% 50% |
+| `our-school/campus-facilities/` / 2 | `IMG_5544.PNG` | `assets/images/school-2026/campus-courts-*.webp`; 50% 50%; displayed in the same 3:2 style as the other content photos |
+| `our-school/campus-facilities/` / 3 | `IMG_5487.HEIC` | `assets/images/school-2026/swimming-pool-long-*.webp` desktop and `swimming-pool-mobile-*.webp` at 640px and below; 16:6 desktop and 16:9 mobile source crops |
 | `our-school/environmentality/` / 1 | [Current school site](https://www.greenacre.ac.th/home) | `assets/images/current-site/home-02.webp` |
 | `our-school/environmentality/` / 2 | [Current school site](https://www.greenacre.ac.th/academics/environmentality) | `assets/images/current-site/academics-environmentality-03.webp` |
 | `our-school/wellbeing/` / 1 | [Current school site](https://www.greenacre.ac.th/extra-curricular/wellbeing) | `assets/images/current-site/extra-curricular-wellbeing-02.webp` |
@@ -51,7 +51,9 @@ The selection combines 14 photographs from the supplied ZIP, the separately supp
 - All replacement badges have been removed from the selected photo frames, including intentionally retained images.
 - Parent Services retains a produce photograph as a food-related illustration. It is not labelled as dining. A dedicated dining image would still improve specificity.
 
-## Current-site review
+## Earlier photo-selection history
+
+### Current-site review — 5 October 2026
 
 Reviewed the live homepage, Early Years, Primary, Curriculum, Environmentality, Wellbeing, Swimming Pool, Services, Community and Head of School Welcome pages on 5 October 2026. Strong reading, collaboration, classroom participation, outdoor learning, meditation, produce and pool images were retained or reassigned.
 
@@ -63,7 +65,7 @@ The current homepage reading image was downloaded through the browser asset expo
 - No horizontal overflow or missing photo assets across the 13 selected pages.
 - Existing ordinary-content and homepage frame dimensions preserved at all three sizes; portrait ratio explicitly preserved.
 - Site checker verifies all 49 pages, relative links, fragments, search metadata and original document checksums.
-- No push or deployment was performed as part of this local update.
+- No push or deployment was performed as part of the 5 October local update.
 
 ## Colour and compression review — 5 October 2026
 
@@ -121,3 +123,10 @@ Adjusted exports embed sRGB. Content WebP files use quality 92; the six adjusted
 Adjustment settings and output paths: `scripts/photo-colour-pass-2026-10-07.json`. Original backups, lossless corrected masters, before/after sheets and browser QA are retained in the workspace at `output/colour-pass-2026-10-07/` outside this deployment repository.
 
 Conventions consulted: [Adobe: sRGB for online viewing](https://helpx.adobe.com/ca/photoshop/using/color-managing-documents-online-viewing.html) and [Adobe: white balance and neutral tones](https://www.adobe.com/au/creativecloud/photography/discover/white-balance.html).
+
+## User-selected photo updates — 11 October 2026
+
+- Replaced the selected internal-page photos with the sources listed above. Primary photo 1, Early Years photo 2 and all unrelated photos remain as previously selected.
+- Campus photo 2 now uses the standard 3:2 frame. The swimming-pool image uses art-directed 16:6 desktop and 16:9 mobile source crops inside the existing responsive section, with left alignment at narrower widths to retain the instructor.
+- Embedded Display P3 sources were converted to sRGB; untagged files were treated as sRGB. Colour was adjusted gently per image, with light output sharpening. No generative editing or upscaling was used. Exact crop boxes, colour adjustments, output dimensions and file sizes are recorded in `assets/images/school-2026/sources.json`.
+- Replacements are responsive WebP assets at 480px, 960px and the source-limited maximum width, using quality 80; the swimming-pool variants use quality 78.
