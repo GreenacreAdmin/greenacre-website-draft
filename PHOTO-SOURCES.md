@@ -25,8 +25,8 @@ This register reflects the latest user-selected photos for Campus, Secondary, Pr
 | `learning/early-years/` / 2 | `EYFS.PNG` (supplied 11 October 2026) | `assets/images/school-2026/early-years-foam-*.webp`; 3:2 crop trimming empty wall above, 50% 50% |
 | `learning/primary/` / 1 | `IMG_5023.PNG` | `assets/images/school-2026/primary-teaching-*.webp`; 50% 15% |
 | `learning/primary/` / 2 | `IMG_5472.PNG` | `assets/images/school-2026/primary-garden-learning-*.webp`; 50% 0% |
-| `learning/secondary/` / 1 | `IMG_5603.HEIC` | `assets/images/school-2026/secondary-practical-*.webp`; 50% 50% |
-| `learning/secondary/` / 2 | `IMG_5461.PNG` (supplied 11 October 2026) | `assets/images/school-2026/secondary-laptops-*.webp`; 3:2 crop, 50% 50% |
+| `learning/secondary/` / 1 | `IMG_5461.PNG` (supplied 11 October 2026) | `assets/images/school-2026/secondary-laptops-*.webp`; 3:2 crop, 50% 50% |
+| `learning/secondary/` / 2 | `IMG_5603.HEIC` | `assets/images/school-2026/secondary-practical-*.webp`; 50% 50% |
 | `learning/clubs-ecas/` / 1 | User-supplied `unnamed (2).jpg` | `assets/images/school-2026/table-tennis-*.webp`; 25% 50% |
 | `our-school/about-greenacre/` / 1 | `IMG_4998.PNG` (reused from Admissions / “Start with a visit”) | `assets/images/school-2026/classroom-welcome-*.webp`; 50% 55% |
 | `our-school/campus-facilities/` / 1 | `IMG_5700.PNG` | `assets/images/school-2026/campus-walkway-*.webp`; 50% 50% |
