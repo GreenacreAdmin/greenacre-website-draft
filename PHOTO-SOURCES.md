@@ -39,7 +39,7 @@ This register reflects the latest user-selected photos for Campus, Secondary, Pr
 | `admissions/admissions-visits/` / 1 | `Arrange a visit.PNG` (supplied 11 October 2026) | `assets/images/school-2026/admissions-plant-welcome-*.webp`; 3:2 crop, 50% 50% |
 | `parent-information/services/` / 1 | [Current school site](https://www.greenacre.ac.th/academics/environmentality) | `assets/images/current-site/academics-environmentality-02.webp` |
 | `our-school/head-of-school-welcome/` / 1 | `1742964487955 (1).jpg` | `assets/images/school-2026/head-dara-nagle-*.webp`; 50% 0% |
-| `work-with-us/` / 1 | `Work with us.PNG` (supplied 11 October 2026) | `assets/images/recruitment/teacher-easel-*.webp`; 3:2 crop, 50% 50%. The earlier teacher-and-pupils photo remains on Curriculum |
+| `work-with-us/` / 1 | `work with us.png` (sharper version supplied 11 October 2026) | `assets/images/recruitment/teacher-easel-*.webp`; 3:2 crop, 50% 50%. The earlier teacher-and-pupils photo remains on Curriculum |
 
 ## Crop and delivery notes
 
