@@ -168,7 +168,7 @@
       isolation: isolate;
       background:
         linear-gradient(90deg, color-mix(in srgb, var(--green-deep) 86%, transparent) 0%, color-mix(in srgb, var(--green-deep) 62%, transparent) 42%, color-mix(in srgb, var(--green-deep) 22%, transparent) 73%, color-mix(in srgb, var(--green-deep) 8%, transparent) 100%),
-        url("../images/optimized/home-hero-seedlings-v3-colour-v1.jpg") 50% 50% / cover no-repeat;
+        url("../images/optimized/home-hero-seedlings-v3-colour-v1.webp") 50% 50% / cover no-repeat;
     }
 
     .hero::after {
@@ -413,12 +413,12 @@
     }
 
     .identity-photo {
-      --school-photo-watering-together: image-set(url("../images/school-2026/environment-garden-v1-960-colour-v1.webp") 1x, url("../images/school-2026/environment-garden-v1-1440-colour-v1.webp") 2x);
+      --school-photo-watering-together: image-set(url("../images/school-2026/environment-garden-home-960-v1.webp") 1x, url("../images/school-2026/environment-garden-home-1032-v1.webp") 2x);
       min-height: 400px;
       border-radius: var(--radius);
       background:
         linear-gradient(180deg, color-mix(in srgb, var(--green-dark) 3%, transparent), color-mix(in srgb, var(--green-dark) 10%, transparent)),
-        var(--school-photo-watering-together) 50% 38% / cover no-repeat;
+        var(--school-photo-watering-together) 50% 50% / cover no-repeat;
       box-shadow: 0 24px 52px rgba(0,0,0,.22);
     }
 

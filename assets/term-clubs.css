@@ -34,3 +34,22 @@
 .clubs-catalogue :is(summary,select,button,a):focus-visible{outline:3px solid var(--blue-dark);outline-offset:4px}
 @media(max-width:650px){.clubs-grid{grid-template-columns:1fr}.clubs-toolbar{gap:12px}.clubs-filters{gap:12px;padding:16px}.clubs-filters>div{flex:1 1 120px;min-width:0}.clubs-filters select{width:100%;min-width:0}#club-results{margin:0 0 10px auto}.term-club summary{min-height:84px}.clubs-friday{padding:18px}}
 @media print{.clubs-filters,.clubs-toolbar{display:none}.club-description{display:block!important}.clubs-grid{display:block}.term-club{break-inside:avoid;margin-bottom:10px}}
+
+/* Activity tags, day buttons and day bands (11 October 2026) */
+.term-club{--club-ink:#24613c;--club-tint:#e3f0e7;border-left:5px solid var(--club-ink)}
+.club--sport{--club-ink:#24613c;--club-tint:#e3f0e7}
+.club--arts{--club-ink:#8a2f5a;--club-tint:#f7e6ee}
+.club--thai{--club-ink:#8a4a12;--club-tint:#f9ecdf}
+.club--thinking{--club-ink:#1f5885;--club-tint:#e3edf7}
+.club--music{--club-ink:#5a3f94;--club-tint:#ece7f7}
+.club--nature{--club-ink:#4b6b14;--club-tint:#edf4df}
+.club--care{--club-ink:#66572a;--club-tint:#f2eedf}
+.club-tag{display:inline-block;margin-bottom:6px;padding:2px 9px;border-radius:999px;background:var(--club-tint);color:var(--club-ink);font-size:.72rem;font-weight:700;letter-spacing:.02em;line-height:1.6}
+.clubs-daynav{position:sticky;top:66px;z-index:5;display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px;padding:10px 0;background:var(--cream,#f8f5ee)}
+.clubs-daynav a{padding:8px 18px;border:1px solid #c9d3c8;border-radius:999px;background:#fff;color:var(--green-dark);font-weight:700;font-size:.9rem;text-decoration:none}
+.clubs-daynav a:hover,.clubs-daynav a[aria-current="true"]{background:var(--green-dark);border-color:var(--green-dark);color:#fff}
+.clubs-catalogue .clubs-day{padding:22px 22px 24px!important;border-radius:18px;background:#fff;scroll-margin-top:140px}
+.clubs-catalogue .clubs-day:nth-of-type(odd){background:var(--green-soft,#eef3ec)}
+.clubs-catalogue .clubs-day h2{font-size:1.6rem!important}
+@media(max-width:650px){.clubs-daynav{top:58px;gap:6px}.clubs-daynav a{padding:7px 12px;font-size:.84rem}.clubs-catalogue .clubs-day{padding:16px 12px 18px!important;border-radius:14px}}
+@media print{.clubs-daynav{display:none}.clubs-catalogue .clubs-day{background:none!important;padding:0!important}}
