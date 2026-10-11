@@ -1,8 +1,8 @@
 # Website photo selections
 
-Updated 11 October 2026. Each photograph is used once across the 27 photography-checklist slots. Logos and staff-roster portraits are outside this list.
+Updated 11 October 2026. There are 27 photography-checklist slots; a photograph may be reused where requested. Logos and staff-roster portraits are outside this list.
 
-This register reflects the latest user-selected photos for Campus, Secondary, Primary, Early Years, About Greenacre and the swimming pool. Primary photo 1 and Early Years photo 2 remain unchanged. All newly supplied images use conventional colour correction and responsive WebP exports; no generative image editing was used for this replacement set.
+This register reflects the latest user-selected photos for Campus, Secondary, Primary, Early Years, About Greenacre, Curriculum and the swimming pool. Primary photo 1 and Early Years photo 2 remain unchanged. All newly supplied images use conventional colour correction and responsive WebP exports; no generative image editing was used for this replacement set.
 
 ## Homepage
 
@@ -19,7 +19,7 @@ This register reflects the latest user-selected photos for Campus, Secondary, Pr
 
 | Page / photo slot | Source | Served asset / crop |
 |---|---|---|
-| `learning/curriculum/` / 1 | [Current school site](https://www.greenacre.ac.th/academics/curriculum) | `assets/images/current-site/academics-curriculum-02.webp` |
+| `learning/curriculum/` / 1 | Reused from Work With Us | `assets/images/recruitment/teacher-with-pupils-*.webp`; bottom-aligned 3:2 crop |
 | `learning/curriculum/` / 2 | `IMG_4117.HEIC` | `assets/images/school-2026/primary-art-*.webp`; 50% 100% |
 | `learning/early-years/` / 1 | `IMG_6830.HEIC` | `assets/images/school-2026/early-years-drawing-*.webp`; 50% 47% |
 | `learning/early-years/` / 2 | `IMG_5039.PNG` | `assets/images/school-2026/early-years-sand-*.webp`; 50% 25% |
@@ -28,7 +28,7 @@ This register reflects the latest user-selected photos for Campus, Secondary, Pr
 | `learning/secondary/` / 1 | `IMG_5603.HEIC` | `assets/images/school-2026/secondary-practical-*.webp`; 50% 50% |
 | `learning/secondary/` / 2 | `IMG_5469.PNG` | `assets/images/school-2026/secondary-guided-lesson-*.webp`; 50% 2% |
 | `learning/clubs-ecas/` / 1 | User-supplied `unnamed (2).jpg` | `assets/images/school-2026/table-tennis-*.webp`; 25% 50% |
-| `our-school/about-greenacre/` / 1 | `IMG_5703.PNG` | `assets/images/school-2026/about-classroom-support-*.webp`; 50% 0% |
+| `our-school/about-greenacre/` / 1 | `IMG_4998.PNG` (reused from Admissions / “Start with a visit”) | `assets/images/school-2026/classroom-welcome-*.webp`; 50% 55% |
 | `our-school/campus-facilities/` / 1 | `IMG_5700.PNG` | `assets/images/school-2026/campus-walkway-*.webp`; 50% 50% |
 | `our-school/campus-facilities/` / 2 | `IMG_5544.PNG` | `assets/images/school-2026/campus-courts-*.webp`; 50% 50%; displayed in the same 3:2 style as the other content photos |
 | `our-school/campus-facilities/` / 3 | `IMG_5487.HEIC` | `assets/images/school-2026/swimming-pool-long-*.webp` desktop and `swimming-pool-mobile-*.webp` at 640px and below; 16:6 desktop and 16:9 mobile source crops |
@@ -39,7 +39,7 @@ This register reflects the latest user-selected photos for Campus, Secondary, Pr
 | `admissions/admissions-visits/` / 1 | `IMG_4998.PNG` | `assets/images/school-2026/classroom-welcome-*.webp`; 50% 55% |
 | `parent-information/services/` / 1 | [Current school site](https://www.greenacre.ac.th/academics/environmentality) | `assets/images/current-site/academics-environmentality-02.webp` |
 | `our-school/head-of-school-welcome/` / 1 | `1742964487955 (1).jpg` | `assets/images/school-2026/head-dara-nagle-*.webp`; 50% 0% |
-| `work-with-us/` / 1 | Existing teacher-at-desk selection; retained | Existing responsive recruitment photo; bottom-aligned 3:2 crop |
+| `work-with-us/` / 1 | Existing teacher-and-pupils selection; retained | `assets/images/recruitment/teacher-with-pupils-*.webp`; bottom-aligned 3:2 crop |
 
 ## Crop and delivery notes
 
@@ -50,6 +50,10 @@ This register reflects the latest user-selected photos for Campus, Secondary, Pr
 - `IMG_5026.JPG` remains a reserve because its portrait composition fits the ordinary landscape frames poorly. The two `IMG_4218` versions are already represented by Work with Us and are not added elsewhere.
 - All replacement badges have been removed from the selected photo frames, including intentionally retained images.
 - Parent Services retains a produce photograph as a food-related illustration. It is not labelled as dining. A dedicated dining image would still improve specificity.
+
+## Staff roster portraits
+
+- `our-school/our-team/` / Mr Mark: `Mark.HEIC`; sRGB, square 570 × 570 transparent PNG master in `assets/images/team/mark.png`, served as `assets/images/optimized/team-mark-colour-v2.webp`.
 
 ## Earlier photo-selection history
 
@@ -128,5 +132,9 @@ Conventions consulted: [Adobe: sRGB for online viewing](https://helpx.adobe.com/
 
 - Replaced the selected internal-page photos with the sources listed above. Primary photo 1, Early Years photo 2 and all unrelated photos remain as previously selected.
 - Campus photo 2 now uses the standard 3:2 frame. The swimming-pool image uses art-directed 16:6 desktop and 16:9 mobile source crops inside the existing responsive section, with left alignment at narrower widths to retain the instructor.
+- About Greenacre photo 1 reuses the classroom image from Admissions / “Start with a visit”.
+- Curriculum photo 1 now reuses the Work With Us teacher-and-pupils image, with the same bottom-aligned crop.
+- Mr Mark's team portrait uses the supplied `Mark.HEIC`, prepared in the roster's circular portrait style.
+- Visit Greenacre's desktop photo now matches the neighbouring campus photo's rendered width; both keep the shared 3:2 crop.
 - Embedded Display P3 sources were converted to sRGB; untagged files were treated as sRGB. Colour was adjusted gently per image, with light output sharpening. No generative editing or upscaling was used. Exact crop boxes, colour adjustments, output dimensions and file sizes are recorded in `assets/images/school-2026/sources.json`.
 - Replacements are responsive WebP assets at 480px, 960px and the source-limited maximum width, using quality 80; the swimming-pool variants use quality 78.

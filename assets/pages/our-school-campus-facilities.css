@@ -100,7 +100,7 @@ section{padding:56px 0}
 .campus-visit-grid-stage46{
   max-width:1180px!important;
   display:grid!important;
-  grid-template-columns:minmax(280px,40%) minmax(0,60%)!important;
+  grid-template-columns:minmax(0,53.3fr) minmax(0,46.7fr)!important;
   gap:48px!important;
   align-items:center!important;
 }
