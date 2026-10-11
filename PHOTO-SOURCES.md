@@ -13,7 +13,7 @@ This register reflects the latest user-selected photos for Campus, Secondary, Pr
 | phase-card.early::before | `IMG_4830.PNG` | `assets/images/school-2026/early-years-nature-*.webp` |
 | phase-card.primary::before | [https://www.greenacre.ac.th/](https://www.greenacre.ac.th/) | `assets/images/school-2026/reading-together-*.webp` |
 | phase-card.secondary::before | `IMG_5037.PNG` | `assets/images/school-2026/science-practical-*.webp`; 100% 0% |
-| identity-photo | User-selected imagegen edit of `IMG_4188.HEIC` | `assets/images/school-2026/watering-together-*.webp` |
+| identity-photo | Swapped with Environmentality "Our values in action" on 11 October 2026 | `assets/images/school-2026/environment-garden-v1-*-colour-v1.webp`; 50% 38% |
 
 ## Internal pages
 
@@ -33,7 +33,7 @@ This register reflects the latest user-selected photos for Campus, Secondary, Pr
 | `our-school/campus-facilities/` / 2 | `IMG_5544.PNG` | `assets/images/school-2026/campus-courts-*.webp`; 50% 50%; displayed in the same 3:2 style as the other content photos |
 | `our-school/campus-facilities/` / 3 | `IMG_5487.HEIC` | `assets/images/school-2026/swimming-pool-long-*.webp` desktop and `swimming-pool-mobile-*.webp` at 640px and below; 16:6 desktop and 16:9 mobile source crops |
 | `our-school/environmentality/` / 1 | [Current school site](https://www.greenacre.ac.th/home) | `assets/images/current-site/home-02.webp` |
-| `our-school/environmentality/` / 2 | [Current school site](https://www.greenacre.ac.th/academics/environmentality) | `assets/images/current-site/academics-environmentality-03.webp` |
+| `our-school/environmentality/` / 2 ("Our values in action") | User-selected imagegen edit of `IMG_4188.HEIC`, swapped from the homepage on 11 October 2026 | `assets/images/school-2026/watering-together-*.webp`; 50% 50% |
 | `our-school/wellbeing/` / 1 | [Current school site](https://www.greenacre.ac.th/extra-curricular/wellbeing) | `assets/images/current-site/extra-curricular-wellbeing-02.webp` |
 | `our-school/wellbeing/` / 2 | `IMG_5038.PNG` | `assets/images/school-2026/outdoor-chess-*.webp`; 50% 72% |
 | `admissions/admissions-visits/` / 1 | `Arrange a visit.PNG` (supplied 11 October 2026) | `assets/images/school-2026/admissions-plant-welcome-*.webp`; 3:2 crop, 50% 50% |
