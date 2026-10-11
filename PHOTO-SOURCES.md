@@ -22,11 +22,11 @@ This register reflects the latest user-selected photos for Campus, Secondary, Pr
 | `learning/curriculum/` / 1 | Reused from Work With Us | `assets/images/recruitment/teacher-with-pupils-*.webp`; bottom-aligned 3:2 crop |
 | `learning/curriculum/` / 2 | `IMG_4117.HEIC` | `assets/images/school-2026/primary-art-*.webp`; 50% 100% |
 | `learning/early-years/` / 1 | `IMG_6830.HEIC` | `assets/images/school-2026/early-years-drawing-*.webp`; 50% 47% |
-| `learning/early-years/` / 2 | `IMG_5039.PNG` | `assets/images/school-2026/early-years-sand-*.webp`; 50% 25% |
+| `learning/early-years/` / 2 | `EYFS.PNG` (supplied 11 October 2026) | `assets/images/school-2026/early-years-foam-*.webp`; 3:2 crop trimming empty wall above, 50% 50% |
 | `learning/primary/` / 1 | `IMG_5023.PNG` | `assets/images/school-2026/primary-teaching-*.webp`; 50% 15% |
 | `learning/primary/` / 2 | `IMG_5472.PNG` | `assets/images/school-2026/primary-garden-learning-*.webp`; 50% 0% |
 | `learning/secondary/` / 1 | `IMG_5603.HEIC` | `assets/images/school-2026/secondary-practical-*.webp`; 50% 50% |
-| `learning/secondary/` / 2 | `IMG_5469.PNG` | `assets/images/school-2026/secondary-guided-lesson-*.webp`; 50% 2% |
+| `learning/secondary/` / 2 | `IMG_5461.PNG` (supplied 11 October 2026) | `assets/images/school-2026/secondary-laptops-*.webp`; 3:2 crop, 50% 50% |
 | `learning/clubs-ecas/` / 1 | User-supplied `unnamed (2).jpg` | `assets/images/school-2026/table-tennis-*.webp`; 25% 50% |
 | `our-school/about-greenacre/` / 1 | `IMG_4998.PNG` (reused from Admissions / “Start with a visit”) | `assets/images/school-2026/classroom-welcome-*.webp`; 50% 55% |
 | `our-school/campus-facilities/` / 1 | `IMG_5700.PNG` | `assets/images/school-2026/campus-walkway-*.webp`; 50% 50% |
@@ -36,10 +36,10 @@ This register reflects the latest user-selected photos for Campus, Secondary, Pr
 | `our-school/environmentality/` / 2 | [Current school site](https://www.greenacre.ac.th/academics/environmentality) | `assets/images/current-site/academics-environmentality-03.webp` |
 | `our-school/wellbeing/` / 1 | [Current school site](https://www.greenacre.ac.th/extra-curricular/wellbeing) | `assets/images/current-site/extra-curricular-wellbeing-02.webp` |
 | `our-school/wellbeing/` / 2 | `IMG_5038.PNG` | `assets/images/school-2026/outdoor-chess-*.webp`; 50% 72% |
-| `admissions/admissions-visits/` / 1 | `IMG_4998.PNG` | `assets/images/school-2026/classroom-welcome-*.webp`; 50% 55% |
+| `admissions/admissions-visits/` / 1 | `Arrange a visit.PNG` (supplied 11 October 2026) | `assets/images/school-2026/admissions-plant-welcome-*.webp`; 3:2 crop, 50% 50% |
 | `parent-information/services/` / 1 | [Current school site](https://www.greenacre.ac.th/academics/environmentality) | `assets/images/current-site/academics-environmentality-02.webp` |
 | `our-school/head-of-school-welcome/` / 1 | `1742964487955 (1).jpg` | `assets/images/school-2026/head-dara-nagle-*.webp`; 50% 0% |
-| `work-with-us/` / 1 | Existing teacher-and-pupils selection; retained | `assets/images/recruitment/teacher-with-pupils-*.webp`; bottom-aligned 3:2 crop |
+| `work-with-us/` / 1 | `Work with us.PNG` (supplied 11 October 2026) | `assets/images/recruitment/teacher-easel-*.webp`; 3:2 crop, 50% 50%. The earlier teacher-and-pupils photo remains on Curriculum |
 
 ## Crop and delivery notes
 
