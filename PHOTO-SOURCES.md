@@ -22,7 +22,7 @@ This register reflects the latest user-selected photos for Campus, Secondary, Pr
 | `learning/curriculum/` / 1 | Reused from Work With Us | `assets/images/recruitment/teacher-with-pupils-*.webp`; bottom-aligned 3:2 crop |
 | `learning/curriculum/` / 2 | `IMG_4117.HEIC` | `assets/images/school-2026/primary-art-*.webp`; 50% 100% |
 | `learning/early-years/` / 1 | `IMG_6830.HEIC` | `assets/images/school-2026/early-years-drawing-*.webp`; 50% 47% |
-| `learning/early-years/` / 2 | `EYFS.PNG` (supplied 11 October 2026) | `assets/images/school-2026/early-years-foam-*.webp`; 3:2 crop trimming empty wall above, 50% 50% |
+| `learning/early-years/` / 2 | `IMG_5471.PNG` (supplied 11 October 2026) | `assets/images/school-2026/early-years-dough-*.webp`; bottom-aligned 3:2 crop, 50% 100% |
 | `learning/primary/` / 1 | `IMG_5023.PNG` | `assets/images/school-2026/primary-teaching-*.webp`; 50% 15% |
 | `learning/primary/` / 2 | `IMG_5472.PNG` | `assets/images/school-2026/primary-garden-learning-*.webp`; 50% 0% |
 | `learning/secondary/` / 1 | `IMG_5461.PNG` (supplied 11 October 2026) | `assets/images/school-2026/secondary-laptops-*.webp`; 3:2 crop, 50% 50% |
