@@ -374,7 +374,7 @@ main > section:last-of-type:not(.page-hero):not(.subhero){padding-bottom:34px!im
   position:absolute;
   left:4%;
   right:4%;
-  top:68px;
+  top:56px;
   height:4px;
   border-radius:4px;
   background:var(--green);
@@ -392,11 +392,11 @@ main > section:last-of-type:not(.page-hero):not(.subhero){padding-bottom:34px!im
   position:relative;
   display:grid;
   place-items:center;
-  width:92px;
-  height:92px;
-  margin:-4px auto 16px;
+  width:69px;
+  height:69px;
+  margin:-4px auto 14px;
   color:#fff;
-  font-size:2.9rem;
+  font-size:2.2rem;
   line-height:1;
 }
 
@@ -407,7 +407,7 @@ main > section:last-of-type:not(.page-hero):not(.subhero){padding-bottom:34px!im
   z-index:-1;
   border-radius:0 60% 0 60%;
   background:var(--green);
-  box-shadow:0 10px 22px rgba(53,107,70,.28);
+  box-shadow:0 8px 16px rgba(53,107,70,.28);
   transform:rotate(-6deg);
 }
 
