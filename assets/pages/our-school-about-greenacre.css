@@ -363,3 +363,60 @@ main > section:last-of-type:not(.page-hero):not(.subhero){padding-bottom:34px!im
     break-inside:avoid;
   }
 }
+
+/* GREEN values: each letter sits in a leaf, joined by a vine */
+.values-grid{
+  position:relative;
+}
+
+.values-grid::before{
+  content:"";
+  position:absolute;
+  left:4%;
+  right:4%;
+  top:68px;
+  height:4px;
+  border-radius:4px;
+  background:var(--green);
+}
+
+.value{
+  position:relative;
+  z-index:1;
+  padding:26px 22px;
+  text-align:center;
+  border-radius:22px;
+}
+
+.value b{
+  position:relative;
+  display:grid;
+  place-items:center;
+  width:92px;
+  height:92px;
+  margin:-4px auto 16px;
+  color:#fff;
+  font-size:2.9rem;
+  line-height:1;
+}
+
+.value b::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  border-radius:0 60% 0 60%;
+  background:var(--green);
+  box-shadow:0 10px 22px rgba(53,107,70,.28);
+  transform:rotate(-6deg);
+}
+
+.value strong{
+  font-size:1.2rem;
+}
+
+@media(max-width:900px){
+  .values-grid::before{
+    display:none;
+  }
+}
