@@ -393,7 +393,7 @@ See `STYLE-MAP.md` for the repository-wide technical map of every class currentl
 
 ## 24. Lunch menu
 
-`documents/lunch-menu/index.html` presents the alternating Week 1 / Week 2 menu using `assets/lunch-menu.css`. Each `.lunch-day` pairs the main dish and vegetarian option; these stack on phones. Meal descriptions and notes preserve the original PDF wording. Keep `assets/documents/lunch-menu-2026-27.pdf` unchanged and retain its open/download links. When updating the menu, verify every day and both options against the school-approved source.
+`documents/lunch-menu/index.html` presents the alternating Week 1 / Week 2 menu using `assets/lunch-menu.css`. Each `.lunch-day` pairs the main dish and vegetarian option; these stack on phones. Meal descriptions and notes preserve the original PDF wording. Keep `assets/documents/lunch-menu-2026-27.pdf` unchanged as the school's original. The page's open/download links serve `lunch-menu-2026-27-web.pdf`, a smaller copy (2.9 MB to 1.2 MB) that looks the same: identical text, drawing coordinates rounded to 0.1 and its two photos saved as JPEG. Make a new web copy whenever the menu PDF is replaced. When updating the menu, verify every day and both options against the school-approved source.
 
 ## 25. Live Secondary parent resources
 

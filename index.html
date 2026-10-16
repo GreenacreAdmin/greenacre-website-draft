@@ -6,14 +6,15 @@
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&amp;family=Comfortaa:wght@400;500;600;700&amp;family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="assets/pages/home-base.css" rel="stylesheet"/>
 <link href="assets/site.css" rel="stylesheet"/>
-<link href="assets/pages/home.css?v=useful-links-3" rel="stylesheet"/>
+<link href="assets/pages/home.css?v=photo-wait-1" rel="stylesheet"/>
 <link as="image" fetchpriority="high" href="assets/images/optimized/home-hero-seedlings-v3-colour-v1.webp" rel="preload" type="image/webp"/>
 <title>Greenacre International School | Koh Samui</title><meta name="description" content="Greenacre International School on Koh Samui offers an inclusive learning pathway from age 3 through to Cambridge IGCSE."/>
 
 <link rel="icon" type="image/png" href="assets/images/greenacre-favicon.png"/>
+<script>if ('IntersectionObserver' in window) document.documentElement.classList.add('wait-photos');</script>
 <link rel="canonical" href="https://greenacreadmin.github.io/greenacre-website-draft/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Greenacre International School">
@@ -133,7 +134,7 @@
           </p>
 </div>
 <div class="phase-grid">
-<a class="phase-card early home-photo-temp" data-path="learning/early-years" href="learning/early-years/">
+<a class="phase-card early home-photo-temp" data-photo-wait data-path="learning/early-years" href="learning/early-years/">
 <div class="phase-content">
 <span class="phase-age">FS1-FS2</span>
 <h3>Early Years</h3>
@@ -141,7 +142,7 @@
 <span class="card-link">Discover Early Years <span class="card-arrow" aria-hidden="true">→</span></span>
 </div>
 </a>
-<a class="phase-card primary home-photo-temp" data-path="learning/primary" href="learning/primary/">
+<a class="phase-card primary home-photo-temp" data-photo-wait data-path="learning/primary" href="learning/primary/">
 <div class="phase-content">
 <span class="phase-age">Years 1-6</span>
 <h3>Primary</h3>
@@ -149,7 +150,7 @@
 <span class="card-link">Explore Primary <span class="card-arrow" aria-hidden="true">→</span></span>
 </div>
 </a>
-<a class="phase-card secondary home-photo-temp" data-path="learning/secondary" href="learning/secondary/">
+<a class="phase-card secondary home-photo-temp" data-photo-wait data-path="learning/secondary" href="learning/secondary/">
 <div class="phase-content">
 <span class="phase-age">Years 7-11</span>
 <h3>Secondary</h3>
@@ -180,7 +181,7 @@
 </div>
 <a class="button button-light" data-path="our-school/environmentality" href="our-school/environmentality/">Discover Environmentality</a>
 </div>
-<div aria-label="Two Greenacre pupils watering plants together" class="identity-photo home-photo-temp" role="img"></div>
+<div aria-label="Two Greenacre pupils watering plants together" class="identity-photo home-photo-temp" data-photo-wait role="img"></div>
 </div>
 </section>
 <section aria-labelledby="testimonial-heading" class="testimonials">
@@ -307,19 +308,19 @@
 </div>
 <div aria-label="Accreditations and associations" class="site-footer__logos">
 <a aria-label="ONESQA" class="site-footer__logo site-footer__logo--onesqa" href="https://www.onesqa.or.th/en/" rel="noopener noreferrer" target="_blank">
-<img alt="ONESQA" src="assets/images/optimized/logos/onesqa.webp" width="196" height="160" decoding="async"/>
+<img alt="ONESQA" src="assets/images/optimized/logos/onesqa.webp" width="196" height="160" loading="lazy" decoding="async"/>
 </a>
 <a aria-label="International Schools Association of Thailand" class="site-footer__logo site-footer__logo--isat" href="https://www.isat.or.th/" rel="noopener noreferrer" target="_blank">
-<img alt="International Schools Association of Thailand" src="assets/images/optimized/logos/isat.webp" width="329" height="150" decoding="async"/>
+<img alt="International Schools Association of Thailand" src="assets/images/optimized/logos/isat.webp" width="329" height="150" loading="lazy" decoding="async"/>
 </a>
 <a aria-label="Cambridge International School" class="site-footer__logo site-footer__logo--cambridge" href="https://www.cambridgeinternational.org/" rel="noopener noreferrer" target="_blank">
-<img alt="Cambridge International School" src="assets/images/optimized/logos/cambridge.webp" width="405" height="120" decoding="async"/>
+<img alt="Cambridge International School" src="assets/images/optimized/logos/cambridge.webp" width="405" height="120" loading="lazy" decoding="async"/>
 </a>
 <a aria-label="Education Development Trust" class="site-footer__logo site-footer__logo--edt" href="https://www.edt.org/" rel="noopener noreferrer" target="_blank">
-<img alt="Education Development Trust" src="assets/images/optimized/logos/edt.webp" width="267" height="150" decoding="async"/>
+<img alt="Education Development Trust" src="assets/images/optimized/logos/edt.webp" width="267" height="150" loading="lazy" decoding="async"/>
 </a>
 <a aria-label="International Schools Quality Mark candidate school" class="site-footer__logo site-footer__logo--isqm" href="https://www.edt.org/what-we-do/school-years/our-programmes/isqm-school-accreditation/" rel="noopener noreferrer" target="_blank">
-<img alt="International Schools Quality Mark candidate school" src="assets/images/optimized/logos/isqm.webp" width="191" height="150" decoding="async"/>
+<img alt="International Schools Quality Mark candidate school" src="assets/images/optimized/logos/isqm.webp" width="191" height="150" loading="lazy" decoding="async"/>
 </a>
 </div>
 </div>
@@ -423,7 +424,7 @@
   })();
 </script>
 <script src="assets/desktop-navigation.js"></script>
-<script src="assets/motion.js"></script>
+<script src="assets/motion.js?v=photo-wait-1"></script>
 <script>
   (() => {
     const map = document.querySelector('.map-frame');
