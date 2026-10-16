@@ -11,6 +11,19 @@
     window.addEventListener('scroll', onScroll, { passive: true });
   }
 
+  // Photos marked data-photo-wait load once they are close to the screen.
+  const waiting = document.querySelectorAll('[data-photo-wait]');
+  if (waiting.length && 'IntersectionObserver' in window) {
+    const photoObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        photoObserver.unobserve(entry.target);
+        entry.target.removeAttribute('data-photo-wait');
+      });
+    }, { rootMargin: '600px 0px' });
+    waiting.forEach(el => photoObserver.observe(el));
+  }
+
   if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   // Sections with their own motion or interactive filtering are left alone.

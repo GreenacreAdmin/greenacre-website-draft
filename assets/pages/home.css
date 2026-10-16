@@ -312,3 +312,8 @@ main .identity .identity-photo:not(:focus-visible) {
 .home-useful-grid a:focus-visible{outline:3px solid var(--blue-dark);outline-offset:3px}
 @media(max-width:1000px){.home-useful-links{grid-template-columns:1fr;gap:12px}.home-useful-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.home-useful-grid a:last-child{grid-column:1 / -1}}
 @media(max-width:720px){.home-useful-links{padding:16px}.home-useful-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.home-useful-grid a{padding:12px;font-size:.85rem}}
+
+/* Photos further down the page wait until the visitor scrolls near them,
+   so the top photo loads first (assets/motion.js lifts the wait). */
+.wait-photos [data-photo-wait],
+.wait-photos [data-photo-wait]::before { background-image: none !important; }
