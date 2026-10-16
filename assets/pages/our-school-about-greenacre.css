@@ -408,13 +408,8 @@ main > section:last-of-type:not(.page-hero):not(.subhero){padding-bottom:34px!im
   border-radius:0 60% 0 60%;
   background:var(--green);
   box-shadow:0 10px 22px rgba(53,107,70,.28);
-  transform:rotate(-8deg);
+  transform:rotate(-6deg);
 }
-
-.value:nth-child(2) b::before{transform:rotate(6deg)}
-.value:nth-child(3) b::before{transform:rotate(-4deg)}
-.value:nth-child(4) b::before{transform:rotate(8deg)}
-.value:nth-child(5) b::before{transform:rotate(-6deg)}
 
 .value strong{
   font-size:1.2rem;
