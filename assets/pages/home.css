@@ -326,3 +326,10 @@ main .identity .identity-photo:not(:focus-visible) {
 .location-panel .panel-link,
 .facebook-panel .panel-link{margin-top:4px}
 .panel-link a{display:inline-block;margin:0;color:var(--green-deep);font-weight:700;text-decoration:underline;text-underline-offset:4px}
+
+/* Map and Facebook cards about 20% taller (George, 17 October 2026). */
+.facebook-plugin-wrap{height:560px!important}
+.facebook-plugin-wrap .fb-page>span,
+.facebook-plugin-wrap .fb-page iframe{height:640px!important}
+@media(max-width:1000px){.map-frame{min-height:410px}}
+@media(max-width:640px){.map-frame{min-height:395px}}
