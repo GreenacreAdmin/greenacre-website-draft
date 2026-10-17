@@ -319,11 +319,10 @@ main .identity .identity-photo:not(:focus-visible) {
 .wait-photos [data-photo-wait]::before { background-image: none !important; }
 
 /* ---- location and Facebook cards ---- */
-/* Both cards share one shape: title and one line on top, map or posts in
-   the middle, and the link in a matching strip at the bottom, so the two
-   cards line up row for row on desktop. */
+/* Both card headers share one shape: title, one line, then an underlined
+   link, so the map and the Facebook posts start at the same height. */
 .location-panel-head{display:block!important}
 .facebook-plugin-wrap{flex:1 1 auto}
-.panel-foot{margin-top:auto;padding:16px 28px 20px;background:#fff;border-top:1px solid color-mix(in srgb,var(--green) 12%,transparent)}
-.panel-foot a{display:inline-block;margin:0;color:var(--green-deep);font-weight:700;text-decoration:none}
-.panel-foot a:hover{text-decoration:underline}
+.location-panel .panel-link,
+.facebook-panel .panel-link{margin-top:4px}
+.panel-link a{display:inline-block;margin:0;color:var(--green-deep);font-weight:700;text-decoration:underline;text-underline-offset:4px}
