@@ -83,18 +83,18 @@ TEMPLATE = '''<!doctype html><html lang="en"><head><meta charset="utf-8">
 @font-face{font-family:Comfortaa;font-weight:700;src:url(fonts/comfortaa-latin-700-normal.woff2)}
 @page{size:A4;margin:0}
 *{box-sizing:border-box}
-body{margin:0;width:210mm;height:297mm;padding:40px 0 36px 32px;font-family:Comfortaa,sans-serif;color:#1f2a22;display:flex;flex-direction:column}
-header{height:176px;width:730px;text-align:center}
-header img{height:88px;display:block;margin:0 auto}
+body{margin:0;width:210mm;height:297mm;padding:48px 0 44px 32px;font-family:Comfortaa,sans-serif;color:#1f2a22;display:flex;flex-direction:column}
+header{height:168px;width:730px;text-align:center}
+header img{height:84px;display:block;margin:0 auto}
 header p{margin:.5mm 0 0;line-height:1.2;font-size:10pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#2f6b2a}
 h1{margin:2px 0 0;font-size:21pt;line-height:1.2}
 /* Grid sizes are even whole CSS pixels so every 1px line sits on the same grid and shows at one even weight. */
-main{display:grid;grid-template-columns:repeat(3,225px);column-gap:27px;row-gap:17px;align-content:start}
+main{display:grid;grid-template-columns:repeat(3,225px);column-gap:27px;row-gap:19px;margin-top:16px;align-content:start}
 table{border-collapse:separate;border-spacing:0;table-layout:fixed;font-size:9pt;text-align:center}
 caption{height:26px;line-height:20px;padding:0;font-size:10.5pt;white-space:nowrap}
 caption span{margin-left:1.5mm;font-size:8pt;font-weight:700;color:#2f6b2a}
-th,td{width:32px;height:26px;padding:0;border:0 solid #7d827d;border-width:0 1px 1px 0}
-th{height:27px;border-top-width:1px}
+th,td{width:32px;height:22px;padding:0;border:0 solid #7d827d;border-width:0 1px 1px 0}
+th{height:25px;border-top-width:1px}
 th:first-child,td:first-child{width:33px;border-left-width:1px}
 th{font-size:7.5pt;font-weight:700;background:#ededed}
 .weekend{background:#fde6cf}
