@@ -199,3 +199,7 @@ Edit guide content in its HTML page. The presentation content and its controls a
 ## Fees and calendar PDF viewer
 
 The School Fees page (`documents/fees/`) and School Calendar page (`documents/calendar/`) draw the PDF's pages straight onto the page with Mozilla's PDF.js (`assets/pdf-pages.js`, library in `assets/vendor/pdfjs-4.10.38/`, Apache 2.0 licence). To update either, replace the PDF in `assets/documents/` and its checksum in `assets/documents/originals.json`; the page needs no other change. If the PDF cannot be drawn, the page asks visitors to use Open PDF or Download PDF.
+
+## School calendar PDF
+
+`assets/documents/calendar-2026-27.pdf` is built from `scripts/calendar/calendar-2026-27.json` (months, terms and coloured dates). To change a date or make next year's calendar, copy or edit that file, then run `python3 scripts/calendar/build-calendar.py scripts/calendar/<file>.json` with Google Chrome installed, and update the PDF's sha256 and bytes in `assets/documents/originals.json`. The crest comes from `assets/images/greenacre-logo.png`; the Comfortaa font files are in `scripts/calendar/fonts/` (SIL Open Font Licence).

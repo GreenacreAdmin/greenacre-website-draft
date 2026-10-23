@@ -7,9 +7,9 @@
   },
   {
     "file": "assets/documents/calendar-2026-27.pdf",
-    "original_filename": "GIS Calendar 2026_2027 - Google Docs.pdf",
-    "sha256": "c6adf22c1eeaee8ae2a05cdb3f4869c57c4348c25bde38014e2d111ba0b5c285",
-    "bytes": 219189
+    "original_filename": "Built by scripts/calendar/build-calendar.py",
+    "sha256": "8242ae682db256bf1eb50c37e32f1ba0e26e597183b48a10f990719ec7fada91",
+    "bytes": 394032
   },
   {
     "file": "assets/documents/lunch-menu-2026-27.pdf",
