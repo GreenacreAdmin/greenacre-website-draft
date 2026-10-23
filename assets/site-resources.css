@@ -14,6 +14,9 @@
 .resource-frame{overflow:hidden;border:1px solid var(--green-pale);border-radius:20px;background:#fff;box-shadow:0 12px 30px rgba(37,72,45,.07)}
 .resource-frame iframe{display:block;width:100%;border:0;background:#fff}
 .document-frame{height:85vh;min-height:600px}
+.pdf-pages{display:grid;gap:1px;max-width:1000px;margin:24px auto 0;background:var(--green-pale)}
+.pdf-pages__wait{margin:0;padding:48px 24px;background:#fff;text-align:center}
+.pdf-page{display:block;width:100%;height:auto;background:#fff}
 .eca-frame{height:1000px;min-height:75vh}
 @media(max-width:780px){.resource-page .wrap{width:calc(100% - 32px)}.resource-section{padding:24px 0 32px}.document-frame{height:75vh;min-height:480px}.eca-frame{height:850px}.resource-frame{border-radius:14px}}
 @media(max-width:400px){.resource-toolbar .action{width:100%}}
