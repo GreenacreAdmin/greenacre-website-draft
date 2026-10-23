@@ -196,6 +196,6 @@ The Secondary page banner links to `academics/secondary-information/` and `acade
 
 Edit guide content in its HTML page. The presentation content and its controls are in the inline script in its HTML page; keep all 35 slides and keyboard controls working. Their styles are scoped to `#secondary-resource` in `assets/secondary-guide.css` and `assets/secondary-presentation.css` so they do not affect the shared navigation. Keep dates, tutor assignments, contact details and club arrangements current when updating these resources.
 
-## Fees PDF viewer
+## Fees and calendar PDF viewer
 
-The School Fees page (`documents/fees/`) draws the PDF's pages straight onto the page with Mozilla's PDF.js (`assets/pdf-pages.js`, library in `assets/vendor/pdfjs-4.10.38/`, Apache 2.0 licence). To update the fees, replace `assets/documents/fees-2026-27.pdf` and its checksum in `assets/documents/originals.json`; the page needs no other change. If the PDF cannot be drawn, the page asks visitors to use Open PDF or Download PDF.
+The School Fees page (`documents/fees/`) and School Calendar page (`documents/calendar/`) draw the PDF's pages straight onto the page with Mozilla's PDF.js (`assets/pdf-pages.js`, library in `assets/vendor/pdfjs-4.10.38/`, Apache 2.0 licence). To update either, replace the PDF in `assets/documents/` and its checksum in `assets/documents/originals.json`; the page needs no other change. If the PDF cannot be drawn, the page asks visitors to use Open PDF or Download PDF.
