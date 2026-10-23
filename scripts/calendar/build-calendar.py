@@ -86,13 +86,15 @@ TEMPLATE = '''<!doctype html><html lang="en"><head><meta charset="utf-8">
 body{margin:0;width:210mm;height:297mm;padding:11mm 13mm 10mm;font-family:Comfortaa,sans-serif;color:#1f2a22;display:flex;flex-direction:column}
 header{text-align:center}
 header img{height:23mm}
-header p{margin:2mm 0 0;font-size:10pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#2f6b2a}
+header p{margin:.5mm 0 0;line-height:1.2;font-size:10pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#2f6b2a}
 h1{margin:1mm 0 5mm;font-size:21pt;line-height:1.2}
-main{display:grid;grid-template-columns:repeat(3,1fr);column-gap:7mm;row-gap:4.5mm;align-content:start}
-table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:9pt;text-align:center}
+main{display:grid;grid-template-columns:repeat(3,auto);justify-content:space-between;row-gap:4.5mm;align-content:start}
+table{border-collapse:separate;border-spacing:0;table-layout:fixed;font-size:9pt;text-align:center}
 caption{padding:0 0 1.5mm;font-size:10.5pt;white-space:nowrap}
 caption span{margin-left:1.5mm;font-size:8pt;font-weight:700;color:#2f6b2a}
-th,td{height:6.6mm;padding:0;border:.6pt solid #8a8f8a}
+th,td{width:8.2mm;height:6.6mm;padding:0;border:0 solid #8a8f8a;border-width:0 .75pt .75pt 0}
+th{border-top-width:.75pt}
+th:first-child,td:first-child{border-left-width:.75pt}
 th{font-size:7.5pt;font-weight:700;background:#ededed}
 .weekend{background:#fde6cf}
 th.weekend{background:#f9cfa5}
@@ -104,7 +106,7 @@ tr.spare td{border:0;background:none}
 footer{margin-top:auto}
 footer ul{display:flex;justify-content:center;gap:9mm;margin:0;padding:0;list-style:none;font-size:9pt}
 footer li{display:flex;align-items:center;gap:2mm}
-footer i{width:4.5mm;height:4.5mm;border:.6pt solid #8a8f8a}
+footer i{width:4.5mm;height:4.5mm;border:.75pt solid #8a8f8a}
 </style></head><body>
 <header><img src="../../assets/images/greenacre-logo.png" alt="Greenacre International School crest">
 <p>Greenacre International School</p><h1>{{TITLE}}</h1></header>
