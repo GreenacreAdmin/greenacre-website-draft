@@ -139,3 +139,7 @@ Conventions consulted: [Adobe: sRGB for online viewing](https://helpx.adobe.com/
 - Visit Greenacre's desktop photo now matches the neighbouring campus photo's rendered width; both keep the shared 3:2 crop.
 - Embedded Display P3 sources were converted to sRGB; untagged files were treated as sRGB. Colour was adjusted gently per image, with light output sharpening. No generative editing or upscaling was used. Exact crop boxes, colour adjustments, output dimensions and file sizes are recorded in `assets/images/school-2026/sources.json`.
 - Replacements are responsive WebP assets at 480px, 960px and the source-limited maximum width, using quality 80; the swimming-pool variants use quality 78.
+
+## Lunch menu food pictures — 24 October 2026
+
+The lunch menu page (`documents/lunch-menu/`) uses no photos. Its small food icons are Phosphor Icons (duotone weight), MIT licence (`assets/vendor/phosphor-icons/LICENSE`), from the `@phosphor-icons/core` package, inlined as SVG symbols in the page.
