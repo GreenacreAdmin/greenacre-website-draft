@@ -406,11 +406,30 @@
 
     // If Facebook is blocked (privacy settings, ad blockers, school or
     // office networks) or too slow, show a friendly card with a link instead.
-    const showFallback = () => {
-      if (feed.querySelector('.fb-page iframe[style*="visibility: visible"]')) return;
+    const showFallback = force => {
+      if (force !== true && feed.querySelector('.fb-page iframe[style*="visibility: visible"]')) return;
       feed.classList.add('is-unavailable');
       feed.querySelector('.facebook-fallback').hidden = false;
     };
+
+    // Facebook sometimes shows the posts, then swaps its own box for a
+    // "refused to connect" page. That swap reloads the box at the same
+    // address, so a second load of an unchanged box means it has failed.
+    const watchFrame = frame => {
+      let lastSrc = null;
+      frame.addEventListener('load', () => {
+        const src = frame.getAttribute('src') || '';
+        if (!src.includes('facebook.com')) return;
+        if (src === lastSrc) showFallback(true);
+        lastSrc = src;
+      });
+    };
+    new MutationObserver(() => {
+      feed.querySelectorAll('.fb-page iframe:not([data-watched])').forEach(frame => {
+        frame.dataset.watched = '';
+        watchFrame(frame);
+      });
+    }).observe(feed, { childList: true, subtree: true });
 
     const loadFacebook = () => {
       if (document.getElementById('facebook-jssdk')) return;
