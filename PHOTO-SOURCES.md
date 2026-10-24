@@ -142,4 +142,4 @@ Conventions consulted: [Adobe: sRGB for online viewing](https://helpx.adobe.com/
 
 ## Lunch menu food pictures — 24 October 2026
 
-The lunch menu page (`documents/lunch-menu/`) uses no photos. Its small food pictures are Fluent Emoji (flat style) by Microsoft, MIT licence (`assets/vendor/fluent-emoji/LICENSE`), from the `@iconify-json/fluent-emoji-flat` 1.2.6 package, inlined as SVG symbols in the page.
+The lunch menu page (`documents/lunch-menu/`) uses no photos. Its small food icons are Phosphor Icons (duotone weight), MIT licence (`assets/vendor/phosphor-icons/LICENSE`), from the `@phosphor-icons/core` package, inlined as SVG symbols in the page.

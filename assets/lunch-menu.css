@@ -1,6 +1,7 @@
 /* Accessible two-week menu; the original PDF remains unchanged. */
-/* Each weekday keeps the same colour in both weeks (colours shared with the clubs page). */
+/* Each weekday keeps its traditional Thai day colour in both weeks: Mon yellow, Tue pink, Wed green, Thu orange, Fri blue. */
 .lunch-symbols{position:absolute;width:0;height:0;overflow:hidden}
+.lunch-food svg,.lunch-icon,.lunch-veg-row svg{fill:currentColor}
 .lunch-intro.resource-section{padding-bottom:8px}
 .lunch-week{padding:40px 0 52px;scroll-margin-top:90px}
 .lunch-week:nth-of-type(even){background:var(--green-soft)}
@@ -8,23 +9,23 @@
 .lunch-week-badge{flex-shrink:0;display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:var(--green-dark);color:#fff;font-size:1.9rem;font-weight:700;box-shadow:0 0 0 8px var(--green-pale);margin-left:8px}
 .lunch-week-heading .kicker,.lunch-original .kicker{margin:0 0 6px;color:var(--green-dark);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
 .lunch-week-heading h2{margin:0;color:var(--green-dark);font-size:clamp(1.8rem,3vw,2.5rem)}
-.lunch-veg-row{display:flex;gap:10px;margin-left:auto}.lunch-veg-row svg{width:40px;height:40px}
+.lunch-veg-row{display:flex;gap:10px;margin-left:auto}.lunch-veg-row svg{width:36px;height:36px;color:var(--green)}
 .lunch-week-heading>a{flex-shrink:0;font-size:.9rem;color:var(--green-dark);text-underline-offset:4px}
 .lunch-days{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
 /* Cards share rows (subgrid) so day names, main dishes and vegetarian boxes line up across each row. */
 .lunch-day,.lunch-notes{--day:#24613c;--day-tint:#e3f0e7;display:grid;grid-row:span 3;grid-template-rows:subgrid;row-gap:0;overflow:hidden;border:1px solid var(--green-pale);border-radius:24px;background:var(--paper);box-shadow:0 12px 30px rgba(37,72,45,.05)}
-.lunch-day--mon{--day:#24613c;--day-tint:#e3f0e7}
-.lunch-day--tue{--day:#8a4a12;--day-tint:#f9ecdf}
-.lunch-day--wed{--day:#1f5885;--day-tint:#e3edf7}
-.lunch-day--thu{--day:#5a3f94;--day-tint:#ece7f7}
-.lunch-day--fri{--day:#8a2f5a;--day-tint:#f7e6ee}
-.lunch-notes{--day:#4b6b14;--day-tint:#edf4df}
+.lunch-day--mon{--day:#7f6100;--day-tint:#fbf1c7}
+.lunch-day--tue{--day:#a3305f;--day-tint:#f9e1ec}
+.lunch-day--wed{--day:#24613c;--day-tint:#e3f0e7}
+.lunch-day--thu{--day:#9c4610;--day-tint:#fbe6d4}
+.lunch-day--fri{--day:#1f5885;--day-tint:#e1ecf7}
+.lunch-notes{--day:#66572a;--day-tint:#f2eedf}
 .lunch-day__top{display:flex;align-items:center;gap:14px;padding:16px 22px;background:var(--day-tint);color:var(--day)}
-.lunch-food{flex-shrink:0;display:grid;place-items:center;width:62px;height:62px;border-radius:50%;background:#fff;box-shadow:0 0 0 4px color-mix(in srgb,var(--day) 18%,transparent)}.lunch-food svg{width:40px;height:40px}
+.lunch-food{flex-shrink:0;display:grid;place-items:center;width:58px;height:58px;border-radius:50%;background:#fff;color:var(--day)}.lunch-food svg{width:34px;height:34px}
 .lunch-day h3,.lunch-notes h3{margin:0;color:var(--day);font-size:1.3rem;font-weight:700}
 .lunch-meal{padding:20px 22px 4px}
 .lunch-meal h4{display:flex;align-items:center;gap:8px;margin:0 0 8px;color:var(--day);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
-.lunch-icon{width:20px;height:20px;flex-shrink:0}
+.lunch-icon{width:18px;height:18px;flex-shrink:0}
 .lunch-meal p{margin:0;font-size:.9375rem;line-height:1.7}
 .lunch-vegetarian{margin:16px 14px 14px;padding:16px 16px 20px;border-radius:16px;background:var(--green-wash)}
 .lunch-vegetarian h4{color:var(--green-dark)}
@@ -34,5 +35,5 @@
 .lunch-original h2{margin:0 0 12px;font-size:1.5rem;color:var(--green-dark)}
 .lunch-original p{margin:0;max-width:620px}
 @media(max-width:1000px){.lunch-days{grid-template-columns:repeat(2,minmax(0,1fr))}.lunch-veg-row{display:none}.lunch-week-heading>a{margin-left:auto}.lunch-original .wrap{display:block}.lunch-original .resource-toolbar{margin-top:22px}}
-@media(max-width:650px){.lunch-week{padding:28px 0 36px}.lunch-week-heading{flex-wrap:wrap;gap:16px}.lunch-week-badge{width:52px;height:52px;font-size:1.5rem;box-shadow:0 0 0 6px var(--green-pale);margin-left:6px}.lunch-week-heading>a{flex-basis:100%;margin-left:0}.lunch-days{grid-template-columns:1fr;gap:18px}.lunch-day__top{padding:14px 18px}.lunch-food{width:52px;height:52px}.lunch-food svg{width:34px;height:34px}.lunch-meal{padding:18px 18px 2px}.lunch-notes>p{padding:18px}}
+@media(max-width:650px){.lunch-week{padding:28px 0 36px}.lunch-week-heading{flex-wrap:wrap;gap:16px}.lunch-week-badge{width:52px;height:52px;font-size:1.5rem;box-shadow:0 0 0 6px var(--green-pale);margin-left:6px}.lunch-week-heading>a{flex-basis:100%;margin-left:0}.lunch-days{grid-template-columns:1fr;gap:18px}.lunch-day__top{padding:14px 18px}.lunch-food{width:50px;height:50px}.lunch-food svg{width:30px;height:30px}.lunch-meal{padding:18px 18px 2px}.lunch-notes>p{padding:18px}}
 @media print{.site-header,.site-footer,.skip-link,.lunch-intro,.lunch-original,.lunch-week-heading>a,.lunch-veg-row,.lunch-food,.lunch-icon,.lunch-week-badge{display:none!important}.resource-page .page-hero{height:auto!important;min-height:0!important;background:none!important;color:#000!important}.resource-page .page-hero>.wrap{padding:12px 0!important}.page-hero .eyebrow{display:none!important}.resource-page .wrap{width:100%}.lunch-week{break-before:page;padding:12px 0}.lunch-week#week-1{break-before:auto}.lunch-days{gap:10px}.lunch-day,.lunch-notes{break-inside:avoid;box-shadow:none;border-radius:10px}.lunch-day__top{padding:8px 12px;background:none}.lunch-day h3,.lunch-notes h3{color:#000;font-size:12pt}.lunch-meal{padding:8px 12px 0}.lunch-vegetarian{margin:8px;padding:8px}.lunch-meal p,.lunch-notes>p{font-size:10pt}.lunch-notes>p{padding:8px 12px}}
