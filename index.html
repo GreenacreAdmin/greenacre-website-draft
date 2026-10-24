@@ -288,6 +288,11 @@
       <a href="https://www.facebook.com/samuigreenacreschool/">Greenacre International School, Koh Samui</a>
     </blockquote>
   </div>
+  <div class="facebook-fallback" hidden>
+    <p class="facebook-fallback-title">Our Facebook posts can't be shown here</p>
+    <p>Some browsers and privacy settings block Facebook content on other websites. You can still see our latest news on Facebook itself.</p>
+    <a class="button button-solid" href="https://www.facebook.com/samuigreenacreschool/" target="_blank" rel="noopener noreferrer">Open our Facebook page</a>
+  </div>
 </div>
 </article>
 </div>
@@ -399,9 +404,38 @@
     const feed = document.querySelector('.facebook-plugin-wrap');
     if (!feed) return;
 
+    // If Facebook is blocked (privacy settings, ad blockers, school or
+    // office networks) or too slow, show a friendly card with a link instead.
+    const showFallback = force => {
+      if (force !== true && feed.querySelector('.fb-page iframe[style*="visibility: visible"]')) return;
+      feed.classList.add('is-unavailable');
+      feed.querySelector('.facebook-fallback').hidden = false;
+    };
+
+    // Facebook sometimes shows the posts, then swaps its own box for a
+    // "refused to connect" page. That swap reloads the box at the same
+    // address, so a second load of an unchanged box means it has failed.
+    const watchFrame = frame => {
+      let lastSrc = null;
+      frame.addEventListener('load', () => {
+        const src = frame.getAttribute('src') || '';
+        if (!src.includes('facebook.com')) return;
+        if (src === lastSrc) showFallback(true);
+        lastSrc = src;
+      });
+    };
+    new MutationObserver(() => {
+      feed.querySelectorAll('.fb-page iframe:not([data-watched])').forEach(frame => {
+        frame.dataset.watched = '';
+        watchFrame(frame);
+      });
+    }).observe(feed, { childList: true, subtree: true });
+
     const loadFacebook = () => {
       if (document.getElementById('facebook-jssdk')) return;
+      window.setTimeout(showFallback, 10000);
       const script = document.createElement('script');
+      script.onerror = showFallback;
       script.id = 'facebook-jssdk';
       script.async = true;
       script.defer = true;

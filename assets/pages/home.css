@@ -337,3 +337,10 @@ main .identity .identity-photo:not(:focus-visible) {
 .facebook-plugin-wrap .fb-page iframe{height:640px!important}
 @media(max-width:1000px){.map-frame{min-height:410px}}
 @media(max-width:640px){.map-frame{min-height:395px}}
+
+/* Friendly card shown when Facebook posts cannot load (George, 24 October 2026). */
+.facebook-fallback{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:12px;height:100%;padding:28px;background:var(--green-wash);color:var(--ink);line-height:1.6}
+.facebook-fallback[hidden]{display:none}
+.facebook-fallback p{margin:0}
+.facebook-fallback .facebook-fallback-title{font-weight:700;font-size:1.1rem;color:var(--green-deep)}
+.facebook-plugin-wrap.is-unavailable .fb-page{display:none!important}
