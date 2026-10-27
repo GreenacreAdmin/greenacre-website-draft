@@ -47,18 +47,14 @@
   width:500px!important;
   max-width:100%!important;
 }
-.facebook-plugin-wrap .fb-page>span{
-  display:block!important;
+.facebook-plugin-wrap .fb-page iframe{
+  display:block;
   width:500px!important;
   max-width:100%!important;
   height:520px!important;
+  border:0;
   /* Crop the compact Facebook header with a small additional allowance. */
   transform:translateY(-80px);
-}
-.facebook-plugin-wrap .fb-page iframe{
-  width:500px!important;
-  max-width:100%!important;
-  height:520px!important;
 }
 @media(max-width:700px){
   .facebook-plugin-wrap{
@@ -67,7 +63,6 @@
     height:440px;
   }
   .facebook-plugin-wrap .fb-page,
-  .facebook-plugin-wrap .fb-page>span,
   .facebook-plugin-wrap .fb-page iframe{
     width:100%!important;
     max-width:500px!important;
@@ -333,7 +328,6 @@ main .identity .identity-photo:not(:focus-visible) {
 
 /* Map and Facebook cards about 20% taller (George, 17 October 2026). */
 .facebook-plugin-wrap{height:560px!important}
-.facebook-plugin-wrap .fb-page>span,
 .facebook-plugin-wrap .fb-page iframe{height:640px!important}
 @media(max-width:1000px){.map-frame{min-height:410px}}
 @media(max-width:640px){.map-frame{min-height:395px}}

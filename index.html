@@ -270,23 +270,9 @@
 <p>A glimpse of everyday life at Greenacre.</p>
 <p class="panel-link"><a href="https://www.facebook.com/samuigreenacreschool/" target="_blank" rel="noopener noreferrer">See more on Facebook →</a></p>
 </div>
-<div id="fb-root"></div>
 <div class="facebook-plugin-wrap">
-  <div
-    class="fb-page"
-    data-href="https://www.facebook.com/samuigreenacreschool/"
-    data-show-posts="true"
-    data-width="500"
-    data-height="640"
-    data-small-header="true"
-    data-adapt-container-width="true"
-    data-hide-cover="true"
-    data-show-facepile="false">
-    <blockquote
-      cite="https://www.facebook.com/samuigreenacreschool/"
-      class="fb-xfbml-parse-ignore">
-      <a href="https://www.facebook.com/samuigreenacreschool/">Greenacre International School, Koh Samui</a>
-    </blockquote>
+  <div class="fb-page" data-page="https://www.facebook.com/samuigreenacreschool/">
+    <p class="facebook-loading"><a href="https://www.facebook.com/samuigreenacreschool/">Greenacre International School, Koh Samui</a></p>
   </div>
   <div class="facebook-fallback" hidden>
     <p class="facebook-fallback-title">Our Facebook posts can't be shown here</p>
@@ -404,44 +390,53 @@
     const feed = document.querySelector('.facebook-plugin-wrap');
     if (!feed) return;
 
+    // Facebook's posts box is loaded as a plain frame (Facebook's "iframe"
+    // code) rather than through Facebook's script, so there is no script
+    // version that can expire.
     // If Facebook is blocked (privacy settings, ad blockers, school or
     // office networks) or too slow, show a friendly card with a link instead.
+    let loaded = false;
     const showFallback = force => {
-      if (force !== true && feed.querySelector('.fb-page iframe[style*="visibility: visible"]')) return;
+      if (force !== true && loaded) return;
       feed.classList.add('is-unavailable');
       feed.querySelector('.facebook-fallback').hidden = false;
     };
 
-    // Facebook sometimes shows the posts, then swaps its own box for a
-    // "refused to connect" page. That swap reloads the box at the same
-    // address, so a second load of an unchanged box means it has failed.
-    const watchFrame = frame => {
-      let lastSrc = null;
-      frame.addEventListener('load', () => {
-        const src = frame.getAttribute('src') || '';
-        if (!src.includes('facebook.com')) return;
-        if (src === lastSrc) showFallback(true);
-        lastSrc = src;
-      });
-    };
-    new MutationObserver(() => {
-      feed.querySelectorAll('.fb-page iframe:not([data-watched])').forEach(frame => {
-        frame.dataset.watched = '';
-        watchFrame(frame);
-      });
-    }).observe(feed, { childList: true, subtree: true });
-
     const loadFacebook = () => {
-      if (document.getElementById('facebook-jssdk')) return;
+      const box = feed.querySelector('.fb-page');
+      const width = Math.round(Math.min(500, Math.max(180, box.clientWidth || 500)));
+      const params = new URLSearchParams({
+        href: box.dataset.page,
+        tabs: 'timeline',
+        width: String(width),
+        height: '640',
+        small_header: 'true',
+        adapt_container_width: 'true',
+        hide_cover: 'true',
+        show_facepile: 'false'
+      });
+      const frame = document.createElement('iframe');
+      frame.title = 'Latest posts from Greenacre on Facebook';
+      frame.src = 'https://www.facebook.com/plugins/page.php?' + params;
+      frame.width = String(width);
+      frame.height = '640';
+      frame.setAttribute('scrolling', 'no');
+      frame.setAttribute('allow', 'encrypted-media');
+
+      // Facebook sometimes shows the posts, then swaps its own box for a
+      // "refused to connect" page. That swap loads the frame a second time,
+      // so a second load means it has failed.
+      frame.addEventListener('load', () => {
+        if (loaded) showFallback(true);
+        loaded = true;
+      });
       window.setTimeout(showFallback, 10000);
-      const script = document.createElement('script');
-      script.onerror = showFallback;
-      script.id = 'facebook-jssdk';
-      script.async = true;
-      script.defer = true;
-      script.crossOrigin = 'anonymous';
-      script.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0';
-      document.body.appendChild(script);
+      box.replaceChildren(frame);
+
+      // A blocked frame still "loads" (as an error page), so check
+      // separately that the browser can reach Facebook at all.
+      fetch('https://www.facebook.com/robots.txt', { mode: 'no-cors', credentials: 'omit' })
+        .catch(() => showFallback(true));
     };
 
     if ('IntersectionObserver' in window) {
