@@ -87,7 +87,7 @@ body{margin:0;width:210mm;height:297mm;padding:48px 0 44px 32px;font-family:Comf
 header{height:168px;width:730px;text-align:center}
 header img{height:84px;display:block;margin:0 auto}
 header p{margin:.5mm 0 0;line-height:1.2;font-size:10pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#2f6b2a}
-h1{margin:2px 0 0;font-size:21pt;line-height:1.2}
+h1{margin:14px 0 0;font-size:21pt;line-height:1.2}
 /* Grid sizes are even whole CSS pixels so every 1px line sits on the same grid and shows at one even weight. */
 main{display:grid;grid-template-columns:repeat(3,225px);column-gap:27px;row-gap:19px;margin-top:16px;align-content:start}
 table{border-collapse:separate;border-spacing:0;table-layout:fixed;font-size:9pt;text-align:center}
