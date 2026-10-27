@@ -55,6 +55,8 @@ This register reflects the latest user-selected photos for Campus, Secondary, Pr
 
 - `our-school/our-team/` / Mr Dara: new HEIC portrait supplied 11 October 2026; sRGB, cropped closer to a head-and-shoulders circle to match the roster, 570 × 570 circular transparent PNG master in `assets/images/team/dara.png`, served as `assets/images/optimized/team-dara-v2.webp`. The Head of School welcome page photo is unchanged.
 - `our-school/our-team/` / Mr Mark: original `Mark.HEIC` (re-supplied 11 October 2026); sRGB, full-width square crop framed to match Mr Dara, with a light warm (yellow) and saturation lift, 570 × 570 circular transparent PNG master in `assets/images/team/mark.png`, served as `assets/images/optimized/team-mark-colour-v5.webp`.
+- `our-school/our-team/` / Ms Tippawan (Tip): cropped about 15% tighter on 27 October 2026 (George's request) from the existing `assets/images/team/tip.png`: 485 px square centred at 265,248, so she sits lower and larger, matching Mr Dara and Mr Mark. 570 × 570 transparent PNG master `assets/images/team/tip-v2.png`, served as `assets/images/optimized/team-tip-v2.webp` (WebP quality 90, 23 KB). The old files are kept.
+- `our-school/our-team/` / Ms Jassy, Mr Josh, Ms Minda: no photo yet; they show the green person-icon placeholder (`.team-avatar-v2--placeholder`).
 
 ## Earlier photo-selection history
 
