@@ -431,15 +431,13 @@ p{line-height:1.75}
 }
 
 /* ---- team-photo-placeholder: staff without a photo yet ---- */
+/* Person icon: Phosphor Icons "user" (regular), MIT licence; see assets/vendor/phosphor-icons/LICENSE */
 .team-avatar-v2--placeholder{
   background:var(--green-soft);
-}
-.team-avatar-v2--placeholder span{
-  max-width:none;
   color:var(--green);
-  font:700 46px/1 Comfortaa,sans-serif;
-  letter-spacing:0;
 }
-@media (max-width:720px){
-  .staff-panel .team-avatar-v2--placeholder span{ font-size:34px; }
+.team-avatar-v2--placeholder svg{
+  display:block;
+  width:58%;
+  height:58%;
 }
