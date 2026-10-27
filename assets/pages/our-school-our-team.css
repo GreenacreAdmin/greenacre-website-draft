@@ -429,3 +429,17 @@ p{line-height:1.75}
   object-fit:contain;
   border-radius:50%;
 }
+
+/* ---- team-photo-placeholder: staff without a photo yet ---- */
+.team-avatar-v2--placeholder{
+  background:var(--green-soft);
+}
+.team-avatar-v2--placeholder span{
+  max-width:none;
+  color:var(--green);
+  font:700 46px/1 Comfortaa,sans-serif;
+  letter-spacing:0;
+}
+@media (max-width:720px){
+  .staff-panel .team-avatar-v2--placeholder span{ font-size:34px; }
+}
