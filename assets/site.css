@@ -1463,7 +1463,7 @@ main .map-frame { background: #e8eee2; }
 }
 
 /* Keep the social fallback tidy while Facebook loads or is unavailable. */
-main .facebook-plugin-wrap .facebook-loading {
+main .facebook-plugin-wrap .fb-xfbml-parse-ignore {
   margin: 0;
   padding: 24px 28px;
   font-size: .95rem;
