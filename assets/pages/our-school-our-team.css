@@ -419,7 +419,8 @@ p{line-height:1.75}
   overflow:hidden;
   padding:0;
   border:2px solid var(--green-mid);
-  background:transparent;
+  /* Ring colour behind the photo, so no light seam shows where the photo's round edge meets the ring. */
+  background:var(--green-mid);
   box-sizing:border-box;
 }
 .team-avatar-v2 img{
