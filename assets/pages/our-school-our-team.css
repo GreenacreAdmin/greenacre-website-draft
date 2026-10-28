@@ -283,10 +283,37 @@ section{padding:78px 0}
   gap:12px;
   padding:20px 12px 18px;
   box-sizing:border-box;
-  border:1px solid #dfe7da;
+  border:1px solid #e3eadf;
   border-radius:18px;
   background:#fff;
+  box-shadow:0 8px 22px rgba(36,79,53,.08);
   text-align:center;
+  transition:transform .2s,box-shadow .2s;
+}
+
+.team-person-v2:hover{
+  transform:translateY(-4px);
+  box-shadow:0 14px 30px rgba(36,79,53,.14);
+}
+
+/* Short gold line between the photo and the name. */
+.team-person-v2::after{
+  content:"";
+  order:1;
+  width:28px;
+  height:3px;
+  margin-top:-2px;
+  border-radius:3px;
+  background:#e2a33a;
+}
+
+.team-person-v2 .team-copy-v2{
+  order:2;
+}
+
+@media(prefers-reduced-motion:reduce){
+  .team-person-v2{transition:none}
+  .team-person-v2:hover{transform:none}
 }
 
 .team-avatar-v2{
@@ -320,13 +347,14 @@ section{padding:78px 0}
 .team-person-v2 h4{
   margin:0 0 4px;
   color:var(--green-dark);
-  font-size:15px;
+  font-size:16px;
   line-height:1.25;
 }
 
 .team-person-v2 p{
   margin:0;
-  color:#647168;
+  color:var(--green);
+  font-weight:700;
   font-size:13px;
   line-height:1.35;
 }
@@ -401,7 +429,10 @@ p{line-height:1.75}
 .team-avatar-v2{
   overflow:hidden;
   padding:0;
-  border:2px solid var(--green-mid);
+  /* Double ring: white frame, green ring and a pale green halo. */
+  outline:2px solid var(--green);
+  box-shadow:0 0 0 5px var(--green-soft);
+  border:3px solid #fff;
   /* Ring colour behind the photo, so no light seam shows where the photo's round edge meets the ring. */
   background:var(--green-mid);
   box-sizing:border-box;
