@@ -23,7 +23,6 @@
   .staff-disclosure > summary h3 { font-size:16px; }
   .staff-chevron { grid-column:2; grid-row:1; width:28px; height:28px; }
   .staff-panel { padding:4px 12px 20px; }
-  .staff-panel .team-avatar-v2 { flex-basis:96px; width:96px; height:96px; }
-  .staff-panel .team-person-v2 { min-height:132px; gap:12px; padding:12px; }
+  .staff-panel .team-avatar-v2 { width:108px; height:108px; }
 }
 @media(prefers-reduced-motion:reduce) { .staff-disclosure > summary,.staff-chevron::after { transition:none; } }

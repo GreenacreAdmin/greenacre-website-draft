@@ -271,14 +271,6 @@ main table {
   box-shadow:0 7px 20px color-mix(in srgb, var(--green-dark) 5%, transparent);
 }
 
-/* Our Team: standard card family with mirrored accent */
-.team-grid-v2 > .team-person-v2 {
-  background:#fff;
-  border:1px solid color-mix(in srgb, var(--green) 12%, transparent);
-  border-right:4px solid var(--blue);
-  border-radius:18px;
-  box-shadow:0 7px 20px color-mix(in srgb, var(--green-dark) 5%, transparent);
-}
 
 
 .green-section{
