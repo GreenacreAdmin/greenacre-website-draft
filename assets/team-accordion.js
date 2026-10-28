@@ -1,4 +1,30 @@
 (() => {
+  // Even rows: give each group the most columns that fit (up to 5, tiles 190px + 18px gap) while
+  // leaving its last row at most one short, e.g. 10 = 5 + 5, 9 = 5 + 4, 7 = 4 + 3, 6 = 3 + 3.
+  // The CSS centres the rows.
+  const directory = document.querySelector('.staff-directory');
+  const panel = document.querySelector('.staff-panel');
+  if (!directory || !panel) return;
+  const layout = () => {
+    const style = getComputedStyle(panel);
+    const width = directory.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight);
+    const fit = Math.max(1, Math.min(5, Math.floor((width + 18) / (190 + 18))));
+    document.querySelectorAll('.team-grid-v2').forEach(grid => {
+      const n = grid.children.length;
+      const short = cols => (n % cols ? cols - n % cols : 0);
+      let cols = Math.min(n, fit);
+      for (let c = cols; c >= Math.min(n, 3, fit); c--) {
+        if (short(c) <= 1) { cols = c; break; }
+        if (short(c) < short(cols)) cols = c;
+      }
+      grid.style.setProperty('--team-cols', cols);
+    });
+  };
+  layout();
+  addEventListener('resize', layout);
+})();
+
+(() => {
   const items = [...document.querySelectorAll('.staff-disclosure')];
   const button = document.querySelector('.staff-tools button');
   if (!items.length || !button) return;
