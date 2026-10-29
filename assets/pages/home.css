@@ -344,6 +344,8 @@ main .identity .identity-photo:not(:focus-visible) {
 .facebook-fallback{position:absolute;inset:0;z-index:1;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:12px;padding:20px 24px 24px;background:var(--green-wash);color:var(--ink);line-height:1.6}
 .facebook-fallback p{margin:0}
 .facebook-fallback .facebook-fallback-title{font-weight:700;font-size:1.1rem;color:var(--green-deep)}
-.facebook-plugin-wrap.is-live .facebook-fallback{display:none}
+.facebook-fallback{transition:opacity .8s ease,visibility 0s linear 0s}
+.facebook-plugin-wrap.is-live .facebook-fallback{opacity:0;visibility:hidden;pointer-events:none;transition:opacity .8s ease,visibility 0s linear .8s}
+@media (prefers-reduced-motion:reduce){.facebook-fallback,.facebook-plugin-wrap.is-live .facebook-fallback{transition:none}}
 .facebook-fallback-photos{display:grid;grid-template-columns:1fr 1fr;gap:8px;width:100%;margin-bottom:6px}
 .facebook-fallback-photos img{display:block;width:100%;aspect-ratio:3/2;height:auto;object-fit:cover;border-radius:12px}

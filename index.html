@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="assets/pages/home-base.css" rel="stylesheet"/>
 <link href="assets/site.css" rel="stylesheet"/>
-<link href="assets/pages/home.css?v=card-height-1" rel="stylesheet"/>
+<link href="assets/pages/home.css?v=feed-fade-1" rel="stylesheet"/>
 <link as="image" fetchpriority="high" href="assets/images/optimized/home-hero-seedlings-v3-colour-v1.webp" rel="preload" type="image/webp"/>
 <title>Greenacre International School | Koh Samui</title><meta name="description" content="Greenacre International School on Koh Samui offers an inclusive learning pathway from age 3 through to Cambridge IGCSE."/>
 
@@ -414,7 +414,8 @@
     // Facebook only keeps its posts for visitors signed in to Facebook: for
     // everyone else it shows them, then reloads its box as a sign-in page.
     // So the posts replace the card only once they have stayed put for two
-    // seconds; if Facebook is blocked, slow or reloads, the card simply stays.
+    // seconds (the card then fades out over them); if Facebook is blocked,
+    // slow or reloads, the card simply stays.
     let settle = null;
     const watchFrame = frame => {
       let loads = 0;
