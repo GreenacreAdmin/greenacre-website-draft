@@ -288,12 +288,6 @@ section{padding:78px 0}
   background:#fff;
   box-shadow:0 8px 22px rgba(36,79,53,.08);
   text-align:center;
-  transition:transform .2s,box-shadow .2s;
-}
-
-.team-person-v2:hover{
-  transform:translateY(-4px);
-  box-shadow:0 14px 30px rgba(36,79,53,.14);
 }
 
 /* Short gold line between the photo and the name. */
@@ -309,11 +303,6 @@ section{padding:78px 0}
 
 .team-person-v2 .team-copy-v2{
   order:2;
-}
-
-@media(prefers-reduced-motion:reduce){
-  .team-person-v2{transition:none}
-  .team-person-v2:hover{transform:none}
 }
 
 .team-avatar-v2{
