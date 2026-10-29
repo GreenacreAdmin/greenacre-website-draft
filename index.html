@@ -261,7 +261,7 @@
 <p>108 Moo 2, Na Mueang, Koh Samui, Surat Thani 84140</p>
 <p class="panel-link"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Greenacre%20International%20School%20Koh%20Samui" rel="noopener" target="_blank">Open in Google Maps →</a></p>
 </div>
-<iframe allowfullscreen="" class="map-frame" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.google.com/maps?q=Greenacre%20International%20School%2C%20Koh%20Samui%2C%20Thailand&amp;z=13&amp;output=embed" title="Map showing Greenacre International School, Koh Samui">
+<iframe allowfullscreen="" class="map-frame" referrerpolicy="strict-origin-when-cross-origin" data-src="https://www.google.com/maps?q=Greenacre%20International%20School%2C%20Koh%20Samui%2C%20Thailand&amp;z=13&amp;output=embed" title="Map showing Greenacre International School, Koh Samui">
 </iframe>
 </article>
 <article class="facebook-panel">
@@ -413,7 +413,7 @@
     // The photo card shows first and covers Facebook's box while it loads.
     // Facebook only keeps its posts for visitors signed in to Facebook: for
     // everyone else it shows them, then reloads its box as a sign-in page.
-    // So the posts replace the card only once they have stayed put for a few
+    // So the posts replace the card only once they have stayed put for two
     // seconds; if Facebook is blocked, slow or reloads, the card simply stays.
     let settle = null;
     const watchFrame = frame => {
@@ -423,7 +423,7 @@
         loads += 1;
         window.clearTimeout(settle);
         if (loads > 1) return;
-        settle = window.setTimeout(() => feed.classList.add('is-live'), 3000);
+        settle = window.setTimeout(() => feed.classList.add('is-live'), 2000);
       });
     };
     new MutationObserver(() => {
@@ -444,16 +444,13 @@
       document.body.appendChild(script);
     };
 
-    if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver(entries => {
-        if (!entries.some(entry => entry.isIntersecting)) return;
-        observer.disconnect();
-        loadFacebook();
-      }, { rootMargin: '1500px 0px' });
-      observer.observe(feed);
-    } else {
-      loadFacebook();
-    }
+    // Facebook starts loading once the top of the page (menu, hero and first
+    // photo) has finished, so it is ready before visitors scroll down to it.
+    const start = () => ('requestIdleCallback' in window
+      ? window.requestIdleCallback(loadFacebook, { timeout: 2000 })
+      : window.setTimeout(loadFacebook, 200));
+    if (document.readyState === 'complete') start();
+    else window.addEventListener('load', start, { once: true });
   })();
 </script>
 <script src="assets/desktop-navigation.js"></script>
@@ -463,15 +460,21 @@
     const map = document.querySelector('.map-frame');
     const phone = window.matchMedia('(max-width: 640px)');
     const updateZoom = () => {
-      const url = new URL(map.src);
+      const url = new URL(map.getAttribute('src') || map.dataset.src);
       // Keep coastline context on phones; use one closer zoom step on wider screens.
       const zoom = phone.matches ? '12' : '13';
-      if (url.searchParams.get('z') === zoom) return;
+      if (map.getAttribute('src') && url.searchParams.get('z') === zoom) return;
       url.searchParams.set('z', zoom);
       map.src = url.href;
     };
-    updateZoom();
-    phone.addEventListener('change', updateZoom);
+    // The map starts loading once the top of the page (menu, hero and first
+    // photo) has finished, so it is ready before visitors scroll down to it.
+    const start = () => ('requestIdleCallback' in window
+      ? window.requestIdleCallback(updateZoom, { timeout: 2000 })
+      : window.setTimeout(updateZoom, 200));
+    if (document.readyState === 'complete') start();
+    else window.addEventListener('load', start, { once: true });
+    phone.addEventListener('change', () => { if (map.getAttribute('src')) updateZoom(); });
   })();
 </script>
 
