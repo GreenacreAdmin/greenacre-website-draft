@@ -359,13 +359,6 @@ section{padding:78px 0}
   line-height:1.35;
 }
 
-/* Full name under a nickname (e.g. Ms Sunny / Sansanee). */
-.team-person-v2 p.team-fullname{
-  margin:-2px 0 4px;
-  color:#5f6f64;
-  font-weight:400;
-}
-
 @media(max-width:720px){
   .team-page-v2{
     padding:48px 0 56px;
