@@ -288,7 +288,7 @@
       <a href="https://www.facebook.com/samuigreenacreschool/">Greenacre International School, Koh Samui</a>
     </blockquote>
   </div>
-  <div class="facebook-fallback" hidden>
+  <div class="facebook-fallback">
     <div class="facebook-fallback-photos">
       <img src="assets/images/school-2026/table-tennis-480-v1.webp" alt="Students playing table tennis outdoors" loading="lazy" width="480" height="320">
       <img src="assets/images/school-2026/outdoor-chess-480-v2-colour-v1.webp" alt="Students playing giant chess outdoors" loading="lazy" width="480" height="320">
@@ -410,24 +410,20 @@
     const feed = document.querySelector('.facebook-plugin-wrap');
     if (!feed) return;
 
-    // If Facebook is blocked (privacy settings, ad blockers, school or
-    // office networks) or too slow, show a friendly card with a link instead.
-    const showFallback = force => {
-      if (force !== true && feed.querySelector('.fb-page iframe[style*="visibility: visible"]')) return;
-      feed.classList.add('is-unavailable');
-      feed.querySelector('.facebook-fallback').hidden = false;
-    };
-
-    // Facebook sometimes shows the posts, then swaps its own box for a
-    // "refused to connect" page. That swap reloads the box at the same
-    // address, so a second load of an unchanged box means it has failed.
+    // The photo card shows first and covers Facebook's box while it loads.
+    // Facebook only keeps its posts for visitors signed in to Facebook: for
+    // everyone else it shows them, then reloads its box as a sign-in page.
+    // So the posts replace the card only once they have stayed put for a few
+    // seconds; if Facebook is blocked, slow or reloads, the card simply stays.
+    let settle = null;
     const watchFrame = frame => {
-      let lastSrc = null;
+      let loads = 0;
       frame.addEventListener('load', () => {
-        const src = frame.getAttribute('src') || '';
-        if (!src.includes('facebook.com')) return;
-        if (src === lastSrc) showFallback(true);
-        lastSrc = src;
+        if (!(frame.getAttribute('src') || '').includes('facebook.com')) return;
+        loads += 1;
+        window.clearTimeout(settle);
+        if (loads > 1) return;
+        settle = window.setTimeout(() => feed.classList.add('is-live'), 3000);
       });
     };
     new MutationObserver(() => {
@@ -439,9 +435,7 @@
 
     const loadFacebook = () => {
       if (document.getElementById('facebook-jssdk')) return;
-      window.setTimeout(showFallback, 10000);
       const script = document.createElement('script');
-      script.onerror = showFallback;
       script.id = 'facebook-jssdk';
       script.async = true;
       script.defer = true;
@@ -455,7 +449,7 @@
         if (!entries.some(entry => entry.isIntersecting)) return;
         observer.disconnect();
         loadFacebook();
-      }, { rootMargin: '500px 0px' });
+      }, { rootMargin: '1500px 0px' });
       observer.observe(feed);
     } else {
       loadFacebook();
