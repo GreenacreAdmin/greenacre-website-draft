@@ -53,3 +53,19 @@
   revealHash();
   sync();
 })();
+
+(() => {
+  // Photos in closed groups would only start loading when a group is opened.
+  // Once the page has finished loading, fetch them all in the background so
+  // they are ready before anyone clicks to expand.
+  const preload = () => {
+    document.querySelectorAll('.staff-disclosure img[loading="lazy"]').forEach(img => {
+      img.loading = 'eager';
+    });
+  };
+  const start = () => ('requestIdleCallback' in window
+    ? window.requestIdleCallback(preload, { timeout: 2000 })
+    : window.setTimeout(preload, 200));
+  if (document.readyState === 'complete') start();
+  else window.addEventListener('load', start, { once: true });
+})();
