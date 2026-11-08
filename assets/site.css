@@ -1436,7 +1436,7 @@ main .phase-card .card-arrow { display: inline-block; transition: transform .18s
 main :is(a.button, a.action, a.btn, a.phase-link):active { transform: translateY(1px) scale(.99); }
 main .phase-card:active { transform: translateY(1px); }
 main .phase-card:focus-visible { outline: 2px solid var(--green-dark); outline-offset: 4px; }
-main .location-panel { background: #e8eee2; }
+main .location-panel { background: #fff; } /* white like the Facebook card, so its rounded edge matches */
 main .location-panel-head { background: #fff; }
 main .map-frame { background: #e8eee2; }
 
