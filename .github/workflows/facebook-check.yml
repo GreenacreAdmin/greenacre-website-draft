@@ -1,0 +1,41 @@
+name: Weekly Facebook feed check
+
+# Checks every Monday morning (Bangkok time) that the Facebook settings the
+# homepage feed relies on still work. If something has changed, this run
+# fails and opens an issue, and GitHub emails the repository owner.
+on:
+  schedule:
+    - cron: "0 0 * * 1"
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - ".github/workflows/facebook-check.yml"
+      - "scripts/check-facebook.py"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check Facebook
+        id: check
+        run: python3 scripts/check-facebook.py | tee facebook-check.txt; exit ${PIPESTATUS[0]}
+      - name: Open an issue (emails the owner)
+        if: failure() && github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            echo "The weekly check found that something Facebook-related has changed, so the homepage Facebook feed may stop working or show no posts."
+            echo
+            echo '```'
+            cat facebook-check.txt
+            echo '```'
+            echo
+            echo "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          } > body.md
+          gh issue create --repo "${{ github.repository }}" --title "Facebook feed check failed ($(date -u +%d\ %b\ %Y))" --body-file body.md --assignee GreenacreAdmin || gh issue create --repo "${{ github.repository }}" --title "Facebook feed check failed" --body-file body.md
