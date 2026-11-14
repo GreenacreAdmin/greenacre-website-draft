@@ -1,0 +1,6 @@
+adapt_container_width
+hide_cover
+hide_cta
+show_facepile
+small_header
+tabs
