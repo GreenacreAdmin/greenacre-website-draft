@@ -276,21 +276,24 @@ main .identity .identity-photo:not(:focus-visible) {
   }
 
 /* ---- homepage-hero-fit ---- */
+/* The hero fills the screen below the menu bar (66.6px; 58.6px on phones) at
+   any screen height. It used to stop at 1000px tall, which left a strip of
+   the next section showing on big screens (George, 14 November 2026). */
 .hero {
-  min-height: min(1000px, calc(100vh - 65.6px));
-  min-height: min(1000px, calc(100svh - 65.6px));
+  min-height: calc(100vh - 66.6px);
+  min-height: calc(100svh - 66.6px);
 }
 
 @media (max-width: 720px) {
   .hero {
-    min-height: min(1000px, calc(100vh - 57.6px));
-    min-height: min(1000px, calc(100svh - 57.6px));
+    min-height: calc(100vh - 58.6px);
+    min-height: calc(100svh - 58.6px);
   }
 }
 
 @media (max-width: 560px) {
   .hero {
-    min-height: max(560px, min(1000px, calc(100svh - 57.6px)));
+    min-height: max(560px, calc(100svh - 58.6px));
   }
 }
 
