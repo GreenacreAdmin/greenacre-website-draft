@@ -349,3 +349,9 @@ main .identity .identity-photo:not(:focus-visible) {
 @media (prefers-reduced-motion:reduce){.facebook-fallback,.facebook-plugin-wrap.is-live .facebook-fallback{transition:none}}
 .facebook-fallback-photos{display:grid;grid-template-columns:1fr 1fr;gap:8px;width:100%;margin-bottom:6px}
 .facebook-fallback-photos img{display:block;width:100%;aspect-ratio:3/2;height:auto;object-fit:cover;border-radius:12px}
+/* Stage cards: darker shade behind the writing so it reads on bright photos (review L1, Nov 2026) */
+.phase-card::after{background:linear-gradient(to top,rgba(18,48,30,.94) 0%,rgba(18,48,30,.82) 38%,rgba(18,48,30,.38) 66%,rgba(18,48,30,.04) 90%)}
+.phase-content{text-shadow:0 1px 3px rgba(10,30,18,.45)}
+/* Phone tidy-up (review L5): "Koh Samui" on its own line on phones */
+.eyebrow-place{white-space:nowrap}
+@media (max-width:560px){.eyebrow-sep{display:none}.eyebrow-place{display:block}}

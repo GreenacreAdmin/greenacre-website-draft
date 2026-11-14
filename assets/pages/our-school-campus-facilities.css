@@ -98,7 +98,6 @@ section{padding:56px 0}
   background:#fff;
 }
 .campus-visit-grid-stage46{
-  max-width:1180px!important;
   display:grid!important;
   grid-template-columns:minmax(0,53.3fr) minmax(0,46.7fr)!important;
   gap:48px!important;
@@ -135,7 +134,6 @@ section{padding:56px 0}
   background:var(--cream);
 }
 .campus-facilities-stage46 > .wrap{
-  max-width:1180px;
 }
 .campus-facilities-stage46 h2{
   margin-bottom:28px;
@@ -154,7 +152,6 @@ section{padding:56px 0}
   background:#fff;
 }
 .campus-pool-stage46 > .wrap{
-  max-width:1180px;
 }
 .campus-pool-stage46 h2{
   margin-bottom:24px;
