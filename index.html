@@ -275,7 +275,7 @@
   <div
     class="fb-page"
     data-href="https://www.facebook.com/samuigreenacreschool/"
-    data-show-posts="true"
+    data-tabs="timeline"
     data-width="500"
     data-height="640"
     data-small-header="true"
@@ -416,7 +416,12 @@
     // So the posts replace the card only once they have stayed put for two
     // seconds (the card then fades out over them); if Facebook is blocked,
     // slow or reloads, the card simply stays.
+    // Facebook also tells the page how tall its box really is. With posts it
+    // is about 640px; with only the page name and Follow button (no posts,
+    // as on 14 November 2026) it is about 345px. So the card only fades
+    // when the box is tall enough to hold posts.
     let settle = null;
+    const hasPosts = frame => (parseInt(frame.style.height, 10) || 0) >= 450;
     const watchFrame = frame => {
       let loads = 0;
       frame.addEventListener('load', () => {
@@ -424,7 +429,12 @@
         loads += 1;
         window.clearTimeout(settle);
         if (loads > 1) return;
-        settle = window.setTimeout(() => feed.classList.add('is-live'), 2000);
+        let checks = 0;
+        const check = () => {
+          if (hasPosts(frame)) feed.classList.add('is-live');
+          else if (++checks < 6) settle = window.setTimeout(check, 1000);
+        };
+        settle = window.setTimeout(check, 2000);
       });
     };
     new MutationObserver(() => {
