@@ -1,20 +1,24 @@
 #!/usr/bin/env python3
 """Weekly check that the Facebook settings the homepage feed relies on still work.
 
-Run by .github/workflows/facebook-check.yml. Exits 1 (and the workflow emails
-the owner) when something has changed. Python 3 only, no extra packages.
+Run by .github/workflows/facebook-check.yml every Monday. If something has
+changed it exits 1, the workflow opens an issue, and GitHub emails George.
+Python 3 only, no extra packages. Run it by hand with:
+    python3 scripts/check-facebook.py
 
 Checks:
 1. The Facebook SDK script the homepage loads is still served.
-2. The Facebook version named in index.html (version=vNN.0) is still accepted
-   by Facebook, and is not within 60 days of its end date.
-3. Facebook's Page Plugin documentation still lists the settings we use
-   (tabs=timeline etc.), and its list of settings has not changed since
-   scripts/facebook-plugin-settings.txt was saved.
+2. The Facebook version in index.html (version=vNN.0) is still listed by
+   Facebook and is not within 60 days of its expiration date. (This is what
+   broke the feed in October 2026: v20.0 expired on 24 Sep 2026.)
+3. Facebook's Page Plugin documentation still offers tabs=timeline (what the
+   homepage uses to show posts since November 2026, when Facebook stopped
+   honouring show_posts), and its list of settings is unchanged since
+   scripts/facebook-plugin-settings.txt was saved. If Facebook adds or drops
+   a setting, check the homepage feed, then update that file.
 """
 import datetime as dt
 import html
-import json
 import re
 import sys
 import urllib.error
@@ -23,18 +27,32 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SAVED_SETTINGS = ROOT / "scripts" / "facebook-plugin-settings.txt"
-UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
+VERSIONS_URL = "https://developers.facebook.com/docs/graph-api/changelog/versions/"
+PLUGIN_URL = "https://developers.facebook.com/docs/plugins/page-plugin/"
 WARN_DAYS = 60
+HEADERS = {
+    # Facebook's documentation answers 400 to requests that don't look like a browser.
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Dest": "document",
+}
+# Settings named in the Page Plugin documentation (the "Settings" table).
+# (Plain words like width and height appear all over the page, so only the
+# distinctive names are compared.)
+SETTING_NAMES = ["adapt_container_width", "hide_cover", "hide_cta", "show_facepile",
+                 "show_posts", "small_header", "tabs"]
 problems = []
 
 
 def get(url):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9"})
     try:
-        with urllib.request.urlopen(req, timeout=30) as r:
+        with urllib.request.urlopen(urllib.request.Request(url, headers=HEADERS), timeout=30) as r:
             return r.status, r.read().decode("utf-8", "replace")
     except urllib.error.HTTPError as e:
-        return e.code, e.read().decode("utf-8", "replace")
+        return e.code, ""
     except (urllib.error.URLError, OSError) as e:
         return 0, str(e)
 
@@ -45,85 +63,62 @@ def text_of(page):
 
 
 index = (ROOT / "index.html").read_text(encoding="utf-8")
-m = re.search(r"connect\.facebook\.net/en_US/sdk\.js#xfbml=1&version=v(\d+)\.0", index)
+m = re.search(r"connect\.facebook\.net/en_US/sdk\.js#xfbml=1&version=(v\d+\.\d+)", index)
 if not m:
-    sys.exit("index.html: could not find the Facebook SDK script and version.")
-major = int(m.group(1))
-version = f"v{major}.0"
-print(f"Homepage uses Facebook version {version}.")
+    sys.exit("index.html: could not find the Facebook SDK script and its version.")
+version = m.group(1)
+print(f"The homepage uses Facebook version {version}.")
 
 # 1. SDK script
 status, body = get("https://connect.facebook.net/en_US/sdk.js")
 if status == 200 and "FB" in body:
-    print("OK  Facebook SDK script is served.")
+    print("OK  Facebook's SDK script is served.")
 else:
-    problems.append(f"Facebook SDK script returned HTTP {status}.")
+    problems.append(f"Facebook's SDK script did not load (HTTP {status}).")
 
-# 2a. Version still accepted (no access token: a live version answers
-#     'access token required'; an expired one names the version).
-status, body = get(f"https://graph.facebook.com/{version}/samuigreenacreschool")
-try:
-    err = json.loads(body).get("error", {})
-except ValueError:
-    err = {"message": body[:200]}
-msg = str(err.get("message", ""))
-if re.search(r"version|deprecat|no longer", msg, re.I) and not re.search(r"access token", msg, re.I):
-    problems.append(f"Facebook no longer accepts {version}: {msg}")
+# 2. Version expiration date
+status, body = get(VERSIONS_URL)
+page = text_of(body)
+date = r"(?:[A-Z][a-z]+ \d{1,2},\s*\d{4}|TBD)"
+row = re.search(rf"\b{re.escape(version)} ({date}) ({date})", page)
+if not row:
+    problems.append(f"Could not find {version} in Facebook's version list (HTTP {status}). "
+                    f"It may have been removed. Check {VERSIONS_URL}")
+elif row.group(2) == "TBD":
+    print(f"OK  {version} has no expiration date yet.")
 else:
-    print(f"OK  Facebook still accepts {version} (reply: {msg[:90]}).")
-
-# 2b. End date from Facebook's version list.
-status, body = get("https://developers.facebook.com/docs/graph-api/changelog/versions/")
-page = text_of(body) if status == 200 else ""
-row = re.search(rf"{re.escape(version)}\b(.{{0,160}})", page)
-dates = []
-if row:
-    for d in re.findall(r"([A-Z][a-z]+ \d{1,2}, \d{4})", row.group(1)):
-        try:
-            dates.append(dt.datetime.strptime(d, "%B %d, %Y").date())
-        except ValueError:
-            pass
-if len(dates) >= 2:
-    end = max(dates)
+    end = dt.datetime.strptime(re.sub(r",\s*", ", ", row.group(2)), "%B %d, %Y").date()
     left = (end - dt.date.today()).days
     if left <= WARN_DAYS:
-        problems.append(f"Facebook {version} stops working on {end:%d %b %Y} ({left} days). Update version= in index.html.")
+        problems.append(f"Facebook {version} expires on {end:%d %b %Y} ({left} days). "
+                        "Ask Claude to update version= in index.html to the newest version.")
     else:
         print(f"OK  {version} works until {end:%d %b %Y} ({left} days).")
-else:
-    problems.append(
-        f"Could not read the end date for {version} from Facebook's version list "
-        f"(HTTP {status}). Check https://developers.facebook.com/docs/graph-api/changelog/versions/ by hand."
-    )
-    print("DEBUG version page:", page[:1500])
 
-# 3. Page Plugin settings.
-status, body = get("https://developers.facebook.com/docs/plugins/page-plugin/")
-page = text_of(body) if status == 200 else ""
-names = sorted(set(re.findall(r"\b(adapt_container_width|hide_cover|hide_cta|height|href|lazy|show_facepile|show_posts|small_header|tabs|width)\b", page)))
-found = sorted(set(re.findall(r"\b([a-z]+(?:_[a-z]+)+)\b", page)))
-if not page:
-    problems.append(f"Could not open Facebook's Page Plugin documentation (HTTP {status}).")
-elif "tabs" not in names or "timeline" not in page:
-    problems.append("Facebook's Page Plugin documentation no longer mentions tabs=timeline, which the homepage uses to show posts.")
+# 3. Page Plugin settings
+status, body = get(PLUGIN_URL)
+if status != 200 or "page-plugin" not in body:
+    problems.append(f"Could not open Facebook's Page Plugin documentation (HTTP {status}). Check {PLUGIN_URL}")
 else:
-    print("OK  Page Plugin documentation still lists tabs=timeline.")
-print("DEBUG plugin page settings seen:", names)
-print("DEBUG plugin page words_with_underscores:", found[:80])
-current = "\n".join(names) + "\n"
-if SAVED_SETTINGS.exists():
-    saved = SAVED_SETTINGS.read_text()
-    if page and saved != current:
-        problems.append(
-            "Facebook's list of Page Plugin settings has changed.\n  Before: "
-            + ", ".join(saved.split()) + "\n  Now:    " + ", ".join(current.split())
-        )
-    elif page:
-        print("OK  Page Plugin settings unchanged.")
+    found = [n for n in SETTING_NAMES if re.search(rf"\b{n}\b", body)]
+    if "tabs" not in found or not re.search(r"timeline", body):
+        problems.append("Facebook's Page Plugin documentation no longer offers tabs=timeline, "
+                        "which the homepage uses to show posts.")
+    else:
+        print("OK  The Page Plugin still offers tabs=timeline.")
+    current = "\n".join(found) + "\n"
+    saved = SAVED_SETTINGS.read_text() if SAVED_SETTINGS.exists() else ""
+    if saved != current:
+        problems.append("Facebook's list of Page Plugin settings has changed.\n"
+                        f"   Before: {', '.join(saved.split()) or '(none saved)'}\n"
+                        f"   Now:    {', '.join(found)}")
+    else:
+        print(f"OK  Page Plugin settings unchanged ({', '.join(found)}).")
 
 if problems:
-    print("\nPROBLEMS FOUND:")
+    print("\nSomething has changed:")
     for p in problems:
         print(" -", p)
+    print("\nCheck the homepage Facebook card, then ask Claude to look at this report.")
     sys.exit(1)
 print("\nAll Facebook checks passed.")
