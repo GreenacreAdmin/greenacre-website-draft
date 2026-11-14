@@ -7,11 +7,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          for v in v20.0 v22.0 v24.0 v26.0 v27.0 v99.0; do echo "$v: $(curl -s https://graph.facebook.com/$v/samuigreenacreschool)"; done
           UA='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36'
-          for u in https://developers.facebook.com/docs/graph-api/changelog/versions/ https://developers.facebook.com/docs/plugins/page-plugin/; do
-            curl -sL -o p.html -w "%{http_code} %{size_download}\n" -A "$UA" -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8' -H 'Accept-Language: en-US,en;q=0.9' -H 'Sec-Fetch-Mode: navigate' -H 'Sec-Fetch-Site: none' -H 'Sec-Fetch-Dest: document' -H 'Upgrade-Insecure-Requests: 1' "$u"
-            grep -o 'v26\.0.\{0,200\}' p.html | head -3; grep -o 'tabs.\{0,120\}' p.html | head -3; grep -oE 'show_facepile|hide_cta|small_header|adapt_container_width' p.html | sort | uniq -c
-          done
-          curl -s https://connect.facebook.net/en_US/sdk.js | grep -oE '"v[0-9]+\.[0-9]+"' | sort | uniq -c | head
-          curl -s https://connect.facebook.net/en_US/sdk.js | grep -oE '.{80}(deprecated|unsupported|Unsupported|expired).{80}' | head -5
+          H=(-A "$UA" -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8' -H 'Accept-Language: en-US,en;q=0.9' -H 'Sec-Fetch-Mode: navigate' -H 'Sec-Fetch-Site: none' -H 'Sec-Fetch-Dest: document' -H 'Upgrade-Insecure-Requests: 1')
+          curl -sL "${H[@]}" -o v.html https://developers.facebook.com/docs/graph-api/changelog/versions/
+          python3 - <<'PY'
+          import re,html
+          s=open('v.html',encoding='utf-8',errors='replace').read()
+          for v in ['v26.0','v25.0','v20.0']:
+              i=s.find(v+'</a>'); print('==',v,i); print(s[max(0,i-300):i+700].replace('\n',' '))
+          t=re.sub(r'(?is)<(script|style)\b.*?</\1>',' ',s); t=re.sub(r'<[^>]+>',' ',t); t=re.sub(r'\s+',' ',html.unescape(t))
+          i=t.find('v26.0'); print('TEXT:', t[max(0,i-500):i+800])
+          PY
+          echo URLLIB; python3 -c "
+          import urllib.request
+          for h in [{'User-Agent':'Mozilla/5.0'},{'User-Agent':'$UA','Accept':'text/html','Accept-Language':'en-US,en;q=0.9','Sec-Fetch-Mode':'navigate','Sec-Fetch-Dest':'document','Sec-Fetch-Site':'none'}]:
+            try: print(urllib.request.urlopen(urllib.request.Request('https://developers.facebook.com/docs/plugins/page-plugin/',headers=h)).status)
+            except Exception as e: print(e)
+          "
