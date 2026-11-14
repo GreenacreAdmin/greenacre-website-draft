@@ -1557,7 +1557,7 @@ footer.site-footer{height:auto;min-height:0}
 .footer-copyright{font-size:.7rem}
 .footer-small{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
 .footer-main .footer-facebook{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:700;line-height:1}
-.footer-facebook svg{flex:none;display:block}
+.footer-facebook svg{flex:none;display:block;transform:translateY(-1px)}
 .footer-bottom .site-footer__logos{height:auto}
 @media (max-width:900px){.footer-cols{gap:24px}}
 @media (max-width:720px){
