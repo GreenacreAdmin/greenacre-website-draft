@@ -355,3 +355,10 @@ main .identity .identity-photo:not(:focus-visible) {
 /* Phone tidy-up (review L5): "Koh Samui" on its own line on phones */
 .eyebrow-place{white-space:nowrap}
 @media (max-width:560px){.eyebrow-sep{display:none}.eyebrow-place{display:block}}
+/* GREEN values on phones: listed down the page so "Environmental" stays whole (review L2, option B) */
+@media (max-width:560px){
+  .values{grid-template-columns:1fr;justify-items:start;row-gap:14px;padding-left:4px}
+  .values::before{left:18px;right:auto;top:14px;bottom:14px;width:1px;height:auto}
+  .values .value{display:flex;align-items:center;gap:16px;text-align:left}
+  .values .green-rest{font-size:.95rem;white-space:nowrap}
+}
