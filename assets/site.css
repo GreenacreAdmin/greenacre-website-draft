@@ -1569,7 +1569,6 @@ footer.site-footer{height:auto;min-height:0}
   .footer-address span+span::before{content:", "}
   .footer-address span:last-child{display:none}
   .footer-phone,.footer-col--email p{display:inline;margin:0 7px}
-  .footer-col--email p:has(a[href^="mailto:recruitment"]){display:none}
   .footer-col--links ul{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 16px;margin-top:10px}
   .footer-col--links li{margin:0}
   .footer-col--links a{text-decoration:underline;text-underline-offset:3px}

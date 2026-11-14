@@ -350,7 +350,7 @@ main .identity .identity-photo:not(:focus-visible) {
 .facebook-fallback-photos{display:grid;grid-template-columns:1fr 1fr;gap:8px;width:100%;margin-bottom:6px}
 .facebook-fallback-photos img{display:block;width:100%;aspect-ratio:3/2;height:auto;object-fit:cover;border-radius:12px}
 /* Phone tidy-up (review L5): "Koh Samui" on its own line on phones */
-.eyebrow-place{white-space:nowrap}
+.eyebrow-place,.nowrap{white-space:nowrap}
 @media (max-width:560px){.eyebrow-sep{display:none}.eyebrow-place{display:block}}
 /* GREEN values on phones: listed down the page so "Environmental" stays whole (review L2, option B) */
 @media (max-width:560px){
@@ -359,3 +359,7 @@ main .identity .identity-photo:not(:focus-visible) {
   .values .value{display:flex;align-items:center;gap:16px;text-align:left}
   .values .green-rest{font-size:.95rem;white-space:nowrap}
 }
+/* Stage cards: bold, slightly bigger words with a faint outline so they read on bright photos (review L1, option E) */
+.phase-content p{font-weight:700;font-size:1.06em}
+.phase-content .phase-age{opacity:1}
+.phase-content{text-shadow:0 1px 2px rgba(0,0,0,.35)}
