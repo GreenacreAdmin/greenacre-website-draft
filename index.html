@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="assets/pages/home-base.css" rel="stylesheet"/>
 <link href="assets/site.css" rel="stylesheet"/>
-<link href="assets/pages/home.css?v=review-1" rel="stylesheet"/>
+<link href="assets/pages/home.css?v=review-2" rel="stylesheet"/>
 <link as="image" fetchpriority="high" href="assets/images/optimized/home-hero-seedlings-v3-colour-v1.webp" rel="preload" type="image/webp"/>
 <title>Greenacre International School | Koh Samui</title><meta name="description" content="Greenacre International School on Koh Samui offers an inclusive learning pathway from age 3 through to Cambridge IGCSE."/>
 
@@ -277,9 +277,9 @@
   <div
     class="fb-page"
     data-href="https://www.facebook.com/samuigreenacreschool/"
-    data-show-posts="true"
+    data-tabs="timeline"
     data-width="500"
-    data-height="640"
+    data-height="1000"
     data-small-header="true"
     data-adapt-container-width="true"
     data-hide-cover="true"
@@ -290,6 +290,18 @@
       <a href="https://www.facebook.com/samuigreenacreschool/">Greenacre International School, Koh Samui</a>
     </blockquote>
   </div>
+  <!-- Hidden copy of Facebook's box without posts: its height tells us how
+       much of Facebook's header to crop off so the card starts at the newest post. -->
+  <div
+    class="fb-page fb-header-probe"
+    aria-hidden="true"
+    data-href="https://www.facebook.com/samuigreenacreschool/"
+    data-width="500"
+    data-height="1000"
+    data-small-header="true"
+    data-adapt-container-width="true"
+    data-hide-cover="true"
+    data-show-facepile="false"></div>
   <div class="facebook-fallback">
     <div class="facebook-fallback-photos">
       <img src="assets/images/school-2026/table-tennis-480-v1.webp" alt="Students playing table tennis outdoors" loading="lazy" width="480" height="320">
@@ -433,9 +445,16 @@
     // The photo card shows first and covers Facebook's box while it loads.
     // Facebook only keeps its posts for visitors signed in to Facebook: for
     // everyone else it shows them, then reloads its box as a sign-in page.
-    // So the posts replace the card only once they have stayed put for two
-    // seconds (the card then fades out over them); if Facebook is blocked,
-    // slow or reloads, the card simply stays.
+    // Facebook's box starts with a tall header (cover photo, page name,
+    // description, Follow button) that we crop off so the card starts at the
+    // newest post. The header's height changes with the card's width (and
+    // whenever Facebook redesigns it), so a hidden copy of the box without
+    // posts measures it: Facebook reports each box's real height to the page.
+    // The photo card fades out only when the posts box has stayed put for two
+    // seconds, is clearly taller than the header alone (it has posts), and
+    // the header has been measured. If Facebook is blocked, slow, reloads or
+    // shows no posts, the photo card simply stays.
+    const reported = frame => (frame && parseInt(frame.style.height, 10)) || 0;
     let settle = null;
     const watchFrame = frame => {
       let loads = 0;
@@ -444,11 +463,21 @@
         loads += 1;
         window.clearTimeout(settle);
         if (loads > 1) return;
-        settle = window.setTimeout(() => feed.classList.add('is-live'), 2000);
+        let checks = 0;
+        const check = () => {
+          const header = reported(feed.querySelector('.fb-header-probe iframe'));
+          if (header > 0 && reported(frame) > header + 150) {
+            feed.style.setProperty('--fb-crop', `${header}px`);
+            feed.classList.add('is-live');
+          } else if (++checks < 8) {
+            settle = window.setTimeout(check, 1000);
+          }
+        };
+        settle = window.setTimeout(check, 2000);
       });
     };
     new MutationObserver(() => {
-      feed.querySelectorAll('.fb-page iframe:not([data-watched])').forEach(frame => {
+      feed.querySelectorAll('.fb-page:not(.fb-header-probe) iframe:not([data-watched])').forEach(frame => {
         frame.dataset.watched = '';
         watchFrame(frame);
       });
