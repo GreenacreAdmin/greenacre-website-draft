@@ -48,4 +48,4 @@ if errors:
     print('\n'.join(errors));sys.exit(1)
 subprocess.run([sys.executable,str(ROOT/'scripts/update-search-metadata.py'),'--check'],check=True)
 subprocess.run([sys.executable,str(ROOT/'scripts/build-shared.py'),'--check'],check=True)
-print(f'Checked {len(pages)} pages, all relative links and fragments at root/project paths, and 3 original PDF checksums.')
+print(f'Checked {len(pages)} pages, all relative links and fragments at root/project paths, and the original PDF checksums.')
