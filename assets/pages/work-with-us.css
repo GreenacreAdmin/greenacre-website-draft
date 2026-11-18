@@ -108,3 +108,9 @@ linear-gradient(35deg,var(--green-pale),var(--sand));display:flex;align-items:ce
 @media(max-width:900px){.job-layout{grid-template-columns:1fr;gap:28px}.job-glance{position:static;order:-1}}
 @media(max-width:850px){.vacancy-card{flex-direction:column;align-items:flex-start;padding:22px}}
 main > section.vacancies{background:#fff}
+.vacancies-none{display:none}
+.vacancies-none p{max-width:820px;margin:0}
+.vacancies-none a{color:var(--green-dark);font-weight:700}
+/* No job cards left: show the "No vacancies" message instead of the list. */
+.vacancies:not(:has(.vacancy-card)) .vacancies-open{display:none}
+.vacancies:not(:has(.vacancy-card)) .vacancies-none{display:block}
