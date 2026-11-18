@@ -44,8 +44,9 @@ def trail(rel, prefix, text):
     if key in items:
         group, label = items[key]
         parts = [group, f'<span aria-current="page">{label}</span>']
-    elif rel in TRAIL_PARENTS:
-        parent = TRAIL_PARENTS[rel]
+    elif rel in TRAIL_PARENTS or rel.startswith('work-with-us/'):
+        # Each job page sits under Work With Us.
+        parent = TRAIL_PARENTS.get(rel, 'work-with-us/')
         group, label = items[parent]
         title = re.search(r'<h1[^>]*>(.*?)</h1>', text, re.S).group(1).strip()
         parts = [group, f'<a href="{prefix}{parent}">{label}</a>', f'<span aria-current="page">{title}</span>']

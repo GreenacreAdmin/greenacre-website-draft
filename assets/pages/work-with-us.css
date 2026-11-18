@@ -82,3 +82,29 @@ linear-gradient(35deg,var(--green-pale),var(--sand));display:flex;align-items:ce
 .photo-plan.secondary{background:linear-gradient(color-mix(in srgb, var(--green-deep) 10%, transparent),color-mix(in srgb, var(--green-deep) 18%, transparent)),url('../images/temp/secondary-learning.webp') center/cover}
 .note-list{padding-left:20px}.note-list li{margin-bottom:10px}
 @media(max-width:850px){.phase-links,.pathway,.feature-list{grid-template-columns:1fr}.photo-plan{min-height:280px}}
+
+/* ---- vacancies (Work With Us list and each job page) ---- */
+.vacancy-list{display:grid;gap:16px;margin-top:24px}
+.vacancy-card{display:flex;align-items:center;justify-content:space-between;gap:28px;background:#fff;border:1px solid color-mix(in srgb, var(--green) 12%, transparent);border-left:5px solid var(--orange);border-radius:20px;padding:26px 30px;box-shadow:0 10px 28px color-mix(in srgb, var(--green-dark) 5%, transparent)}
+.vacancy-card h3{margin:0 0 6px;font-size:1.3rem}
+.vacancy-card h3 a{color:var(--green-dark);text-decoration:none}
+.vacancy-card h3 a:hover{text-decoration:underline}
+.vacancy-card p{margin:0;max-width:760px}
+.vacancy-card .action{flex:0 0 auto}
+.vacancy-facts{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:14px 0 0}
+.vacancy-facts li{background:var(--green-wash);color:var(--green-dark);font-weight:700;font-size:.84rem;border-radius:999px;padding:6px 13px}
+.job-layout{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:56px;align-items:start}
+.job-main h2{font-size:clamp(1.4rem,2vw,1.9rem);margin-top:34px}
+.job-main h2:first-child{margin-top:0}
+.job-main ul{padding-left:22px;margin:0}
+.job-main li{line-height:1.65;margin-bottom:8px}
+.job-glance{position:sticky;top:120px;background:#fff;border:1px solid color-mix(in srgb, var(--green) 12%, transparent);border-top:5px solid var(--orange);border-radius:20px;padding:26px;box-shadow:0 10px 28px color-mix(in srgb, var(--green-dark) 5%, transparent)}
+.job-glance h2{font-size:1.25rem;margin:0 0 14px}
+.job-glance dl{margin:0;display:grid;gap:12px}
+.job-glance dt{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--green-mid)}
+.job-glance dd{margin:2px 0 0;color:var(--green-dark);font-weight:600;line-height:1.45}
+.job-glance .action-row{flex-direction:column;margin-top:22px;gap:10px}
+.job-note{font-size:.9rem;margin-top:18px}
+@media(max-width:900px){.job-layout{grid-template-columns:1fr;gap:28px}.job-glance{position:static;order:-1}}
+@media(max-width:850px){.vacancy-card{flex-direction:column;align-items:flex-start;padding:22px}}
+main > section.vacancies{background:#fff}
