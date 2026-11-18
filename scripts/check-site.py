@@ -44,6 +44,9 @@ for entry in json.loads((ROOT/'assets/documents/originals.json').read_text()):
     data=(ROOT/entry['file']).read_bytes()
     if hashlib.sha256(data).hexdigest()!=entry['sha256'] or len(data)!=entry['bytes'] or not data.startswith(b'%PDF-'):
         errors.append('Original PDF changed: '+entry['file'])
+wwu=(ROOT/'work-with-us/index.html').read_text()
+for job in (ROOT/'work-with-us').glob('*/index.html'):
+    if f'href="{job.parent.name}/"' not in wwu:errors.append(f'work-with-us/{job.parent.name}: job page has no card on Work With Us (delete the page or add the card)')
 if errors:
     print('\n'.join(errors));sys.exit(1)
 subprocess.run([sys.executable,str(ROOT/'scripts/update-search-metadata.py'),'--check'],check=True)

@@ -205,3 +205,15 @@ The School Fees page (`documents/fees/`) and School Calendar page (`documents/ca
 ## School calendar PDF
 
 `assets/documents/calendar-2026-27.pdf` is built from `scripts/calendar/calendar-2026-27.json` (months, terms and coloured dates). To change a date or make next year's calendar, copy or edit that file, then run `python3 scripts/calendar/build-calendar.py scripts/calendar/<file>.json` with Google Chrome installed, and update the PDF's sha256 and bytes in `assets/documents/originals.json`. The crest comes from `assets/images/greenacre-logo.png`; the Comfortaa font files are in `scripts/calendar/fonts/` (SIL Open Font Licence).
+
+## Job vacancies (George, 18 November 2026)
+
+This is the agreed layout for every future job. Do not redesign it per job.
+
+- `work-with-us/index.html` has a "Current vacancies" section at the top. Each open job is one `<article class="vacancy-card">` (title, one-sentence summary in the posting's own words, chips for start date and full/part time, a "View job details" button). No salary chip on the card; the salary is on the job page.
+- Each job has its own page at `work-with-us/<job-name>/index.html`. Copy `secondary-science-teacher/` (or the newest job page) and change the words, the "At a glance" box and the `job-data` JobPosting script in the head (title, description, datePosted, salary). The breadcrumb is added by `scripts/build-shared.py`.
+- The PDF is not the posting George sends as is. Rebuild it from a print template: copy `scripts/vacancies/secondary-science-teacher.html`, use the same words as the job page, print it with Chrome to `assets/documents/vacancy-<job-name>.pdf` (A4, no margins, background graphics on), check the page break, and add the file to `assets/documents/originals.json`.
+- Applications go to `recruitment@greenacre.ac.th`. There is no closing date: George asks for a job to be removed when it is filled.
+- Keep wording close to George's posting; list any wording changes for him. No em or en dashes on the site.
+
+To remove a filled job: delete its card, its `work-with-us/<job-name>/` folder, its PDF and its `originals.json` entry, then run the checks (`update-search-metadata.py` also refreshes `sitemap.xml`). Keep the vacancies section itself. With no cards left it shows "No vacancies at the moment" with the recruitment email by itself. `scripts/check-site.py` fails if a job page is left without a card.
