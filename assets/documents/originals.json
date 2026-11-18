@@ -19,8 +19,8 @@
   },
   {
     "file": "assets/documents/vacancy-secondary-science-teacher.pdf",
-    "original_filename": "Science Teacher Posting.pdf",
-    "sha256": "ef9c17316624d24b49bfb8febb4ca7e63df89f4326814643e32e140557aad49b",
-    "bytes": 64337
+    "original_filename": "Built from scripts/vacancies/secondary-science-teacher.html (George's Science Teacher Posting, re-laid out)",
+    "sha256": "aa64374020757e3ca061db7ec056ace3bd6611ec37809a2a82f07cf93398f220",
+    "bytes": 216585
   }
 ]
